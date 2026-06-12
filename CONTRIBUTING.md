@@ -30,7 +30,7 @@ git clone https://github.com/<your-username>/C1-Code-Crunch-Convos.git
 cd C1-Code-Crunch-Convos
 
 # 2. Add the upstream remote
-git remote add upstream https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos.git
+git remote add upstream https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos.git
 
 # 3. Create a virtual environment
 python -m venv .venv

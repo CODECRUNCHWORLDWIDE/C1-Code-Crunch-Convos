@@ -101,7 +101,7 @@ This curriculum will give you the *skills* to interview for entry-level Python r
 
 ### I found a bug / typo. What do I do?
 
-[Open an Issue](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos/issues/new) or, even better, a Pull Request. See [CONTRIBUTING.md](../CONTRIBUTING.md).
+[Open an Issue](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/issues/new) or, even better, a Pull Request. See [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ### I want to translate a week into Spanish. How?
 
@@ -115,4 +115,4 @@ The Code Crunch Club is a student-led volunteer effort. We don't currently accep
 
 ## Anything else?
 
-Open a [Discussion](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos/discussions) and we'll add to this FAQ.
+Open a [Discussion](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/discussions) and we'll add to this FAQ.

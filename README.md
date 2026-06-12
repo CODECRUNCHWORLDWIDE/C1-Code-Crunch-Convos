@@ -13,7 +13,7 @@
 
 ## Overview
 
-**Code Crunch Convos (C1)** is the flagship Python program of the [Code Crunch Club](https://github.com/CODE-CRUNCH-CLUB) — a global, student-led learning community. This curriculum reorganizes C1 into a complete **15-week Python Bootcamp** that takes a learner from "I've never written code" to a portfolio-ready engineer who has shipped real projects, written tests, queried databases, consumed APIs, deployed a web app, and trained a basic ML model.
+**Code Crunch Convos (C1)** is the flagship Python program of the [Code Crunch Club](https://github.com/CODECRUNCHWORLDWIDE) — a global, student-led learning community. This curriculum reorganizes C1 into a complete **15-week Python Bootcamp** that takes a learner from "I've never written code" to a portfolio-ready engineer who has shipped real projects, written tests, queried databases, consumed APIs, deployed a web app, and trained a basic ML model.
 
 The program is delivered as a public, version-controlled repository — designed equally well for:
 
@@ -211,8 +211,8 @@ Full week-by-week syllabus: [curriculum/SYLLABUS.md](curriculum/SYLLABUS.md)
 We welcome contributions from learners, instructors, and the wider community. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for the full guide.
 
 Quick links:
-- 🐛 [Report a bug or typo](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos/issues/new)
-- 💡 [Suggest an improvement](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos/issues/new)
+- 🐛 [Report a bug or typo](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/issues/new)
+- 💡 [Suggest an improvement](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/issues/new)
 - 🧑‍🏫 [Add or improve a lecture / exercise](CONTRIBUTING.md#contributing-curriculum)
 - 🌐 [Translate a week into another language](CONTRIBUTING.md#translations)
 
@@ -234,8 +234,8 @@ We believe education should be unbounded by paywalls. Improvements come from lea
 
 ## Community & Support
 
-- 💬 **Discussions** — [GitHub Discussions](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos/discussions)
-- 🐦 **Updates** — follow [@CODE-CRUNCH-CLUB](https://github.com/CODE-CRUNCH-CLUB) on GitHub
+- 💬 **Discussions** — [GitHub Discussions](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/discussions)
+- 🐦 **Updates** — follow [@CODECRUNCHWORLDWIDE](https://github.com/CODECRUNCHWORLDWIDE) on GitHub
 - 🆘 **Stuck on an exercise?** — see [community/support.md](community/support.md)
 - ❓ **Frequently asked questions** — see [community/faqs.md](community/faqs.md)
 
