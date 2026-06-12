@@ -1,0 +1,829 @@
+{
+  "repo": "C1-Code-Crunch-Convos",
+  "files": [
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "title": "Contributor Covenant Code of Conduct"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "title": "Contributing to Code Crunch Convos"
+    },
+    {
+      "path": "README.md",
+      "title": "C1 \u00b7 Code Crunch Convos \u2014 Python Bootcamp"
+    },
+    {
+      "path": "community/faqs.md",
+      "title": "Frequently Asked Questions"
+    },
+    {
+      "path": "community/support.md",
+      "title": "Getting Help"
+    },
+    {
+      "path": "curriculum/README.md",
+      "title": "Curriculum"
+    },
+    {
+      "path": "curriculum/SYLLABUS.md",
+      "title": "Code Crunch Convos \u2014 Full Program Syllabus"
+    },
+    {
+      "path": "curriculum/week-01-python-foundations/README.md",
+      "title": "Week 1 \u2014 Python Foundations & Dev Environment"
+    },
+    {
+      "path": "curriculum/week-01-python-foundations/challenges/README.md",
+      "title": "Week 1 Challenges"
+    },
+    {
+      "path": "curriculum/week-01-python-foundations/challenges/challenge-01-personalized-banner.md",
+      "title": "Challenge 1 \u2014 Personalized ASCII Banner"
+    },
+    {
+      "path": "curriculum/week-01-python-foundations/challenges/challenge-02-environment-audit.md",
+      "title": "Challenge 2 \u2014 Environment Audit"
+    },
+    {
+      "path": "curriculum/week-01-python-foundations/exercises/README.md",
+      "title": "Week 1 Exercises"
+    },
+    {
+      "path": "curriculum/week-01-python-foundations/homework.md",
+      "title": "Week 1 Homework"
+    },
+    {
+      "path": "curriculum/week-01-python-foundations/lecture-notes/01-installing-python-and-running-your-first-program.md",
+      "title": "Lecture 1 \u2014 Installing Python and Running Your First Program"
+    },
+    {
+      "path": "curriculum/week-01-python-foundations/lecture-notes/02-terminal-virtual-environments-and-pip.md",
+      "title": "Lecture 2 \u2014 Terminal, Virtual Environments, and pip"
+    },
+    {
+      "path": "curriculum/week-01-python-foundations/lecture-notes/03-git-and-github-basics.md",
+      "title": "Lecture 3 \u2014 Git and GitHub Basics"
+    },
+    {
+      "path": "curriculum/week-01-python-foundations/mini-project/README.md",
+      "title": "Mini-Project \u2014 \"Hello, You\""
+    },
+    {
+      "path": "curriculum/week-01-python-foundations/quiz.md",
+      "title": "Week 1 Quiz"
+    },
+    {
+      "path": "curriculum/week-01-python-foundations/resources.md",
+      "title": "Week 1 Resources"
+    },
+    {
+      "path": "curriculum/week-02-data-types-operators/README.md",
+      "title": "Week 2 \u2014 Variables, Data Types & Operators"
+    },
+    {
+      "path": "curriculum/week-02-data-types-operators/challenges/README.md",
+      "title": "Week 2 \u2014 Challenges"
+    },
+    {
+      "path": "curriculum/week-02-data-types-operators/challenges/challenge-01-tip-calculator.md",
+      "title": "Challenge 01 \u2014 Tip Calculator"
+    },
+    {
+      "path": "curriculum/week-02-data-types-operators/challenges/challenge-02-mad-libs.md",
+      "title": "Challenge 02 \u2014 Mad Libs Generator"
+    },
+    {
+      "path": "curriculum/week-02-data-types-operators/exercises/README.md",
+      "title": "Week 2 \u2014 Exercises"
+    },
+    {
+      "path": "curriculum/week-02-data-types-operators/homework.md",
+      "title": "Week 2 \u2014 Homework"
+    },
+    {
+      "path": "curriculum/week-02-data-types-operators/lecture-notes/01-variables-and-types.md",
+      "title": "Lecture 01 \u2014 Variables and Built-in Types"
+    },
+    {
+      "path": "curriculum/week-02-data-types-operators/lecture-notes/02-operators-and-strings.md",
+      "title": "Lecture 02 \u2014 Operators and Strings"
+    },
+    {
+      "path": "curriculum/week-02-data-types-operators/lecture-notes/03-input-and-type-hints.md",
+      "title": "Lecture 03 \u2014 Reading Input and Type Hints"
+    },
+    {
+      "path": "curriculum/week-02-data-types-operators/mini-project/README.md",
+      "title": "Mini-Project \u2014 Unit Converter CLI"
+    },
+    {
+      "path": "curriculum/week-02-data-types-operators/quiz.md",
+      "title": "Week 2 \u2014 Quiz"
+    },
+    {
+      "path": "curriculum/week-02-data-types-operators/resources.md",
+      "title": "Week 2 \u2014 Resources"
+    },
+    {
+      "path": "curriculum/week-03-control-flow/README.md",
+      "title": "Week 3 \u2014 Control Flow: Conditionals & Loops"
+    },
+    {
+      "path": "curriculum/week-03-control-flow/challenges/README.md",
+      "title": "Week 3 \u2014 Challenges"
+    },
+    {
+      "path": "curriculum/week-03-control-flow/challenges/challenge-01-caesar-cipher.md",
+      "title": "Challenge 01 \u2014 Caesar Cipher"
+    },
+    {
+      "path": "curriculum/week-03-control-flow/challenges/challenge-02-rps.md",
+      "title": "Challenge 02 \u2014 Rock, Paper, Scissors"
+    },
+    {
+      "path": "curriculum/week-03-control-flow/exercises/README.md",
+      "title": "Week 3 \u2014 Exercises"
+    },
+    {
+      "path": "curriculum/week-03-control-flow/homework.md",
+      "title": "Week 3 \u2014 Homework"
+    },
+    {
+      "path": "curriculum/week-03-control-flow/lecture-notes/01-conditionals.md",
+      "title": "Lecture 1 \u2014 Conditionals: Deciding What Runs"
+    },
+    {
+      "path": "curriculum/week-03-control-flow/lecture-notes/02-loops.md",
+      "title": "Lecture 2 \u2014 Loops: Doing Things Repeatedly"
+    },
+    {
+      "path": "curriculum/week-03-control-flow/lecture-notes/03-loop-patterns.md",
+      "title": "Lecture 3 \u2014 Loop Patterns You Will Use Forever"
+    },
+    {
+      "path": "curriculum/week-03-control-flow/mini-project/README.md",
+      "title": "Mini-Project \u2014 Number Guessing Game"
+    },
+    {
+      "path": "curriculum/week-03-control-flow/quiz.md",
+      "title": "Week 3 \u2014 Quiz"
+    },
+    {
+      "path": "curriculum/week-03-control-flow/resources.md",
+      "title": "Week 3 \u2014 Resources"
+    },
+    {
+      "path": "curriculum/week-04-functions-modules/README.md",
+      "title": "Week 4 \u2014 Functions, Modules & Scope"
+    },
+    {
+      "path": "curriculum/week-04-functions-modules/challenges/README.md",
+      "title": "Week 4 \u2014 Challenges"
+    },
+    {
+      "path": "curriculum/week-04-functions-modules/challenges/challenge-01-mini-calculator-module.md",
+      "title": "Challenge 01 \u2014 Mini Calculator Module"
+    },
+    {
+      "path": "curriculum/week-04-functions-modules/challenges/challenge-02-text-stats-package.md",
+      "title": "Challenge 02 \u2014 Text Stats Module"
+    },
+    {
+      "path": "curriculum/week-04-functions-modules/exercises/README.md",
+      "title": "Week 4 \u2014 Exercises"
+    },
+    {
+      "path": "curriculum/week-04-functions-modules/homework.md",
+      "title": "Week 4 \u2014 Homework"
+    },
+    {
+      "path": "curriculum/week-04-functions-modules/lecture-notes/01-defining-functions.md",
+      "title": "Lecture Note 1 \u2014 Defining Functions"
+    },
+    {
+      "path": "curriculum/week-04-functions-modules/lecture-notes/02-args-kwargs-and-scope.md",
+      "title": "Lecture Note 2 \u2014 `*args`, `**kwargs`, and Scope"
+    },
+    {
+      "path": "curriculum/week-04-functions-modules/lecture-notes/03-modules-and-imports.md",
+      "title": "Lecture Note 3 \u2014 Modules and Imports"
+    },
+    {
+      "path": "curriculum/week-04-functions-modules/mini-project/README.md",
+      "title": "Mini-Project \u2014 Personal Finance Calculator"
+    },
+    {
+      "path": "curriculum/week-04-functions-modules/quiz.md",
+      "title": "Week 4 \u2014 Quiz"
+    },
+    {
+      "path": "curriculum/week-04-functions-modules/resources.md",
+      "title": "Week 4 \u2014 Resources"
+    },
+    {
+      "path": "curriculum/week-05-data-structures/README.md",
+      "title": "Week 5 \u2014 Data Structures & Comprehensions"
+    },
+    {
+      "path": "curriculum/week-05-data-structures/challenges/README.md",
+      "title": "Week 5 \u2014 Challenges"
+    },
+    {
+      "path": "curriculum/week-05-data-structures/challenges/challenge-01-anagram-groups.md",
+      "title": "Challenge 01 \u2014 Anagram Groups"
+    },
+    {
+      "path": "curriculum/week-05-data-structures/challenges/challenge-02-inventory-tracker.md",
+      "title": "Challenge 02 \u2014 Inventory Tracker"
+    },
+    {
+      "path": "curriculum/week-05-data-structures/exercises/README.md",
+      "title": "Week 5 \u2014 Exercises"
+    },
+    {
+      "path": "curriculum/week-05-data-structures/homework.md",
+      "title": "Week 5 \u2014 Homework"
+    },
+    {
+      "path": "curriculum/week-05-data-structures/lecture-notes/01-lists-and-tuples.md",
+      "title": "01 \u2014 Lists and Tuples"
+    },
+    {
+      "path": "curriculum/week-05-data-structures/lecture-notes/02-sets-and-dicts.md",
+      "title": "02 \u2014 Sets and Dictionaries"
+    },
+    {
+      "path": "curriculum/week-05-data-structures/lecture-notes/03-comprehensions-and-big-o.md",
+      "title": "03 \u2014 Comprehensions and Big-O"
+    },
+    {
+      "path": "curriculum/week-05-data-structures/mini-project/README.md",
+      "title": "Mini-Project \u2014 Contact Book Manager"
+    },
+    {
+      "path": "curriculum/week-05-data-structures/quiz.md",
+      "title": "Week 5 \u2014 Quiz"
+    },
+    {
+      "path": "curriculum/week-05-data-structures/resources.md",
+      "title": "Week 5 \u2014 Resources"
+    },
+    {
+      "path": "curriculum/week-06-file-io-exceptions/README.md",
+      "title": "Week 6 \u2014 File I/O & Exception Handling"
+    },
+    {
+      "path": "curriculum/week-06-file-io-exceptions/challenges/README.md",
+      "title": "Week 6 \u2014 Challenges"
+    },
+    {
+      "path": "curriculum/week-06-file-io-exceptions/challenges/challenge-01-recursive-line-counter.md",
+      "title": "Challenge 01 \u2014 Recursive line counter"
+    },
+    {
+      "path": "curriculum/week-06-file-io-exceptions/challenges/challenge-02-config-validator.md",
+      "title": "Challenge 02 \u2014 Config validator"
+    },
+    {
+      "path": "curriculum/week-06-file-io-exceptions/exercises/README.md",
+      "title": "Week 6 \u2014 Exercises"
+    },
+    {
+      "path": "curriculum/week-06-file-io-exceptions/homework.md",
+      "title": "Week 6 \u2014 Homework"
+    },
+    {
+      "path": "curriculum/week-06-file-io-exceptions/lecture-notes/01-files-and-pathlib.md",
+      "title": "Lecture 01 \u2014 Files and `pathlib`"
+    },
+    {
+      "path": "curriculum/week-06-file-io-exceptions/lecture-notes/02-csv-and-json.md",
+      "title": "Lecture 02 \u2014 CSV and JSON"
+    },
+    {
+      "path": "curriculum/week-06-file-io-exceptions/lecture-notes/03-exceptions-and-logging.md",
+      "title": "Lecture 03 \u2014 Exceptions and Logging"
+    },
+    {
+      "path": "curriculum/week-06-file-io-exceptions/mini-project/README.md",
+      "title": "Mini-project \u2014 Log file analyzer"
+    },
+    {
+      "path": "curriculum/week-06-file-io-exceptions/quiz.md",
+      "title": "Week 6 \u2014 Quiz"
+    },
+    {
+      "path": "curriculum/week-06-file-io-exceptions/resources.md",
+      "title": "Week 6 \u2014 Resources"
+    },
+    {
+      "path": "curriculum/week-07-object-oriented-programming/README.md",
+      "title": "Week 7 \u2014 Object-Oriented Programming"
+    },
+    {
+      "path": "curriculum/week-07-object-oriented-programming/challenges/README.md",
+      "title": "Week 7 \u2014 Challenges"
+    },
+    {
+      "path": "curriculum/week-07-object-oriented-programming/challenges/challenge-01-deck-of-cards.md",
+      "title": "Challenge 01 \u2014 A Deck of Cards"
+    },
+    {
+      "path": "curriculum/week-07-object-oriented-programming/challenges/challenge-02-employee-hierarchy.md",
+      "title": "Challenge 02 \u2014 Employee Hierarchy and Payroll"
+    },
+    {
+      "path": "curriculum/week-07-object-oriented-programming/exercises/README.md",
+      "title": "Week 7 \u2014 Exercises"
+    },
+    {
+      "path": "curriculum/week-07-object-oriented-programming/homework.md",
+      "title": "Week 7 \u2014 Homework"
+    },
+    {
+      "path": "curriculum/week-07-object-oriented-programming/lecture-notes/01-classes-and-instances.md",
+      "title": "Lecture 01 \u2014 Classes and Instances"
+    },
+    {
+      "path": "curriculum/week-07-object-oriented-programming/lecture-notes/02-inheritance-and-composition.md",
+      "title": "Lecture 02 \u2014 Inheritance and Composition"
+    },
+    {
+      "path": "curriculum/week-07-object-oriented-programming/lecture-notes/03-dataclasses-and-magic-methods.md",
+      "title": "Lecture 03 \u2014 Dataclasses, Dunder Methods, and Friends"
+    },
+    {
+      "path": "curriculum/week-07-object-oriented-programming/mini-project/README.md",
+      "title": "Mini-Project \u2014 Library Management System"
+    },
+    {
+      "path": "curriculum/week-07-object-oriented-programming/quiz.md",
+      "title": "Week 7 \u2014 Quiz"
+    },
+    {
+      "path": "curriculum/week-07-object-oriented-programming/resources.md",
+      "title": "Week 7 \u2014 Resources"
+    },
+    {
+      "path": "curriculum/week-08-apis-json/README.md",
+      "title": "Week 8 \u2014 APIs, JSON & HTTP"
+    },
+    {
+      "path": "curriculum/week-08-apis-json/challenges/README.md",
+      "title": "Week 8 \u2014 Challenges"
+    },
+    {
+      "path": "curriculum/week-08-apis-json/challenges/challenge-01-currency-converter.md",
+      "title": "Challenge 01 \u2014 Currency Converter CLI"
+    },
+    {
+      "path": "curriculum/week-08-apis-json/challenges/challenge-02-github-user-stats.md",
+      "title": "Challenge 02 \u2014 GitHub User Stats"
+    },
+    {
+      "path": "curriculum/week-08-apis-json/exercises/README.md",
+      "title": "Week 8 \u2014 Exercises"
+    },
+    {
+      "path": "curriculum/week-08-apis-json/homework.md",
+      "title": "Week 8 \u2014 Homework"
+    },
+    {
+      "path": "curriculum/week-08-apis-json/lecture-notes/01-http-and-rest.md",
+      "title": "01 \u2014 HTTP and REST"
+    },
+    {
+      "path": "curriculum/week-08-apis-json/lecture-notes/02-using-requests.md",
+      "title": "02 \u2014 Using `requests`"
+    },
+    {
+      "path": "curriculum/week-08-apis-json/lecture-notes/03-authentication-and-secrets.md",
+      "title": "03 \u2014 Authentication and Secrets"
+    },
+    {
+      "path": "curriculum/week-08-apis-json/mini-project/README.md",
+      "title": "Mini-Project \u2014 Weather Dashboard CLI"
+    },
+    {
+      "path": "curriculum/week-08-apis-json/quiz.md",
+      "title": "Week 8 \u2014 Quiz"
+    },
+    {
+      "path": "curriculum/week-08-apis-json/resources.md",
+      "title": "Week 8 \u2014 Resources"
+    },
+    {
+      "path": "curriculum/week-09-web-development-flask/README.md",
+      "title": "Week 9 \u2014 Web Development with Flask"
+    },
+    {
+      "path": "curriculum/week-09-web-development-flask/challenges/README.md",
+      "title": "Week 9 \u2014 Challenges"
+    },
+    {
+      "path": "curriculum/week-09-web-development-flask/challenges/challenge-01-todo-app.md",
+      "title": "Challenge 01 \u2014 Todo App"
+    },
+    {
+      "path": "curriculum/week-09-web-development-flask/challenges/challenge-02-url-shortener.md",
+      "title": "Challenge 02 \u2014 Tiny URL Shortener"
+    },
+    {
+      "path": "curriculum/week-09-web-development-flask/exercises/README.md",
+      "title": "Week 9 \u2014 Exercises"
+    },
+    {
+      "path": "curriculum/week-09-web-development-flask/homework.md",
+      "title": "Week 9 Homework \u2014 Six Problems"
+    },
+    {
+      "path": "curriculum/week-09-web-development-flask/lecture-notes/01-flask-hello-world.md",
+      "title": "Lecture 1 \u2014 Flask Hello World"
+    },
+    {
+      "path": "curriculum/week-09-web-development-flask/lecture-notes/02-templates-and-static.md",
+      "title": "Lecture 2 \u2014 Templates and Static Files"
+    },
+    {
+      "path": "curriculum/week-09-web-development-flask/lecture-notes/03-forms-sessions-deployment.md",
+      "title": "Lecture 3 \u2014 Forms, Sessions, and Deployment"
+    },
+    {
+      "path": "curriculum/week-09-web-development-flask/mini-project/README.md",
+      "title": "Mini-project \u2014 Personal Blog Web App"
+    },
+    {
+      "path": "curriculum/week-09-web-development-flask/quiz.md",
+      "title": "Week 9 Quiz \u2014 Flask Fundamentals"
+    },
+    {
+      "path": "curriculum/week-09-web-development-flask/resources.md",
+      "title": "Week 9 Resources \u2014 Flask, Jinja2, and Friends"
+    },
+    {
+      "path": "curriculum/week-10-databases-sql/README.md",
+      "title": "Week 10 \u2014 Databases & SQL with Python"
+    },
+    {
+      "path": "curriculum/week-10-databases-sql/challenges/README.md",
+      "title": "Week 10 Challenges"
+    },
+    {
+      "path": "curriculum/week-10-databases-sql/challenges/challenge-01-library-with-sqlite.md",
+      "title": "Challenge 01 \u2014 Library Management with SQLite"
+    },
+    {
+      "path": "curriculum/week-10-databases-sql/challenges/challenge-02-blog-with-db.md",
+      "title": "Challenge 02 \u2014 Flask Blog backed by SQLite"
+    },
+    {
+      "path": "curriculum/week-10-databases-sql/exercises/README.md",
+      "title": "Week 10 Exercises"
+    },
+    {
+      "path": "curriculum/week-10-databases-sql/homework.md",
+      "title": "Week 10 Homework"
+    },
+    {
+      "path": "curriculum/week-10-databases-sql/lecture-notes/01-relational-databases-and-sql.md",
+      "title": "Lecture 1 \u2014 Relational Databases & SQL"
+    },
+    {
+      "path": "curriculum/week-10-databases-sql/lecture-notes/02-joins-and-aggregations.md",
+      "title": "Lecture 2 \u2014 JOINs and Aggregations"
+    },
+    {
+      "path": "curriculum/week-10-databases-sql/lecture-notes/03-python-with-sqlite-and-orm.md",
+      "title": "Lecture 3 \u2014 Python with SQLite and the SQLAlchemy ORM"
+    },
+    {
+      "path": "curriculum/week-10-databases-sql/mini-project/README.md",
+      "title": "Mini-Project \u2014 SQLite Task Tracker CLI"
+    },
+    {
+      "path": "curriculum/week-10-databases-sql/quiz.md",
+      "title": "Week 10 Quiz \u2014 Databases & SQL"
+    },
+    {
+      "path": "curriculum/week-10-databases-sql/resources.md",
+      "title": "Week 10 \u2014 Resources"
+    },
+    {
+      "path": "curriculum/week-11-testing-debugging/README.md",
+      "title": "Week 11 \u2014 Testing, Debugging & Code Quality"
+    },
+    {
+      "path": "curriculum/week-11-testing-debugging/challenges/README.md",
+      "title": "Week 11 \u2014 Challenges"
+    },
+    {
+      "path": "curriculum/week-11-testing-debugging/challenges/challenge-01-tdd-fizzbuzz.md",
+      "title": "Challenge 1 \u2014 TDD FizzBuzz"
+    },
+    {
+      "path": "curriculum/week-11-testing-debugging/challenges/challenge-02-flask-api-tests.md",
+      "title": "Challenge 2 \u2014 Integration tests for the Week 9 Flask blog"
+    },
+    {
+      "path": "curriculum/week-11-testing-debugging/exercises/README.md",
+      "title": "Week 11 \u2014 Exercises"
+    },
+    {
+      "path": "curriculum/week-11-testing-debugging/homework.md",
+      "title": "Week 11 \u2014 Homework"
+    },
+    {
+      "path": "curriculum/week-11-testing-debugging/lecture-notes/01-intro-to-pytest.md",
+      "title": "Lecture 1 \u2014 Introduction to `pytest`"
+    },
+    {
+      "path": "curriculum/week-11-testing-debugging/lecture-notes/02-mocking-coverage-and-debugging.md",
+      "title": "Lecture 2 \u2014 Mocking, Coverage, and Debugging"
+    },
+    {
+      "path": "curriculum/week-11-testing-debugging/lecture-notes/03-quality-tools-and-ci.md",
+      "title": "Lecture 3 \u2014 Code Quality Tools and Continuous Integration"
+    },
+    {
+      "path": "curriculum/week-11-testing-debugging/mini-project/README.md",
+      "title": "Mini-project \u2014 `stringutils`"
+    },
+    {
+      "path": "curriculum/week-11-testing-debugging/quiz.md",
+      "title": "Week 11 Quiz \u2014 Testing, Debugging & Code Quality"
+    },
+    {
+      "path": "curriculum/week-11-testing-debugging/resources.md",
+      "title": "Week 11 \u2014 Resources"
+    },
+    {
+      "path": "curriculum/week-12-automation-scripting/README.md",
+      "title": "Week 12 \u2014 Automation & Scripting"
+    },
+    {
+      "path": "curriculum/week-12-automation-scripting/challenges/README.md",
+      "title": "Week 12 \u2014 Challenges"
+    },
+    {
+      "path": "curriculum/week-12-automation-scripting/challenges/challenge-01-website-watcher.md",
+      "title": "Challenge 01 \u2014 Website watcher"
+    },
+    {
+      "path": "curriculum/week-12-automation-scripting/challenges/challenge-02-pdf-renamer.md",
+      "title": "Challenge 02 \u2014 PDF renamer"
+    },
+    {
+      "path": "curriculum/week-12-automation-scripting/exercises/README.md",
+      "title": "Week 12 \u2014 Exercises"
+    },
+    {
+      "path": "curriculum/week-12-automation-scripting/homework.md",
+      "title": "Week 12 \u2014 Homework"
+    },
+    {
+      "path": "curriculum/week-12-automation-scripting/lecture-notes/01-cli-scripts-with-argparse.md",
+      "title": "Lecture 1 \u2014 CLI Scripts with `argparse`"
+    },
+    {
+      "path": "curriculum/week-12-automation-scripting/lecture-notes/02-file-system-and-subprocess.md",
+      "title": "Lecture 2 \u2014 File System and `subprocess`"
+    },
+    {
+      "path": "curriculum/week-12-automation-scripting/lecture-notes/03-scraping-and-scheduling.md",
+      "title": "Lecture 3 \u2014 Scraping and Scheduling"
+    },
+    {
+      "path": "curriculum/week-12-automation-scripting/mini-project/README.md",
+      "title": "Mini-Project \u2014 File Organizer Bot"
+    },
+    {
+      "path": "curriculum/week-12-automation-scripting/quiz.md",
+      "title": "Week 12 \u2014 Quiz"
+    },
+    {
+      "path": "curriculum/week-12-automation-scripting/resources.md",
+      "title": "Week 12 \u2014 Resources"
+    },
+    {
+      "path": "curriculum/week-13-data-analysis/README.md",
+      "title": "Week 13 \u2014 Data Analysis with pandas"
+    },
+    {
+      "path": "curriculum/week-13-data-analysis/challenges/README.md",
+      "title": "Week 13 \u2014 Challenges"
+    },
+    {
+      "path": "curriculum/week-13-data-analysis/challenges/challenge-01-titanic-eda.md",
+      "title": "Challenge 01 \u2014 Titanic Exploratory Data Analysis"
+    },
+    {
+      "path": "curriculum/week-13-data-analysis/challenges/challenge-02-time-series.md",
+      "title": "Challenge 02 \u2014 Time Series: Resample & Rolling Mean"
+    },
+    {
+      "path": "curriculum/week-13-data-analysis/exercises/README.md",
+      "title": "Week 13 \u2014 Exercises"
+    },
+    {
+      "path": "curriculum/week-13-data-analysis/homework.md",
+      "title": "Week 13 \u2014 Homework"
+    },
+    {
+      "path": "curriculum/week-13-data-analysis/lecture-notes/01-numpy-and-pandas-basics.md",
+      "title": "Lecture 1 \u2014 NumPy & pandas Basics"
+    },
+    {
+      "path": "curriculum/week-13-data-analysis/lecture-notes/02-cleaning-and-transforming.md",
+      "title": "Lecture 2 \u2014 Cleaning & Transforming Data"
+    },
+    {
+      "path": "curriculum/week-13-data-analysis/lecture-notes/03-aggregation-and-plotting.md",
+      "title": "Lecture 3 \u2014 Aggregation & Plotting"
+    },
+    {
+      "path": "curriculum/week-13-data-analysis/mini-project/README.md",
+      "title": "Week 13 \u2014 Mini-Project: Real-World Dataset Analysis"
+    },
+    {
+      "path": "curriculum/week-13-data-analysis/quiz.md",
+      "title": "Week 13 \u2014 Quiz"
+    },
+    {
+      "path": "curriculum/week-13-data-analysis/resources.md",
+      "title": "Week 13 \u2014 Resources"
+    },
+    {
+      "path": "curriculum/week-14-intro-ai-ml/README.md",
+      "title": "Week 14 \u2014 Intro to AI/ML with scikit-learn"
+    },
+    {
+      "path": "curriculum/week-14-intro-ai-ml/challenges/README.md",
+      "title": "Week 14 \u2014 Challenges"
+    },
+    {
+      "path": "curriculum/week-14-intro-ai-ml/challenges/challenge-01-titanic-survival.md",
+      "title": "Challenge 01 \u2014 Predict Titanic survival"
+    },
+    {
+      "path": "curriculum/week-14-intro-ai-ml/challenges/challenge-02-kmeans-clustering.md",
+      "title": "Challenge 02 \u2014 Customer segmentation with k-means"
+    },
+    {
+      "path": "curriculum/week-14-intro-ai-ml/exercises/README.md",
+      "title": "Week 14 \u2014 Exercises"
+    },
+    {
+      "path": "curriculum/week-14-intro-ai-ml/homework.md",
+      "title": "Week 14 \u2014 Homework"
+    },
+    {
+      "path": "curriculum/week-14-intro-ai-ml/lecture-notes/01-what-is-ml.md",
+      "title": "Lecture 1 \u2014 What is machine learning?"
+    },
+    {
+      "path": "curriculum/week-14-intro-ai-ml/lecture-notes/02-first-model-with-sklearn.md",
+      "title": "Lecture 2 \u2014 Your first model with scikit-learn"
+    },
+    {
+      "path": "curriculum/week-14-intro-ai-ml/lecture-notes/03-pipelines-evaluation-and-ethics.md",
+      "title": "Lecture 3 \u2014 Pipelines, evaluation, and ethics"
+    },
+    {
+      "path": "curriculum/week-14-intro-ai-ml/mini-project/README.md",
+      "title": "Mini-project \u2014 SMS Spam Classifier"
+    },
+    {
+      "path": "curriculum/week-14-intro-ai-ml/quiz.md",
+      "title": "Week 14 \u2014 Quiz"
+    },
+    {
+      "path": "curriculum/week-14-intro-ai-ml/resources.md",
+      "title": "Week 14 \u2014 Resources"
+    },
+    {
+      "path": "curriculum/week-15-capstone/README.md",
+      "title": "Week 15 \u2014 Capstone Project"
+    },
+    {
+      "path": "curriculum/week-15-capstone/examples/README.md",
+      "title": "Capstone Examples"
+    },
+    {
+      "path": "curriculum/week-15-capstone/examples/api-track.md",
+      "title": "API Track Example \u2014 Currency Conversion API"
+    },
+    {
+      "path": "curriculum/week-15-capstone/examples/automation-track.md",
+      "title": "Automation Track Example \u2014 GitHub Repo Triage Bot"
+    },
+    {
+      "path": "curriculum/week-15-capstone/examples/data-track.md",
+      "title": "Data Track Example \u2014 Public Transit Reliability Study"
+    },
+    {
+      "path": "curriculum/week-15-capstone/examples/ml-track.md",
+      "title": "ML Track Example \u2014 Movie Recommender"
+    },
+    {
+      "path": "curriculum/week-15-capstone/examples/web-app-track.md",
+      "title": "Web App Track Example \u2014 Habit Tracker"
+    },
+    {
+      "path": "curriculum/week-15-capstone/lecture-notes/01-planning-your-capstone.md",
+      "title": "Lecture 1 \u2014 Planning Your Capstone"
+    },
+    {
+      "path": "curriculum/week-15-capstone/lecture-notes/02-building-and-shipping.md",
+      "title": "Lecture 2 \u2014 Building and Shipping"
+    },
+    {
+      "path": "curriculum/week-15-capstone/lecture-notes/03-presentation-and-portfolio.md",
+      "title": "Lecture 3 \u2014 Presentation and Portfolio"
+    },
+    {
+      "path": "curriculum/week-15-capstone/milestones/01-idea-and-scope.md",
+      "title": "Milestone 01 \u2014 Idea & Scope (Day 1)"
+    },
+    {
+      "path": "curriculum/week-15-capstone/milestones/02-design-and-skeleton.md",
+      "title": "Milestone 02 \u2014 Design & Skeleton (Day 2)"
+    },
+    {
+      "path": "curriculum/week-15-capstone/milestones/03-build-core.md",
+      "title": "Milestone 03 \u2014 Build Core (Days 3\u20134)"
+    },
+    {
+      "path": "curriculum/week-15-capstone/milestones/04-test-and-polish.md",
+      "title": "Milestone 04 \u2014 Test & Polish (Day 5)"
+    },
+    {
+      "path": "curriculum/week-15-capstone/milestones/05-ship-and-present.md",
+      "title": "Milestone 05 \u2014 Ship & Present (Days 6\u20137)"
+    },
+    {
+      "path": "curriculum/week-15-capstone/milestones/README.md",
+      "title": "Capstone Milestones"
+    },
+    {
+      "path": "curriculum/week-15-capstone/resources.md",
+      "title": "Week 15 \u2014 Capstone Resources"
+    },
+    {
+      "path": "curriculum/week-15-capstone/rubric.md",
+      "title": "Capstone Rubric (100 points)"
+    },
+    {
+      "path": "curriculum/week-15-capstone/submission-checklist.md",
+      "title": "Submission Checklist"
+    },
+    {
+      "path": "past-sessions/README.md",
+      "title": "Past Sessions"
+    },
+    {
+      "path": "projects/capstone/README.md",
+      "title": "Capstone Project Master Guide"
+    },
+    {
+      "path": "projects/mini-projects/README.md",
+      "title": "Mini-Projects Index"
+    },
+    {
+      "path": "resources/cheatsheets/git-commands.md",
+      "title": "Git Commands Cheatsheet"
+    },
+    {
+      "path": "resources/cheatsheets/python-syntax.md",
+      "title": "Python Syntax Cheatsheet"
+    },
+    {
+      "path": "resources/coding-standards.md",
+      "title": "Coding Standards"
+    },
+    {
+      "path": "resources/git-github-workflow.md",
+      "title": "Git & GitHub Workflow"
+    },
+    {
+      "path": "resources/setup-guides/README.md",
+      "title": "Setup Guides"
+    },
+    {
+      "path": "resources/setup-guides/browser.md",
+      "title": "Browser-Based Setup (No Install)"
+    },
+    {
+      "path": "resources/setup-guides/linux.md",
+      "title": "Linux Setup Guide"
+    },
+    {
+      "path": "resources/setup-guides/macos.md",
+      "title": "macOS Setup Guide"
+    },
+    {
+      "path": "resources/setup-guides/windows.md",
+      "title": "Windows Setup Guide"
+    }
+  ]
+}

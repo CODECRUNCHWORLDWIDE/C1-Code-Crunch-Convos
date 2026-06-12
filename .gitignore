@@ -57,3 +57,9 @@ secrets.json
 # Local data
 data/local/
 *.csv.local
+
+# macOS filesystem junk
+._*
+.AppleDouble
+.Spotlight-V100
+.Trashes
