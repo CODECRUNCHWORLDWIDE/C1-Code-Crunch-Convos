@@ -35,4 +35,4 @@ If you can install software on **any** computer you have access to, even occasio
 
 ## Back to setup index
 
-[← Setup guides](README.md)
+[← Setup guides](./00-overview.md)
