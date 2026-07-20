@@ -5,7 +5,7 @@
 By end of Day 7, your project is **deployed** (if it has a web UI), a
 **walkthrough video** of 3–5 minutes is recorded and linked from the
 README, the repo is **pinned** on your GitHub profile, a
-**retrospective** is in `docs/RETRO.md`, and the [submission checklist](../09-submission-checklist.md)
+**retrospective** is in `docs/RETRO.md`, and the [submission checklist](../submission-checklist.md)
 is fully ticked.
 
 This is the most rewarding milestone. You are turning a finished
@@ -18,7 +18,7 @@ project into a *visible* finished project.
 Skip this section if you are on the data or automation track and have
 no hosted UI. Your notebook or CLI on GitHub already *is* the demo.
 
-1. **Pick one host** from [../resources.md](../01-resources.md) and stop
+1. **Pick one host** from [../resources.md](../resources.md) and stop
    shopping. Fly.io, Render, Railway, PythonAnywhere, and Hugging Face
    Spaces are all fine.
 
@@ -54,7 +54,7 @@ no hosted UI. Your notebook or CLI on GitHub already *is* the demo.
 
 ### PM: Record the walkthrough video
 
-Use the structure from [../lecture-notes/02-building-and-shipping.md](../02-lecture-notes/02-building-and-shipping.md):
+Use the structure from [../lecture-notes/02-building-and-shipping.md](../lecture-notes/02-building-and-shipping.md):
 
 | Time         | Content                                       |
 |--------------|-----------------------------------------------|
@@ -117,7 +117,7 @@ Commit and push as `docs(retro): add capstone retrospective`.
 
 ### Midday: pin the repo
 
-Follow [../lecture-notes/03-presentation-and-portfolio.md](../02-lecture-notes/03-presentation-and-portfolio.md)
+Follow [../lecture-notes/03-presentation-and-portfolio.md](../lecture-notes/03-presentation-and-portfolio.md)
 section *Pinning your repo*. Pin the capstone in **position 1**. Untick
 old practice repos. Verify the GitHub profile loads with the capstone
 on top.
@@ -133,7 +133,7 @@ While you are here:
 
 ### PM: Final pass and submit
 
-1. **Walk the [submission checklist](../09-submission-checklist.md)
+1. **Walk the [submission checklist](../submission-checklist.md)
    top to bottom.** Tick each item *only* after you have actually
    verified it.
 
@@ -169,7 +169,7 @@ By end of Day 7:
 - [ ] The repo is pinned in position 1 on your GitHub profile.
 - [ ] The repo description and topics are set.
 - [ ] Submission is in (per your cohort's process).
-- [ ] All boxes in [submission-checklist.md](../09-submission-checklist.md)
+- [ ] All boxes in [submission-checklist.md](../submission-checklist.md)
       are ticked.
 
 ## Pitfalls

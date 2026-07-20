@@ -42,8 +42,8 @@ This pattern is sometimes called the "[Rubber Duck](https://rubberduckdebugging.
 
 | Channel                                                                                            | Best for                                |
 | -------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| [GitHub Discussions](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/discussions)        | Curriculum questions, project showcase  |
-| [GitHub Issues](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/issues)                  | Bugs, typos, broken links               |
+| [GitHub Discussions](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos/discussions)        | Curriculum questions, project showcase  |
+| [GitHub Issues](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos/issues)                  | Bugs, typos, broken links               |
 | [Python Discord](https://discord.gg/python)                                                        | Real-time Python help (active 24/7)     |
 | [Stack Overflow](https://stackoverflow.com/questions/tagged/python)                                | Specific technical questions            |
 | [r/learnpython](https://www.reddit.com/r/learnpython/)                                             | Beginner-friendly Python community      |

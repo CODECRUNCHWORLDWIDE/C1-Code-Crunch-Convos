@@ -6,7 +6,7 @@ Can't install software (school laptop, Chromebook, public computer)? You can do 
 
 If you have a free [GitHub](https://github.com/) account, you get **60 hours/month of free Codespaces**.
 
-1. Fork [this repository](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos).
+1. Fork [this repository](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos).
 2. On your fork, click the green **Code** button → **Codespaces** → **Create codespace on main**.
 3. You now have a full VS Code environment in your browser with Python, Git, and the project files preinstalled.
 
@@ -35,4 +35,4 @@ If you can install software on **any** computer you have access to, even occasio
 
 ## Back to setup index
 
-[← Setup guides](./00-overview.md)
+[← Setup guides](README.md)
