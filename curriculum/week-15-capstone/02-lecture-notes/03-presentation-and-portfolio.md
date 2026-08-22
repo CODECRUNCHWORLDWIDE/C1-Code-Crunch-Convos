@@ -48,7 +48,7 @@ returns. Keep it under a screen of text. Do not list every emoji.
 ## Writing a project summary for resumes
 
 You have one to three lines on a resume to describe the capstone. Almost
-every student writes "Built a Flask app with a database" and stops.
+every learner writes "Built a Flask app with a database" and stops.
 Better summaries do three things:
 
 1. **State what the project does** (the problem, plainly).

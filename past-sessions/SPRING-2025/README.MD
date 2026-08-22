@@ -21,7 +21,7 @@ print("Hello, world!")
 ---
 # C1 Crunch Convos
 
-Welcome to **C1 Crunch Convos**! This interactive course is designed to prepare students for technical interviews by emphasizing problem-solving, algorithms, and hands-on coding. You’ll dive deep into Python basics and advanced concepts, ensuring a strong foundation for tackling real-world challenges.
+Welcome to **C1 Crunch Convos**! This interactive course is designed to prepare learners for technical interviews by emphasizing problem-solving, algorithms, and hands-on coding. You’ll dive deep into Python basics and advanced concepts, ensuring a strong foundation for tackling real-world challenges.
 
 ---
 
@@ -108,14 +108,14 @@ print(greet("Brian"))
 ```python
 # Dictionary Example
 
-student_scores = {"Alice": 90, "Bob": 85, "Charlie": 88}
+learner_scores = {"Alice": 90, "Bob": 85, "Charlie": 88}
 
 # Accessing a value
-print(student_scores["Alice"])
+print(learner_scores["Alice"])
 
 # Adding a new entry
-student_scores["David"] = 92
-print(student_scores)
+learner_scores["David"] = 92
+print(learner_scores)
 ```
 
 

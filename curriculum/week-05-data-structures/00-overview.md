@@ -2,7 +2,7 @@
 
 Welcome to Week 5 of **Code Crunch Convos**, our open-source Python bootcamp. This is the week the language stops feeling like a calculator and starts feeling like a toolkit. You will learn the four built-in container types that almost every real Python program is built from — **lists, tuples, sets, and dictionaries** — and how to write idiomatic, Pythonic code with **comprehensions**.
 
-By the end of this week you will be able to model real-world data (contacts, inventories, word counts, student rosters) and pick the right structure for the job.
+By the end of this week you will be able to model real-world data (contacts, inventories, word counts, learner rosters) and pick the right structure for the job.
 
 ---
 

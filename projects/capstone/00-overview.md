@@ -106,7 +106,7 @@ Push commits every day. Visible progress beats invisible perfection.
 | ------------------------ | ------ | ----------------------------------------------------------------------------------- |
 | **Code Quality**         | 20     | PEP 8, ruff clean, black formatted, type hints, no dead code                        |
 | **Architecture**         | 15     | Logical module structure, separation of concerns, no god-objects                    |
-| **Testing & CI**         | 15     | ≥70% coverage on student code, CI passes, tests cover happy + edge cases            |
+| **Testing & CI**         | 15     | ≥70% coverage on learner code, CI passes, tests cover happy + edge cases            |
 | **Documentation**        | 15     | README is excellent, docstrings on public funcs, decisions documented                |
 | **Functionality**        | 15     | MVP scope delivered, polished UX (terminal/UI/notebook), no obvious bugs            |
 | **Git Hygiene**          | 10     | Meaningful commits, branches for features, descriptive PRs, no committed secrets    |

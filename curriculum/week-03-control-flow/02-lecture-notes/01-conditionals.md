@@ -295,7 +295,7 @@ made-up; this is a teaching example.)
 
 ```python
 income = float(input("Enter your annual income: "))
-is_student = input("Are you a student? (y/n) ").strip().lower() == "y"
+is_learner = input("Are you a learner? (y/n) ").strip().lower() == "y"
 
 if income < 0:
     print("Income cannot be negative.")
@@ -308,9 +308,9 @@ elif 10_000 <= income < 50_000:
 else:
     tax = income * 0.25
 
-# Students get a flat 10% discount on positive taxes.
+# Learners get a flat 10% discount on positive taxes.
 if income >= 0:
-    if is_student and tax > 0:
+    if is_learner and tax > 0:
         tax *= 0.90
     print(f"Estimated tax: {tax:,.2f}")
 ```
@@ -318,7 +318,7 @@ if income >= 0:
 Notice the guard-style check for negative income at the top, the
 `elif` chain ordered from smallest to largest threshold, the chained
 comparison `10_000 <= income < 50_000`, and the truthy boolean
-`is_student` used directly in the `if`. That is a lot of this lecture's
+`is_learner` used directly in the `if`. That is a lot of this lecture's
 ideas in one short program.
 
 ## 12. Recap

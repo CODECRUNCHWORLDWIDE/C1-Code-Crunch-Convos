@@ -161,7 +161,7 @@ What we check:
 
 - A 3–5 minute walkthrough video, unlisted, linked from the README.
 - The video covers the demo, the code tour, and one design decision.
-- The repo is pinned in position 1 on the student's GitHub profile.
+- The repo is pinned in position 1 on the learner's GitHub profile.
 - The repo has a description and 3+ topic tags.
 - The README's "live demo" link works (where applicable).
 

@@ -38,7 +38,7 @@ The lowest-level interface treats rows as **lists** of strings.
 import csv
 from pathlib import Path
 
-with Path("students.csv").open("r", encoding="utf-8", newline="") as f:
+with Path("learners.csv").open("r", encoding="utf-8", newline="") as f:
     reader = csv.reader(f)
     header = next(reader)              # first row is the header
     for row in reader:
@@ -100,7 +100,7 @@ For files with a header row, working with **dicts** is almost always cleaner tha
 import csv
 from pathlib import Path
 
-with Path("students.csv").open("r", encoding="utf-8", newline="") as f:
+with Path("learners.csv").open("r", encoding="utf-8", newline="") as f:
     reader = csv.DictReader(f)
     for row in reader:
         print(row["name"], row["age"], row["city"])
@@ -133,7 +133,7 @@ with Path("out.csv").open("w", encoding="utf-8", newline="") as f:
 import csv
 from pathlib import Path
 
-INPUT = Path("students.csv")
+INPUT = Path("learners.csv")
 OUTPUT = Path("passing.csv")
 
 with INPUT.open("r", encoding="utf-8", newline="") as src, \
@@ -352,9 +352,9 @@ If you are debugging a malformed JSON file, paste it into [JSONLint](https://jso
 
 ---
 
-## 9. A worked example — student grades
+## 9. A worked example — learner grades
 
-We will read a CSV of students, compute average grade per class, and write the result as JSON.
+We will read a CSV of learners, compute average grade per class, and write the result as JSON.
 
 ```python
 import csv

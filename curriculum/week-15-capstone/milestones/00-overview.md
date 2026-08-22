@@ -9,7 +9,7 @@ Each milestone file contains:
 - **Goal** — what "done" looks like for this milestone.
 - **Tasks** — a numbered checklist.
 - **Outputs** — the artefacts you produce.
-- **Pitfalls** — common ways students stall here.
+- **Pitfalls** — common ways learners stall here.
 
 ## Index
 
@@ -41,7 +41,7 @@ At the end of every build day, do four things in this order:
 4. Update the **Milestones** section of `docs/PROPOSAL.md` with a tick
    or a slip note.
 
-That last step is the one most students skip; it is the one that keeps
+That last step is the one most learners skip; it is the one that keeps
 you honest about whether you are on track.
 
 ## If you fall behind

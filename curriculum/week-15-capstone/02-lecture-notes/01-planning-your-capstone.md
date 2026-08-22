@@ -6,7 +6,7 @@ decides what is in the project and, more importantly, what is *not*. By
 the end of this lecture you will know how to pick a project you can
 actually finish, how to scope it down to a defensible minimum viable
 product, how to break that MVP into milestones with dates, and how to
-recognise the four anti-patterns that quietly murder student projects
+recognise the four anti-patterns that quietly murder learner projects
 around Day 4.
 
 ## Why planning matters more than usual
@@ -64,7 +64,7 @@ a new ML framework — those are post-bootcamp projects. If you find
 yourself reaching for a brand-new technology to *enable* the capstone, you
 have picked the wrong capstone.
 
-This is the rule that students break most often. They reason: "I want to
+This is the rule that learners break most often. They reason: "I want to
 learn X, so my capstone will use X." They then spend the first three days
 fighting X's tutorial, not their own project. By Day 5 they have a tour of
 X and no working capstone. Be honest with yourself: this week is for
@@ -154,7 +154,7 @@ each evening with a tick or a note about what slipped.
 
 ## Tech stack: choose, then stop choosing
 
-A surprising amount of student time evaporates on "should I use Flask or
+A surprising amount of learner time evaporates on "should I use Flask or
 FastAPI? SQLite or Postgres? pip or poetry?" Pick. Move on. For this
 capstone, sensible defaults are:
 

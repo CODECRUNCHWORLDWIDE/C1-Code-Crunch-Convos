@@ -182,7 +182,7 @@ After finishing this week, your capstone repo is the artefact. There is no
 *outside* this curriculum and is referenced by your mentors and reviewers
 lives at [../../projects/capstone/](../../projects/capstone/). It contains
 the long-form submission instructions and the historical archive of past
-student capstones. Bookmark it.
+learner capstones. Bookmark it.
 
 ## A final note
 

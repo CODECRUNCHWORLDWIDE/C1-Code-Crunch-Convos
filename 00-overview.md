@@ -13,7 +13,7 @@
 
 ## Overview
 
-**Code Crunch Convos (C1)** is the flagship Python program of the [Code Crunch Club](https://github.com/CODECRUNCHWORLDWIDE) — a global, student-led learning community. This curriculum reorganizes C1 into a complete **15-week Python Bootcamp** that takes a learner from "I've never written code" to a portfolio-ready engineer who has shipped real projects, written tests, queried databases, consumed APIs, deployed a web app, and trained a basic ML model.
+**Code Crunch Convos (C1)** is the flagship Python program of the [Code Crunch Club](https://github.com/CODECRUNCHWORLDWIDE) — a global, learner-led learning community. This curriculum reorganizes C1 into a complete **15-week Python Bootcamp** that takes a learner from "I've never written code" to a portfolio-ready engineer who has shipped real projects, written tests, queried databases, consumed APIs, deployed a web app, and trained a basic ML model.
 
 The program is delivered as a public, version-controlled repository — designed equally well for:
 
@@ -40,7 +40,7 @@ The program is delivered as a public, version-controlled repository — designed
 
 - **Absolute beginners** with no prior programming experience.
 - **Self-taught coders** wanting a structured path with accountability.
-- **CS students** seeking practical, project-driven reinforcement of coursework.
+- **CS learners** seeking practical, project-driven reinforcement of coursework.
 - **Career-switchers** building a portfolio for technical interviews.
 - **Educators and clubs** looking for ready-to-teach open curriculum.
 
@@ -71,7 +71,7 @@ Part-time learners can stretch the program to **30 weeks at ~18 hrs/week** witho
 
 ## Skills You'll Gain
 
-By the end of Week 15, students will be able to:
+By the end of Week 15, learners will be able to:
 
 - Write clean, idiomatic Python (PEP 8 / PEP 257).
 - Use Git and GitHub for collaborative version control.
