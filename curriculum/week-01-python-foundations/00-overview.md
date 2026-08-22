@@ -73,21 +73,21 @@ target, not a contract — some sections will click faster, others slower.
 
 | File | What's inside |
 |------|---------------|
-| [README.md](./00-overview.md) | This overview (you are here) |
+| [README.md](../../README.md) | This overview (you are here) |
 | [resources.md](./01-resources.md) | Curated readings, free books, and Python docs links |
 | [lecture-notes/01-installing-python-and-running-your-first-program.md](./02-lecture-notes/01-installing-python-and-running-your-first-program.md) | Install Python, use the REPL, run your first script |
 | [lecture-notes/02-terminal-virtual-environments-and-pip.md](./02-lecture-notes/02-terminal-virtual-environments-and-pip.md) | Terminal commands, `venv`, and `pip` |
 | [lecture-notes/03-git-and-github-basics.md](./02-lecture-notes/03-git-and-github-basics.md) | Version control, your first repository, pushing to GitHub |
-| [exercises/README.md](./03-exercises/00-overview.md) | Index of short coding exercises |
+| [exercises/README.md](../../README.md) | Index of short coding exercises |
 | [exercises/exercise-01-hello-world.py](./03-exercises/exercise-01-hello-world.py) | Print your first message |
 | [exercises/exercise-02-repl-explorer.py](./03-exercises/exercise-02-repl-explorer.py) | Drive the REPL like a calculator |
 | [exercises/exercise-03-script-vs-repl.py](./03-exercises/exercise-03-script-vs-repl.py) | Compare running modes |
-| [challenges/README.md](./04-challenges/00-overview.md) | Index of weekly challenges |
+| [challenges/README.md](../../README.md) | Index of weekly challenges |
 | [challenges/challenge-01-personalized-banner.md](./04-challenges/challenge-01-personalized-banner.md) | Build a centered ASCII banner |
 | [challenges/challenge-02-environment-audit.md](./04-challenges/challenge-02-environment-audit.md) | Print details about your Python install |
 | [quiz.md](./05-quiz.md) | 10 multiple-choice questions |
 | [homework.md](./06-homework.md) | Six practice problems for the week |
-| [mini-project/README.md](./07-mini-project/00-overview.md) | Full spec for the "Hello, You" CLI |
+| [mini-project/README.md](../../README.md) | Full spec for the "Hello, You" CLI |
 | [mini-project/starter.py](./07-mini-project/starter.py) | Starter file for the mini-project |
 
 ## Stretch Goals
@@ -105,5 +105,5 @@ If you finish early and want to push further, try any of the following:
 
 ## Up Next
 
-Continue to [Week 2 — Variables, Data Types & Operators](../week-02-data-types-operators/00-overview.md)
+Continue to [Week 2 — Variables, Data Types & Operators](../../README.md)
 once you've pushed your mini-project to GitHub.

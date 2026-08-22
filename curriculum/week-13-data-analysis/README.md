@@ -94,23 +94,23 @@ target, not a contract — some sections will click faster, others slower.
 
 | File | What's inside |
 |------|---------------|
-| [README.md](./README.md) | This overview (you are here) |
+| [README.md](../../README.md) | This overview (you are here) |
 | [resources.md](./resources.md) | Official docs, free books, dataset catalogues |
 | [lecture-notes/01-numpy-and-pandas-basics.md](./lecture-notes/01-numpy-and-pandas-basics.md) | NumPy arrays, vectorization, broadcasting; pandas Series and DataFrame |
 | [lecture-notes/02-cleaning-and-transforming.md](./lecture-notes/02-cleaning-and-transforming.md) | Selecting, filtering, sorting, missing data, type conversions, string ops |
 | [lecture-notes/03-aggregation-and-plotting.md](./lecture-notes/03-aggregation-and-plotting.md) | Groupby, pivot tables, merging, matplotlib & pandas `.plot` |
-| [exercises/README.md](./exercises/README.md) | Index of short coding exercises |
+| [exercises/README.md](../../README.md) | Index of short coding exercises |
 | [exercises/exercise-01-numpy-arrays.py](./exercises/exercise-01-numpy-arrays.py) | Create arrays, vector math, broadcasting |
 | [exercises/exercise-02-load-and-inspect.ipynb](./exercises/exercise-02-load-and-inspect.ipynb) | Jupyter notebook: load a small dataset, inspect it |
 | [exercises/exercise-03-filter-and-sort.py](./exercises/exercise-03-filter-and-sort.py) | Filter passing grades and sort by score |
 | [exercises/exercise-04-groupby.py](./exercises/exercise-04-groupby.py) | Sales by category — total + average |
 | [exercises/exercise-05-plot.py](./exercises/exercise-05-plot.py) | Monthly totals bar chart, saved as PNG |
-| [challenges/README.md](./challenges/README.md) | Index of weekly challenges |
+| [challenges/README.md](../../README.md) | Index of weekly challenges |
 | [challenges/challenge-01-titanic-eda.md](./challenges/challenge-01-titanic-eda.md) | Exploratory data analysis on the Titanic dataset |
 | [challenges/challenge-02-time-series.md](./challenges/challenge-02-time-series.md) | Resample a time series and plot a rolling mean |
 | [quiz.md](./quiz.md) | 10 multiple-choice questions |
 | [homework.md](./homework.md) | Six practice problems for the week |
-| [mini-project/README.md](./mini-project/README.md) | Full spec for the dataset analysis notebook |
+| [mini-project/README.md](../../README.md) | Full spec for the dataset analysis notebook |
 | [mini-project/starter.ipynb](./mini-project/starter.ipynb) | Scaffolded Jupyter notebook to work from |
 | [mini-project/requirements.txt](./mini-project/requirements.txt) | Python dependencies for the mini-project |
 
@@ -135,7 +135,7 @@ If you finish early and want to push further, try any of the following:
 
 ## Up Next
 
-Continue to [Week 14 — Intro to AI & Machine Learning](../week-14-intro-ai-ml/README.md)
+Continue to [Week 14 — Intro to AI & Machine Learning](../../README.md)
 once you have submitted your mini-project notebook and your one-page summary.
 You will start applying the same pandas DataFrames you mastered this week to
 training your first machine-learning models with scikit-learn.

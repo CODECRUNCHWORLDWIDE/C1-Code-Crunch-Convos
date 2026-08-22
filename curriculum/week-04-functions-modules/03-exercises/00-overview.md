@@ -31,4 +31,4 @@ Total expected time: about 4 hours.
 - Type hints are required on every function you write this week, even when the spec does not say so explicitly.
 - Every public function needs a one-line docstring per [PEP 257](https://peps.python.org/pep-0257/).
 
-When all five exercises pass, move on to the [challenges](../04-challenges/00-overview.md).
+When all five exercises pass, move on to the [challenges](../../../README.md).

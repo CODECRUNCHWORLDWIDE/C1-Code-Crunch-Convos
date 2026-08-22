@@ -44,4 +44,4 @@ Every exercise file expects you to:
 - Avoid magic numbers — name constants with `UPPER_SNAKE_CASE`.
 
 If you finish all four and want more practice, move on to the
-[challenges](../challenges/README.md).
+[challenges](../../../README.md).

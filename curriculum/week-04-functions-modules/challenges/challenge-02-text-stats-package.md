@@ -155,4 +155,4 @@ if __name__ == "__main__":
 - That `collections.Counter` is much nicer than building a count dict by hand.
 - That sorting with a tuple key (`key=lambda x: (-count, word)`) is how you do "descending by count, ascending by name".
 
-When you finish, commit and move on to the [mini-project](../mini-project/README.md).
+When you finish, commit and move on to the [mini-project](../../../README.md).

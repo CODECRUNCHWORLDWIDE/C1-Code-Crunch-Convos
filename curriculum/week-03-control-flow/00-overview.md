@@ -87,23 +87,23 @@ target, not a contract — some sections will click faster, others slower.
 
 | File | What's inside |
 |------|---------------|
-| [README.md](./00-overview.md) | This overview (you are here) |
+| [README.md](../../README.md) | This overview (you are here) |
 | [resources.md](./01-resources.md) | Curated readings, docs links, and articles |
 | [lecture-notes/01-conditionals.md](./02-lecture-notes/01-conditionals.md) | `if`/`elif`/`else`, truthiness, ternary, guard clauses |
 | [lecture-notes/02-loops.md](./02-lecture-notes/02-loops.md) | `while`, `for`, `range`, `enumerate`, `zip`, `break`/`continue`/`else` |
 | [lecture-notes/03-loop-patterns.md](./02-lecture-notes/03-loop-patterns.md) | Counting, accumulating, searching, performance hints |
-| [exercises/README.md](./03-exercises/00-overview.md) | Index of short coding exercises |
+| [exercises/README.md](../../README.md) | Index of short coding exercises |
 | [exercises/exercise-01-fizzbuzz.py](./03-exercises/exercise-01-fizzbuzz.py) | Classic FizzBuzz from 1 to 100 |
 | [exercises/exercise-02-sum-evens.py](./03-exercises/exercise-02-sum-evens.py) | Sum even numbers from 1 to N |
 | [exercises/exercise-03-password-checker.py](./03-exercises/exercise-03-password-checker.py) | Loop until the password meets the rules |
 | [exercises/exercise-04-multiplication-table.py](./03-exercises/exercise-04-multiplication-table.py) | Print an N×N multiplication table |
 | [exercises/exercise-05-find-prime.py](./03-exercises/exercise-05-find-prime.py) | Decide whether a number is prime |
-| [challenges/README.md](./04-challenges/00-overview.md) | Index of weekly challenges |
+| [challenges/README.md](../../README.md) | Index of weekly challenges |
 | [challenges/challenge-01-caesar-cipher.md](./04-challenges/challenge-01-caesar-cipher.md) | Build a Caesar shift cipher |
 | [challenges/challenge-02-rps.md](./04-challenges/challenge-02-rps.md) | Rock-paper-scissors with score tracking |
 | [quiz.md](./05-quiz.md) | 10 multiple-choice questions |
 | [homework.md](./06-homework.md) | Six practice problems for the week |
-| [mini-project/README.md](./07-mini-project/00-overview.md) | Full spec for the number-guessing game |
+| [mini-project/README.md](../../README.md) | Full spec for the number-guessing game |
 | [mini-project/starter.py](./07-mini-project/starter.py) | Starter file for the mini-project |
 
 ## Stretch Goals
@@ -128,6 +128,6 @@ If you finish early and want to push further, try any of the following:
 ## Up Next
 
 When the number-guessing game runs cleanly and your homework is committed,
-continue to [Week 4 — Functions & Modules](../week-04-functions-modules/00-overview.md).
+continue to [Week 4 — Functions & Modules](../../README.md).
 Functions are how we package the control flow you just learned into reusable
 named blocks — they are the next big jump in expressive power.

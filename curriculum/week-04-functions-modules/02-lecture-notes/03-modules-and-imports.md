@@ -432,4 +432,4 @@ Run `python weather_report.py` and you should see three lines of output. Run `py
 
 You are ready for the exercises, the challenges, and the multi-file mini-project.
 
-Next steps: [Exercises](../03-exercises/00-overview.md) and the [Mini-project](../07-mini-project/00-overview.md).
+Next steps: [Exercises](../../../README.md) and the [Mini-project](../../../README.md).

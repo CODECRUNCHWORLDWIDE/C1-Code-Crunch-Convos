@@ -116,6 +116,6 @@ already.
 ## Up next
 
 Once you submit, move on to
-[Week 14 — Intro to AI & Machine Learning](../../week-14-intro-ai-ml/00-overview.md).
+[Week 14 — Intro to AI & Machine Learning](../../../README.md).
 You'll bring the cleaned DataFrame from this project straight into
 scikit-learn.

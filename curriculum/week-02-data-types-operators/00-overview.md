@@ -39,7 +39,7 @@ By the end of this week, you will be able to:
 ## Prerequisites
 
 You should have completed [Week 1 — Python Foundations & Dev
-Environment](../week-01-python-foundations/00-overview.md). Specifically you
+Environment](../../README.md). Specifically you
 need:
 
 - Python 3.11 or later installed and available as `python` or `python3`.
@@ -88,22 +88,22 @@ adjust to your pace.
 
 | File | What's inside |
 |------|---------------|
-| [README.md](./00-overview.md) | This overview (you are here) |
+| [README.md](../../README.md) | This overview (you are here) |
 | [resources.md](./01-resources.md) | Curated readings, Python docs links, PEPs |
 | [lecture-notes/01-variables-and-types.md](./02-lecture-notes/01-variables-and-types.md) | Variables, dynamic typing, the five core types, casting |
 | [lecture-notes/02-operators-and-strings.md](./02-lecture-notes/02-operators-and-strings.md) | Operators, precedence, strings, f-strings, format specs |
 | [lecture-notes/03-input-and-type-hints.md](./02-lecture-notes/03-input-and-type-hints.md) | Reading input, parsing safely, type hints, mypy |
-| [exercises/README.md](./03-exercises/00-overview.md) | Index of short coding exercises |
+| [exercises/README.md](../../README.md) | Index of short coding exercises |
 | [exercises/exercise-01-variable-swap.py](./03-exercises/exercise-01-variable-swap.py) | Swap two variables without a temporary |
 | [exercises/exercise-02-string-formatter.py](./03-exercises/exercise-02-string-formatter.py) | Build a multi-line aligned f-string |
 | [exercises/exercise-03-temperature-converter.py](./03-exercises/exercise-03-temperature-converter.py) | Celsius to Fahrenheit with type hints |
 | [exercises/exercise-04-input-parsing.py](./03-exercises/exercise-04-input-parsing.py) | Read two numbers and print arithmetic results |
-| [challenges/README.md](./04-challenges/00-overview.md) | Index of weekly challenges |
+| [challenges/README.md](../../README.md) | Index of weekly challenges |
 | [challenges/challenge-01-tip-calculator.md](./04-challenges/challenge-01-tip-calculator.md) | Tip & per-person split calculator |
 | [challenges/challenge-02-mad-libs.md](./04-challenges/challenge-02-mad-libs.md) | Classic Mad Libs with f-strings |
 | [quiz.md](./05-quiz.md) | 10 multiple-choice questions with answer key |
 | [homework.md](./06-homework.md) | Six practice problems for the week |
-| [mini-project/README.md](./07-mini-project/00-overview.md) | Full spec for the Unit Converter CLI |
+| [mini-project/README.md](../../README.md) | Full spec for the Unit Converter CLI |
 | [mini-project/starter.py](./07-mini-project/starter.py) | Starter file for the mini-project |
 
 ## Stretch Goals
@@ -127,6 +127,6 @@ Already comfortable with the basics? Try any of these:
 ## Up Next
 
 When you've pushed this week's mini-project to GitHub, continue to
-[Week 3 — Control Flow](../week-03-control-flow/00-overview.md). That's where
+[Week 3 — Control Flow](../../README.md). That's where
 your programs start making decisions and repeating themselves — the third
 pillar of programming.

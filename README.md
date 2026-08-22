@@ -1,4 +1,4 @@
-# C1 · Code Crunch Convos — Python Bootcamp
+# Start here — Course Overview
 
 ![C1 · Code Crunch Convos — Python Bootcamp](assets/brand/c1-social-16x9.png)
 
@@ -13,7 +13,7 @@
 
 ## Overview
 
-**Code Crunch Convos (C1)** is the flagship Python program of the [Code Crunch Club](https://github.com/CODE-CRUNCH-CLUB) — a global, learner-led learning community. This curriculum reorganizes C1 into a complete **15-week Python Bootcamp** that takes a learner from "I've never written code" to a portfolio-ready engineer who has shipped real projects, written tests, queried databases, consumed APIs, deployed a web app, and trained a basic ML model.
+**Code Crunch Convos (C1)** is the flagship Python program of the [Code Crunch Club](https://github.com/CODECRUNCHWORLDWIDE) — a global, learner-led learning community. This curriculum reorganizes C1 into a complete **15-week Python Bootcamp** that takes a learner from "I've never written code" to a portfolio-ready engineer who has shipped real projects, written tests, queried databases, consumed APIs, deployed a web app, and trained a basic ML model.
 
 The program is delivered as a public, version-controlled repository — designed equally well for:
 
@@ -159,30 +159,6 @@ week-XX-topic/
 
 ---
 
-## Weekly Curriculum
-
-| Week | Topic                                                                            | Mini-project                     |
-| ---- | -------------------------------------------------------------------------------- | -------------------------------- |
-| 01   | [Python Foundations & Dev Environment](curriculum/week-01-python-foundations/)   | "Hello, You" personal greeter    |
-| 02   | [Variables, Data Types & Operators](curriculum/week-02-data-types-operators/)    | Unit converter CLI               |
-| 03   | [Control Flow — Conditionals & Loops](curriculum/week-03-control-flow/)          | Number-guessing game             |
-| 04   | [Functions, Modules & Scope](curriculum/week-04-functions-modules/)              | Personal finance calculator      |
-| 05   | [Data Structures & Comprehensions](curriculum/week-05-data-structures/)          | Contact book manager             |
-| 06   | [File I/O & Exception Handling](curriculum/week-06-file-io-exceptions/)          | Log file analyzer                |
-| 07   | [Object-Oriented Programming](curriculum/week-07-object-oriented-programming/)   | Library management system        |
-| 08   | [APIs, JSON & HTTP](curriculum/week-08-apis-json/)                               | Weather dashboard CLI            |
-| 09   | [Web Development with Flask](curriculum/week-09-web-development-flask/)          | Personal blog web app            |
-| 10   | [Databases & SQL with Python](curriculum/week-10-databases-sql/)                 | Task tracker w/ SQLite           |
-| 11   | [Testing, Debugging & Code Quality](curriculum/week-11-testing-debugging/)       | Tested utility library           |
-| 12   | [Automation & Scripting](curriculum/week-12-automation-scripting/)               | File organizer bot               |
-| 13   | [Data Analysis with pandas](curriculum/week-13-data-analysis/)                   | Real-world dataset analysis      |
-| 14   | [Intro to AI/ML with scikit-learn](curriculum/week-14-intro-ai-ml/)              | Spam classifier                  |
-| 15   | [Capstone Project](curriculum/week-15-capstone/)                                 | Your portfolio centerpiece       |
-
-Full week-by-week syllabus: [curriculum/SYLLABUS.md](curriculum/SYLLABUS.md)
-
----
-
 ## Getting Started
 
 1. **Install prerequisites** — Python 3.11+, Git, and VS Code. Follow the [setup guide for your OS](resources/setup-guides/).
@@ -211,8 +187,8 @@ Full week-by-week syllabus: [curriculum/SYLLABUS.md](curriculum/SYLLABUS.md)
 We welcome contributions from learners, instructors, and the wider community. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for the full guide.
 
 Quick links:
-- 🐛 [Report a bug or typo](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos/issues/new)
-- 💡 [Suggest an improvement](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos/issues/new)
+- 🐛 [Report a bug or typo](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/issues/new)
+- 💡 [Suggest an improvement](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/issues/new)
 - 🧑‍🏫 [Add or improve a lecture / exercise](CONTRIBUTING.md#contributing-curriculum)
 - 🌐 [Translate a week into another language](CONTRIBUTING.md#translations)
 
@@ -234,8 +210,8 @@ We believe education should be unbounded by paywalls. Improvements come from lea
 
 ## Community & Support
 
-- 💬 **Discussions** — [GitHub Discussions](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos/discussions)
-- 🐦 **Updates** — follow [@CODE-CRUNCH-CLUB](https://github.com/CODE-CRUNCH-CLUB) on GitHub
+- 💬 **Discussions** — [GitHub Discussions](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/discussions)
+- 🐦 **Updates** — follow [@CODECRUNCHWORLDWIDE](https://github.com/CODECRUNCHWORLDWIDE) on GitHub
 - 🆘 **Stuck on an exercise?** — see [community/support.md](community/support.md)
 - ❓ **Frequently asked questions** — see [community/faqs.md](community/faqs.md)
 
@@ -256,3 +232,11 @@ This program is released under the **GNU General Public License v3.0** — see [
 > "The best way to predict the future is to teach it."
 
 — The Code Crunch Club
+
+---
+
+---
+
+## The curriculum
+
+The week-by-week programme, the phase breakdown and the time budget live in one place: **[C1 · Code Crunch Convos — Syllabus](SYLLABUS.md)**.

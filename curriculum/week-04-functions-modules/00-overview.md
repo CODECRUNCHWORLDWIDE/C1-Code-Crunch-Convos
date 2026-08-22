@@ -99,11 +99,11 @@ If you have less than 36 hours, prioritize: lecture notes, exercises 1 and 2, an
 - [Lecture note 1 — Defining functions](./02-lecture-notes/01-defining-functions.md)
 - [Lecture note 2 — `*args`, `**kwargs`, and scope](./02-lecture-notes/02-args-kwargs-and-scope.md)
 - [Lecture note 3 — Modules and imports](./02-lecture-notes/03-modules-and-imports.md)
-- [Exercises index](./03-exercises/00-overview.md)
-- [Challenges index](./04-challenges/00-overview.md)
+- [Exercises index](../../README.md)
+- [Challenges index](../../README.md)
 - [Quiz](./05-quiz.md)
 - [Homework](./06-homework.md)
-- [Mini-project — Personal finance calculator](./07-mini-project/00-overview.md)
+- [Mini-project — Personal finance calculator](../../README.md)
 - [Resources](./01-resources.md)
 
 ---
@@ -133,6 +133,6 @@ If you are stuck for more than 30 minutes on a single bug, ask. The bootcamp is 
 
 ## Up next
 
-[Week 5 — Data Structures](../week-05-data-structures/00-overview.md): we will go deeper on lists, tuples, sets, and dictionaries, including comprehensions, when to pick which structure, and the time-complexity trade-offs that come with each.
+[Week 5 — Data Structures](../../README.md): we will go deeper on lists, tuples, sets, and dictionaries, including comprehensions, when to pick which structure, and the time-complexity trade-offs that come with each.
 
 Bring your function skills with you — Week 5 leans on them heavily.
