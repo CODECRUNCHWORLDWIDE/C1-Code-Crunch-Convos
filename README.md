@@ -85,10 +85,6 @@ Part-time learners stretch the same content to 30 weeks at ~18 hrs/week.
 
 ---
 
-**Outcome:** a portfolio-ready engineer who has shipped 15 mini-projects and one capstone — written clean idiomatic Python, used Git and GitHub, built OOP systems, consumed REST APIs, deployed a Flask web app, queried databases with SQL and SQLAlchemy, written `pytest` suites, analyzed data with pandas, and trained a basic scikit-learn model, every artifact public on GitHub with a README, tests, and CI.
-
----
-
 ## Weekly modules
 
 | #   | Week                                                                  | Mini-project                  |
@@ -423,8 +419,35 @@ The tools we teach are open source. The platform we publish on is open source. T
 
 ## Questions, anticipated
 
----
+**Is this really free?**
 
+Yes. The entire curriculum is licensed under GPL-3.0 — no paid tier, no upsells, no required services. The only thing it costs you is time and effort.
+
+**Do I receive a certificate?**
+
+Not by default — we are a community-built open curriculum, not an accredited institution. Your public GitHub portfolio of fifteen shipped projects is the credential that matters most to employers. Clubs or universities running this as a cohort may issue their own certificates.
+
+**How long does the bootcamp realistically take?**
+
+Designed for ~36 hours/week × 15 weeks (~540 hours). Most self-paced learners take 6–12 months at part-time speed. Finishing matters more than speed.
+
+**I already know a little Python. Can I start later?**
+
+Yes. Each week opens with a quiz — if you score above eighty percent, the topic is safe to skim. We recommend at least glancing at earlier weeks for any unfamiliar habits (especially Git and testing).
+
+**Can I teach this in my club or class?**
+
+Please do. Fork the repository, adapt as needed, and — if your adaptation works well — open a pull request so others can learn from your improvements. See the contributing guide.
+
+**What happens after Week 15?**
+
+You specialize. Pick a deeper track: web (Django/FastAPI), data (more SQL + visualization), ML (deep learning), DevOps, or systems. Contribute to open source. Build more projects. Apply for roles. Mentor someone going through this curriculum.
+
+**Can I use AI assistants while working through the course?**
+
+Yes — for explanations, debugging help, and reviewing code you have written yourself. No — for generating solutions you do not understand. The shortcut is the price you pay later, in interviews you cannot pass and codebases you cannot maintain.
+
+---
 ## Past sessions
 
 Previous cohorts and their materials are preserved under [past-sessions/](past-sessions/) for historical reference:
