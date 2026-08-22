@@ -93,6 +93,16 @@ A few notes:
 
 The pipeline can now be cross-validated, pickled, deployed — as a single object.
 
+```mermaid
+flowchart LR
+  N["Numeric columns age and fare"] --> S["StandardScaler"]
+  C["Categorical columns sex embarked pclass"] --> O["OneHotEncoder"]
+  S --> P["ColumnTransformer output"]
+  O --> P
+  P --> M["LogisticRegression"]
+```
+*Different preprocessing per column type, merged before the model sees anything.*
+
 ## StandardScaler: what it actually does
 
 `StandardScaler` subtracts the mean and divides by the standard deviation, column by column. Each output column has mean 0 and standard deviation 1. This is called **standardisation**. It matters for:
@@ -235,6 +245,15 @@ Many deployed ML systems shape the data they are subsequently trained on. This c
 - **Predictive policing.** A model predicts where crime will occur; police are dispatched there; they find more crime there (because they're there); the new data confirms the model's prediction; next iteration sends more police there. Neighbourhoods that were over-policed historically get more over-policed by the model. Cathy O'Neil's *Weapons of Math Destruction* dissects exactly this in detail.
 - **Recommendation systems.** A platform shows you what its model thinks you'll engage with; you engage with what it shows you; the model "learns" your preferences from your engagement. But your engagement was constrained by its showings. The model now has a self-fulfilling theory of who you are.
 - **Hiring filters.** A resume screener trained on past hires will favour candidates who look like past hires. Future hires will look more like past hires. The filter is "validated" by its own outputs.
+
+```mermaid
+flowchart LR
+  A["Model predicts crime hotspot"] --> B["Police dispatched there"]
+  B --> C["More crime found there"]
+  C --> D["Data confirms the prediction"]
+  D --> A
+```
+*The predictive-policing feedback loop — the model's own outputs become tomorrow's training data.*
 
 The technical lesson: **monitor your live model the way you would monitor a sick patient**. Track its decisions over time. Track who its decisions affect. If you can, randomly bypass the model for a small fraction of cases to keep a clean counterfactual stream.
 

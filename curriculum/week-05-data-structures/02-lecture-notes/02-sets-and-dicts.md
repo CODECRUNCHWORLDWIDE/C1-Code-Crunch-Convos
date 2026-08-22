@@ -349,6 +349,17 @@ A starter decision tree:
 3. **Do I have a fixed-size record (e.g. coordinates)?** → `tuple` (or `namedtuple`).
 4. **Do I have an ordered, growing sequence?** → `list`.
 
+```mermaid
+flowchart TD
+  Q1{"Need key to value lookup"} -->|"yes"| Dict["Use a dict"]
+  Q1 -->|"no"| Q2{"Need uniqueness or fast membership and order does not matter"}
+  Q2 -->|"yes"| Set["Use a set"]
+  Q2 -->|"no"| Q3{"Fixed size record like coordinates"}
+  Q3 -->|"yes"| Tuple["Use a tuple or namedtuple"]
+  Q3 -->|"no"| List["Use a list"]
+```
+*Walk the questions top to bottom; the first yes picks your structure.*
+
 If unsure, start with the simplest structure that works (often a list) and refactor only if performance or readability demands it.
 
 ---

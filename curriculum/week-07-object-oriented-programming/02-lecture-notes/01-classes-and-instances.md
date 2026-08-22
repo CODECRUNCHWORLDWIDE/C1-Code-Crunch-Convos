@@ -154,6 +154,14 @@ Python roughly does this behind the scenes:
 2. Call `Dog.__init__(<that new object>, "Fido", 3)`.
 3. Bind the new object to the name `fido`.
 
+```mermaid
+flowchart TD
+  A["Call Dog with args"] --> B["Allocate new empty object"]
+  B --> C["Run __init__ on new object"]
+  C --> D["Bind object to name fido"]
+```
+*What Python does behind the scenes when you write fido = Dog of Fido comma 3.*
+
 So inside `__init__`, `self` *is* the new object. When you write
 `self.name = name`, you are saying "attach an attribute called `name` to this
 new object, with the value the caller gave us".
@@ -288,6 +296,18 @@ Python looks up the name in this order:
 2. The class's `__dict__`.
 3. The parent classes (we cover this in lecture 02).
 4. If still not found, `AttributeError`.
+
+```mermaid
+flowchart TD
+  A["Look up object dot attribute"] --> B{"Found in instance dict"}
+  B -- Yes --> Z1["Use instance value"]
+  B -- No --> C{"Found in class dict"}
+  C -- Yes --> Z2["Use class value"]
+  C -- No --> D{"Found in a parent class"}
+  D -- Yes --> Z3["Use parent value"]
+  D -- No --> E["Raise AttributeError"]
+```
+*The order Python searches when you read object dot attribute.*
 
 You can see the dictionaries directly:
 

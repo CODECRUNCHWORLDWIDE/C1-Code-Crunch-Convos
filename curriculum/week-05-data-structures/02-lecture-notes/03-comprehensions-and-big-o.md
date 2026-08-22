@@ -121,6 +121,17 @@ flat = [n for row in matrix for n in row]
 # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
+```mermaid
+flowchart LR
+  M["matrix - three rows"] --> R1["row one 1 2 3"]
+  M --> R2["row two 4 5 6"]
+  M --> R3["row three 7 8 9"]
+  R1 --> F["flat list 1 2 3 4 5 6 7 8 9"]
+  R2 --> F
+  R3 --> F
+```
+*The outer for walks rows, the inner for walks each row into one flat list.*
+
 And **transposing** a matrix:
 
 ```python

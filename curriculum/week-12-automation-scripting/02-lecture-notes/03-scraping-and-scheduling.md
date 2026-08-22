@@ -180,6 +180,18 @@ Two patterns to notice:
 1. **`requests.Session()`** reuses the TCP connection — faster, lower load on the server.
 2. **The break condition is "empty result"** — robust to changes in pagination styles.
 
+```mermaid
+flowchart TD
+  A["Request page N"] --> B["Parse quotes with BeautifulSoup"]
+  B --> C{"Any quotes found"}
+  C -->|No| D["Stop loop"]
+  C -->|Yes| E["Append quotes to results"]
+  E --> F["Sleep to be polite"]
+  F --> G["Increment page number"]
+  G --> A
+```
+*The fetch-parse-check loop that pages through quotes.toscrape.com.*
+
 ### 2.5 Forms and logged-in scraping
 
 For form-based logins:
@@ -250,6 +262,16 @@ Three options, in order of complexity:
 | Task Scheduler (Win)| Cron's Windows cousin.                                            |
 
 For most personal automation, **cron** is the answer. Run the Python script *as a regular script* and let the OS schedule it. That way the script doesn't have to know how to schedule itself.
+
+```mermaid
+flowchart TD
+  A{"Does the script need to keep running as a process"} -->|No - OS can trigger it| B{"On your own machine"}
+  A -->|Yes - long-running app| C["APScheduler"]
+  B -->|Unix or macOS| D["cron"]
+  B -->|Windows| E["Task Scheduler"]
+  B -->|No machine needed - internet only| F["GitHub Actions schedule"]
+```
+*Picking a scheduling option based on where and how the job needs to run.*
 
 ### 4.1 The `schedule` package
 

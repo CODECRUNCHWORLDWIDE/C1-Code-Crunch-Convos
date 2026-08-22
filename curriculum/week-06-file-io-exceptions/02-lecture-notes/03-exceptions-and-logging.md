@@ -94,6 +94,18 @@ finally:
 
 The `finally` block runs **no matter what** — on success, on exception, even if you `return` from inside the `try`. This is exactly the pattern that `with` automates for you. You rarely write `finally` by hand once you know `with`, but it is the right tool for cleanup that has no context-manager wrapper.
 
+```mermaid
+flowchart TD
+    A["Enter try block"] --> B{"Exception raised"}
+    B -- "No" --> C["Run else block"]
+    B -- "Yes" --> D["Find matching except"]
+    D --> E["Run except block"]
+    C --> F["Run finally block"]
+    E --> F
+    F --> G["Continue after try"]
+```
+*Execution order for try, except, else, and finally.*
+
 ---
 
 ## 4. Narrow vs broad `except` — always prefer narrow
@@ -156,6 +168,21 @@ BaseException
       ├── NameError            # undefined variable
       └── RuntimeError         # generic
 ```
+
+```mermaid
+flowchart TD
+    A["BaseException"] --> B["SystemExit - do not catch"]
+    A --> C["KeyboardInterrupt - do not catch"]
+    A --> D["Exception"]
+    D --> E["OSError"]
+    E --> E1["FileNotFoundError"]
+    E --> E2["PermissionError"]
+    D --> F["LookupError"]
+    F --> F1["KeyError"]
+    D --> G["ValueError"]
+    D --> H["TypeError"]
+```
+*A trimmed view of the exception hierarchy, highlighting the branches this lecture uses most.*
 
 Two practical consequences:
 

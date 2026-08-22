@@ -30,6 +30,14 @@ If a task takes 30 minutes, you do it once a year, and the script would take a d
 
 If a task takes 30 seconds, you do it 50 times a day, and the script takes 2 hours to build — automate the heck out of it.
 
+```mermaid
+flowchart TD
+  A["Task keeps coming back"] --> B{"Frequency times time saved beats cost to build plus maintain"}
+  B -->|Yes| C["Automate it"]
+  B -->|No| D["Write a checklist instead"]
+```
+*Whether a repeated task clears the bar for automation.*
+
 Good candidates for automation:
 
 - Renaming, sorting, or backing up files.
@@ -262,6 +270,17 @@ listing items...
 ```
 
 The `set_defaults(func=...)` trick attaches a handler to each subparser. `main()` just calls `args.func(args)`. Clean, scalable, and the pattern used by tools like `aws` and `gh`.
+
+```mermaid
+flowchart LR
+  A["todo add buy milk"] --> B["argparse parses command"]
+  B --> C{"Which subcommand"}
+  C -->|add| D["cmd_add set as func"]
+  C -->|list| E["cmd_list set as func"]
+  D --> F["main calls args.func args"]
+  E --> F
+```
+*How argparse routes a subcommand to its handler via set_defaults.*
 
 ---
 

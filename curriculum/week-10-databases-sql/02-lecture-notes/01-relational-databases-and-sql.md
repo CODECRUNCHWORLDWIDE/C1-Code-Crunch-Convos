@@ -58,6 +58,23 @@ The `book_id` column **points at** the `id` column of the `books` table. We say 
 
 Foreign keys are the *relational* part of the relational model. They are how tables connect.
 
+```mermaid
+erDiagram
+    BOOKS ||--o{ REVIEWS : has
+    BOOKS {
+        int id
+        string title
+        string author
+    }
+    REVIEWS {
+        int id
+        int book_id
+        string reviewer
+        int rating
+    }
+```
+*A foreign key ties each review row back to one book by id.*
+
 ## 3. Talking to a database: SQL
 
 **SQL** (Structured Query Language, pronounced "sequel" or "ess-cue-ell" — both are fine; we'll use "sequel") is the standard language for relational databases. The same SQL works (mostly) across SQLite, PostgreSQL, MySQL, SQL Server, and Oracle. There are small dialect differences. We'll focus on standard SQL.
@@ -299,6 +316,16 @@ COMMIT;
 If the second update fails (say, account 2 doesn't exist), you can `ROLLBACK` and the first update is undone. The two changes are atomic — one without the other would be a bug (somebody just lost $100).
 
 We'll see Python's transaction handling in Lecture 3. The big lesson today: **transactions exist; use them when several writes must happen together**.
+
+```mermaid
+flowchart TD
+    A["BEGIN transaction"] --> B["UPDATE balance minus 100"]
+    B --> C["UPDATE balance plus 100"]
+    C --> D{"Both succeeded?"}
+    D -->|Yes| E["COMMIT"]
+    D -->|No| F["ROLLBACK"]
+```
+*A transaction only saves its changes if every statement inside it succeeds.*
 
 ## 11. Common mistakes to avoid
 

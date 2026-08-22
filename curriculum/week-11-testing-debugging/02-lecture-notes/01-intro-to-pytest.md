@@ -337,6 +337,15 @@ Test-driven development is a discipline:
 3. **Refactor** — clean the code up. The test guards you.
 4. **Repeat** — write the next test.
 
+```mermaid
+flowchart LR
+  A["Red - write failing test"] --> B["Green - minimum code to pass"]
+  B --> C["Refactor - clean up"]
+  C --> D["Repeat - next test"]
+  D --> A
+```
+*The TDD loop cycles from a failing test through minimal code and cleanup, then starts again.*
+
 A 90-second example. We are building a `slugify` function.
 
 ```python

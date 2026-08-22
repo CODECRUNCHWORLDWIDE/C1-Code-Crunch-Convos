@@ -187,6 +187,16 @@ print(append_item(3))   # [1, 2, 3]  -- the SAME list keeps growing
 
 What happened? Python created the empty list `[]` **once** when the `def` ran. Every call that does not pass `bucket` reuses that one shared list. This is one of the most famous beginner traps in the language. The Python docs warn about it explicitly in [Default Argument Values](https://docs.python.org/3/tutorial/controlflow.html#default-argument-values).
 
+```mermaid
+flowchart LR
+  A["append_item of 1 called"] --> B["Shared list now holds 1"]
+  B --> C["append_item of 2 called"]
+  C --> D["Shared list now holds 1 and 2"]
+  D --> E["append_item of 3 called"]
+  E --> F["Shared list now holds 1 and 2 and 3"]
+```
+*The default list is built once when def runs, so every call that skips the argument mutates the same shared object.*
+
 The fix: use `None` as the sentinel and create a fresh list inside the body.
 
 ```python
@@ -366,6 +376,15 @@ def fetch(url: str, *, timeout: float = 5.0, retries: int = 3) -> str:
 ```
 
 Here `timeout` and `retries` are keyword-only because the bare `*` separator forces it. That makes the call site much more readable: `fetch("https://...", timeout=10.0)`.
+
+```mermaid
+flowchart LR
+  A["Positional no default"] --> B["Positional with default"]
+  B --> C["Star args"]
+  C --> D["Keyword only"]
+  D --> E["Double star kwargs"]
+```
+*The legal left-to-right order of parameter categories in a Python function signature.*
 
 ---
 

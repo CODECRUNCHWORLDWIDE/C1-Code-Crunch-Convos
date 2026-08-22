@@ -23,6 +23,17 @@ That is it. There is no magic, just a strict text protocol over a socket. In
 Week 8 you played the role of the *client* with the `requests` library. This
 week you play the role of the **server**.
 
+```mermaid
+sequenceDiagram
+  participant Browser
+  participant Server as Flask Server
+  Browser->>Server: GET /about HTTP/1.1
+  Server-->>Browser: 200 OK with HTML body
+  Browser->>Browser: Parse HTML and fetch CSS/JS/images
+  Browser->>Browser: Paint pixels
+```
+*The full request-response cycle between browser and Flask server.*
+
 The three "languages of the web" each have one job:
 
 - **HTML** is the **structure**: headings, paragraphs, links, forms.
@@ -333,6 +344,16 @@ def latest():
 - **`url_for("show_post", post_id=2)`** builds the URL for the view function
   named `show_post`. **Always prefer `url_for` over hard-coding URLs** — if
   you ever rename a route, every `url_for` call updates automatically.
+
+```mermaid
+flowchart TD
+  A["Request /post/id"] --> B{"post_id in POSTS"}
+  B -- No --> C["abort 404"]
+  B -- Yes --> D["Return post HTML"]
+  R["Request /latest"] --> S["redirect to show_post"]
+  S --> D
+```
+*How abort and redirect route a request to a 404 or to an existing post.*
 
 ---
 

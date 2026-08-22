@@ -25,6 +25,16 @@ Bad candidates for mocking:
 
 A useful heuristic: **mock at the boundary**. The boundary is where your code meets something you don't control. Inside the boundary, use the real objects.
 
+```mermaid
+flowchart LR
+  A["Pure functions you wrote"] --> Z["Boundary - mock here"]
+  Z --> B["Network calls"]
+  Z --> C["External services"]
+  Z --> D["Time and randomness"]
+  Z --> E["File system writes"]
+```
+*Mock everything past the boundary; keep real objects on your side of it.*
+
 ---
 
 ## 2. `unittest.mock` — the standard library mock toolkit
@@ -296,6 +306,14 @@ Both branches ran. There is no `assert`. Coverage is a floor, not a ceiling. **A
 ## 7. Debugging tools
 
 When a test fails and you cannot tell why, you have four tools in order of escalation.
+
+```mermaid
+flowchart TD
+  A["print debugging"] --> B["breakpoint and pdb"]
+  B --> C["pdb commands - next step continue"]
+  C --> D["VS Code debugger"]
+```
+*Escalate through debugging tools as a bug gets harder to see.*
 
 ### 7.1 `print` debugging
 

@@ -7,6 +7,22 @@ small variations of one of them. Mastering these five — counting,
 accumulating, max/min, filtering, and searching — also gives you a
 vocabulary to talk about your code in reviews and interviews.
 
+```mermaid
+mindmap
+  root((Loop patterns))
+    Counting
+      Zero-initialized counter
+    Accumulating
+      Sum or product
+    Max or min
+      Track best so far
+    Filtering
+      Keep matching items
+    Searching
+      Break when found
+```
+*The five loop recipes covered in this lecture, all variations on initialize then update.*
+
 ## 1. Counting
 
 Use a counter when you want to know "how many" of something there are.
@@ -183,6 +199,17 @@ single pass. This is the single most common surprise for people coming
 from languages where strings are mutable. For tiny strings (a handful of
 characters), `+=` is fine and readable. For big loops, reach for the
 list-and-join pattern.
+
+```mermaid
+flowchart LR
+  A["Loop n times"] --> B["String plus equals a"]
+  B --> C["New string copy each time"]
+  C --> D["O of n squared"]
+  A --> E["List append a"]
+  E --> F["Join once at the end"]
+  F --> G["O of n"]
+```
+*Building a list and joining once avoids the repeated copies that make string concatenation slow.*
 
 ## 7. Putting two patterns together
 

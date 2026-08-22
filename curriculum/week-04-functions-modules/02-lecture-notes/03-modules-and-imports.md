@@ -108,6 +108,14 @@ Typical contents:
 3. Installation-specific default paths.
 4. The directories of any installed packages (`pip install ...` puts modules here).
 
+```mermaid
+flowchart TD
+  A["Directory of the running script"] --> B["PYTHONPATH directories"]
+  B --> C["Installation default paths"]
+  C --> D["Installed package directories"]
+```
+*Python walks sys.path in this order and stops at the first directory containing the module.*
+
 The official explanation is in [The Module Search Path](https://docs.python.org/3/tutorial/modules.html#the-module-search-path).
 
 The practical rule: **if both files are in the same folder, `import sibling_module` just works**. That is all you need for now.
@@ -235,6 +243,17 @@ Now:
 
 - `python main.py` runs `main()`.
 - `import main` from another file does **not** run `main()` — it just makes the function available.
+
+```mermaid
+flowchart TD
+  Run["How is the module used"] --> Direct["Run directly as python mathy.py"]
+  Run --> Imported["Imported by another file"]
+  Direct --> NameMain["dunder name equals dunder main"]
+  Imported --> NameMod["dunder name equals the module name"]
+  NameMain --> RunMain["if block runs and main executes"]
+  NameMod --> SkipMain["if block skipped and main not called"]
+```
+*The dunder name variable differs between running a file directly and importing it, which is what the main guard checks.*
 
 This is so common that every project you read will have it somewhere. Read more in the [`__main__` docs](https://docs.python.org/3/library/__main__.html) and in [Real Python's explainer](https://realpython.com/if-name-main-python/).
 

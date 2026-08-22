@@ -167,6 +167,18 @@ The five you will see most often in each family:
 
 In Python, `response.raise_for_status()` raises an `HTTPError` if the code is `>= 400`. We will lean on this constantly.
 
+```mermaid
+flowchart TD
+  A["Status code"] --> B{"First digit"}
+  B -->|1xx| C["Informational"]
+  B -->|2xx| D["Success"]
+  B -->|3xx| E["Redirection"]
+  B -->|4xx| F["Client error"]
+  B -->|5xx| G["Server error"]
+```
+
+*The first digit of a status code sorts it into one of five families.*
+
 ---
 
 ## 6. URLs decoded
@@ -209,6 +221,14 @@ The **query string** is where you put parameters that modify a `GET`. In `reques
 4. **Statelessness.** Every request carries everything the server needs to handle it. The server keeps no session for you between requests (cookies and tokens are the workaround; they live in headers on every call).
 
 This is why REST endpoints feel predictable. Once you see `GET /repos/{owner}/{repo}/issues` you can guess that `POST /repos/{owner}/{repo}/issues` creates an issue and `DELETE /repos/{owner}/{repo}/issues/3` closes one.
+
+```mermaid
+flowchart TD
+  A["users collection"] --> B["user 42"]
+  B --> C["posts belonging to user 42"]
+```
+
+*Nesting a URL path mirrors nesting the resources it names.*
 
 ---
 

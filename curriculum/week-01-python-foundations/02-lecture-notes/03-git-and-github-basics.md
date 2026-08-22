@@ -111,6 +111,13 @@ week. Most beginner confusion is "I edited the file but the commit didn't
 include my changes" — that means the edit was in the working directory but
 never made it to the staging area.
 
+```mermaid
+flowchart LR
+  A["Working directory - you edit"] --> B["Staging area - git add"]
+  B --> C["Committed history - git commit"]
+```
+*A file moves through three states before it's permanently recorded.*
+
 ## Staging Files with `git add`
 
 To stage a specific file:
@@ -256,6 +263,19 @@ only need to do this once per machine; the token is cached.
 
 Refresh your repository page on GitHub. Your `hello.py` is now live and
 shareable.
+
+```mermaid
+sequenceDiagram
+  participant Dev as Developer
+  participant Local as Local repo
+  participant GitHub as GitHub remote
+  Dev->>Local: git init
+  Dev->>Local: git add and git commit
+  Dev->>GitHub: git remote add origin
+  Dev->>GitHub: git push -u origin main
+  GitHub-->>Dev: Code now live and shareable
+```
+*The sequence of commands that takes code from your laptop to GitHub.*
 
 ## Cloning an Existing Repository
 

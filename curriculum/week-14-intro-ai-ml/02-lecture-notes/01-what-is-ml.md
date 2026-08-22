@@ -85,6 +85,16 @@ You have inputs (`X`) but no labels. You want the algorithm to discover structur
 
 The classic unsupervised method we will see this week is **k-means clustering**: tell the algorithm how many groups you want, and it groups your data into that many clusters by similarity.
 
+```mermaid
+flowchart TD
+  ML["Machine learning"] --> SUP["Supervised: has labels"]
+  ML --> UNSUP["Unsupervised: no labels"]
+  SUP --> CLASS["Classification: category output"]
+  SUP --> REG["Regression: number output"]
+  UNSUP --> CLUST["Clustering example k-means"]
+```
+*The two big families, and how supervised learning splits again.*
+
 ### Other families (not this week)
 
 - **Semi-supervised** — most data unlabelled, a little labelled. Useful when labels are expensive.
@@ -128,6 +138,19 @@ Almost every supervised ML project follows the same nine-step shape. Memorise th
 │                                                                        │
 └────────────────────────────────────────────────────────────────────────┘
 ```
+
+```mermaid
+flowchart TD
+  A["Frame the problem"] --> B["Get the data"]
+  B --> C["Explore the data"]
+  C --> D["Clean and engineer features"]
+  D --> E["Split train and test"]
+  E --> F["Train baseline model"]
+  F --> G["Evaluate with right metric"]
+  G --> H["Iterate and tune"]
+  H --> I["Ship and monitor"]
+```
+*The nine-step ML workflow, in order — most beginners skip 1, 3, and 9.*
 
 Beginners usually skip steps 1, 3, and 9. Senior ML practitioners spend most of their time on 1, 3, 4, and 9.
 

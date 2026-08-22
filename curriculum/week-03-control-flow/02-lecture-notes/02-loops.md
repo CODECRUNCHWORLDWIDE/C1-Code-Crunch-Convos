@@ -42,6 +42,16 @@ The pattern is always:
 3. Update the variable inside the loop so that the condition eventually
    becomes false.
 
+```mermaid
+flowchart TD
+  A["Initialize count equals 1"] --> B{"count less or equal 5"}
+  B -- true --> C["Run loop body"]
+  C --> D["Update count"]
+  D --> B
+  B -- false --> E["Continue after loop"]
+```
+*A while loop keeps running while the condition holds, then falls through once it goes false.*
+
 Skip step 3 and you have an **infinite loop** — Python will happily run
 forever (or until you press `Ctrl+C`). For example, this is a bug:
 
@@ -253,6 +263,18 @@ If the `break` fires, the `else` is skipped. If the loop finishes
 naturally — runs out of items, or the `while` condition becomes false —
 the `else` runs. This is a tidy way to write search loops without an
 extra flag variable.
+
+```mermaid
+flowchart TD
+  A["Start for loop over numbers"] --> B{"n equals target"}
+  B -- yes --> C["Print Found and break"]
+  B -- no --> D{"more items"}
+  D -- yes --> A
+  D -- no --> E["Loop finished without break"]
+  E --> F["Run the else clause"]
+  C --> G["Skip the else clause"]
+```
+*The loop else clause runs only when the loop finishes without hitting break.*
 
 It surprises almost everyone the first time they see it, so it is worth
 calling out. Reference:

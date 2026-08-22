@@ -352,6 +352,16 @@ if __name__ == "__main__":
     watch(Path("."), interval=2.0)
 ```
 
+```mermaid
+flowchart TD
+  A["Take snapshot of file mtimes"] --> B["Sleep for interval"]
+  B --> C["Take new snapshot"]
+  C --> D["Diff old vs new"]
+  D --> E["Print added removed changed"]
+  E --> B
+```
+*The poll-sleep-diff cycle that watch drives forever until Ctrl-C.*
+
 What's nice about polling:
 
 - Zero dependencies.
@@ -429,6 +439,18 @@ def main() -> int:
 if __name__ == "__main__":
     raise SystemExit(main())
 ```
+
+```mermaid
+flowchart TD
+  A["Parse source and dest args"] --> B{"Is source a directory"}
+  B -->|No| C["Log error and return 1"]
+  B -->|Yes| D{"git-push flag set"}
+  D -->|Yes| E["Run git push in source"]
+  D -->|No| F["Make zip archive with shutil"]
+  E --> F
+  F --> G["Log archive path and size"]
+```
+*The nightly_backup pipeline from parsed args to a logged zip file.*
 
 You could schedule this with cron (`0 2 * * *` for 2 a.m. daily) — we'll cover cron in lecture 3.
 

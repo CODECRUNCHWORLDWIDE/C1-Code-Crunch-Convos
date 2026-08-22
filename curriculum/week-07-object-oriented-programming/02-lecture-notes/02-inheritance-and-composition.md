@@ -175,6 +175,15 @@ print([k.__name__ for k in D.__mro__])
 # ['D', 'B', 'C', 'A', 'object']
 ```
 
+```mermaid
+flowchart TD
+  A["Class A"] --> B["Class B"]
+  A --> C["Class C"]
+  B --> D["Class D"]
+  C --> D
+```
+*The diamond shape: D inherits from both B and C, which both inherit from A.*
+
 C3 picks `B` because it was listed first. If `D` itself overrides `greet`
 and uses `super().greet()`, the call walks down the MRO: `D` → `B` → `C` → `A`.
 
@@ -372,6 +381,18 @@ Choose **composition** when **any** of these are true:
 
 When in doubt, **start with composition**. Inheritance is easy to add later
 and very painful to remove.
+
+```mermaid
+flowchart TD
+  A["New class relationship"] --> B{"Is B truly a kind of A"}
+  B -- No --> H["Use composition"]
+  B -- Yes --> C{"Does B reuse most of A behavior"}
+  C -- No --> H
+  C -- Yes --> D{"Does B ever remove or disable behavior"}
+  D -- Yes --> H
+  D -- No --> E["Use inheritance"]
+```
+*A quick decision tree for choosing inheritance versus composition.*
 
 ---
 

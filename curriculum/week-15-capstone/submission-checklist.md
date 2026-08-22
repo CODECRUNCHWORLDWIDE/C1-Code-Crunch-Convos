@@ -122,5 +122,5 @@ Submit per your cohort's process. At minimum, include:
 - [ ] Post about the project in the community channel.
 - [ ] Add the project to your LinkedIn under "Projects" with the
       resume-style summary from
-      [lecture-notes/03-presentation-and-portfolio.md](lecture-notes/03-presentation-and-portfolio.md).
+      [lecture-notes/03-presentation-and-portfolio.md](02-lecture-notes/03-presentation-and-portfolio.md).
 - [ ] Pat yourself on the back. You shipped.

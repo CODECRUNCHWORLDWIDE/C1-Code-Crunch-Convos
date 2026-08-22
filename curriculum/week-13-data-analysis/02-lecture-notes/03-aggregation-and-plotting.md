@@ -21,6 +21,13 @@ The single most useful pattern in data analysis is **split-apply-combine**:
 2. **Apply** a function to each group (sum, mean, count, custom).
 3. **Combine** the per-group results into a new DataFrame.
 
+```mermaid
+flowchart LR
+  A["Split by key"] --> B["Apply function to each group"]
+  B --> C["Combine into result"]
+```
+*The split-apply-combine pattern behind every groupby call.*
+
 In pandas this is one call:
 
 ```python
@@ -157,6 +164,17 @@ The `how` argument matches SQL exactly:
 - `"left"` — keep all rows from the left frame.
 - `"right"` — keep all rows from the right frame.
 - `"outer"` — keep all rows from either side.
+
+```mermaid
+flowchart TD
+  O["orders table"] --> M{"merge on customer id"}
+  C["customers table"] --> M
+  M -->|"how equals inner"| R1["only matching rows"]
+  M -->|"how equals left"| R2["all rows from orders"]
+  M -->|"how equals right"| R3["all rows from customers"]
+  M -->|"how equals outer"| R4["all rows from either"]
+```
+*How the how argument controls which rows survive a merge.*
 
 When the join column has different names on each side:
 

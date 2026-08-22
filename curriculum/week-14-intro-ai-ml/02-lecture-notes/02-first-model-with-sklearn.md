@@ -33,6 +33,17 @@ X_test_scaled = scaler.transform(X_test)   # IMPORTANT: only fit on train.
 
 A few classes are both (e.g., `PCA`). A few have extra methods (`predict_proba` on classifiers, for probability estimates). But this is the spine.
 
+```mermaid
+flowchart TD
+  A["sklearn object"] --> B["Estimator"]
+  A --> C["Transformer"]
+  B --> B1["call fit with X and y"]
+  B1 --> B2["call predict with X"]
+  C --> C1["call fit with X"]
+  C1 --> C2["call transform with X"]
+```
+*The two shapes almost everything in sklearn takes — estimator or transformer.*
+
 ## Notation conventions
 
 Throughout sklearn (and ML in general):
@@ -159,6 +170,15 @@ print(export_text(tree, feature_names=list(X.columns)))
 |   |--- petal width (cm) <= 1.75
 |   |   |--- ...
 ```
+
+```mermaid
+flowchart TD
+  A["Petal length less or equal 2.45"] -->|Yes| B["Predict setosa"]
+  A -->|No| C["Petal width less or equal 1.75"]
+  C -->|Yes| D["Predict versicolor"]
+  C -->|No| E["Predict virginica"]
+```
+*The same tree, drawn as the flowchart it actually is.*
 
 The big appeal of trees: you can *read them*. Loan officer asks why an applicant got rejected — you can show them the path. Big risk of trees: they will memorise the training set if you let them. `max_depth=3` is a guardrail; without it, the tree will keep splitting until each leaf is a single example, which is textbook overfitting (covered in Lecture 3).
 

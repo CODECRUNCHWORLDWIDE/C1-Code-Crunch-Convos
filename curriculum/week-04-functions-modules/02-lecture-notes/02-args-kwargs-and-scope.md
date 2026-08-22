@@ -194,6 +194,20 @@ Python looks in L first. If `x` is not there, it looks in E. Then G. Then B. If 
 
 Reads name `x`: Python searches L -> E -> G -> B. First hit wins.
 
+```mermaid
+flowchart TD
+  Start["Python looks up a name"] --> L{"Found in Local scope?"}
+  L -- Yes --> UseL["Use the local value"]
+  L -- No --> E{"Found in Enclosing scope?"}
+  E -- Yes --> UseE["Use the enclosing value"]
+  E -- No --> G{"Found in Global scope?"}
+  G -- Yes --> UseG["Use the global value"]
+  G -- No --> B{"Found in Built-in scope?"}
+  B -- Yes --> UseB["Use the built-in value"]
+  B -- No --> Err["Raise NameError"]
+```
+*Python resolves a name by checking Local, Enclosing, Global, then Built-in scopes in order, stopping at the first match.*
+
 ### A worked example
 
 ```python
@@ -328,6 +342,15 @@ inc_b()
 print(get_a())   # 2
 print(get_b())   # 1
 ```
+
+```mermaid
+flowchart TD
+  M1["make_counter call 1"] --> C1["new count starts at 0 - instance A"]
+  C1 --> P1["returns inc_a and get_a"]
+  M2["make_counter call 2"] --> C2["new count starts at 0 - instance B"]
+  C2 --> P2["returns inc_b and get_b"]
+```
+*Each call to make_counter closes over its own fresh count, so instance A and instance B never share state.*
 
 Closures are how decorators are built. You do not need to master them this week, but you should recognize the shape: "function returns function, inner function uses outer variable".
 

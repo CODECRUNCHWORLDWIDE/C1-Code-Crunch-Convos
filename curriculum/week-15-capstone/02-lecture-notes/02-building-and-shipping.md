@@ -9,6 +9,16 @@ lecture walks through how to make each of them go right: the project
 structure, the README anatomy, the CI workflow, the demo, the video, and
 deployment.
 
+```mermaid
+flowchart LR
+  A["README first impression"] --> B["File tree skim"]
+  B --> C["CI badge glance"]
+  C --> D["Run install instructions"]
+  D --> E["Look at a test"]
+  E --> F["Read the code"]
+```
+*The order a reviewer actually judges a capstone repo.*
+
 ## Project structure conventions
 
 There is no single correct Python project layout. There are, however,
@@ -379,6 +389,16 @@ The pattern is the same on all of them:
 5. Deploy.
 6. Click the live URL. If it loads, add it to the README under "Live
    demo".
+
+```mermaid
+flowchart TD
+  A["Run app locally with one command"] --> B["Bind to 0.0.0.0 and read PORT"]
+  B --> C["Move secrets to environment variables"]
+  C --> D["Add Procfile or fly.toml"]
+  D --> E["Deploy"]
+  E --> F["Click live URL and add to README"]
+```
+*The six-step deploy pattern shared by Fly.io, Render, Railway, and PythonAnywhere.*
 
 A common mistake: forgetting that the production database is not the
 SQLite file on your laptop. For the capstone, an *empty* SQLite on the

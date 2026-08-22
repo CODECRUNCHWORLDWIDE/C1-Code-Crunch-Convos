@@ -78,6 +78,17 @@ The `!r` inside the f-string calls `repr()` on the value, which quotes
 strings — useful for error messages so the user can see if they typed an
 extra space.
 
+```mermaid
+flowchart TD
+  A["input pick a number"] --> B["Try int of raw"]
+  B --> C{"Did conversion succeed"}
+  C -->|Yes| D["Use n normally doubled printed"]
+  C -->|No ValueError| E["Except block runs"]
+  E --> F["Print sorry raw is not a whole number"]
+```
+
+*Defensive input reading: `try` attempts the cast, `except` catches a bad value instead of crashing.*
+
 ## 4. Reading Multiple Values
 
 A common pattern is to read several space-separated numbers from one
@@ -237,6 +248,16 @@ Found 1 error in 1 file (checked 1 source file)
 
 `mypy` found the bug without ever executing the code. That's the
 superpower: type errors at *write* time, not at *run* time.
+
+```mermaid
+flowchart LR
+  A["Source file with type hints"] --> B["Run mypy"]
+  B --> C{"Types match the hints"}
+  C -->|Yes| D["Success no issues found"]
+  C -->|No| E["Error report with line numbers"]
+```
+
+*`mypy` reads your hints and checks them statically, before the program ever runs.*
 
 ### 7.3 A clean file
 

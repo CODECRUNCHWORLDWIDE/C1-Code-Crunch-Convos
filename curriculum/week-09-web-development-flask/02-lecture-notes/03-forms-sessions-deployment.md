@@ -145,6 +145,18 @@ This pattern is called **Post / Redirect / Get (PRG)**. After a successful
 re-submit the form. Browsers warn you about this; PRG silences the warning by
 making the destination an idempotent `GET`.
 
+```mermaid
+flowchart TD
+  A["POST /new with form data"] --> B["Validate title and body"]
+  B --> C{"Any errors"}
+  C -- Yes --> D["Flash error messages"]
+  D --> E["Re-render form with typed values"]
+  C -- No --> F["Save post"]
+  F --> G["Flash success message"]
+  G --> H["Redirect to index"]
+```
+*Server-side validation branches into re-render on error or Post-Redirect-Get on success.*
+
 For richer validation (CSRF tokens, type coercion, field-level error
 messages), reach for **Flask-WTF**:
 
@@ -364,6 +376,16 @@ You do **not** need to deploy for this week to count as finished. But once you
 have a working blog, spending an hour deploying it is the single best use of
 that hour. Send the URL to a friend. Watch them load it. That feeling is why
 people become developers.
+
+```mermaid
+flowchart LR
+  A["Local Flask app"] --> B["requirements.txt and Procfile"]
+  B --> C["Push to GitHub"]
+  C --> D["Host builds container"]
+  D --> E["gunicorn runs app:app"]
+  E --> F["Live on the internet"]
+```
+*The path from local code to a gunicorn-served app on a free host.*
 
 ---
 

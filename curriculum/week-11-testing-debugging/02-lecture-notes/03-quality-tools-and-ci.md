@@ -487,6 +487,17 @@ This week's mini-project, `stringutils`, will give you the full stack:
 4. Coverage is gated at 90 % minimum.
 5. A status badge in the README turns green when everything passes.
 
+```mermaid
+flowchart LR
+  A["pyproject.toml config"] --> B["pre-commit on save"]
+  B --> C["git commit"]
+  C --> D["push to GitHub"]
+  D --> E["GitHub Actions CI"]
+  E --> F["Coverage gate 90 percent"]
+  F --> G["Status badge turns green"]
+```
+*Config feeds pre-commit locally, then the same checks run again in CI before the badge goes green.*
+
 That setup, once you have it, is essentially copy-paste for every new Python project for the rest of your career. Invest the hour now.
 
 ---

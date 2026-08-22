@@ -54,6 +54,14 @@ A subtle point: when you do `x = "ten"`, Python doesn't erase the integer
 `10` from memory. It just stops `x` from pointing at it. Garbage collection
 cleans up unused values eventually.
 
+```mermaid
+flowchart LR
+  A["x points to 10 the int"] --> B["x reassigned points to ten the str"]
+  B --> C["x reassigned again points to a list"]
+```
+
+*The name `x` can point at values of any type over its lifetime — the type belongs to the value, not the name.*
+
 ## 3. Naming Conventions (PEP 8)
 
 Python is permissive about variable names, but the community follows
@@ -214,6 +222,17 @@ def describe(value):
 
 (We haven't covered `if` formally yet — Week 3 — but the syntax should be
 guessable.)
+
+```mermaid
+flowchart TD
+  A["Start describe value"] --> B{"Is it int or float"}
+  B -->|Yes| C["Print a number"]
+  B -->|No| D{"Is it str"}
+  D -->|Yes| E["Print text"]
+  D -->|No| F["Print something else"]
+```
+
+*Decision tree for the `describe()` function: each `isinstance()` check narrows down the type.*
 
 ## 7. Type Casting
 

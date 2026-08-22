@@ -92,6 +92,16 @@ You only need to remember a handful for arithmetic:
 4. `*`, `/`, `//`, `%` — left-to-right.
 5. `+`, `-` — left-to-right.
 
+```mermaid
+flowchart TD
+  A["Parentheses evaluated first"] --> B["Exponent right to left"]
+  B --> C["Unary minus and unary plus"]
+  C --> D["Multiply divide floor divide modulo"]
+  D --> E["Add and subtract"]
+```
+
+*Precedence levels from highest to lowest — higher levels evaluate first.*
+
 Examples:
 
 ```python
@@ -165,6 +175,16 @@ name = ""
 if name and name[0].isupper():
     print("starts uppercase")
 ```
+
+```mermaid
+flowchart TD
+  A["Check name"] --> B{"Is name falsy empty string"}
+  B -->|Yes| C["Return name short circuit stop here"]
+  B -->|No| D["Evaluate name index zero is upper"]
+  D --> E["Return that result"]
+```
+
+*Short-circuiting: the right side of `and` is only evaluated if the left side is truthy.*
 
 ### 4.2 `and`/`or` return values, not just booleans
 

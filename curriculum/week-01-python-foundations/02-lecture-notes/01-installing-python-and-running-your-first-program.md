@@ -107,6 +107,14 @@ A **REPL** stands for *Read–Eval–Print Loop*. It reads what you type,
 evaluates it, prints the result, and loops back to read again. Start the
 REPL by typing `python` (or `python3`) with no filename:
 
+```mermaid
+flowchart LR
+  A["Read what you type"] --> B["Evaluate it"]
+  B --> C["Print the result"]
+  C --> A
+```
+*The REPL keeps looping through read, evaluate, and print until you exit.*
+
 ```bash
 python
 ```
@@ -287,6 +295,16 @@ Python — they're all easy fixes.
   indentation to group code. Pick four spaces and stick with it.
 - **`python: command not found`** means Python isn't on your `PATH`. Try
   `python3` instead, or re-install with the *Add to PATH* option checked.
+
+```mermaid
+flowchart TD
+  A["Terminal shows an error"] --> B{"What kind of error?"}
+  B -->|"SyntaxError"| C["Check punctuation and capitalization"]
+  B -->|"NameError"| D["Check variable spelling"]
+  B -->|"IndentationError"| E["Make whitespace consistent"]
+  B -->|"command not found"| F["Add Python to your PATH"]
+```
+*Match the error message to its most common fix.*
 
 ## Recap
 

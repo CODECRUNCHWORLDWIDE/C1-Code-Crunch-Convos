@@ -154,6 +154,16 @@ your machine
     └── .venv/        <- awesome==2.0 lives here
 ```
 
+```mermaid
+flowchart TD
+  M["Your machine"] --> S["System Python - do not touch"]
+  M --> A["Project A"]
+  M --> B["Project B"]
+  A --> AV["Project A venv - awesome 1.0"]
+  B --> BV["Project B venv - awesome 2.0"]
+```
+*Each project gets its own venv, so conflicting package versions never collide.*
+
 ## Creating a Virtual Environment with `venv`
 
 Python ships with a `venv` module that creates virtual environments. To
@@ -297,6 +307,16 @@ python -m pip install -r requirements.txt
 ```
 
 This is the bedrock of reproducible Python projects.
+
+```mermaid
+flowchart LR
+  A["Install packages with pip"] --> B["Freeze versions"]
+  B --> C["requirements.txt file"]
+  C --> D["Share with teammate"]
+  D --> E["New venv"]
+  E --> F["Install from requirements.txt"]
+```
+*How a working environment becomes reproducible for anyone else.*
 
 ## Putting It All Together
 

@@ -165,6 +165,16 @@ Three statements: an empty select, a `DROP TABLE`, and a comment that swallows t
 
 This is **SQL injection**. It is the #1 web application vulnerability historically, and it is *almost always* the result of mixing user input into SQL via string formatting (`f"..."`, `% "..."`, `+`, `.format()`, etc.).
 
+```mermaid
+flowchart TD
+    A["User input"] --> B{"How is it inserted into SQL?"}
+    B -->|"String concatenation"| C["Query text itself changes"]
+    C --> D["Attacker can inject DROP TABLE"]
+    B -->|"Parameterized placeholder"| E["Value bound separately from SQL"]
+    E --> F["Treated as plain text - safe"]
+```
+*String concatenation lets user input rewrite the query; parameterized placeholders never let that happen.*
+
 The good news: the fix is one of the easiest fixes in security. Use **parameterized queries**.
 
 ### The right way: parameterized queries
@@ -417,6 +427,21 @@ class Task(Base):
 ```
 
 Now `user.tasks` is a Python list that SQLAlchemy loads from the database on demand. Adding a task to a user is just `user.tasks.append(task)` — no manual `INSERT`.
+
+```mermaid
+erDiagram
+    USER ||--o{ TASK : owns
+    USER {
+        int id
+        string name
+    }
+    TASK {
+        int id
+        string title
+        int owner_id
+    }
+```
+*A User can own many Task rows, linked back through the owner_id foreign key.*
 
 ## 11. Migrations — what they are, why you'll need them
 

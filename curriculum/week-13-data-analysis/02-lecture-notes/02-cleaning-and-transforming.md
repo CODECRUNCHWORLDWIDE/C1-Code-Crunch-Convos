@@ -47,6 +47,16 @@ pandas has two row-selection accessors that you will use constantly.
 - **`.loc`** selects by **label** (the index value or a column name).
 - **`.iloc`** selects by **integer position** (0-indexed, like a list).
 
+```mermaid
+flowchart TD
+  Q{"Select rows by label or position?"}
+  Q -->|"Label - index value"| LOC["use dot loc"]
+  Q -->|"Position - zero indexed"| ILOC["use dot iloc"]
+  LOC --> L1["Slices inclusive on both ends"]
+  ILOC --> L2["Slices exclusive like Python"]
+```
+*Choosing between label-based and position-based row selection.*
+
 ```python
 df.iloc[0]              # first row (Series)
 df.iloc[0:5]            # first 5 rows (DataFrame)
@@ -408,6 +418,18 @@ def load_and_clean(path: str) -> pd.DataFrame:
 Notice how the function is just a sequence of small, named transformations.
 That is the pandas style: each step does one thing, the data flows top to
 bottom, and a reader can stop at any line and ask `df.head()`.
+
+```mermaid
+flowchart TD
+  A["Read CSV with parse dates"] --> B["Standardize column names"]
+  B --> C["Drop rows missing order id"]
+  C --> D["Drop duplicate order ids"]
+  D --> E["Fix numeric types"]
+  E --> F["Fill missing price by category median"]
+  F --> G["Add revenue and year month columns"]
+  G --> H["Drop rows still missing quantity or price"]
+```
+*The realistic cleaning pipeline as a linear sequence of transformations.*
 
 ## 14. The Copy-vs-View Trap (and `SettingWithCopyWarning`)
 

@@ -183,6 +183,16 @@ print(a is b)         # True
 
 This is *not* a Python bug — it's how object references work. But it bites every beginner. The fix is to make a copy explicitly.
 
+```mermaid
+flowchart TD
+  A["a points to List one two three"] --> B["b equals a so b points to the same object"]
+  B --> C["b dot append four mutates the shared object"]
+  C --> D["a and b both now show one two three four"]
+  A --> E["a equals ninety nine one hundred so a now points to a new object"]
+  E --> F["b still points to the original object one two three"]
+```
+*Mutation changes the shared object both names see; reassignment just moves one label to a new object.*
+
 ### Shallow copy
 
 `list.copy()` (or the slice `a[:]`, or `list(a)`) creates a **new** list containing the **same** items.

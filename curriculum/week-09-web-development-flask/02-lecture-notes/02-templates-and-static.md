@@ -307,6 +307,15 @@ That is it. Every page now has the same header, footer, stylesheet link, and
 and fill in two blocks. Forget to set a title? You get the default,
 `"My Blog"`, automatically.
 
+```mermaid
+flowchart TD
+  Base["base.html defines title and content blocks"]
+  Base --> Index["index.html extends base and fills content"]
+  Base --> Post["post.html extends base and fills content"]
+  Base --> New["new.html extends base and fills content"]
+```
+*Child templates extend one base layout and override its named blocks.*
+
 A few rules:
 
 - A child template **must** start with `{% extends "base.html" %}` (or

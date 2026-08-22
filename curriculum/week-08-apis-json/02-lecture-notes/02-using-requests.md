@@ -258,6 +258,20 @@ def fetch_user(login: str) -> dict | None:
 
 The `RequestException` catch-all covers every network failure mode. Inside the `try` block, `raise_for_status()` converts `4xx`/`5xx` responses into exceptions so the same handler covers them too. Exercise 05 has you build a more elaborate version of this with retries.
 
+```mermaid
+flowchart TD
+  A["requests get with timeout"] --> B{"Connection or DNS failure"}
+  B -->|yes| C["ConnectionError"]
+  B -->|no| D{"Too slow"}
+  D -->|yes| E["Timeout"]
+  D -->|no| F["raise_for_status"]
+  F --> G{"Status 4xx or 5xx"}
+  G -->|yes| H["HTTPError"]
+  G -->|no| I["Return response json"]
+```
+
+*One request, four different ways it can fail before you get usable data.*
+
 ---
 
 ## 9. Sessions — reuse connections, share headers

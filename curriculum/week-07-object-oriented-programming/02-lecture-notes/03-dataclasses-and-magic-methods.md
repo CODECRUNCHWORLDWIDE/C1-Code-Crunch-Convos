@@ -50,6 +50,15 @@ You get `__init__`, `__repr__`, and `__eq__` for free. The class also looks
 like its own documentation — the field list at the top is exactly the shape
 of an instance.
 
+```mermaid
+flowchart LR
+  A["Point class body with x and y fields"] --> B["dataclass decorator"]
+  B --> C["Generated __init__"]
+  B --> D["Generated __repr__"]
+  B --> E["Generated __eq__"]
+```
+*The dataclass decorator reads the field list and writes the boilerplate methods for you.*
+
 ```python
 a = Point(1.0, 2.0)
 b = Point(1.0, 2.0)

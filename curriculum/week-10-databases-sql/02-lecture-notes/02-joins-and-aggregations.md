@@ -158,6 +158,14 @@ CREATE TABLE book_genres (
 
 `book_genres` is a **junction table** (sometimes called an associative or join table), used to model a many-to-many relationship: a book can have many genres, a genre can have many books.
 
+```mermaid
+erDiagram
+    AUTHORS ||--o{ BOOKS : writes
+    BOOKS ||--o{ BOOK_GENRES : tagged
+    GENRES ||--o{ BOOK_GENRES : tagged
+```
+*book_genres is a junction table that turns the many-to-many link between books and genres into two one-to-many links.*
+
 To list books with their author and *all* their genres:
 
 ```sql
@@ -252,6 +260,17 @@ The canonical SQL evaluation order â€” which is *not* the order you write them â
 7. `LIMIT`
 
 Read top to bottom: tables get built, rows get filtered, rows get grouped, groups get filtered, columns get computed, results get sorted, then trimmed.
+
+```mermaid
+flowchart TD
+    A["FROM and JOIN"] --> B["WHERE"]
+    B --> C["GROUP BY"]
+    C --> D["HAVING"]
+    D --> E["SELECT"]
+    E --> F["ORDER BY"]
+    F --> G["LIMIT"]
+```
+*SQL clauses execute in this order regardless of the order you type them.*
 
 A query that uses every clause:
 

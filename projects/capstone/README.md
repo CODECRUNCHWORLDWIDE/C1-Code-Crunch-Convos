@@ -115,7 +115,7 @@ Push commits every day. Visible progress beats invisible perfection.
 
 A passing capstone is **70+**. An excellent capstone is **90+** and could be shown verbatim to a recruiter.
 
-Detailed score bands per dimension: [curriculum/week-15-capstone/rubric.md](../../curriculum/week-15-capstone/rubric.md).
+Detailed score bands per dimension: [curriculum/week-15-capstone/rubric.md](../../curriculum/week-15-capstone/08-rubric.md).
 
 ---
 

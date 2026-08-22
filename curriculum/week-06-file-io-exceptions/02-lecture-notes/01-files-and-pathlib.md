@@ -39,6 +39,18 @@ Two things to internalize:
 
 You can combine flags: `"r+b"` means "read and write, binary". You almost never need this as a beginner.
 
+```mermaid
+flowchart TD
+    A["Need to open a file"] --> B{"Keep existing content"}
+    B -- "Yes - append" --> C["Mode a"]
+    B -- "No - start empty" --> D["Mode w"]
+    B -- "Just reading" --> E["Mode r"]
+    C --> F["Pass encoding utf-8"]
+    D --> F
+    E --> F
+```
+*Picking the right open mode based on what you need to do with the file.*
+
 ### The cursor
 
 A file object has a **position** (sometimes called the "cursor" or "seek pointer"). Reading advances it. You can ask where it is with `f.tell()` and move it with `f.seek(offset)`. In `"r+"` mode the cursor starts at byte 0; in `"a"` mode it starts at the end. This matters for one edge case: if you open in `"r+"` and call `f.write("X")`, the `X` **overwrites** whatever byte was at the cursor — it does not insert. Treat files as a fixed grid of bytes, not as a text editor.

@@ -125,6 +125,17 @@ The professional pattern:
 4. Load `.env` at runtime with `python-dotenv`.
 5. Read the values from `os.environ` in your code.
 
+```mermaid
+flowchart LR
+  A[".env file"] --> B["dotenv loads it"]
+  B --> C["os.environ"]
+  C --> D["your code reads a value"]
+  A -.->|listed in| E[".gitignore"]
+  F[".env.example placeholders"] -.->|committed instead| G["git repo"]
+```
+
+*Real values stay local and gitignored; only the placeholder template gets committed.*
+
 Step by step:
 
 ### 5a. The `.env` file
@@ -282,6 +293,19 @@ The pattern is:
 4. Sleep, then loop.
 
 For anything beyond a toy script, prefer the `HTTPAdapter` + `Retry` approach from lecture 2 — it already handles `429` and `Retry-After` correctly, and it also retries `5xx` transient failures. Hand-rolled loops are useful when you want custom logging or jitter.
+
+```mermaid
+flowchart TD
+  A["Send request"] --> B{"Status is 429"}
+  B -->|no| C["Return response"]
+  B -->|yes| D{"Attempts left"}
+  D -->|no| C
+  D -->|yes| E["Read Retry-After or double delay"]
+  E --> F["Sleep"]
+  F --> A
+```
+
+*The retry loop keeps trying until it gets a non-429 response or runs out of attempts.*
 
 ### 8a. Exponential backoff with jitter
 

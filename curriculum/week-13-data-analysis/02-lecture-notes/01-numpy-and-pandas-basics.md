@@ -155,6 +155,17 @@ s + 5       # adds 5 to every element
 A `Series` is the building block of a DataFrame: each column is a `Series`,
 and rows themselves are `Series` too.
 
+```mermaid
+flowchart TD
+  IDX["Row index"] --> S1["Series column name"]
+  IDX --> S2["Series column lang"]
+  IDX --> S3["Series column rating"]
+  S1 --> DF["DataFrame"]
+  S2 --> DF
+  S3 --> DF
+```
+*A DataFrame is a collection of Series columns that all share the same row index.*
+
 ## 4. The pandas `DataFrame`
 
 A `DataFrame` is a two-dimensional labelled table — rows and columns, like
@@ -279,6 +290,16 @@ df.describe()
 Within 30 seconds you should know: how big is the file, what columns it has,
 what type each column is, whether there is missing data, and roughly what the
 numeric values look like.
+
+```mermaid
+flowchart LR
+  A["Load df"] --> B["df.head - preview rows"]
+  B --> C["df.shape - rows and columns"]
+  C --> D["df.dtypes - column types"]
+  D --> E["df.info - nulls and memory"]
+  E --> F["df.describe - summary stats"]
+```
+*The 30-second first-look workflow for any new dataset.*
 
 ### `info()` in detail
 
