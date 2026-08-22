@@ -1,6 +1,6 @@
 {
   "repo": "C1-Code-Crunch-Convos",
-  "updated": "2026-08-22T12:33:53-04:00",
+  "updated": "2026-08-22T12:35:17-04:00",
   "files": [
     {"path": "CODE_OF_CONDUCT.md", "title": "Contributor Covenant Code of Conduct"},
     {"path": "CONTRIBUTING.md", "title": "Contributing to Code Crunch Convos"},
@@ -199,15 +199,12 @@
     {"path": "past-sessions/README.md", "title": "Past Sessions"},
     {"path": "past-sessions/SPRING-2025/README.MD", "title": "C1 Crunch Convos"},
     {"path": "projects/capstone/00-overview.md", "title": "Capstone Project Master Guide"},
-    {"path": "projects/capstone/README.md", "title": "Capstone Project Master Guide"},
     {"path": "projects/mini-projects/00-overview.md", "title": "Mini-Projects Index"},
-    {"path": "projects/mini-projects/README.md", "title": "Mini-Projects Index"},
     {"path": "resources/cheatsheets/git-commands.md", "title": "Git Commands Cheatsheet"},
     {"path": "resources/cheatsheets/python-syntax.md", "title": "Python Syntax Cheatsheet"},
     {"path": "resources/coding-standards.md", "title": "Coding Standards"},
     {"path": "resources/git-github-workflow.md", "title": "Git & GitHub Workflow"},
     {"path": "resources/setup-guides/00-overview.md", "title": "Setup Guides"},
-    {"path": "resources/setup-guides/README.md", "title": "Setup Guides"},
     {"path": "resources/setup-guides/browser.md", "title": "Browser-Based Setup (No Install)"},
     {"path": "resources/setup-guides/linux.md", "title": "Linux Setup Guide"},
     {"path": "resources/setup-guides/macos.md", "title": "macOS Setup Guide"},

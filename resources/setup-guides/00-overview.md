@@ -30,4 +30,4 @@ code --version      # should print VS Code version info
 
 If all three commands print versions, you're ready. Head back to [Week 1](../../curriculum/week-01-python-foundations/).
 
-If any fail, retry the relevant section in your platform guide, or ask in [GitHub Discussions](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/discussions).
+If any fail, retry the relevant section in your platform guide, or ask in [GitHub Discussions](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos/discussions).

@@ -127,7 +127,7 @@ When you're done:
 2. **Pin it** to your GitHub profile (Profile → Customize your pins).
 3. **Upload your video** somewhere streamable (unlisted YouTube, Loom, Vimeo).
 4. **Link the video** at the top of the repo README.
-5. **Open a Discussion** on this curriculum repo's [Discussions](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/discussions) with: capstone repo URL, video URL, 2-sentence pitch, what you'd improve with another week.
+5. **Open a Discussion** on this curriculum repo's [Discussions](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos/discussions) with: capstone repo URL, video URL, 2-sentence pitch, what you'd improve with another week.
 
 The Code Crunch Club community celebrates capstones in a monthly showcase — sharing is encouraged.
 
