@@ -1,6 +1,6 @@
 {
   "repo": "C1-Code-Crunch-Convos",
-  "updated": "2026-08-22T12:35:17-04:00",
+  "updated": "2026-08-22T13:34:02-04:00",
   "files": [
     {"path": "CODE_OF_CONDUCT.md", "title": "Contributor Covenant Code of Conduct"},
     {"path": "CONTRIBUTING.md", "title": "Contributing to Code Crunch Convos"},
@@ -195,9 +195,6 @@
     {"path": "curriculum/week-15-capstone/milestones/04-test-and-polish.md", "title": "Milestone 04 — Test & Polish (Day 5)"},
     {"path": "curriculum/week-15-capstone/milestones/05-ship-and-present.md", "title": "Milestone 05 — Ship & Present (Days 6–7)"},
     {"path": "curriculum/week-15-capstone/submission-checklist.md", "title": "Submission Checklist"},
-    {"path": "past-sessions/00-overview.md", "title": "Past Sessions"},
-    {"path": "past-sessions/README.md", "title": "Past Sessions"},
-    {"path": "past-sessions/SPRING-2025/README.MD", "title": "C1 Crunch Convos"},
     {"path": "projects/capstone/00-overview.md", "title": "Capstone Project Master Guide"},
     {"path": "projects/mini-projects/00-overview.md", "title": "Mini-Projects Index"},
     {"path": "resources/cheatsheets/git-commands.md", "title": "Git Commands Cheatsheet"},

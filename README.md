@@ -374,8 +374,6 @@ C1-Code-Crunch-Convos/
 ├── community/
 │   ├── support.md             ← where to ask for help
 │   └── faqs.md
-├── past-sessions/
-│   └── SPRING-2025/           ← archived cohort materials
 └── assets/                    ← shared images / diagrams
 ```
 
@@ -446,16 +444,6 @@ You specialize. Pick a deeper track: web (Django/FastAPI), data (more SQL + visu
 **Can I use AI assistants while working through the course?**
 
 Yes — for explanations, debugging help, and reviewing code you have written yourself. No — for generating solutions you do not understand. The shortcut is the price you pay later, in interviews you cannot pass and codebases you cannot maintain.
-
----
-## Past sessions
-
-Previous cohorts and their materials are preserved under [past-sessions/](past-sessions/) for historical reference:
-
-- [SPRING 2025](past-sessions/SPRING-2025/) — original interview-prep focused 5-unit series
-
----
-
 ## Outcome
 
 **Outcome:** a portfolio-ready engineer who has shipped 15 mini-projects and one capstone — written clean idiomatic Python, used Git and GitHub, built OOP systems, consumed REST APIs, deployed a Flask web app, queried databases with SQL and SQLAlchemy, written `pytest` suites, analyzed data with pandas, and trained a basic scikit-learn model, every artifact public on GitHub with a README, tests, and CI.
