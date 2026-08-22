@@ -1,11 +1,10 @@
 {
   "repo": "C1-Code-Crunch-Convos",
-  "updated": "2026-08-22T02:54:53-04:00",
+  "updated": "2026-08-22T03:16:03-04:00",
   "files": [
     {"path": "CODE_OF_CONDUCT.md", "title": "Contributor Covenant Code of Conduct"},
     {"path": "CONTRIBUTING.md", "title": "Contributing to Code Crunch Convos"},
-    {"path": "README.md", "title": "Start here — Course Overview"},
-    {"path": "SYLLABUS.md", "title": "C1 · Code Crunch Convos — Syllabus"},
+    {"path": "README.md", "title": "C1 · Code Crunch Convos — Course Syllabus"},
     {"path": "community/faqs.md", "title": "Frequently Asked Questions"},
     {"path": "community/support.md", "title": "Getting Help"},
     {"path": "curriculum/week-01-python-foundations/00-overview.md", "title": "Week 1 — Python Foundations & Dev Environment"},
