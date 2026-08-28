@@ -7,7 +7,7 @@ It will not be displayed in the rendered README.
 ## Unit 0: Course Overview
 
 - **Week Dates:** January 6, 2025 - January 10, 2025  
-- **Link to Slides:** [Unit 0 - Python Fundamentals.pptx](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos/blob/main/SPRING-2025/RESOURCES/Unit%200%20-%20C1%20_%20Crunch%20Convos%20-%20Python%20Fundamentals.pptx.pdf)  
+- **Link to Slides:** [Unit 0 - Python Fundamentals.pptx](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/blob/main/SPRING-2025/RESOURCES/Unit%200%20-%20C1%20_%20Crunch%20Convos%20-%20Python%20Fundamentals.pptx.pdf)  
 
 ### **Python Code Example**
 ```python
@@ -73,7 +73,7 @@ This repository contains everything you’ll need throughout the course:
 ## Unit 0: Course Overview
 
 - **Week Dates:** January 6, 2025 - January 10, 2025  
-- **Link to Slides:** [Unit 0 - Python Fundamentals.pptx](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos/blob/main/SPRING-2025/RESOURCES/Unit%200%20-%20C1%20_%20Crunch%20Convos%20-%20Python%20Fundamentals.pptx.pdf)  
+- **Link to Slides:** [Unit 0 - Python Fundamentals.pptx](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/blob/main/SPRING-2025/RESOURCES/Unit%200%20-%20C1%20_%20Crunch%20Convos%20-%20Python%20Fundamentals.pptx.pdf)  
 
 ### **Python Code Example**
 ```python
@@ -85,7 +85,7 @@ print("Hello, world!")
 ## Unit 1: Advanced Python Basics
 
 - **Week Dates:** January 13, 2025 - January 17, 2025  
-- **Link to Slides:** [Unit 1 - Advanced Python Basics.pptx](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos/blob/main/SPRING-2025/RESOURCES/Unit%201%20-%20C1%20_%20Crunch%20Convos%20-%20Python%20Fundamentals.pptx.pdf)  
+- **Link to Slides:** [Unit 1 - Advanced Python Basics.pptx](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/blob/main/SPRING-2025/RESOURCES/Unit%201%20-%20C1%20_%20Crunch%20Convos%20-%20Python%20Fundamentals.pptx.pdf)  
 
 ### **Python Code Example**
 ```python
@@ -102,7 +102,7 @@ print(greet("Brian"))
 ## Unit 2: Sets and Dictionaries
 
 - **Week Dates:** January 20, 2025 - January 24, 2025  
-- **Link to Slides:** [Unit 2 - Sets & Dictionaries.pptx](https://github.com/CODE-CRUNCH-CLUB/C1-Code-Crunch-Convos/blob/main/SPRING-2025/RESOURCES/Unit%202%20-%20C1%20_%20Crunch%20Convos%20-%20Sets%20%26%20Dictionaries.pptx.pdf)  
+- **Link to Slides:** [Unit 2 - Sets & Dictionaries.pptx](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/blob/main/SPRING-2025/RESOURCES/Unit%202%20-%20C1%20_%20Crunch%20Convos%20-%20Sets%20%26%20Dictionaries.pptx.pdf)  
 
 ### **Python Code Example**
 ```python

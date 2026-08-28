@@ -1,6 +1,6 @@
 # Week 4 — Functions, Modules & Scope
 
-Welcome to Week 4 of **Code Crunch Convos**, a global, open-source Python bootcamp run out of Code Crunch Club. By the end of this week you will know how to package logic into reusable functions, split a program across multiple files, and reason confidently about which variables are visible where.
+Welcome to Week 4 of **Code Crunch Convos**, a global, open-source Python bootcamp run out of Code Crunch Worldwide. By the end of this week you will know how to package logic into reusable functions, split a program across multiple files, and reason confidently about which variables are visible where.
 
 This is the week your programs stop being "scripts" and start being **software**.
 

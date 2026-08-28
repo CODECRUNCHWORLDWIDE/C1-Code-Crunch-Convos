@@ -14,7 +14,7 @@
 
   <!-- Top eyebrow strip -->
   <g transform="translate(120, 150)">
-    <text class="mono" fill="#8A6829" font-size="20" letter-spacing="4">VOLUME I · CODE CRUNCH CLUB · EST. 2024</text>
+    <text class="mono" fill="#8A6829" font-size="20" letter-spacing="4">VOLUME I · CODE CRUNCH WORLDWIDE · EST. 2024</text>
   </g>
   <g transform="translate(1800, 150)" text-anchor="end">
     <text class="mono" fill="#6A6157" font-size="20" letter-spacing="4">INVITING LEARNERS <tspan fill="#B98F3E">WORLDWIDE</tspan></text>

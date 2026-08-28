@@ -37,7 +37,7 @@ This Code of Conduct applies within all community spaces — issues, pull reques
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project maintainers via a private email to the Code Crunch Club leadership team or by opening a confidential issue. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project maintainers via a private email to the Code Crunch Worldwide leadership team or by opening a confidential issue. All complaints will be reviewed and investigated promptly and fairly.
 
 All maintainers are obligated to respect the privacy and security of the reporter of any incident.
 

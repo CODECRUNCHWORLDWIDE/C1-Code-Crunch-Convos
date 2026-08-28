@@ -13,7 +13,7 @@
 
 **Format:** 15 weeks · ~36 hrs/week intensive (or 30 weeks at ~18 hrs/week part-time) · absolute beginner → portfolio-ready Python engineer
 
-The flagship Python bootcamp of the Code Crunch Club, and the on-ramp to C2, C13, and C14.
+The flagship Python bootcamp of Code Crunch Worldwide, and the on-ramp to C2, C13, and C14.
 
 **Prerequisites.** None beyond a computer, a willingness to read documentation, and the weekly hours. No prior programming experience is assumed — Week 1 starts at "I've never written code."
 
