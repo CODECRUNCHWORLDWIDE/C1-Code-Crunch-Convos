@@ -1,32 +1,25 @@
 # C1 · Code Crunch Convos — Course Syllabus
 
-> A fifteen-week, open-source Python bootcamp — designed for the absolute beginner, sharpened to the standards of professional engineering. Five hundred and forty hours of lectures, labs, projects, and a capstone. Free, forever.
+![C1 · Code Crunch Convos — Python Bootcamp](assets/brand/c1-social-16x9.png)
 
-| | |
-| --- | --- |
-| **15 weeks** | Program length |
-| **540 hrs** | Total workload |
-| **14 +1** | Projects + capstone |
-| **$0** | Tuition · always |
+> A fully open-source, 15-week Python bootcamp designed for absolute beginners progressing toward industry-ready engineering skills.
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE.md)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![Open Source](https://img.shields.io/badge/open%20source-%E2%9C%94-green.svg)](#open-source-philosophy)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 ---
 
-**Format:** 15 weeks · ~36 hrs/week intensive (or 30 weeks at ~18 hrs/week part-time) · absolute beginner → portfolio-ready Python engineer
+## Overview
 
-The flagship Python bootcamp of Code Crunch Worldwide, and the on-ramp to C2, C13, and C14.
+**Code Crunch Convos (C1)** is the flagship Python program of the [Code Crunch Worldwide](https://github.com/CODECRUNCHWORLDWIDE) — a global, learner-led learning community. This curriculum reorganizes C1 into a complete **15-week Python Bootcamp** that takes a learner from "I've never written code" to a portfolio-ready engineer who has shipped real projects, written tests, queried databases, consumed APIs, deployed a web app, and trained a basic ML model.
 
-**Prerequisites.** None beyond a computer, a willingness to read documentation, and the weekly hours. No prior programming experience is assumed — Week 1 starts at "I've never written code."
+The program is delivered as a public, version-controlled repository — designed equally well for:
 
-**Assessment is honor-based.** There are no proctors and no grades. Every quiz, homework set, and mini-project is self-checked against the rubric in its week folder; the credential is the public work in your GitHub repo, not a certificate. You advance when your own work convinces you — and anyone who reads your repo — that you have it.
----
-
-## An open course, in the open
-
-Code Crunch Convos began in August 2024 as a small interview-prep workshop run by Code Crunch Worldwide — a global, learner-led community. It ran quietly through its first year and a half while we built out the branding, website, assessments, and event programming behind the scenes. In 2026 we rebuilt it as a complete fifteen-week Python bootcamp — a public curriculum that any learner, anywhere, can use without permission or payment.
-
-The course is structured like a real-world bootcamp: lectures, hands-on labs, weekly projects, quizzes, homework, and a portfolio capstone. It is engineered to be taken on its own, or taught from by instructors and university clubs. Everything is GPL-3.0 licensed and lives on GitHub.
-
-> “The best way to predict the future is to teach it.” — Code Crunch Worldwide
+- **Self-study learners** working through the curriculum at their own pace.
+- **Instructors and clubs** running it as a synchronous cohort.
+- **Contributors** improving exercises, fixing bugs, or adding new modules.
 
 ---
 
@@ -43,32 +36,240 @@ The course is structured like a real-world bootcamp: lectures, hands-on labs, we
 
 ---
 
-## Who it is for
+## Target Audience
 
-*Built for four kinds of learner.*
+- **Absolute beginners** with no prior programming experience.
+- **Self-taught coders** wanting a structured path with accountability.
+- **CS learners** seeking practical, project-driven reinforcement of coursework.
+- **Career-switchers** building a portfolio for technical interviews.
+- **Educators and clubs** looking for ready-to-teach open curriculum.
 
-No prerequisites beyond a willingness to read documentation and roughly thirty-six hours a week. There is room for everyone.
+No prerequisites beyond: a computer, a willingness to read documentation, and ~36 hours per week.
 
-- **The Absolute Beginner** — Has never written code. Week 1 begins with installing Python and ends with their first commit on GitHub.
-- **The Self-Taught Coder** — Has dabbled in tutorials. Wants structure, accountability, and a portfolio of finished, polished work.
-- **The Career-Switcher** — Needs hire-ready Python skills, version control habits, and projects to show — all without paying for a paid bootcamp.
-- **The Instructor** — Teaches a club or class. Wants a ready-to-deliver, modifiable curriculum that they can fork and adapt.
+---
+
+## Estimated Workload
+
+Total program: **~540 hours over 15 weeks (≈36 hrs/week).**
+
+Each week typically breaks down as:
+
+| Component                 | Hours/week |
+| ------------------------- | ---------- |
+| Lectures / study material | 6          |
+| Hands-on exercises        | 8          |
+| Coding challenges         | 4          |
+| Quizzes & readings        | 3          |
+| Homework problems         | 6          |
+| Mini-project              | 7          |
+| Self-study / review       | 2          |
+| **Total**                 | **~36**    |
+
+Part-time learners can stretch the program to **30 weeks at ~18 hrs/week** without changing the content.
+
+---
+
+## Skills You'll Gain
+
+By the end of Week 15, learners will be able to:
+
+- Write clean, idiomatic Python (PEP 8 / PEP 257).
+- Use Git and GitHub for collaborative version control.
+- Design data structures and pick the right one for the job.
+- Build object-oriented systems with clear interfaces.
+- Read and write files, handle exceptions, and parse structured data.
+- Consume REST APIs and produce JSON.
+- Build a small web application with Flask.
+- Query relational databases with SQL and SQLAlchemy.
+- Write unit and integration tests with `pytest`.
+- Automate repetitive tasks with scripts.
+- Analyze data with `pandas`, `NumPy`, and `matplotlib`.
+- Train and evaluate a basic ML model with `scikit-learn`.
+- Ship a full capstone project on GitHub with README, tests, and CI.
+
+---
+
+## Technologies & Tools
+
+All free, open-source, and cross-platform.
+
+| Category        | Tool                                                                                                        |
+| --------------- | ----------------------------------------------------------------------------------------------------------- |
+| Language        | [Python 3.11+](https://www.python.org/)                                                                     |
+| Editor          | [VS Code](https://code.visualstudio.com/) (recommended) or any editor                                       |
+| Notebooks       | [Jupyter](https://jupyter.org/)                                                                             |
+| Version control | [Git](https://git-scm.com/) + [GitHub](https://github.com/)                                                 |
+| Env management  | [venv](https://docs.python.org/3/library/venv.html) / [uv](https://github.com/astral-sh/uv)                 |
+| Linting / format| [ruff](https://github.com/astral-sh/ruff), [black](https://black.readthedocs.io/)                           |
+| Testing         | [pytest](https://docs.pytest.org/)                                                                          |
+| Web             | [Flask](https://flask.palletsprojects.com/)                                                                 |
+| Databases       | [SQLite](https://www.sqlite.org/), [SQLAlchemy](https://www.sqlalchemy.org/)                                |
+| HTTP            | [requests](https://requests.readthedocs.io/), [httpx](https://www.python-httpx.org/)                        |
+| Data            | [NumPy](https://numpy.org/), [pandas](https://pandas.pydata.org/), [matplotlib](https://matplotlib.org/)    |
+| ML              | [scikit-learn](https://scikit-learn.org/)                                                                   |
+| CI              | [GitHub Actions](https://docs.github.com/en/actions)                                                        |
+
+See [resources/setup-guides/](resources/setup-guides/) for installation instructions on macOS, Windows, and Linux.
+
+---
+
+## How This Course Reads
+
+Every page here is written to be understood the first time you read it. Short
+sentences, plain words, and a picture in your head before any jargon. When a new
+term shows up, it gets explained in the same breath. That is on purpose, and it
+is the same for the hardest week as for the first one.
+
+Four things are true of every problem in the course:
+
+- **The main text is the whole lesson.** You do not need anything outside a page
+  to do its work.
+- **The answer is right there on the page**, under a heading called *The
+  Solution*. Read it after you have tried, not before — the learning happens in
+  the gap between the two. It is not hidden behind a click; it is just further
+  down, after the part where you do the work.
+- **Every problem ships a file you can download and run.** The page links it
+  under *Download and run*, and it is the exact code shown on the page, so what
+  you read is what runs.
+- **Anything deeper than you need lives in a box marked *Under the hood*.** Those
+  boxes are folded shut. Open them if you are curious about why something works
+  the way it does — the memory, the internals, the history. Skip every single
+  one and you can still finish the course. Nothing important hides in there.
+
+Where a problem needs only plain Python, the page also offers to open it in the
+**browser code editor** — no install, nothing to set up, and your work stays on
+your own machine. Problems that need a real computer (installing things, a
+virtual environment, Git, a web server) say so and skip that offer.
+
+## How to Navigate This Repository
+
+```text
+C1-Code-Crunch-Convos/
+├── README.md                  ← you are here; the whole course, in one document
+├── CONTRIBUTING.md            ← how to contribute
+├── CODE_OF_CONDUCT.md         ← community rules
+├── CONTENT-POLICY.md          ← what every problem page must contain
+├── LICENSE.md                 ← GPL-3.0
+├── curriculum/                ← the 15-week course, one folder per week
+│   ├── week-01-python-foundations/
+│   ├── week-02-data-types-operators/
+│   ├── ...
+│   └── week-15-capstone/
+├── projects/
+│   ├── mini-projects/         ← cross-week project specs
+│   └── capstone/              ← capstone guide & rubric
+├── resources/
+│   ├── setup-guides/          ← install Python, Git, VS Code
+│   ├── cheatsheets/           ← quick reference sheets
+│   ├── git-github-workflow.md
+│   └── coding-standards.md
+├── community/
+│   ├── support.md             ← where to ask for help
+│   └── faqs.md
+└── assets/                    ← shared images / diagrams
+```
+
+### Inside each `curriculum/week-XX-*/` you will find
+
+```text
+week-XX-topic/
+├── README.md               ← objectives, schedule, navigation
+├── lecture-notes/          ← written material to study
+├── resources.md            ← curated readings + docs links
+├── exercises/              ← guided, small practice problems
+├── challenges/             ← harder, open-ended problems
+├── quiz.md                 ← knowledge check
+├── homework/               ← graded practice, one page per problem
+└── mini-project/           ← week-capping deliverable
+```
+
+Every problem — exercise, challenge, homework problem, mini-project — is one
+page, and its answer is on that page: complete, visible, never hidden behind a
+toggle, with a runnable file beside it whose code is byte-identical to the block
+you can read. There is no separate answers folder anywhere in this course. The
+answer and the question are edited together or not at all.
+
+---
+
+## Getting Started
+
+1. **Install prerequisites** — Python 3.11+, Git, and VS Code. Follow the [setup guide for your OS](resources/setup-guides/).
+2. **Fork & clone this repo.**
+
+   ```bash
+   git clone https://github.com/<your-username>/C1-Code-Crunch-Convos.git
+   cd C1-Code-Crunch-Convos
+   ```
+
+3. **Create a virtual environment.**
+
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate          # macOS/Linux
+   .venv\Scripts\activate             # Windows
+   ```
+
+4. **Start with [Week 1](curriculum/week-01-python-foundations/).**
+5. Submit your work via pull request to your personal fork, or share publicly on your GitHub profile.
+
+---
+
+## Contribution Guidelines
+
+We welcome contributions from learners, instructors, and the wider community. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for the full guide.
+
+Quick links:
+- 🐛 [Report a bug or typo](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/issues/new)
+- 💡 [Suggest an improvement](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/issues/new)
+- 🧑‍🏫 [Add or improve a lecture / exercise](CONTRIBUTING.md#contributing-curriculum)
+- 🌐 [Translate a week into another language](CONTRIBUTING.md#translations)
+
+All contributors agree to the [Code of Conduct](CODE_OF_CONDUCT.md).
+
+---
+
+## Open Source Philosophy
+
+This curriculum is licensed under **[GPL-3.0](LICENSE.md)**. That means:
+
+- Anyone may use, copy, modify, and redistribute this material — including for commercial teaching.
+- Derivative works (forks, translations, modified curricula) must remain under GPL-3.0 and credit the original.
+- We rely **only** on free and open-source tools. No paid platforms, no proprietary dependencies, no required SaaS.
+
+We believe education should be unbounded by paywalls. Improvements come from learners who pass through it and give back — that's the loop we want to encourage.
+
+---
+
+## Community & Support
+
+- 💬 **Discussions** — [GitHub Discussions](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/discussions)
+- 🐦 **Updates** — follow [@CODECRUNCHWORLDWIDE](https://github.com/CODECRUNCHWORLDWIDE) on GitHub
+- 🆘 **Stuck on an exercise?** — see [community/support.md](community/support.md)
+- ❓ **Frequently asked questions** — see [community/faqs.md](community/faqs.md)
+
+---
+
+## Past Sessions
+
+Material from earlier cohorts has been moved out of this course into the
+2025 archive, so that a learner reading the curriculum only ever sees the
+current one. Nothing was deleted.
 
 ---
 
 ## Program at a glance
 
-| Phase                         | Weeks    | Outcome                                                |
-| ----------------------------- | -------- | ------------------------------------------------------ |
-| **Phase 1 — Foundations**     | 01 – 04  | Write programs with variables, control flow, functions |
-| **Phase 2 — Core programming**| 05 – 07  | Data structures, files, OOP                            |
-| **Phase 3 — Real-world Python**| 08 – 11 | APIs, web, databases, testing                          |
-| **Phase 4 — Applied Python**  | 12 – 14  | Automation, data analysis, intro ML                    |
-| **Phase 5 — Capstone**        | 15       | Ship a portfolio project                               |
+**Format:** 15 weeks · ~36 hrs/week intensive (or 30 weeks at ~18 hrs/week part-time) · absolute beginner → portfolio-ready Python engineer
+
+The flagship Python bootcamp of Code Crunch Worldwide, and the on-ramp to C2, C13, and C14.
+
+**Prerequisites.** None beyond a computer, a willingness to read documentation, and the weekly hours. No prior programming experience is assumed — Week 1 starts at "I've never written code."
+
+**Assessment is honor-based.** There are no proctors and no grades. Every quiz, homework set, and mini-project is self-checked against the rubric in its week folder; the credential is the public work in your GitHub repo, not a certificate. You advance when your own work convinces you — and anyone who reads your repo — that you have it.
 
 ---
 
-## Weekly load
+### Weekly load
 
 | Component | hrs/wk |
 |-----------|------:|
@@ -85,51 +286,51 @@ Part-time learners stretch the same content to 30 weeks at ~18 hrs/week.
 
 ---
 
-## Weekly modules
-
-| #   | Week                                                                  | Mini-project                  |
-| --- | --------------------------------------------------------------------- | ----------------------------- |
-| 01  | [Python Foundations](curriculum/week-01-python-foundations/)                     | "Hello, You" CLI greeter      |
-| 02  | [Variables, Data Types & Operators](curriculum/week-02-data-types-operators/)    | Unit converter                |
-| 03  | [Control Flow](curriculum/week-03-control-flow/)                                 | Number-guessing game          |
-| 04  | [Functions, Modules & Scope](curriculum/week-04-functions-modules/)              | Personal finance calculator   |
-| 05  | [Data Structures & Comprehensions](curriculum/week-05-data-structures/)          | Contact book                  |
-| 06  | [File I/O & Exception Handling](curriculum/week-06-file-io-exceptions/)          | Log file analyzer             |
-| 07  | [Object-Oriented Programming](curriculum/week-07-object-oriented-programming/)   | Library management system     |
-| 08  | [APIs, JSON & HTTP](curriculum/week-08-apis-json/)                               | Weather dashboard             |
-| 09  | [Web Development with Flask](curriculum/week-09-web-development-flask/)          | Personal blog                 |
-| 10  | [Databases & SQL](curriculum/week-10-databases-sql/)                             | Task tracker                  |
-| 11  | [Testing, Debugging & Quality](curriculum/week-11-testing-debugging/)            | Tested utility library + CI   |
-| 12  | [Automation & Scripting](curriculum/week-12-automation-scripting/)               | File organizer bot            |
-| 13  | [Data Analysis with pandas](curriculum/week-13-data-analysis/)                   | Dataset analysis              |
-| 14  | [Intro to AI/ML](curriculum/week-14-intro-ai-ml/)                                | Spam classifier               |
-| 15  | [Capstone](curriculum/week-15-capstone/)                                         | Portfolio centerpiece         |
+**Outcome:** a portfolio-ready engineer who has shipped 15 mini-projects and one capstone — written clean idiomatic Python, used Git and GitHub, built OOP systems, consumed REST APIs, deployed a Flask web app, queried databases with SQL and SQLAlchemy, written `pytest` suites, analyzed data with pandas, and trained a basic scikit-learn model, every artifact public on GitHub with a README, tests, and CI.
 
 ---
 
-## Weekly breakdown
+## Week by week
 
-### Phase 1 — Foundations
+15 weeks · ~540 hours · ~36 hours/week · Beginner → Industry-ready
 
-#### [Week 1 — Python Foundations & Dev Environment](curriculum/week-01-python-foundations/)
+This page is the **table of contents** for the entire program. Each week links to its own README with detailed objectives, materials, exercises, and a mini-project.
+
+---
+
+### Program at a glance
+
+| Phase                         | Weeks    | Outcome                                                |
+| ----------------------------- | -------- | ------------------------------------------------------ |
+| **Phase 1 — Foundations**     | 01 – 04  | Write programs with variables, control flow, functions |
+| **Phase 2 — Core programming**| 05 – 07  | Data structures, files, OOP                            |
+| **Phase 3 — Real-world Python**| 08 – 11 | APIs, web, databases, testing                          |
+| **Phase 4 — Applied Python**  | 12 – 14  | Automation, data analysis, intro ML                    |
+| **Phase 5 — Capstone**        | 15       | Ship a portfolio project                               |
+
+### Weekly breakdown
+
+#### Phase 1 — Foundations
+
+##### [Week 1 — Python Foundations & Dev Environment](curriculum/week-01-python-foundations/)
 
 Install Python, write your first program, learn the REPL, get comfortable with the terminal and Git. Hello world done properly: with version control, virtual environments, and `pip`.
 
 - **Mini-project:** "Hello, You" — a personal CLI greeter committed to your own GitHub.
 
-#### [Week 2 — Variables, Data Types & Operators](curriculum/week-02-data-types-operators/)
+##### [Week 2 — Variables, Data Types & Operators](curriculum/week-02-data-types-operators/)
 
 Numbers, strings, booleans, type coercion, f-strings, arithmetic, comparison, logical operators. Reading user input. Type hints.
 
 - **Mini-project:** Unit converter (temperature, currency, distance).
 
-#### [Week 3 — Control Flow](curriculum/week-03-control-flow/)
+##### [Week 3 — Control Flow](curriculum/week-03-control-flow/)
 
 `if/elif/else`, `while` loops, `for` loops, `range`, `break`, `continue`. Logical decomposition.
 
 - **Mini-project:** Number-guessing game with replay loop.
 
-#### [Week 4 — Functions, Modules & Scope](curriculum/week-04-functions-modules/)
+##### [Week 4 — Functions, Modules & Scope](curriculum/week-04-functions-modules/)
 
 Defining functions, parameters, return values, default & keyword args, `*args`/`**kwargs`, scope rules, importing modules, organizing code into multiple files.
 
@@ -137,21 +338,21 @@ Defining functions, parameters, return values, default & keyword args, `*args`/`
 
 ---
 
-### Phase 2 — Core Programming
+#### Phase 2 — Core Programming
 
-#### [Week 5 — Data Structures & Comprehensions](curriculum/week-05-data-structures/)
+##### [Week 5 — Data Structures & Comprehensions](curriculum/week-05-data-structures/)
 
 Lists, tuples, sets, dicts. When to use each. List, dict, and set comprehensions. Big-O intuition.
 
 - **Mini-project:** Contact book manager.
 
-#### [Week 6 — File I/O & Exception Handling](curriculum/week-06-file-io-exceptions/)
+##### [Week 6 — File I/O & Exception Handling](curriculum/week-06-file-io-exceptions/)
 
 Reading and writing files, `pathlib`, CSV, JSON, structured logging, the exception model, custom exceptions.
 
 - **Mini-project:** Log file analyzer.
 
-#### [Week 7 — Object-Oriented Programming](curriculum/week-07-object-oriented-programming/)
+##### [Week 7 — Object-Oriented Programming](curriculum/week-07-object-oriented-programming/)
 
 Classes, instances, attributes, methods, inheritance, composition, `__init__`, `__repr__`, dunder methods, `dataclasses`, design tradeoffs (OOP vs. procedural).
 
@@ -159,27 +360,27 @@ Classes, instances, attributes, methods, inheritance, composition, `__init__`, `
 
 ---
 
-### Phase 3 — Real-World Python
+#### Phase 3 — Real-World Python
 
-#### [Week 8 — APIs, JSON & HTTP](curriculum/week-08-apis-json/)
+##### [Week 8 — APIs, JSON & HTTP](curriculum/week-08-apis-json/)
 
 HTTP basics, JSON, the `requests` library, pagination, authentication, rate limiting, error handling. Reading and producing JSON.
 
 - **Mini-project:** Weather dashboard CLI.
 
-#### [Week 9 — Web Development with Flask](curriculum/week-09-web-development-flask/)
+##### [Week 9 — Web Development with Flask](curriculum/week-09-web-development-flask/)
 
 Routes, request/response, templates with Jinja2, forms, sessions, deploying for free.
 
 - **Mini-project:** Personal blog web app.
 
-#### [Week 10 — Databases & SQL with Python](curriculum/week-10-databases-sql/)
+##### [Week 10 — Databases & SQL with Python](curriculum/week-10-databases-sql/)
 
 Relational data, SQL fundamentals (SELECT/JOIN/GROUP BY), SQLite, the `sqlite3` module, an intro to SQLAlchemy.
 
 - **Mini-project:** Task tracker with SQLite-backed storage.
 
-#### [Week 11 — Testing, Debugging & Code Quality](curriculum/week-11-testing-debugging/)
+##### [Week 11 — Testing, Debugging & Code Quality](curriculum/week-11-testing-debugging/)
 
 `pytest`, fixtures, parametrize, the debugger (`pdb`/VS Code), `ruff` & `black`, type checking with `mypy`, GitHub Actions CI.
 
@@ -187,21 +388,21 @@ Relational data, SQL fundamentals (SELECT/JOIN/GROUP BY), SQLite, the `sqlite3` 
 
 ---
 
-### Phase 4 — Applied Python
+#### Phase 4 — Applied Python
 
-#### [Week 12 — Automation & Scripting](curriculum/week-12-automation-scripting/)
+##### [Week 12 — Automation & Scripting](curriculum/week-12-automation-scripting/)
 
 `argparse`, `subprocess`, `pathlib`, `shutil`, scheduling with `cron`, web scraping basics with `BeautifulSoup`, `Selenium`/`Playwright` overview.
 
 - **Mini-project:** File organizer bot.
 
-#### [Week 13 — Data Analysis with pandas](curriculum/week-13-data-analysis/)
+##### [Week 13 — Data Analysis with pandas](curriculum/week-13-data-analysis/)
 
 `NumPy` basics, `pandas` DataFrames, loading CSV/JSON/Excel, cleaning, aggregating, plotting with `matplotlib`/`seaborn`, Jupyter notebooks.
 
 - **Mini-project:** Real-world dataset analysis (you pick the dataset).
 
-#### [Week 14 — Intro to AI/ML with scikit-learn](curriculum/week-14-intro-ai-ml/)
+##### [Week 14 — Intro to AI/ML with scikit-learn](curriculum/week-14-intro-ai-ml/)
 
 Supervised vs. unsupervised, train/test split, linear & logistic regression, decision trees, `scikit-learn` pipeline, model evaluation, where ML can and can't help.
 
@@ -209,9 +410,9 @@ Supervised vs. unsupervised, train/test split, linear & logistic regression, dec
 
 ---
 
-### Phase 5 — Capstone
+#### Phase 5 — Capstone
 
-#### [Week 15 — Capstone Project](curriculum/week-15-capstone/)
+##### [Week 15 — Capstone Project](curriculum/week-15-capstone/)
 
 You design and build a substantial project of your choice that exercises the skills from Weeks 1–14. Ships with README, tests, CI, deployable demo, and a 5-minute video walkthrough.
 
@@ -219,51 +420,7 @@ You design and build a substantial project of your choice that exercises the ski
 
 ---
 
-## The stack
-
-*Free, open, and cross-platform.*
-
-No paid platforms. No proprietary dependencies. No required SaaS. Every tool below works on macOS, Windows, and Linux.
-
-- **Python 3.11+** — Language. python.org
-- **VS Code** — Editor. free · cross-platform
-- **Git + GitHub** — Version Control. free for public repos
-- **venv · uv** — Environments. isolated installs
-- **ruff · black** — Format / Lint. opinionated, fast
-- **pytest** — Testing. w/ coverage
-- **Flask · Jinja2** — Web. minimal framework
-- **SQLite · SQLAlchemy** — Database. no server required
-- **requests · httpx** — HTTP. de facto clients
-- **NumPy · pandas** — Data. the analytics stack
-- **matplotlib** — Plotting. via pandas .plot
-- **scikit-learn** — Machine Learning. classical ML
-
----
-
-## What you walk away with
-
-By the end of Week 15, you are able to do each of the following — credibly, on a real codebase, in front of real reviewers.
-
-- Write clean, idiomatic Python that passes PEP 8 and type-checking.
-- Use Git and GitHub fluently — branches, PRs, code review.
-- Design data structures and pick the right one for the job.
-- Build object-oriented systems with clear, testable interfaces.
-- Read and write files, handle exceptions, and parse structured data.
-- Consume third-party REST APIs and produce well-formed JSON.
-- Build a small web application from scratch with Flask.
-- Query relational databases with SQL and SQLAlchemy.
-- Write unit and integration tests with pytest and target coverage.
-- Automate repetitive tasks with command-line scripts.
-- Analyze real datasets with pandas, NumPy, and matplotlib.
-- Train, evaluate, and reason about a basic machine-learning model.
-- Wire up GitHub Actions CI on every project you ship.
-- Read the documentation as a first move, not a last resort.
-- Write a README that lets a stranger run your code in five minutes.
-- Ship a polished, portfolio-grade project — end to end.
-
----
-
-## Skills progression, phase by phase
+### Skills progression chart
 
 ```text
 W1  ─ environment, REPL, first script
@@ -283,23 +440,7 @@ W14 ─ intro ML (scikit-learn)
 W15 ─ CAPSTONE
 ```
 
----
-
-## The capstone
-
-*One project. Five tracks. Your choice.*
-
-Week 15 is reserved for a substantial, public project of your choosing. Pick the track that excites you most. Each track has a worked example in the repository.
-
-- **Web App** (Track i) — A Flask application with database, multiple routes, and one significant interactive feature.
-- **Data** (Track ii) — A real public dataset analyzed end-to-end, with cleaning, EDA, and a written summary of findings.
-- **Machine Learning** (Track iii) — Train a scikit-learn model, evaluate it honestly, and ship a CLI or web endpoint for inference.
-- **Automation** (Track iv) — A working tool that solves a real problem — in your school, your club, your daily life.
-- **API** (Track v) — A small REST API with documentation, tests, authentication, and a deployed demo.
-
----
-
-## What this course does not cover
+### What you won't learn (but should later)
 
 To keep this curriculum focused, we don't cover:
 
@@ -314,7 +455,7 @@ We list resources for each of these as **stretch reading** in the relevant weeks
 
 ---
 
-## Adapting the syllabus
+### Adapting the syllabus
 
 - **Part-time (18 hrs/wk):** Each "week" becomes 2 weeks. Total = 30 weeks.
 - **University semester (15 weeks × 9 hrs/wk):** Drop homework and one challenge per week. Keep all lectures, exercises, and mini-projects.
@@ -324,126 +465,53 @@ Instructors: feel free to fork and adjust. If you do something that works well, 
 
 ---
 
-## Getting started
+## Curriculum map
 
-*Four commands. Then begin.*
+The 15-week Python bootcamp lives here. Start with the [full syllabus](README.md), then dive into [Week 1](curriculum/week-01-python-foundations/).
 
-The setup is intentionally lightweight. If you can run a terminal command, you can begin the bootcamp today.
+### Quick links
 
-```sh
-# 1. Clone the curriculum repository
-git clone https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos.git
-cd C1-Code-Crunch-Convos
+- 📋 [Full syllabus](README.md) — phase breakdown, time budget, prerequisites
+- 🎯 [Capstone guide](curriculum/../projects/capstone/) — Week 15 deliverable
+- 🛠️ [Setup guides](curriculum/../resources/setup-guides/) — install Python before Week 1
+- 🤝 [Contributing](curriculum/../CONTRIBUTING.md) — fix typos, add exercises
 
-# 2. Create a virtual environment
-python -m venv .venv
-source .venv/bin/activate    # macOS / Linux
-.venv\Scripts\activate       # Windows
+### Weekly modules
 
-# 3. Open the Week 1 overview and begin reading
-code curriculum/week-01-python-foundations/00-overview.md
+| #   | Week                                                                  | Mini-project                  |
+| --- | --------------------------------------------------------------------- | ----------------------------- |
+| 01  | [Python Foundations](curriculum/week-01-python-foundations/)                     | "Hello, You" CLI greeter      |
+| 02  | [Variables, Data Types & Operators](curriculum/week-02-data-types-operators/)    | Unit converter                |
+| 03  | [Control Flow](curriculum/week-03-control-flow/)                                 | Number-guessing game          |
+| 04  | [Functions, Modules & Scope](curriculum/week-04-functions-modules/)              | Personal finance calculator   |
+| 05  | [Data Structures & Comprehensions](curriculum/week-05-data-structures/)          | Contact book                  |
+| 06  | [File I/O & Exception Handling](curriculum/week-06-file-io-exceptions/)          | Log file analyzer             |
+| 07  | [Object-Oriented Programming](curriculum/week-07-object-oriented-programming/)   | Library management system     |
+| 08  | [APIs, JSON & HTTP](curriculum/week-08-apis-json/)                               | Weather dashboard             |
+| 09  | [Web Development with Flask](curriculum/week-09-web-development-flask/)          | Personal blog                 |
+| 10  | [Databases & SQL](curriculum/week-10-databases-sql/)                             | Task tracker                  |
+| 11  | [Testing, Debugging & Quality](curriculum/week-11-testing-debugging/)            | Tested utility library + CI   |
+| 12  | [Automation & Scripting](curriculum/week-12-automation-scripting/)               | File organizer bot            |
+| 13  | [Data Analysis with pandas](curriculum/week-13-data-analysis/)                   | Dataset analysis              |
+| 14  | [Intro to AI/ML](curriculum/week-14-intro-ai-ml/)                                | Spam classifier               |
+| 15  | [Capstone](curriculum/week-15-capstone/)                                         | Portfolio centerpiece         |
 
-# 4. Push your first mini-project to your own GitHub by Sunday
-git push origin main
-```
-
----
-
-## How the repository is organised
-
-```text
-C1-Code-Crunch-Convos/
-├── README.md                  ← you are here: the whole course
-├── CONTRIBUTING.md            ← how to contribute
-├── CODE_OF_CONDUCT.md         ← community rules
-├── LICENSE                    ← GPL-3.0
-├── _index.json                ← generated index the course reader consumes
-├── curriculum/                ← the 15 weeks, and nothing else
-│   ├── week-01-python-foundations/
-│   ├── week-02-data-types-operators/
-│   ├── …
-│   └── week-15-capstone/
-├── projects/
-│   ├── mini-projects/         ← cross-week project specs
-│   └── capstone/              ← capstone guide & rubric
-├── resources/
-│   ├── setup-guides/          ← install Python, Git, VS Code
-│   ├── cheatsheets/           ← quick reference sheets
-│   ├── git-github-workflow.md
-│   └── coding-standards.md
-├── community/
-│   ├── support.md             ← where to ask for help
-│   └── faqs.md
-└── assets/                    ← shared images / diagrams
-```
-
-### Inside each `curriculum/week-NN-*/`
-
-Every file carries a number, so a plain name sort is teaching order:
+### How each week is organized
 
 ```text
-week-NN-topic/
-├── 00-overview.md     ← objectives, schedule, navigation — start here
-├── 01-resources.md    ← curated readings + docs links
-├── 02-lecture-notes/  ← written study material
-├── 03-exercises/      ← guided practice, 5–30 minutes each
-├── 04-challenges/     ← harder, open-ended problems
-├── 05-quiz.md         ← knowledge check
-├── 06-homework.md     ← graded practice
-└── 07-mini-project/   ← the week-capping deliverable
+week-XX-topic/
+├── README.md          ← objectives, schedule, navigation
+├── resources.md       ← curated readings + docs links
+├── lecture-notes/     ← written material
+├── exercises/         ← guided practice (5–30 min each)
+├── challenges/        ← harder, open-ended problems
+├── quiz.md            ← knowledge check
+├── homework/          ← graded problems, one page each
+└── mini-project/      ← week-capping deliverable
 ```
 
-Read the week's `00-overview.md` first, then work down the numbers. Don't skip
-the homework — it is where most of the learning happens.
+Every problem is one page and carries its own answer, visible on the page, with
+a runnable `-solution.py` beside it. There is no separate answers folder — the
+answer lives under the question that asked it.
 
----
-
-## Where things live
-
--  [Capstone guide](projects/capstone/) — Week 15 deliverable
--  [Setup guides](resources/setup-guides/) — install Python before Week 1
--  [Contributing](CONTRIBUTING.md) — fix typos, add exercises
-
----
-
-## Education without paywalls
-
-Code Crunch Convos is released under the **GNU General Public License v3**. Anyone may use, copy, modify, and redistribute it — including for commercial teaching — provided derivative works remain under the same license and credit the original.
-We made this choice deliberately. A curriculum that only opens up after payment is, in our view, no curriculum at all. Improvements come from the learners who pass through and give back: a fixed typo, a sharper explanation, a translation, a new exercise. That cycle of public improvement is what makes a course durable across years.
-The tools we teach are open source. The platform we publish on is open source. The contributing guide invites you in. Read it, fork it, send a pull request.
-[Read the contributing guide](https://github.com/CODECRUNCHWORLDWIDE/C1-Code-Crunch-Convos/blob/main/CONTRIBUTING.md)
-
----
-
-## Questions, anticipated
-
-**Is this really free?**
-
-Yes. The entire curriculum is licensed under GPL-3.0 — no paid tier, no upsells, no required services. The only thing it costs you is time and effort.
-
-**Do I receive a certificate?**
-
-Not by default — we are a community-built open curriculum, not an accredited institution. Your public GitHub portfolio of fifteen shipped projects is the credential that matters most to employers. Clubs or universities running this as a cohort may issue their own certificates.
-
-**How long does the bootcamp realistically take?**
-
-Designed for ~36 hours/week × 15 weeks (~540 hours). Most self-paced learners take 6–12 months at part-time speed. Finishing matters more than speed.
-
-**I already know a little Python. Can I start later?**
-
-Yes. Each week opens with a quiz — if you score above eighty percent, the topic is safe to skim. We recommend at least glancing at earlier weeks for any unfamiliar habits (especially Git and testing).
-
-**Can I teach this in my club or class?**
-
-Please do. Fork the repository, adapt as needed, and — if your adaptation works well — open a pull request so others can learn from your improvements. See the contributing guide.
-
-**What happens after Week 15?**
-
-You specialize. Pick a deeper track: web (Django/FastAPI), data (more SQL + visualization), ML (deep learning), DevOps, or systems. Contribute to open source. Build more projects. Apply for roles. Mentor someone going through this curriculum.
-
-**Can I use AI assistants while working through the course?**
-
-Yes — for explanations, debugging help, and reviewing code you have written yourself. No — for generating solutions you do not understand. The shortcut is the price you pay later, in interviews you cannot pass and codebases you cannot maintain.
-## Outcome
-
-**Outcome:** a portfolio-ready engineer who has shipped 15 mini-projects and one capstone — written clean idiomatic Python, used Git and GitHub, built OOP systems, consumed REST APIs, deployed a Flask web app, queried databases with SQL and SQLAlchemy, written `pytest` suites, analyzed data with pandas, and trained a basic scikit-learn model, every artifact public on GitHub with a README, tests, and CI.
+Start each week by reading the week's **README.md**, then follow the day-by-day schedule. Don't skip the homework — it's where most learning happens.

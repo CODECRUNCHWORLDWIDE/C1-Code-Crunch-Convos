@@ -120,7 +120,7 @@ sitting on the table after Milestone 03 are won here.
    File Size".
 
 3. **Rewrite the README.** Use the anatomy from
-   [../lecture-notes/02-building-and-shipping.md](../02-lecture-notes/02-building-and-shipping.md):
+   [../lecture-notes/02-building-and-shipping.md](../lecture-notes/02-building-and-shipping.md):
 
    - Title and one-sentence pitch.
    - Badges: CI, coverage (optional, via Codecov), license.

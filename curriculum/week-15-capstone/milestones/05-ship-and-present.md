@@ -18,7 +18,7 @@ project into a *visible* finished project.
 Skip this section if you are on the data or automation track and have
 no hosted UI. Your notebook or CLI on GitHub already *is* the demo.
 
-1. **Pick one host** from [../resources.md](../01-resources.md) and stop
+1. **Pick one host** from [../resources.md](../resources.md) and stop
    shopping. Fly.io, Render, Railway, PythonAnywhere, and Hugging Face
    Spaces are all fine.
 
@@ -54,7 +54,7 @@ no hosted UI. Your notebook or CLI on GitHub already *is* the demo.
 
 ### PM: Record the walkthrough video
 
-Use the structure from [../lecture-notes/02-building-and-shipping.md](../02-lecture-notes/02-building-and-shipping.md):
+Use the structure from [../lecture-notes/02-building-and-shipping.md](../lecture-notes/02-building-and-shipping.md):
 
 | Time         | Content                                       |
 |--------------|-----------------------------------------------|
@@ -117,7 +117,7 @@ Commit and push as `docs(retro): add capstone retrospective`.
 
 ### Midday: pin the repo
 
-Follow [../lecture-notes/03-presentation-and-portfolio.md](../02-lecture-notes/03-presentation-and-portfolio.md)
+Follow [../lecture-notes/03-presentation-and-portfolio.md](../lecture-notes/03-presentation-and-portfolio.md)
 section *Pinning your repo*. Pin the capstone in **position 1**. Untick
 old practice repos. Verify the GitHub profile loads with the capstone
 on top.

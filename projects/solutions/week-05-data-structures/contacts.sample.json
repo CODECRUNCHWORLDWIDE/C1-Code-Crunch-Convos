@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Ada Lovelace",
+    "email": "ada@example.com",
+    "phone": "555-0100"
+  },
+  {
+    "name": "Grace Hopper",
+    "email": "grace@example.com",
+    "phone": "555-0200"
+  },
+  {
+    "name": "Linus Torvalds",
+    "email": "linus@example.com",
+    "phone": "555-0300"
+  },
+  {
+    "name": "Margaret Hamilton",
+    "email": "margaret@example.com",
+    "phone": ""
+  },
+  {
+    "name": "Katherine Johnson",
+    "email": "",
+    "phone": "555-0500"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "source_file": "sample.log",
+  "total_lines": 30,
+  "parsed_lines": 28,
+  "skipped_lines": 2,
+  "counts": {
+    "DEBUG": 0,
+    "INFO": 18,
+    "WARNING": 6,
+    "ERROR": 4
+  },
+  "most_common_error": {
+    "message": "Failed to connect to cache: timeout",
+    "count": 2
+  }
+}

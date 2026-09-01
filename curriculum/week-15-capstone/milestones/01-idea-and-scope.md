@@ -138,7 +138,7 @@ cache responses locally and fall back to the cached version.">
 ## Worked example
 
 For a thin walked-through example, see the *Habit Tracker* worked plan
-inside [../lecture-notes/01-planning-your-capstone.md](../02-lecture-notes/01-planning-your-capstone.md)
+inside [../lecture-notes/01-planning-your-capstone.md](../lecture-notes/01-planning-your-capstone.md)
 at the end. It uses exactly this template.
 
 ## Pitfalls

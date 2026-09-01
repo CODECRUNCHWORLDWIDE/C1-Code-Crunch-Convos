@@ -4,7 +4,7 @@
 
 ### Is this really free?
 
-Yes. The curriculum is licensed under [GPL-3.0](../LICENSE) — you can read, copy, modify, redistribute, and even teach from it commercially, as long as derivative works stay open source. There are no paid tiers, no upsells, no required services.
+Yes. The curriculum is licensed under [GPL-3.0](../LICENSE.md) — you can read, copy, modify, redistribute, and even teach from it commercially, as long as derivative works stay open source. There are no paid tiers, no upsells, no required services.
 
 ### Do I get a certificate?
 
