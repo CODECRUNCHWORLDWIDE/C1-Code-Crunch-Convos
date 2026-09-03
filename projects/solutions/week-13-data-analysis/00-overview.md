@@ -25,7 +25,7 @@ week-13-data-analysis/
 ├── requirements.txt    # exact pinned versions
 ├── .gitignore          # data/ is not committed — it is reproducible
 ├── data/               # created on first run; 14 MB CSV cache
-└── figures/
+└── figures/            # written by the run; not committed
     ├── main.png                        # required deliverable
     ├── top15-total-vs-per-capita.png
     ├── income-vs-carbon.png
@@ -111,7 +111,7 @@ intensity −45.4%.
 | `analysis.ipynb` in the project folder | [`analysis.ipynb`](./analysis.ipynb) |
 | One-page `findings.md` | [`findings.md`](./findings.md) |
 | `requirements.txt` with exact versions | [`requirements.txt`](./requirements.txt) |
-| At least one chart saved at `figures/main.png` | [`figures/main.png`](./figures/main.png) |
+| At least one chart saved at `figures/main.png` | notebook section 5, written on the run |
 | Section 1 — Load | notebook cells 1–2 |
 | Section 2 — Inspect | cells 3–8, including a missing-data audit and a coverage-by-year check |
 | Section 3 — Clean | cells 9–12, six numbered decisions, one of them verified rather than asserted |

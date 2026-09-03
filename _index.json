@@ -1,11 +1,10 @@
 {
   "repo": "C1-Code-Crunch-Convos",
-  "updated": "2026-09-03T01:07:27-04:00",
+  "updated": "2026-09-03T11:54:00-04:00",
   "files": [
     {"path": "CODE_OF_CONDUCT.md", "title": "Contributor Covenant Code of Conduct"},
     {"path": "CONTENT-POLICY.md", "title": "C1 Content Policy — Original Problems, Honest Sources"},
     {"path": "CONTRIBUTING.md", "title": "Contributing to Code Crunch Convos"},
-    {"path": "LICENSE.md", "title": "LICENSE"},
     {"path": "README.md", "title": "C1 · Code Crunch Convos — Course Syllabus"},
     {"path": "community/faqs.md", "title": "Frequently Asked Questions"},
     {"path": "community/support.md", "title": "Getting Help"},

@@ -1,10 +1,10 @@
 # C1 · Code Crunch Convos — Course Syllabus
 
-![C1 · Code Crunch Convos — Python Bootcamp](assets/brand/c1-social-16x9.png)
+![C1 · Code Crunch Convos — Python Bootcamp](assets/brand/c1-social-16x9.svg)
 
 > A fully open-source, 15-week Python bootcamp designed for absolute beginners progressing toward industry-ready engineering skills.
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE.md)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![Open Source](https://img.shields.io/badge/open%20source-%E2%9C%94-green.svg)](#open-source-philosophy)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
@@ -18,7 +18,7 @@
 The program is delivered as a public, version-controlled repository — designed equally well for:
 
 - **Self-study learners** working through the curriculum at their own pace.
-- **Instructors and clubs** running it as a synchronous cohort.
+- **Instructors and orgs** running it as a synchronous cohort.
 - **Contributors** improving exercises, fixing bugs, or adding new modules.
 
 ---
@@ -93,7 +93,7 @@ Every row above points at a week that **assigns work** on that outcome — an ex
 - **Self-taught coders** wanting a structured path with accountability.
 - **CS learners** seeking practical, project-driven reinforcement of coursework.
 - **Career-switchers** building a portfolio for technical interviews.
-- **Educators and clubs** looking for ready-to-teach open curriculum.
+- **Educators and orgs** looking for ready-to-teach open curriculum.
 
 No prerequisites beyond: a computer, a willingness to read documentation, and ~36 hours per week.
 
@@ -200,7 +200,7 @@ C1-Code-Crunch-Convos/
 ├── CONTRIBUTING.md            ← how to contribute
 ├── CODE_OF_CONDUCT.md         ← community rules
 ├── CONTENT-POLICY.md          ← what every problem page must contain
-├── LICENSE.md                 ← GPL-3.0
+├── LICENSE                    ← GPL-3.0
 ├── curriculum/                ← the 15-week course, one folder per week
 │   ├── week-01-python-foundations/
 │   ├── week-02-data-types-operators/
@@ -281,7 +281,7 @@ All contributors agree to the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Open Source Philosophy
 
-This curriculum is licensed under **[GPL-3.0](LICENSE.md)**. That means:
+This curriculum is licensed under **[GPL-3.0](LICENSE)**. That means:
 
 - Anyone may use, copy, modify, and redistribute this material — including for commercial teaching.
 - Derivative works (forks, translations, modified curricula) must remain under GPL-3.0 and credit the original.
@@ -510,7 +510,7 @@ We list resources for each of these as **stretch reading** in the relevant weeks
 
 - **Part-time (18 hrs/wk):** Each "week" becomes 2 weeks. Total = 30 weeks.
 - **University semester (15 weeks × 9 hrs/wk):** Drop homework and one challenge per week. Keep all lectures, exercises, and mini-projects.
-- **High-school club (15 weeks × ~3 hrs/wk):** Skip Weeks 11, 13, 14 — extend the capstone instead. Or treat it as a two-year program.
+- **Lighter cohort (15 weeks × ~3 hrs/wk):** Skip Weeks 11, 13, 14 — extend the capstone instead. Or treat it as a two-year program.
 
 Instructors: feel free to fork and adjust. If you do something that works well, [send us a PR](curriculum/../CONTRIBUTING.md) so others can benefit.
 

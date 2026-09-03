@@ -48,7 +48,7 @@ Train, evaluate, and deploy a scikit-learn model. Build a tiny inference CLI or 
 Examples: movie recommender, news topic classifier, sentiment analyzer, fraud detector, image-class style classifier (tabular).
 
 ### ⚙️ Automation track
-Build a working automation tool that solves a real problem in your life, school, or club.
+Build a working automation tool that solves a real problem in your life, school, or community.
 
 Examples: GitHub repo triage bot, file backup with cloud sync, content scheduler, exam-question generator, link-rot detector.
 

@@ -22,8 +22,6 @@ copied verbatim.
 | [`test_report.py`](./test_report.py) | 12 pytest tests over the pure modules. | Stretch goal 4 |
 | [`report_stretch.py`](./report_stretch.py) | `compounded_projection`, `totals_by_category`, `format_categories`. | Stretch goals 2 and 3 |
 | [`main_stretch.py`](./main_stretch.py) | `argparse` flags plus CSV loading. | Stretch goal 1 |
-| [`sample-income.csv`](./sample-income.csv) | Two income rows for the CSV flag. | Stretch fixture |
-| [`sample-expenses.csv`](./sample-expenses.csv) | Three expense rows, with categories. | Stretch fixture |
 
 The four required files are exactly the four the brief asks for, with exactly
 the function signatures it specifies. Nothing was added to them. Every extra
@@ -78,7 +76,10 @@ python -m pytest -q
 12 passed in 0.05s
 ```
 
-The stretch CLI:
+The stretch CLI reads two CSV files that are not committed here — write them
+yourself first. Income takes `label,amount` (`salary,2500` and
+`freelance,400`); expenses take `label,amount,category` (`rent,900,housing`,
+`food,350,living`, `transport,120,living`). Then:
 
 ```bash
 python main_stretch.py --income sample-income.csv --expenses sample-expenses.csv --months 12 --rate 0.004

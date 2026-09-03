@@ -95,9 +95,12 @@ Two smaller follow-ups:
 
 ## Charts
 
+All four are rendered inline in the committed notebook. Running it also writes
+them to `figures/`, which is produced by the run and not committed.
+
 | File | What it shows |
 |---|---|
-| [`figures/main.png`](./figures/main.png) | Global CO2 by fuel source, 1950-2024, stacked |
-| [`figures/top15-total-vs-per-capita.png`](./figures/top15-total-vs-per-capita.png) | The 2023 top 15, ranked two ways |
-| [`figures/income-vs-carbon.png`](./figures/income-vs-carbon.png) | GDP per capita vs CO2 per capita, 2022 |
-| [`figures/decoupling-1990-2022.png`](./figures/decoupling-1990-2022.png) | Growth vs carbon for the 20 largest 1990 emitters |
+| `figures/main.png` | Global CO2 by fuel source, 1950-2024, stacked |
+| `figures/top15-total-vs-per-capita.png` | The 2023 top 15, ranked two ways |
+| `figures/income-vs-carbon.png` | GDP per capita vs CO2 per capita, 2022 |
+| `figures/decoupling-1990-2022.png` | Growth vs carbon for the 20 largest 1990 emitters |
