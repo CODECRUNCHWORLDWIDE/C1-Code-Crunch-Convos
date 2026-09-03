@@ -1,8 +1,8 @@
 # Week 13 — Quiz
 
 Ten multiple-choice questions covering the lecture notes for the week. Pick
-**one** answer per question. The answer key is at the bottom — try the whole
-quiz before scrolling.
+**one** answer per question. Each answer is folded beneath its question — try
+the whole quiz before you open any of them.
 
 ---
 
@@ -12,6 +12,13 @@ quiz before scrolling.
 - B. `pa`
 - C. `panda`
 - D. `pdr`
+
+<details>
+<summary>Answer</summary>
+
+**A** — `import pandas as pd`.
+
+</details>
 
 ---
 
@@ -23,6 +30,14 @@ expression returns the **first column as a Series**?
 - C. `df[["a"]]`
 - D. `df.iloc[0]`
 
+<details>
+<summary>Answer</summary>
+
+**B** — Single brackets with a string return a `Series`; double brackets
+`[["a"]]` would return a one-column DataFrame.
+
+</details>
+
 ---
 
 ### 3. What does `df.shape` return for a DataFrame with 100 rows and 7
@@ -32,6 +47,13 @@ columns?
 - B. `(7, 100)`
 - C. `(100, 7)`
 - D. `[100, 7]`
+
+<details>
+<summary>Answer</summary>
+
+**C** — `shape` is `(rows, columns)`.
+
+</details>
 
 ---
 
@@ -43,6 +65,13 @@ non-null values in every column?
 - C. `df.info()`
 - D. `df.dtypes`
 
+<details>
+<summary>Answer</summary>
+
+**C** — `info()` is the all-in-one summary.
+
+</details>
+
 ---
 
 ### 5. You want every row where `score > 80` **and** `subject == "Math"`.
@@ -53,6 +82,14 @@ Which expression is correct?
 - C. `df[df["score"] > 80 && df["subject"] == "Math"]`
 - D. `df.where("score > 80 and subject == 'Math'")`
 
+<details>
+<summary>Answer</summary>
+
+**B** — `&` and `|` with parentheses around each clause. The Python
+keywords `and` / `or` do not work element-wise.
+
+</details>
+
 ---
 
 ### 6. What is the difference between `.loc` and `.iloc`?
@@ -61,6 +98,13 @@ Which expression is correct?
 - B. `.loc` selects rows only, `.iloc` selects columns only.
 - C. `.loc` returns a copy, `.iloc` returns a view.
 - D. They are aliases of each other.
+
+<details>
+<summary>Answer</summary>
+
+**A** — Label vs. integer position.
+
+</details>
 
 ---
 
@@ -72,6 +116,13 @@ which line is correct?
 - C. `df["price"].replace(np.nan, "mean")`
 - D. `df["price"] = df["price"].mean()`
 
+<details>
+<summary>Answer</summary>
+
+**B** — `fillna` is the right tool; the mean is a fine fill value.
+
+</details>
+
 ---
 
 ### 8. Which call produces a Series of the **mean** `tip` per `day`?
@@ -80,6 +131,13 @@ which line is correct?
 - B. `df.groupby("day")["tip"].mean()`
 - C. `df.mean().groupby("day")`
 - D. `df["tip"].groupby("day").mean()`
+
+<details>
+<summary>Answer</summary>
+
+**B** — Group, then select the column, then aggregate.
+
+</details>
 
 ---
 
@@ -92,6 +150,13 @@ would write:
 - C. `pd.concat([orders, customers], axis=1)`
 - D. `orders.join(customers)`
 
+<details>
+<summary>Answer</summary>
+
+**B** — `how="left"` keeps every row from `orders`.
+
+</details>
+
 ---
 
 ### 10. Which line saves a matplotlib figure to a PNG with crisp resolution
@@ -102,28 +167,15 @@ and trimmed whitespace?
 - C. `fig.savefig("chart.png", dpi=150, bbox_inches="tight")`
 - D. `fig.export("chart.png", quality=high)`
 
----
-
-## Answer key
-
 <details>
-<summary>Click to reveal answers</summary>
+<summary>Answer</summary>
 
-1. **A** — `import pandas as pd`.
-2. **B** — Single brackets with a string return a `Series`; double brackets
-   `[["a"]]` would return a one-column DataFrame.
-3. **C** — `shape` is `(rows, columns)`.
-4. **C** — `info()` is the all-in-one summary.
-5. **B** — `&` and `|` with parentheses around each clause. The Python
-   keywords `and` / `or` do not work element-wise.
-6. **A** — Label vs. integer position.
-7. **B** — `fillna` is the right tool; the mean is a fine fill value.
-8. **B** — Group, then select the column, then aggregate.
-9. **B** — `how="left"` keeps every row from `orders`.
-10. **C** — Both `dpi` and `bbox_inches="tight"` matter for a publishable
-    figure.
+**C** — Both `dpi` and `bbox_inches="tight"` matter for a publishable
+figure.
 
 </details>
+
+---
 
 ## Score yourself
 

@@ -1,6 +1,6 @@
 # Week 14 — Quiz
 
-Ten multiple-choice questions. Cover the page below the answer key with your hand and try without peeking. Aim for 8/10 before moving on to Week 15.
+Ten multiple-choice questions. Each answer is folded under its question — settle on yours before you open it. Aim for 8/10 before moving on to Week 15.
 
 ---
 
@@ -13,6 +13,13 @@ B. Supervised classification
 C. Unsupervised clustering
 D. Reinforcement learning
 
+<details>
+<summary>Answer</summary>
+
+**C.** No labels + grouping = unsupervised clustering. k-means is the canonical method.
+
+</details>
+
 ---
 
 ## Question 2 — Regression vs classification
@@ -23,6 +30,13 @@ A. Classification
 B. Regression
 C. Clustering
 D. Dimensionality reduction
+
+<details>
+<summary>Answer</summary>
+
+**B.** Continuous numerical output is regression by definition.
+
+</details>
 
 ---
 
@@ -35,6 +49,13 @@ B. To estimate how the model will perform on data it has never seen
 C. To save memory during training
 D. To increase the size of the training set
 
+<details>
+<summary>Answer</summary>
+
+**B.** The test set is your honest estimate of generalisation. Touching it during model selection invalidates it.
+
+</details>
+
 ---
 
 ## Question 4 — The estimator API
@@ -45,6 +66,13 @@ A. `train` and `evaluate`
 B. `learn` and `infer`
 C. `fit` and `predict`
 D. `compile` and `forward`
+
+<details>
+<summary>Answer</summary>
+
+**C.** `fit` (train) and `predict` (produce outputs) are the sklearn API spine.
+
+</details>
 
 ---
 
@@ -57,6 +85,13 @@ B. The model is correctly trained but the test set is too small
 C. Overfitting — the model has memorised the training data
 D. The optimiser failed to converge
 
+<details>
+<summary>Answer</summary>
+
+**C.** Large gap between train and test scores is the classic overfitting signature.
+
+</details>
+
 ---
 
 ## Question 6 — Metrics on imbalanced data
@@ -68,6 +103,13 @@ B. Stop using ML; the problem is too hard
 C. Switch metrics to precision/recall on the fraud class and re-evaluate
 D. Add more "not fraud" examples to balance the dataset
 
+<details>
+<summary>Answer</summary>
+
+**C.** Accuracy is a trap on imbalanced classes. Move to precision/recall on the minority class — that's what you actually care about.
+
+</details>
+
 ---
 
 ## Question 7 — Pipelines
@@ -78,6 +120,13 @@ A. Pipelines run faster than separate calls
 B. Pipelines prevent leakage during cross-validation by re-fitting preprocessing on each fold's training data only
 C. Pipelines automatically tune hyperparameters
 D. Pipelines convert pandas DataFrames into NumPy arrays for you
+
+<details>
+<summary>Answer</summary>
+
+**B.** Pipelines correctly re-fit preprocessing on each cross-validation fold, preventing leakage. They also simplify deployment.
+
+</details>
 
 ---
 
@@ -98,6 +147,13 @@ B. `b`
 C. `c`
 D. `d`
 
+<details>
+<summary>Answer</summary>
+
+**C.** `c` is the bottom-left cell: actual class 1 (positive), predicted class 0 (negative) = false negative.
+
+</details>
+
 ---
 
 ## Question 9 — Bias and ethics
@@ -108,6 +164,13 @@ A. The algorithm is racist by design
 B. Darker faces are inherently harder to classify
 C. The training data underrepresented darker-skinned women, so the model's performance for that group is worse
 D. The choice of learning rate
+
+<details>
+<summary>Answer</summary>
+
+**C.** Representation in training data is the dominant driver of subgroup performance gaps in modern ML systems. This was documented at scale in the "Gender Shades" research and is now widely replicated.
+
+</details>
 
 ---
 
@@ -120,22 +183,14 @@ B. Translating a fixed table of currency codes to country names
 C. Predicting customer churn from usage data
 D. Detecting tumours in chest X-rays
 
+<details>
+<summary>Answer</summary>
+
+**B.** Translating a fixed table is a deterministic lookup. Write a dictionary. ML is overkill, slower, and adds error.
+
+</details>
+
 ---
-
-## Answer key
-
-(Read after you've answered all ten.)
-
-1. **C.** No labels + grouping = unsupervised clustering. k-means is the canonical method.
-2. **B.** Continuous numerical output is regression by definition.
-3. **B.** The test set is your honest estimate of generalisation. Touching it during model selection invalidates it.
-4. **C.** `fit` (train) and `predict` (produce outputs) are the sklearn API spine.
-5. **C.** Large gap between train and test scores is the classic overfitting signature.
-6. **C.** Accuracy is a trap on imbalanced classes. Move to precision/recall on the minority class — that's what you actually care about.
-7. **B.** Pipelines correctly re-fit preprocessing on each cross-validation fold, preventing leakage. They also simplify deployment.
-8. **C.** `c` is the bottom-left cell: actual class 1 (positive), predicted class 0 (negative) = false negative.
-9. **C.** Representation in training data is the dominant driver of subgroup performance gaps in modern ML systems. This was documented at scale in the "Gender Shades" research and is now widely replicated.
-10. **B.** Translating a fixed table is a deterministic lookup. Write a dictionary. ML is overkill, slower, and adds error.
 
 ## Scoring
 

@@ -1,6 +1,6 @@
 # Week 11 Quiz — Testing, Debugging & Code Quality
 
-Ten multiple-choice questions. Pick the **single best** answer. Answer key at the bottom — no peeking.
+Ten multiple-choice questions. Pick the **single best** answer. Each answer is folded under its question — commit before you open it.
 
 ---
 
@@ -10,6 +10,13 @@ A. Any `.py` file in the current directory.
 B. Files named `test_*.py` or `*_test.py`.
 C. Files inside a directory called `pytest/`.
 D. Only `tests.py`.
+
+<details>
+<summary>Answer</summary>
+
+**B** — `test_*.py` or `*_test.py`. Cite: <https://docs.pytest.org/en/stable/explanation/goodpractices.html#test-discovery>
+
+</details>
 
 ---
 
@@ -26,6 +33,13 @@ B. It runs the fixture exactly once per test file.
 C. It runs the fixture once per test class.
 D. It runs the fixture once for the entire `pytest` session.
 
+<details>
+<summary>Answer</summary>
+
+**B** — module scope runs the fixture once per test file.
+
+</details>
+
 ---
 
 **3. You want to test five values against the same assertion logic. Which feature avoids copy-pasting the test five times?**
@@ -34,6 +48,13 @@ A. `pytest.skip`
 B. `pytest.fixture`
 C. `pytest.mark.parametrize`
 D. `pytest.raises`
+
+<details>
+<summary>Answer</summary>
+
+**C** — `@pytest.mark.parametrize` is the table-driven test feature.
+
+</details>
 
 ---
 
@@ -44,6 +65,13 @@ B. `patch("myapp.requests.get")`
 C. `patch("myapp.get")`
 D. Both A and B are valid; B is usually the safer choice because it patches the exact lookup path used by `myapp`.
 
+<details>
+<summary>Answer</summary>
+
+**D** — Both work, but patching the path where the name is looked up (`myapp.requests.get`) is the recommended pattern for isolating the patch to one module.
+
+</details>
+
 ---
 
 **5. Which statement about line coverage versus branch coverage is correct?**
@@ -52,6 +80,13 @@ A. They always produce the same number.
 B. Branch coverage is a subset of line coverage and is always lower.
 C. Branch coverage can be lower than line coverage because it requires *both* sides of every conditional to be exercised.
 D. Line coverage is more accurate than branch coverage.
+
+<details>
+<summary>Answer</summary>
+
+**C** — A single test can cover every line without covering every branch.
+
+</details>
 
 ---
 
@@ -62,6 +97,13 @@ B. `n`
 C. `c`
 D. `r`
 
+<details>
+<summary>Answer</summary>
+
+**B** — `n` (next) steps *over* function calls; `s` (step) steps *into* them.
+
+</details>
+
 ---
 
 **7. Which tool is primarily a code *formatter* (not a linter)?**
@@ -70,6 +112,13 @@ A. `ruff`
 B. `mypy`
 C. `black`
 D. `pytest`
+
+<details>
+<summary>Answer</summary>
+
+**C** — `black` formats; `ruff` lints (and optionally formats); `mypy` type-checks; `pytest` runs tests.
+
+</details>
 
 ---
 
@@ -99,6 +148,13 @@ D.
 mypy_strict = true
 ```
 
+<details>
+<summary>Answer</summary>
+
+**B** — `strict = true` is the one-line opt-in.
+
+</details>
+
 ---
 
 **9. Where do GitHub Actions workflow files live in a repository?**
@@ -107,6 +163,13 @@ A. `.github/`
 B. `.github/workflows/`
 C. `actions/`
 D. The repository root, named `actions.yml`.
+
+<details>
+<summary>Answer</summary>
+
+**B** — Workflows must live in `.github/workflows/` and use `.yml` or `.yaml`.
+
+</details>
 
 ---
 
@@ -117,17 +180,11 @@ B. Equal numbers of all three.
 C. Many unit tests, fewer integration tests, very few end-to-end tests.
 D. Only unit tests — integration and end-to-end tests are not needed.
 
+<details>
+<summary>Answer</summary>
+
+**C** — Many fast unit tests, fewer integration tests, fewest end-to-end tests. The inverse is called the ice-cream-cone anti-pattern.
+
+</details>
+
 ---
-
-## Answer key
-
-1. **B** — `test_*.py` or `*_test.py`. Cite: <https://docs.pytest.org/en/stable/explanation/goodpractices.html#test-discovery>
-2. **B** — module scope runs the fixture once per test file.
-3. **C** — `@pytest.mark.parametrize` is the table-driven test feature.
-4. **D** — Both work, but patching the path where the name is looked up (`myapp.requests.get`) is the recommended pattern for isolating the patch to one module.
-5. **C** — A single test can cover every line without covering every branch.
-6. **B** — `n` (next) steps *over* function calls; `s` (step) steps *into* them.
-7. **C** — `black` formats; `ruff` lints (and optionally formats); `mypy` type-checks; `pytest` runs tests.
-8. **B** — `strict = true` is the one-line opt-in.
-9. **B** — Workflows must live in `.github/workflows/` and use `.yml` or `.yaml`.
-10. **C** — Many fast unit tests, fewer integration tests, fewest end-to-end tests. The inverse is called the ice-cream-cone anti-pattern.

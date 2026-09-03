@@ -1,9 +1,9 @@
 # Week 3 — Quiz
 
-Ten multiple-choice questions covering this week's material. Try to
-answer each one in your head before peeking at the answer key at the
-bottom. Aim for **8 / 10 or better** before moving on. Re-read the
-matching lecture for anything you miss.
+Ten multiple-choice questions covering this week's material. Answer
+each one in your head before opening the fold beneath it. Aim for
+**8 / 10 or better** before moving on. Re-read the matching lecture for
+anything you miss.
 
 ---
 
@@ -13,6 +13,14 @@ A. `0`
 B. `[]`
 C. `"False"`
 D. `None`
+
+<details>
+<summary>Answer</summary>
+
+**C** — `"False"` is a non-empty string, therefore truthy. `0`, `[]`,
+and `None` are all falsy.
+
+</details>
 
 ---
 
@@ -33,6 +41,14 @@ B. `big`
 C. `positive` then `big`
 D. `small`
 
+<details>
+<summary>Answer</summary>
+
+**A** — The first matching branch wins. Even though `x > 3` is also
+true, the `elif` is never checked because `x > 0` matched first.
+
+</details>
+
 ---
 
 ## 3. Which loop construct best fits "repeat until the user types
@@ -43,6 +59,14 @@ B. `while count < quit:`
 C. `while True:` paired with `break`
 D. `for line in quit:`
 
+<details>
+<summary>Answer</summary>
+
+**C** — `while True:` with a `break` is the idiomatic pattern for
+"until the user says quit".
+
+</details>
+
 ---
 
 ## 4. What does `range(2, 10, 3)` produce?
@@ -51,6 +75,14 @@ A. `2, 3, 4, 5, 6, 7, 8, 9`
 B. `2, 5, 8`
 C. `2, 5, 8, 10`
 D. `3, 6, 9`
+
+<details>
+<summary>Answer</summary>
+
+**B** — `range(start, stop, step)` excludes `stop`. So it yields
+`2, 5, 8` and stops before reaching `11`.
+
+</details>
 
 ---
 
@@ -62,6 +94,14 @@ B. `for index, item in enumerate(items):`
 C. `for item in items: index = items.index(item)`
 D. `while i < len(items): item = items[i]; i += 1`
 
+<details>
+<summary>Answer</summary>
+
+**B** — `enumerate(items)` returns `(index, value)` pairs. Never
+write `for i in range(len(items))` when `enumerate` exists.
+
+</details>
+
 ---
 
 ## 6. What does the `else` clause on a `for` loop do?
@@ -70,6 +110,15 @@ A. It runs only when the loop body is empty.
 B. It is a `SyntaxError` — `for` loops cannot have `else`.
 C. It runs only if the loop completed without hitting `break`.
 D. It runs every time the loop variable is `None`.
+
+<details>
+<summary>Answer</summary>
+
+**C** — The `else` on a loop runs when the loop completes normally
+(without `break`). It is the cleanest way to write "I searched and
+did not find it".
+
+</details>
 
 ---
 
@@ -84,6 +133,14 @@ B. `"no"`
 C. `True`
 D. A `SyntaxError`
 
+<details>
+<summary>Answer</summary>
+
+**B** — `0` is falsy, so the conditional expression picks the `else`
+branch: `"no"`.
+
+</details>
+
 ---
 
 ## 8. Which line contains a bug (assume the intent is "if `x` equals
@@ -93,6 +150,15 @@ A. `if x == 5:`
 B. `if 5 == x:`
 C. `if x = 5:`
 D. `if not (x != 5):`
+
+<details>
+<summary>Answer</summary>
+
+**C** — `=` is assignment, `==` is comparison. In Python, `if x = 5:`
+is a `SyntaxError` (which is the language helping you, not insulting
+you).
+
+</details>
 
 ---
 
@@ -111,6 +177,14 @@ B. Six pairs of numbers, none with `i == j`.
 C. Three pairs: `1 1`, `2 2`, `3 3`.
 D. Nothing — `continue` ends the loop.
 
+<details>
+<summary>Answer</summary>
+
+**B** — `continue` skips the `i == j` cases, so the diagonal is
+excluded. Six off-diagonal pairs print.
+
+</details>
+
 ---
 
 ## 10. Which of the following correctly explains the performance hint
@@ -123,32 +197,15 @@ B. Strings are immutable, so `result += "x"` allocates a new string
 C. Lists are immutable, so `append` is slow; use string concatenation.
 D. There is no difference — both are O(n).
 
+<details>
+<summary>Answer</summary>
+
+**B** — Strings are immutable; repeated `+=` is O(n²). Collect into
+    a list and join once.
+
 ---
 
-## Answer key
-
-1. **C** — `"False"` is a non-empty string, therefore truthy. `0`, `[]`,
-   and `None` are all falsy.
-2. **A** — The first matching branch wins. Even though `x > 3` is also
-   true, the `elif` is never checked because `x > 0` matched first.
-3. **C** — `while True:` with a `break` is the idiomatic pattern for
-   "until the user says quit".
-4. **B** — `range(start, stop, step)` excludes `stop`. So it yields
-   `2, 5, 8` and stops before reaching `11`.
-5. **B** — `enumerate(items)` returns `(index, value)` pairs. Never
-   write `for i in range(len(items))` when `enumerate` exists.
-6. **C** — The `else` on a loop runs when the loop completes normally
-   (without `break`). It is the cleanest way to write "I searched and
-   did not find it".
-7. **B** — `0` is falsy, so the conditional expression picks the `else`
-   branch: `"no"`.
-8. **C** — `=` is assignment, `==` is comparison. In Python, `if x = 5:`
-   is a `SyntaxError` (which is the language helping you, not insulting
-   you).
-9. **B** — `continue` skips the `i == j` cases, so the diagonal is
-   excluded. Six off-diagonal pairs print.
-10. **B** — Strings are immutable; repeated `+=` is O(n²). Collect into
-    a list and join once.
+</details>
 
 ---
 

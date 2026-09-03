@@ -1,6 +1,6 @@
 # Week 8 — Quiz
 
-10 multiple-choice questions. Pick the **single best** answer for each. Aim for 8/10 or higher to pass. Answers and explanations are at the end of the file — try the quiz before looking.
+10 multiple-choice questions. Pick the **single best** answer for each. Aim for 8/10 or higher to pass. Each answer and its explanation are folded under the question — try it before you open the fold.
 
 ---
 
@@ -11,6 +11,13 @@
 - c) The resource was not found.
 - d) The server is overloaded; retry later.
 
+<details>
+<summary>Answer</summary>
+
+**b** — `204 No Content` means the request succeeded but there is no body. Common after a `DELETE`. Don't call `.json()` on a 204 response; it will fail.
+
+</details>
+
 ---
 
 **2. Which of the following is the most idiomatic way to pass query parameters with `requests`?**
@@ -19,6 +26,13 @@
 - b) `requests.get("https://api.x.com/items", params={"id": id, "sort": "desc"})`
 - c) `requests.get("https://api.x.com/items", data={"id": id, "sort": "desc"})`
 - d) `requests.get("https://api.x.com/items", json={"id": id, "sort": "desc"})`
+
+<details>
+<summary>Answer</summary>
+
+**b** — `params=` builds and URL-encodes the query string for you. Option (a) breaks on special characters; (c) sends a form-encoded body (wrong for `GET`); (d) sends a JSON body (wrong for `GET`).
+
+</details>
 
 ---
 
@@ -29,6 +43,13 @@
 - c) Pass `timeout=` to `requests.get`.
 - d) Use `requests.post` instead of `requests.get`.
 
+<details>
+<summary>Answer</summary>
+
+**c** — `timeout=` is the only fix. Without it, `requests` waits forever. Get into the habit of *always* passing one.
+
+</details>
+
 ---
 
 **4. Which HTTP method is BOTH safe AND idempotent?**
@@ -37,6 +58,13 @@
 - b) `PUT`
 - c) `GET`
 - d) `PATCH`
+
+<details>
+<summary>Answer</summary>
+
+**c** — `GET` is both safe (does not change state) and idempotent (repeating yields the same result). `PUT` and `DELETE` are idempotent but not safe. `POST` is neither.
+
+</details>
 
 ---
 
@@ -47,6 +75,13 @@
 - c) `Bearer-Authorization: <token>`
 - d) `Token: Bearer <token>`
 
+<details>
+<summary>Answer</summary>
+
+**b** — The literal word `Bearer`, a single space, then the token. See RFC 6750.
+
+</details>
+
 ---
 
 **6. What does `response.raise_for_status()` do?**
@@ -55,6 +90,13 @@
 - b) Raises an exception if the status code is `>= 400`.
 - c) Raises an exception if the status code is exactly `500`.
 - d) Returns `True` on success and `False` on failure.
+
+<details>
+<summary>Answer</summary>
+
+**b** — `raise_for_status()` is a no-op for 1xx/2xx/3xx and raises `requests.HTTPError` for 4xx/5xx.
+
+</details>
 
 ---
 
@@ -65,6 +107,13 @@
 - c) Put the key in `.env`, add `.env` to `.gitignore`, load with `python-dotenv`, read with `os.environ`.
 - d) Put the key in `secrets.json`, commit it, load with `json.load`.
 
+<details>
+<summary>Answer</summary>
+
+**c** — `.env` must be gitignored, with the example file `.env.example` committed. `python-dotenv` loads it; `os.environ` reads from it.
+
+</details>
+
 ---
 
 **8. An API returns `429 Too Many Requests` with `Retry-After: 30`. What should your client do?**
@@ -73,6 +122,13 @@
 - b) Wait 30 seconds and then retry.
 - c) Give up and raise an error.
 - d) Reduce the request body size and retry.
+
+<details>
+<summary>Answer</summary>
+
+**b** — That is exactly what `Retry-After` means. The `HTTPAdapter`+`Retry` combo from lecture 2 does this automatically when `respect_retry_after_header=True`.
+
+</details>
 
 ---
 
@@ -83,6 +139,13 @@
 - c) REST is a set of conventions for HTTP APIs; resources are nouns, methods are verbs.
 - d) REST APIs always return XML.
 
+<details>
+<summary>Answer</summary>
+
+**c** — REST is a convention, not a library and not a standard URL scheme. The defining characteristic is "resources are URLs, methods are HTTP verbs".
+
+</details>
+
 ---
 
 **10. You are fetching many pages from the same host. What is the best `requests` pattern?**
@@ -92,32 +155,13 @@
 - c) Use `requests.post(url)` for every page.
 - d) Use `urllib.request.urlopen` instead of `requests`.
 
----
-
-## Answers
-
 <details>
-<summary>Click to reveal</summary>
+<summary>Answer</summary>
 
-1. **b** — `204 No Content` means the request succeeded but there is no body. Common after a `DELETE`. Don't call `.json()` on a 204 response; it will fail.
+**b** — A `Session` pools the underlying TCP+TLS connection, so subsequent requests skip the handshake. It also gives you a shared place for headers, auth, and retry policy.
 
-2. **b** — `params=` builds and URL-encodes the query string for you. Option (a) breaks on special characters; (c) sends a form-encoded body (wrong for `GET`); (d) sends a JSON body (wrong for `GET`).
 
-3. **c** — `timeout=` is the only fix. Without it, `requests` waits forever. Get into the habit of *always* passing one.
-
-4. **c** — `GET` is both safe (does not change state) and idempotent (repeating yields the same result). `PUT` and `DELETE` are idempotent but not safe. `POST` is neither.
-
-5. **b** — The literal word `Bearer`, a single space, then the token. See RFC 6750.
-
-6. **b** — `raise_for_status()` is a no-op for 1xx/2xx/3xx and raises `requests.HTTPError` for 4xx/5xx.
-
-7. **c** — `.env` must be gitignored, with the example file `.env.example` committed. `python-dotenv` loads it; `os.environ` reads from it.
-
-8. **b** — That is exactly what `Retry-After` means. The `HTTPAdapter`+`Retry` combo from lecture 2 does this automatically when `respect_retry_after_header=True`.
-
-9. **c** — REST is a convention, not a library and not a standard URL scheme. The defining characteristic is "resources are URLs, methods are HTTP verbs".
-
-10. **b** — A `Session` pools the underlying TCP+TLS connection, so subsequent requests skip the handshake. It also gives you a shared place for headers, auth, and retry policy.
+---
 
 </details>
 

@@ -1,6 +1,6 @@
 # Week 12 — Quiz
 
-Ten multiple-choice questions. Pick one answer for each. Answers and short explanations are at the bottom — try the quiz first without peeking.
+Ten multiple-choice questions. Pick one answer for each. Each answer and its short explanation are folded under the question — answer first, then open it.
 
 ---
 
@@ -11,6 +11,13 @@ Ten multiple-choice questions. Pick one answer for each. Answers and short expla
 - C. `action="store_true"`
 - D. `action="append"`
 
+<details>
+<summary>Answer</summary>
+
+**C** — `store_true` is the standard way to make a boolean flag.
+
+</details>
+
 ---
 
 ### 2. You want `python tool.py --version` to print `tool 2.0.0` and exit. Which line wires it up?
@@ -19,6 +26,13 @@ Ten multiple-choice questions. Pick one answer for each. Answers and short expla
 - B. `parser.add_argument("--version", action="version", version="%(prog)s 2.0.0")`
 - C. `parser.add_argument("--version", action="store_true")`
 - D. `parser.print_version("tool 2.0.0")`
+
+<details>
+<summary>Answer</summary>
+
+**B** — `action="version"` with a `version=` string is the built-in pattern. `%(prog)s` is interpolated to the program name.
+
+</details>
 
 ---
 
@@ -29,6 +43,13 @@ Ten multiple-choice questions. Pick one answer for each. Answers and short expla
 - C. `2`
 - D. `127`
 
+<details>
+<summary>Answer</summary>
+
+**C** — Convention is `2` for misuse of CLI args. `argparse` already uses this.
+
+</details>
+
 ---
 
 ### 4. Which `subprocess.run` invocation captures stdout as a string and raises on non-zero exit?
@@ -37,6 +58,13 @@ Ten multiple-choice questions. Pick one answer for each. Answers and short expla
 - B. `subprocess.run(["ls"], stdout=True, text=True, check=True)`
 - C. `subprocess.run(["ls"], capture_output=True, text=True, check=True)`
 - D. `subprocess.call(["ls"], stdout=subprocess.PIPE)`
+
+<details>
+<summary>Answer</summary>
+
+**C** — `capture_output=True` + `text=True` + `check=True` is the canonical incantation.
+
+</details>
 
 ---
 
@@ -47,6 +75,13 @@ Ten multiple-choice questions. Pick one answer for each. Answers and short expla
 - C. It enables shell injection attacks.
 - D. It only works on Linux.
 
+<details>
+<summary>Answer</summary>
+
+**C** — User input is concatenated into a shell command, allowing arbitrary commands to run.
+
+</details>
+
 ---
 
 ### 6. Which `shutil` function makes a `.zip` archive of a directory?
@@ -55,6 +90,13 @@ Ten multiple-choice questions. Pick one answer for each. Answers and short expla
 - B. `shutil.make_archive(base_name, "zip", root_dir)`
 - C. `shutil.compress()`
 - D. `shutil.archive(base_name, root_dir, format="zip")`
+
+<details>
+<summary>Answer</summary>
+
+**B** — `shutil.make_archive(base, "zip", root_dir)` returns the path of the created archive.
+
+</details>
 
 ---
 
@@ -65,6 +107,13 @@ Ten multiple-choice questions. Pick one answer for each. Answers and short expla
 - C. `Path("~/photos").rglob("*.jpg")`
 - D. `Path.home().glob("photos/*.jpg")`
 
+<details>
+<summary>Answer</summary>
+
+**B** — `rglob` walks recursively. `~` is not expanded inside `Path()` — use `Path.home()` or `Path("~/photos").expanduser()`.
+
+</details>
+
 ---
 
 ### 8. According to the lecture's ethics rules, what is the *first* thing you should do before scraping a site?
@@ -73,6 +122,13 @@ Ten multiple-choice questions. Pick one answer for each. Answers and short expla
 - B. Read the site's `robots.txt` and respect it.
 - C. Spin up 50 parallel workers to be efficient.
 - D. Check if the page has a `<title>` tag.
+
+<details>
+<summary>Answer</summary>
+
+**B** — `robots.txt` first. Identifying yourself is a *positive* behavior, but the *first* check is whether you're even allowed there. Faking a User-Agent (A) is *bad* etiquette.
+
+</details>
 
 ---
 
@@ -83,6 +139,13 @@ Ten multiple-choice questions. Pick one answer for each. Answers and short expla
 - C. `* * 2 0 *`
 - D. `@every 2h`
 
+<details>
+<summary>Answer</summary>
+
+**A** — Format is `minute hour day-of-month month day-of-week`. `0 2 * * *` is "minute 0 of hour 2, every day".
+
+</details>
+
 ---
 
 ### 10. Which statement about `python-dotenv` and `.env` files is **correct**?
@@ -92,17 +155,11 @@ Ten multiple-choice questions. Pick one answer for each. Answers and short expla
 - C. `.env` files belong in `.gitignore`; ship a `.env.example` instead.
 - D. `.env` only works on Windows.
 
+<details>
+<summary>Answer</summary>
+
+**C** — `.env` files contain secrets; never commit them. The convention is to commit `.env.example` with empty values.
+
+</details>
+
 ---
-
-## Answers
-
-1. **C** — `store_true` is the standard way to make a boolean flag.
-2. **B** — `action="version"` with a `version=` string is the built-in pattern. `%(prog)s` is interpolated to the program name.
-3. **C** — Convention is `2` for misuse of CLI args. `argparse` already uses this.
-4. **C** — `capture_output=True` + `text=True` + `check=True` is the canonical incantation.
-5. **C** — User input is concatenated into a shell command, allowing arbitrary commands to run.
-6. **B** — `shutil.make_archive(base, "zip", root_dir)` returns the path of the created archive.
-7. **B** — `rglob` walks recursively. `~` is not expanded inside `Path()` — use `Path.home()` or `Path("~/photos").expanduser()`.
-8. **B** — `robots.txt` first. Identifying yourself is a *positive* behavior, but the *first* check is whether you're even allowed there. Faking a User-Agent (A) is *bad* etiquette.
-9. **A** — Format is `minute hour day-of-month month day-of-week`. `0 2 * * *` is "minute 0 of hour 2, every day".
-10. **C** — `.env` files contain secrets; never commit them. The convention is to commit `.env.example` with empty values.

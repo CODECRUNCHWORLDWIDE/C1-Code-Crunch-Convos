@@ -2,8 +2,8 @@
 
 Ten multiple-choice questions covering this week's material. Answer
 honestly without running code first; *then* try each in the REPL to
-confirm. Use the collapsed answer key at the bottom only after you've
-written down your own answers.
+confirm. Open the fold under a question only after you've written down
+your own answer to it.
 
 ---
 
@@ -16,6 +16,14 @@ What is the value of `type(3.0)` in Python?
 - C. `<class 'double'>`
 - D. `<class 'number'>`
 
+<details>
+<summary>Answer</summary>
+
+**B** — `<class 'float'>`. Any literal with a decimal point is a
+`float`, even when the fractional part is zero.
+
+</details>
+
 ---
 
 ### Question 2
@@ -26,6 +34,14 @@ Which of the following is **not** a valid variable name in Python?
 - B. `total_2`
 - C. `2_total`
 - D. `TOTAL`
+
+<details>
+<summary>Answer</summary>
+
+**C** — `2_total`. Names cannot start with a digit. (`_total`,
+`total_2`, and `TOTAL` are all valid.)
+
+</details>
 
 ---
 
@@ -38,6 +54,14 @@ What does `10 // 3` evaluate to?
 - C. `4`
 - D. `1`
 
+<details>
+<summary>Answer</summary>
+
+**B** — `3`. `//` is floor division: it returns the integer part of
+the quotient when both operands are integers.
+
+</details>
+
 ---
 
 ### Question 4
@@ -48,6 +72,15 @@ Which expression below is **falsy** in Python?
 - B. `[0]`
 - C. `" "`
 - D. `0.0`
+
+<details>
+<summary>Answer</summary>
+
+**D** — `0.0`. The other three are truthy: `"False"` is a non-empty
+string, `[0]` is a list with one element, and `" "` is a non-empty
+string (it contains a space).
+
+</details>
 
 ---
 
@@ -66,6 +99,14 @@ print(x == y)
 - C. `5`
 - D. It raises `TypeError`.
 
+<details>
+<summary>Answer</summary>
+
+**B** — `False`. Python does not consider an `int` and a `str` equal
+even if they look "the same." Use `int(y)` or `str(x)` to compare.
+
+</details>
+
 ---
 
 ### Question 6
@@ -76,6 +117,14 @@ What does `"abcdef"[1:4]` evaluate to?
 - B. `"bcd"`
 - C. `"bcde"`
 - D. `"cd"`
+
+<details>
+<summary>Answer</summary>
+
+**B** — `"bcd"`. Slicing is `[start:stop]` where `start` is included
+and `stop` is excluded. Indices 1, 2, 3 give `b`, `c`, `d`.
+
+</details>
 
 ---
 
@@ -89,6 +138,15 @@ with two decimals?
 - C. `f"{x:8>.2f}"`
 - D. `f"{x:.2>8f}"`
 
+<details>
+<summary>Answer</summary>
+
+**B** — `f"{x:>8.2f}"`. The grammar is
+`[fill]align width [,] .precision type`. Width comes before
+precision.
+
+</details>
+
 ---
 
 ### Question 8
@@ -99,6 +157,14 @@ What is the result of `input("Age: ")` when the user types `25`?
 - B. The float `25.0`.
 - C. The string `"25"`.
 - D. A `ValueError`.
+
+<details>
+<summary>Answer</summary>
+
+**C** — The string `"25"`. `input()` always returns a string. Cast
+it with `int()` or `float()` if you need a number.
+
+</details>
 
 ---
 
@@ -117,6 +183,13 @@ print(a and not b)
 - C. `None`
 - D. It raises a `SyntaxError`.
 
+<details>
+<summary>Answer</summary>
+
+**A** — `True`. `not b` is `True`; `True and True` is `True`.
+
+</details>
+
 ---
 
 ### Question 10
@@ -130,37 +203,16 @@ Which of the following best describes Python type hints, such as
 - C. They prevent the function from being called with the wrong type.
 - D. They are compiled into faster machine code.
 
----
-
-## Answer Key
-
 <details>
-<summary>Click to reveal answers</summary>
+<summary>Answer</summary>
 
-1. **B** — `<class 'float'>`. Any literal with a decimal point is a
-   `float`, even when the fractional part is zero.
-2. **C** — `2_total`. Names cannot start with a digit. (`_total`,
-   `total_2`, and `TOTAL` are all valid.)
-3. **B** — `3`. `//` is floor division: it returns the integer part of
-   the quotient when both operands are integers.
-4. **D** — `0.0`. The other three are truthy: `"False"` is a non-empty
-   string, `[0]` is a list with one element, and `" "` is a non-empty
-   string (it contains a space).
-5. **B** — `False`. Python does not consider an `int` and a `str` equal
-   even if they look "the same." Use `int(y)` or `str(x)` to compare.
-6. **B** — `"bcd"`. Slicing is `[start:stop]` where `start` is included
-   and `stop` is excluded. Indices 1, 2, 3 give `b`, `c`, `d`.
-7. **B** — `f"{x:>8.2f}"`. The grammar is
-   `[fill]align width [,] .precision type`. Width comes before
-   precision.
-8. **C** — The string `"25"`. `input()` always returns a string. Cast
-   it with `int()` or `float()` if you need a number.
-9. **A** — `True`. `not b` is `True`; `True and True` is `True`.
-10. **B** — Type hints are advisory. Tools like `mypy` use them for
-    static analysis, but the Python interpreter ignores them at runtime
-    (with rare exceptions like `dataclasses`).
+**B** — Type hints are advisory. Tools like `mypy` use them for
+static analysis, but the Python interpreter ignores them at runtime
+(with rare exceptions like `dataclasses`).
 
 </details>
+
+---
 
 ## Scoring
 
