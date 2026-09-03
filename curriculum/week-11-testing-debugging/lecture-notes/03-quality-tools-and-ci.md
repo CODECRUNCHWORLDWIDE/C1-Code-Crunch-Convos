@@ -517,8 +517,61 @@ The point is that **failing fast is a kindness** — to your teammates, your fut
 
 ## Self-check
 
-1. What is the difference between a linter and a formatter? Which is `ruff`, which is `black`?
-2. Why does `mypy` not require running the code under test to find bugs?
-3. Sketch the contents of `.pre-commit-config.yaml` for a project that uses `ruff` and `black`.
-4. What does `strategy.matrix.python-version: ["3.11", "3.12"]` do in a GitHub Actions workflow?
-5. Why might you set `--cov-fail-under=90` in CI?
+**1.** What is the difference between a linter and a formatter? Which is `ruff`, which is `black`?
+
+<details>
+<summary>Answer</summary>
+
+A linter reports problems and leaves the fixing to you — unused imports, shadowed names, suspicious comparisons. A formatter rewrites the file to one canonical layout and has no opinion about correctness. `ruff` is the linter, `black` the formatter. The reason to run both is that they cannot argue: formatting stops being reviewable opinion, which leaves the linter's output to be about substance.
+
+</details>
+
+**2.** Why does `mypy` not require running the code under test to find bugs?
+
+<details>
+<summary>Answer</summary>
+
+Because it reads types, not behaviour. `mypy` walks the source and checks that every annotated value is used consistently with its declared type, so it finds `None` reaching a parameter typed `str` on a branch no test ever exercises. That is also its limit: it proves the types are coherent, never that the logic is right, so it complements tests rather than replacing them.
+
+</details>
+
+**3.** Sketch the contents of `.pre-commit-config.yaml` for a project that uses `ruff` and `black`.
+
+<details>
+<summary>Answer</summary>
+
+```yaml
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.9
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+  - repo: https://github.com/psf/black
+    rev: 24.8.0
+    hooks:
+      - id: black
+```
+
+Pin `rev` to a real tag rather than a branch, so the hook cannot change under you. Then `pre-commit install` once per clone — without it the config exists and nothing runs.
+
+</details>
+
+**4.** What does `strategy.matrix.python-version: ["3.11", "3.12"]` do in a GitHub Actions workflow?
+
+<details>
+<summary>Answer</summary>
+
+It runs the whole job once per listed value, in parallel: one run on Python 3.11 and one on 3.12, each reporting separately. That is how you find the version-specific failure before a user does, and the matrix can take more than one axis — operating system alongside version — at the cost of a job for every combination.
+
+</details>
+
+**5.** Why might you set `--cov-fail-under=90` in CI?
+
+<details>
+<summary>Answer</summary>
+
+It fails the build when coverage drops below 90 %, which turns coverage from a number somebody looks at into a condition somebody has to meet. The honest caveat: it measures how much code ran, not how well it was checked, so a suite can hit the threshold with assertions that assert nothing. Use it as a floor against silent erosion, not as evidence the tests are good.
+
+</details>

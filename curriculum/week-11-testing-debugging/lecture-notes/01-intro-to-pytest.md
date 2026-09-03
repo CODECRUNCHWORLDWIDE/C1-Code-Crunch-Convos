@@ -456,15 +456,94 @@ Next up, **Lecture 2** covers what to do when your code talks to the network, th
 
 ## Self-check
 
-1. What is the difference between `assert x == 5` and `assert x == 5, "x was {}".format(x)`?
-2. Why does `pytest` find `test_widgets.py` but not `widget_tests.py` with default settings?
-3. When would you use `scope="module"` instead of `scope="function"`?
-4. Rewrite this with `@pytest.mark.parametrize`:
+**1.** What is the difference between `assert x == 5` and `assert x == 5, "x was {}".format(x)`?
 
-   ```python
-   def test_double_1(): assert double(1) == 2
-   def test_double_2(): assert double(2) == 4
-   def test_double_3(): assert double(3) == 6
-   ```
+<details>
+<summary>Answer</summary>
 
-5. Describe a function that would be very hard to test, and explain *why*.
+Nothing, as far as Python is concerned — the second argument to `assert` is the
+message carried by the `AssertionError`. The difference is what you see on
+failure. `pytest` rewrites bare assertions and reports both sides for you
+(`assert 4 == 5`), so most of the time the message earns nothing. It earns its
+place when the expression alone does not say which case failed — inside a loop,
+or when the values are long and the interesting part is one field.
+
+</details>
+
+**2.** Why does `pytest` find `test_widgets.py` but not `widget_tests.py` with default settings?
+
+<details>
+<summary>Answer</summary>
+
+Default discovery collects files matching `test_*.py` or `*_test.py`.
+`widget_tests.py` matches neither — plural `_tests` is not `_test` — so the file
+is never imported and its tests are silently not run, which is the dangerous
+part: a green run that tested nothing. Either rename it, or set `python_files`
+in `pytest.ini` / `pyproject.toml`.
+
+</details>
+
+**3.** When would you use `scope="module"` instead of `scope="function"`?
+
+<details>
+<summary>Answer</summary>
+
+When the setup is expensive and the tests do not mutate it: a database
+connection, a loaded fixture file, a started test server. `function` scope
+rebuilds it for every test, which is the safe default; `module` builds it once
+per test module and shares it.
+
+The trade is isolation. Anything one test changes on a module-scoped fixture is
+still changed for the next, so a failure can depend on the order tests ran in —
+the hardest kind of test bug to reproduce.
+
+</details>
+
+**4.** Rewrite this with `@pytest.mark.parametrize`:
+
+```python
+def test_double_1(): assert double(1) == 2
+def test_double_2(): assert double(2) == 4
+def test_double_3(): assert double(3) == 6
+```
+
+<details>
+<summary>Answer</summary>
+
+```python
+import pytest
+
+
+@pytest.mark.parametrize("value, expected", [(1, 2), (2, 4), (3, 6)])
+def test_double(value, expected):
+    assert double(value) == expected
+```
+
+Three test cases, still reported as three separate results — `pytest` names them
+`test_double[1-2]`, `test_double[2-4]`, `test_double[3-6]`, so a failure still
+tells you which case broke. Adding a fourth case is now one tuple rather than
+one more copied function.
+
+</details>
+
+**5.** Describe a function that would be very hard to test, and explain *why*.
+
+<details>
+<summary>Answer</summary>
+
+One that does several jobs and reaches outside itself for all of them: reads a
+config file from a hard-coded path, calls a live API, stamps `datetime.now()`
+into the result, writes to a database, and returns nothing.
+
+Each of those is a separate obstacle. There is no seam to substitute a fake, so
+the test needs the real file, the real network and the real database. The clock
+makes the output different on every run, so there is nothing stable to assert.
+And with no return value, the only evidence of correctness is a side effect
+somewhere else.
+
+The fix is the same in every case: separate the decision from the doing. Pull
+the logic into a pure function that takes the config, the clock reading and the
+fetched data as arguments and returns a value. That function is trivial to test,
+and the thin shell that wires it to the outside world is what mocking is for.
+
+</details>

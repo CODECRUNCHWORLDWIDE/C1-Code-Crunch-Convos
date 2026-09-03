@@ -208,11 +208,52 @@ In Lecture 2 we will write actual code: load data, split it, train a model, eval
 
 Before moving on, you should be able to answer (out loud, no peeking):
 
-1. What is the difference between classification and regression? Give one example of each.
-2. What is the difference between supervised and unsupervised learning?
-3. Why is "the data is the program" a useful frame?
-4. Name three situations where ML is the wrong tool.
-5. What is the first step of the ML workflow, and why is it the one beginners skip?
+**1.** What is the difference between classification and regression? Give one example of each.
+
+<details>
+<summary>Answer</summary>
+
+Both predict from labelled examples; what differs is the shape of the label. Classification predicts a **category** from a fixed set — is this email spam or not, which of ten digits is this image. Regression predicts a **number** on a continuous scale — what will this house sell for, how many units will ship next month. The distinction decides everything downstream: the model you reach for, and the metric you judge it by, since accuracy means nothing for a price and an error in pounds means nothing for a category.
+
+</details>
+
+**2.** What is the difference between supervised and unsupervised learning?
+
+<details>
+<summary>Answer</summary>
+
+Supervised learning has labelled examples: every training row carries the answer, and the model learns the mapping from inputs to that answer. Unsupervised learning has no labels — the model is asked to find structure that is already in the data, such as clusters of similar customers or the directions along which the data varies most. The practical consequence is how you judge them: supervised work has a right answer to score against, unsupervised work does not, so evaluating it is a matter of whether the structure it found is useful to you.
+
+</details>
+
+**3.** Why is "the data is the program" a useful frame?
+
+<details>
+<summary>Answer</summary>
+
+Because it says where the behaviour actually lives. The source is a couple of lines — `model = LogisticRegression(); model.fit(X, y)` — and almost everything the system does is determined by `X` and `y` instead. Three things follow. Bias or mislabelling in the data is reproduced faithfully, and that is a property of the data, not a bug in the model. Debugging moves from stepping through code to asking which examples are wrong and what they have in common. And versioning now covers three artefacts rather than one: the code, the data, and the trained model.
+
+</details>
+
+**4.** Name three situations where ML is the wrong tool.
+
+<details>
+<summary>Answer</summary>
+
+From §"When ML is the wrong tool" — any three of: the rules are clear and stable (tax brackets, currency conversion: write the formula); you have almost no data; a mistake is catastrophic and unauditable, such as a loan denial you cannot explain; the problem is really search or information retrieval; speed and determinism matter more than accuracy, where a regex finishes in microseconds and never surprises you; or you are reaching for it to automate away accountability, where "the algorithm decided" is not an answer to the person it decided about.
+
+The self-test is the useful part: sketch what a non-ML solution looks like, and if it is good enough, ship that.
+
+</details>
+
+**5.** What is the first step of the ML workflow, and why is it the one beginners skip?
+
+<details>
+<summary>Answer</summary>
+
+**Frame the problem** — deciding whether it is classification or regression, and what success means as a number you can compute. Beginners skip it because it produces no code and feels like it can be settled later, so they start at step 2 with the data they happen to have. The cost arrives at the end, when there is a trained model and no agreed way to tell whether it is any good — and by then the choice of metric is being made to flatter the result rather than to measure it.
+
+</details>
 
 If any of those are fuzzy, re-read the relevant section.
 

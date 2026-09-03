@@ -507,8 +507,47 @@ Next up, **Lecture 3** is about the tools that run automatically every time you 
 
 ## Self-check
 
-1. You patch `myapp.fetch` but the test still calls the real network. What is the most likely cause?
-2. Your coverage report shows 100 % line coverage but a colleague says a branch is untested. How can both be true?
-3. Inside `pdb`, how do you (a) see local variables, (b) move up the stack one frame, (c) inspect the current call stack?
-4. Name two reasons to prefer `logging.info` over `print` in production code.
-5. Sketch the layers of the testing pyramid and a one-sentence reason each layer exists.
+**1.** You patch `myapp.fetch` but the test still calls the real network. What is the most likely cause?
+
+<details>
+<summary>Answer</summary>
+
+You patched where the name was **defined** rather than where it is **used**. If the module under test did `from myapp import fetch`, it holds its own reference to the original function, and replacing `myapp.fetch` never touches it. Patch the name in the importing module — `patch("module_under_test.fetch")` — or have that module call `myapp.fetch(...)` through the module object so there is only one name to replace.
+
+</details>
+
+**2.** Your coverage report shows 100 % line coverage but a colleague says a branch is untested. How can both be true?
+
+<details>
+<summary>Answer</summary>
+
+Line coverage records that a line ran, not that every way through it ran. `if user.is_admin: grant()` on a line reached only with an admin user shows as covered while the false branch has never executed once — one path through, both lines green. Branch coverage (`--cov-branch`) counts the outcomes of each decision, not the lines, and is what would show the gap.
+
+</details>
+
+**3.** Inside `pdb`, how do you (a) see local variables, (b) move up the stack one frame, (c) inspect the current call stack?
+
+<details>
+<summary>Answer</summary>
+
+(a) `l` lists the source around the current line and `args`/`p <name>` shows values — `locals()` via `p locals()` dumps them all. (b) `u` moves up one frame toward the caller, `d` back down. (c) `w` (where) prints the whole stack with the current frame marked. `pp` pretty-prints, and `n`/`s`/`c` are next, step-in and continue.
+
+</details>
+
+**4.** Name two reasons to prefer `logging.info` over `print` in production code.
+
+<details>
+<summary>Answer</summary>
+
+Levels and destinations. `logging` lets the same call be a debug line in development and silent in production without editing code, and it routes to files, syslog or a collector rather than only stdout. It also stamps each record with time, level, module and line for free, which is what makes a production log searchable — and unlike `print`, it can be turned down by a library's consumer rather than shouting into their output.
+
+</details>
+
+**5.** Sketch the layers of the testing pyramid and a one-sentence reason each layer exists.
+
+<details>
+<summary>Answer</summary>
+
+Many fast **unit** tests at the base, testing one function in isolation — they pin behaviour precisely and run in milliseconds. Fewer **integration** tests in the middle, checking that two real pieces agree at their seam, which is where unit tests with mocks on both sides can both pass on a contract that does not exist. A handful of **end-to-end** tests at the top, driving the whole system as a user does — the only ones that prove the thing works assembled, and the slowest and most brittle, which is why they stay few.
+
+</details>
