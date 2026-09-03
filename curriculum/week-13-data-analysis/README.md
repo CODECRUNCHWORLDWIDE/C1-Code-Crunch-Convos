@@ -36,6 +36,14 @@ By the end of this week, you will be able to:
 - **Work** inside a Jupyter notebook: cells, markdown, magic commands, and
   exporting results.
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `6.100A` — Past the CS1 outcome set: collections extended to tabular data at a size no list comprehension will hold. |
+| Industry | Take a messy public dataset nobody has cleaned and hand back a short written finding backed by numbers and by labelled charts a reader can check. |
+| Beyond the bar | The time-series data is built from a known trend, a known weekly cycle and a fixed seed, so the learner checks the result they recovered against the truth that was planted in it — `challenges/challenge-02-time-series.md` |
+
 ## Prerequisites
 
 You should have completed Weeks 1–12 of Code Crunch Convos, or be

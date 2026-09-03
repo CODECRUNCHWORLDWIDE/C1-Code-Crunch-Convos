@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}New post — My Blog{% endblock %}
+
+{% block content %}
+  <h2>New post</h2>
+
+  {% if error %}
+    <p class="error" role="alert">{{ error }}</p>
+  {% endif %}
+
+  <form method="post" action="{{ url_for('blog.create_post') }}">
+    <label for="title">Title</label>
+    <input id="title" name="title" value="{{ title }}" />
+
+    <label for="body">Body</label>
+    <textarea id="body" name="body" rows="10">{{ body }}</textarea>
+
+    <button type="submit">Publish</button>
+  </form>
+{% endblock %}

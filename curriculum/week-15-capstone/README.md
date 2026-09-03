@@ -45,6 +45,14 @@ By the end of this week, you will be able to:
 - **Talk** about your project clearly in writing (for resumes) and
   out loud (for interviews) using the STAR method.
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `COP 2210` — Complete a substantial program of the learner's own design, and defend it. |
+| Industry | Take a project from a one-page proposal to something a stranger can clone, install from the README and run, with tests, green CI on every push, and a written retrospective. |
+| Beyond the bar | The week keeps going after the code is finished, into pinning the repo, writing the resume line, answering the deep-dive questions out loud, and getting the project reviewed by a peer and by a stranger — `lecture-notes/03-presentation-and-portfolio.md` |
+
 ## Prerequisites
 
 This week assumes you have completed (or are comfortable with) Weeks 1–14.

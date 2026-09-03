@@ -1,6 +1,6 @@
 {
   "repo": "C1-Code-Crunch-Convos",
-  "updated": "2026-08-27T21:22:41-04:00",
+  "updated": "2026-09-03T01:07:27-04:00",
   "files": [
     {"path": "CODE_OF_CONDUCT.md", "title": "Contributor Covenant Code of Conduct"},
     {"path": "CONTENT-POLICY.md", "title": "C1 Content Policy — Original Problems, Honest Sources"},
@@ -243,6 +243,7 @@
     {"path": "curriculum/week-11-testing-debugging/challenges/README.md", "title": "Week 11 — Challenges"},
     {"path": "curriculum/week-11-testing-debugging/challenges/challenge-01-tdd-fizzbuzz.md", "title": "Challenge 1 — TDD FizzBuzz"},
     {"path": "curriculum/week-11-testing-debugging/challenges/challenge-02-flask-api-tests.md", "title": "Challenge 2 — Integration tests for the Week 9 Flask blog"},
+    {"path": "curriculum/week-11-testing-debugging/challenges/challenge-03-review-the-parser.md", "title": "Challenge 3 — Review the parser"},
     {"path": "curriculum/week-11-testing-debugging/exercises/README.md", "title": "Week 11 — Exercises"},
     {"path": "curriculum/week-11-testing-debugging/exercises/exercise-01-first-test.md", "title": "Exercise 1 — Your First Pytest Tests"},
     {"path": "curriculum/week-11-testing-debugging/exercises/exercise-02-fixtures.md", "title": "Exercise 2 — Sharing Setup With Fixtures"},

@@ -38,6 +38,16 @@ After this week you will be able to:
 
 ---
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `COP 2210` — Define classes and objects, with encapsulation and inheritance. |
+| Industry | Guard an object's state so a caller cannot corrupt it — validate on assignment, keep the container behind a small API, and give the class a repr a colleague can read in a traceback. |
+| Beyond the bar | The capstone argues each of its three nouns into a different kind of class — a frozen record, a hand-written guarded class, a plain dataclass — and keeps inheritance for the error family alone, so the learner has to defend the relationship and not only write it — `mini-project/README.md` |
+
+---
+
 ## Prerequisites
 
 You should be comfortable with everything from Weeks 1–6:

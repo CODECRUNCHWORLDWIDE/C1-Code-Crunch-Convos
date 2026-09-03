@@ -25,6 +25,16 @@ By the end of Week 6 you will be able to:
 
 ---
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `6.100A` — Read and write files, and raise and handle exceptions instead of letting a program crash. |
+| Industry | Turn a log file whose lines are not all the shape the parser expects into a CSV and a JSON report, recording the lines it could not read instead of stopping on them. |
+| Beyond the bar | Every failure in the week's homework is reduced to one choice — skip it and say so, stop and explain, or let it crash — and the learner names the choice before writing the `try` — `homework/README.md` |
+
+---
+
 ## Prerequisites
 
 You should be comfortable with everything from Weeks 1–5:

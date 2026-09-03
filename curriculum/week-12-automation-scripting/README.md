@@ -23,6 +23,16 @@ By the end of Week 12, you will be able to:
 
 ---
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `CSE 8A` — Past the CS1 outcome set: decomposition and file handling extended to work that runs unattended. |
+| Industry | Ship a command-line tool somebody can run unattended: real arguments and help text, a preview that runs before anything is moved, log lines rather than prints, and an exit code that reports whether the run worked. |
+| Beyond the bar | An answer that would otherwise touch the outside world builds its own sandbox first, so the port scanner opens a listener on a port it picked, probes it, closes it and probes again, demonstrating both outcomes without scanning a machine you do not own — `homework/problem-06-port-scanner-solution.py` |
+
+---
+
 ## Prerequisites
 
 You should be comfortable with everything covered in **Weeks 1–11**, especially:

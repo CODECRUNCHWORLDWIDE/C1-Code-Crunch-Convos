@@ -1,0 +1,78 @@
+:root {
+  --ink: #1b1b1f;
+  --muted: #61616b;
+  --line: #e2e2e8;
+  --accent: #b4451f;
+  --bg: #fbfbfd;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+nav .brand { font-weight: 700; text-decoration: none; color: var(--ink); }
+nav .spacer { flex: 1; }
+nav .who { color: var(--muted); font-size: 0.9rem; }
+nav a { color: var(--accent); text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+
+main { max-width: 42rem; margin: 0 auto; padding: 1.5rem; }
+
+h1 { font-size: 1.6rem; margin-top: 0; }
+h2 { font-size: 1.2rem; margin-bottom: 0.25rem; }
+
+.byline { color: var(--muted); font-size: 0.85rem; margin: 0 0 0.5rem; }
+.empty { color: var(--muted); font-style: italic; }
+
+.flash {
+  padding: 0.6rem 0.9rem;
+  border-left: 3px solid var(--accent);
+  background: #fff4ef;
+  margin: 0 0 1rem;
+}
+
+article.summary {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+article.summary h2 a { color: var(--ink); text-decoration: none; }
+article.summary h2 a:hover { color: var(--accent); }
+
+.comments { margin-top: 2rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+.comment { padding: 0.6rem 0; border-bottom: 1px dotted var(--line); }
+
+form { display: flex; flex-direction: column; gap: 0.35rem; margin: 1rem 0; }
+label { font-weight: 600; font-size: 0.9rem; }
+input, textarea {
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+}
+button {
+  align-self: flex-start;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 4px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+button.danger { background: #8a1c1c; }
+button:hover { filter: brightness(1.1); }

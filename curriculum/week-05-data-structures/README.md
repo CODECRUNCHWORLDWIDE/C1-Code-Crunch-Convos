@@ -23,6 +23,16 @@ By the end of Week 5 you will be able to:
 
 ---
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `CS 106A` — Choose among the built-in collections — lists, tuples, dictionaries, sets — and reason about what each one costs. |
+| Industry | Find the scan hidden inside a loop in working code, replace it with a keyed lookup, and say in review what the change costs and what it buys. |
+| Beyond the bar | The capstone spends its brief arguing why the faster container is the wrong one here, and its published answer saves through a temporary file and a rename so a save interrupted halfway leaves the old book intact — `mini-project/README.md` |
+
+---
+
 ## Prerequisites
 
 You should be comfortable with everything from Weeks 1–4:

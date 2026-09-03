@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loganalyzer"
+version = "0.1.0"
+description = "The Week 6 log analyzer, refactored until it could be tested — Week 11 homework reference."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.5",
+    "black>=24.0",
+    "mypy>=1.10",
+    "pre-commit>=3.7",
+]
+
+[project.scripts]
+loganalyzer = "loganalyzer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# --------------------------------------------------------------- pytest ----
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra -q --strict-markers"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+# ------------------------------------------------------------- coverage ----
+[tool.coverage.run]
+branch = true
+source = ["src"]
+omit = ["*/__main__.py"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 80
+
+# ---------------------------------------------------------------- black ----
+[tool.black]
+line-length = 100
+target-version = ["py311", "py312"]
+
+# ----------------------------------------------------------------- ruff ----
+[tool.ruff]
+line-length = 100
+# Homework Problem 5 asks for py312. Read the note in README.md before you copy
+# this into a project whose CI matrix includes 3.11: `target-version` is what
+# `UP` rewrites *to*, so naming a version older than your oldest interpreter is
+# the safe direction and naming a newer one can produce code the matrix cannot
+# run. Nothing in this package trips that, which is why py312 is fine here.
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "SIM", "C4", "RET"]
+ignore = ["E501"]   # black owns line length
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]   # asserts are the whole point of a test
+
+# ----------------------------------------------------------------- mypy ----
+[tool.mypy]
+python_version = "3.12"
+strict = true
+mypy_path = "src"
+files = ["src", "tests"]

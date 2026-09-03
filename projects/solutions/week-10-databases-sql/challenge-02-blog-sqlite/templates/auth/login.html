@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Log in — Crunch Blog{% endblock %}
+
+{% block content %}
+  <h1>Log in</h1>
+  <form method="post">
+    {# Carry ?next= through the POST so login_required can send you back. #}
+    <input type="hidden" name="next" value="{{ request.args.get('next', '') }}">
+
+    <label for="username">Username</label>
+    <input id="username" name="username" required autofocus>
+
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" required>
+
+    <button type="submit">Log in</button>
+  </form>
+  <p>No account? <a href="{{ url_for('auth.register') }}">Register</a>.</p>
+{% endblock %}

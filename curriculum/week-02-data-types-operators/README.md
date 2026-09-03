@@ -36,6 +36,14 @@ By the end of this week, you will be able to:
 - **Build** a menu-driven command-line unit converter that ties all of the
   above together.
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `CS 106A` — Use primitive types, variables, expressions and operators, and reason about conversion between them. |
+| Industry | Turn text somebody typed at a terminal into numbers a program can compute with, reject the entries that are not numbers, and print money and measurements at a fixed width and precision that reads down a column. |
+| Beyond the bar | One homework problem bans `if` entirely and asks for five letter grades out of a sum of comparisons, which only works because `True` is `1` in Python — a fact most people carry for years as a curiosity rather than a tool — `homework/problem-04-grade-letter-assigner-no-if.md` |
+
 ## Prerequisites
 
 You should have completed [Week 1 — Python Foundations & Dev

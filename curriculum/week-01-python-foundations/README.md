@@ -32,6 +32,14 @@ By the end of this week, you will be able to:
 - **Ship** a small interactive CLI program called "Hello, You" to your own
   GitHub account.
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `COP 2210` — Write, run and debug a program in a high-level language, and use the tooling that surrounds it. |
+| Industry | Set up a project a stranger can clone and run: an isolated environment, a pinned dependency file, an ignore list, and a first commit pushed to a remote you own. |
+| Beyond the bar | You write a script that interrogates the interpreter running it — which version, which file on disk, whether it is inside a virtual environment, and what is installed in it — so that "which Python am I running" is a question you answer rather than guess — `challenges/challenge-02-environment-audit.md` |
+
 ## Prerequisites
 
 None. Week 1 assumes zero programming experience. You only need a computer

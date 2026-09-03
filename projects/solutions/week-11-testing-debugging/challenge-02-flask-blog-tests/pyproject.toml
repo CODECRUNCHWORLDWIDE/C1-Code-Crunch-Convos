@@ -1,0 +1,37 @@
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra -q --strict-markers"
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.coverage.run]
+branch = true
+source = ["blog"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 80
+
+[tool.black]
+line-length = 100
+target-version = ["py311", "py312"]
+
+[tool.ruff]
+line-length = 100
+# py311, not py312, because CI runs a 3.11 + 3.12 matrix and `target-version`
+# must name the *oldest* interpreter you support. Set it to "py312" and UP047
+# will tell you to rewrite `login_required`'s TypeVar as a PEP 695 generic —
+# which is a syntax error on 3.11 and would turn the whole matrix red.
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "SIM", "C4", "RET"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["blog", "tests"]

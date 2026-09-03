@@ -1,0 +1,14 @@
+# Secrets — the rubric checks for this line.
+.env
+.env.local
+
+# Files the tool generates at runtime.
+history.json
+cache.json
+*.csv
+
+# Python noise
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/

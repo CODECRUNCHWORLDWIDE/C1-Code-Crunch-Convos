@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}{{ post['title'] }} — My Blog{% endblock %}
+
+{% block content %}
+  <article>
+    <h2>{{ post['title'] }}</h2>
+    <time>{{ post['created_at'] }}</time>
+    <p>{{ post['body'] }}</p>
+  </article>
+
+  <form method="post" action="{{ url_for('blog.delete_post', post_id=post['id']) }}">
+    <button type="submit">Delete this post</button>
+  </form>
+{% endblock %}

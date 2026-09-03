@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Log in — My Blog{% endblock %}
+
+{% block content %}
+  <h2>Log in</h2>
+
+  <form method="post" action="{{ url_for('auth.login') }}">
+    <label for="password">Admin password</label>
+    <input id="password" name="password" type="password" />
+    <button type="submit">Log in</button>
+  </form>
+{% endblock %}

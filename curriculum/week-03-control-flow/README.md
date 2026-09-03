@@ -37,6 +37,14 @@ By the end of this week, you will be able to:
 - **Build** a complete interactive command-line program — a number-guessing
   game — using everything above.
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `COP 2210` — Direct a program with conditionals, loops and iteration, including early exit. |
+| Industry | Write the loop that keeps a program running while somebody uses it: re-prompt on a bad entry, refuse the operation that would corrupt the data, and exit on a condition you can name out loud. |
+| Beyond the bar | The loop-patterns lecture puts a cost on the loop you choose, showing why gluing characters onto a string in a loop is quadratic and collecting them in a list and joining once is not — `lecture-notes/03-loop-patterns.md` |
+
 ## Prerequisites
 
 You should have completed **Week 1** (Python installed, terminal basics, Git)

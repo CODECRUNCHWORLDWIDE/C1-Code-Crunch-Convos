@@ -1,0 +1,11 @@
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]

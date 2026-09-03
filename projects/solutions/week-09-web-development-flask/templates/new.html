@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}New post — Crunch Blog{% endblock %}
+
+{% block content %}
+  <h2>New post</h2>
+  <form method="post" action="{{ url_for('new_post') }}">
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title"
+           value="{{ title }}" maxlength="120" required>
+
+    <label for="body">Body</label>
+    <textarea id="body" name="body" rows="10" required>{{ body }}</textarea>
+
+    <label for="tags">Tags <span class="hint">(comma separated)</span></label>
+    <input type="text" id="tags" name="tags"
+           value="{{ tags }}" placeholder="python, flask, web">
+
+    <div class="actions">
+      <button type="submit">Publish</button>
+      <a href="{{ url_for('index') }}">Cancel</a>
+    </div>
+  </form>
+{% endblock %}

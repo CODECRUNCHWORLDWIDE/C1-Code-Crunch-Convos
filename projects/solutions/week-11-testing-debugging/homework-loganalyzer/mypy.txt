@@ -1,0 +1,8 @@
+$ mypy --version
+mypy 2.3.1 (compiled: yes)
+
+$ mypy src
+Success: no issues found in 7 source files
+
+$ mypy src tests   # what [tool.mypy] files = ["src", "tests"] checks
+Success: no issues found in 12 source files

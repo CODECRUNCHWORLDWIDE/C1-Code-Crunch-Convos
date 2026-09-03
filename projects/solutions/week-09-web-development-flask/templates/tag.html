@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Posts tagged '{{ tag }}' — Crunch Blog{% endblock %}
+
+{% block content %}
+  <h2>Posts tagged <span class="pill">{{ tag }}</span></h2>
+  <p>{{ posts|length }} post{{ '' if posts|length == 1 else 's' }}.</p>
+
+  {% for post in posts %}
+    <article>
+      <h3>
+        <a href="{{ url_for('show_post', post_id=post.id) }}">{{ post.title }}</a>
+      </h3>
+      <p class="meta">{{ post.created_at.strftime('%Y-%m-%d %H:%M') }}</p>
+      <p>{{ post.body|truncate(120) }}</p>
+    </article>
+  {% endfor %}
+
+  <p><a href="{{ url_for('index') }}">&larr; Back to all posts</a></p>
+{% endblock %}

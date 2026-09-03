@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}
+  {%- if q -%}
+    Search results for '{{ q }}' ({{ total }} found)
+  {%- else -%}
+    Home — Crunch Blog
+  {%- endif -%}
+{% endblock %}
+
+{% block content %}
+  <form class="search" method="get" action="{{ url_for('index') }}">
+    <label for="q">Search</label>
+    <input type="search" id="q" name="q" placeholder="title or body"
+           value="{{ request.args.get('q', '') }}">
+    <button type="submit">Search</button>
+    {% if q %}<a href="{{ url_for('index') }}">Clear</a>{% endif %}
+  </form>
+
+  {% if q %}
+    <h2>Search results for '{{ q }}' ({{ total }} found)</h2>
+  {% else %}
+    <h2>Latest posts</h2>
+  {% endif %}
+
+  {% for post in posts %}
+    <article>
+      <h3>
+        <a href="{{ url_for('show_post', post_id=post.id) }}">{{ post.title }}</a>
+      </h3>
+      {% if post.tags %}
+        <p class="tags">
+          {% for tag in post.tags %}
+            <a class="pill" href="{{ url_for('show_tag', tag=tag) }}">{{ tag }}</a>
+          {% endfor %}
+        </p>
+      {% endif %}
+      <p class="meta">{{ post.created_at.strftime('%Y-%m-%d %H:%M') }}</p>
+      <p>{{ post.body|truncate(120) }}</p>
+    </article>
+  {% else %}
+    <p>{% if q %}Nothing matched that search.{% else %}No posts yet.{% endif %}</p>
+  {% endfor %}
+
+  {% if pages > 1 %}
+    <nav class="pager">
+      {% if page > 1 %}
+        <a href="{{ url_for('index', q=q or none, page=page - 1) }}">&larr; Newer</a>
+      {% endif %}
+      <span>Page {{ page }} of {{ pages }}</span>
+      {% if page < pages %}
+        <a href="{{ url_for('index', q=q or none, page=page + 1) }}">Older &rarr;</a>
+      {% endif %}
+    </nav>
+  {% endif %}
+{% endblock %}

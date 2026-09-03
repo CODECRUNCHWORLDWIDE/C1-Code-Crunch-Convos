@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}{{ post['title'] }} — Crunch Blog{% endblock %}
+
+{% block content %}
+  <article>
+    <h1>{{ post['title'] }}</h1>
+    <p class="byline">by {{ post['author'] }} on {{ post['published_at'] }}</p>
+    <p>{{ post['body'] }}</p>
+
+    {% if g.user and g.user['id'] == post['author_id'] %}
+      <form method="post" action="{{ url_for('blog.delete', post_id=post['id']) }}">
+        <button class="danger" type="submit">Delete this post</button>
+      </form>
+    {% endif %}
+  </article>
+
+  <section class="comments">
+    <h2>Comments ({{ comments|length }})</h2>
+
+    {% for comment in comments %}
+      <div class="comment">
+        <p class="byline">
+          {# author is NULL for guest comments -- the LEFT JOIN gives us None #}
+          {{ comment['author'] or 'guest' }} on {{ comment['created_at'] }}
+        </p>
+        <p>{{ comment['body'] }}</p>
+      </div>
+    {% else %}
+      <p class="empty">No comments yet.</p>
+    {% endfor %}
+
+    <form method="post" action="{{ url_for('blog.comment', post_id=post['id']) }}">
+      <label for="body">
+        {% if g.user %}Comment as {{ g.user['username'] }}{% else %}Comment as a guest{% endif %}
+      </label>
+      <textarea id="body" name="body" rows="3" required></textarea>
+      <button type="submit">Post comment</button>
+    </form>
+  </section>
+
+  <p><a href="{{ url_for('index') }}">&larr; All posts</a></p>
+{% endblock %}

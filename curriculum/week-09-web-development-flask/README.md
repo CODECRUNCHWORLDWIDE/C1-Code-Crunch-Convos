@@ -46,6 +46,16 @@ After this week you will be able to:
 
 ---
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `CS 106A` — Past the CS1 outcome set: a first programming course stops at programs that print, this one serves HTTP. |
+| Industry | Serve an HTTP application other people can reach: validate what a form submits, redirect after a successful POST so a refresh does not publish the same thing twice, and answer a bad URL with a 404 page instead of a traceback. |
+| Beyond the bar | Every published answer runs itself with no browser and no live network, because the app is driven through Flask's test client and the weather call sits behind a function you can swap, so the file prints the same output on any machine — `homework/problem-03-weather-route-solution.py` |
+
+---
+
 ## Prerequisites
 
 You should be comfortable with everything from Weeks 1–8:

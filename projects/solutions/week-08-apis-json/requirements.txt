@@ -1,0 +1,14 @@
+# Week 8 mini-project — weather dashboard CLI
+# Install with:  python -m pip install -r requirements.txt
+
+# CPython 3.13.2, urllib3 2.3.0. Newer patch releases are fine.
+# requests, python-dotenv and pytest are pinned above the versions this was
+# executed against, because the originals carry published advisories and this
+# file is installed onto learners' machines.
+requests==2.33.0        # the HTTP client from lecture 02
+python-dotenv==1.2.2    # only used by the optional commercial-tier stretch goal
+
+# Optional. weather.py runs fine without both of these; --rich falls back to
+# plain text if rich is missing, and the tests are the stretch-goal answer.
+rich==15.0.0
+pytest==9.0.3

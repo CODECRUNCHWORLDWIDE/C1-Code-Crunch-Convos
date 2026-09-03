@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Log in — Crunch Blog{% endblock %}
+
+{% block content %}
+  <h2>Log in</h2>
+  <p class="warning">
+    Demo authentication only. The password is a constant in the source and
+    there is no CSRF protection, no rate limiting, and no password hashing.
+    Never ship this pattern.
+  </p>
+  <form method="post" action="{{ url_for('login') }}">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required autofocus>
+
+    <div class="actions">
+      <button type="submit">Log in</button>
+      <a href="{{ url_for('index') }}">Cancel</a>
+    </div>
+  </form>
+{% endblock %}

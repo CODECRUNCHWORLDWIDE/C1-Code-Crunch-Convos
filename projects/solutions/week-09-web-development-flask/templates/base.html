@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Crunch Blog{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <header>
+      <h1><a href="{{ url_for('index') }}">Crunch Blog</a></h1>
+      <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('new_post') }}">New post</a>
+        <a href="{{ url_for('weather') }}">Weather</a>
+        {% if session.get('is_admin') %}
+          <form class="inline" method="post" action="{{ url_for('logout') }}">
+            <button type="submit" class="linklike">Log out</button>
+          </form>
+        {% else %}
+          <a href="{{ url_for('login') }}">Log in</a>
+        {% endif %}
+      </nav>
+    </header>
+
+    <main>
+      {% include "_flashes.html" %}
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+      <small>Built with Flask. Posts live in memory until Week 10.</small>
+    </footer>
+  </body>
+</html>

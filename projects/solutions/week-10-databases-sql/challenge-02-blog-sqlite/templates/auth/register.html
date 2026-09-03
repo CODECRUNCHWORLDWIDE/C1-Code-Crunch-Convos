@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Register — Crunch Blog{% endblock %}
+
+{% block content %}
+  <h1>Register</h1>
+  <form method="post">
+    <label for="username">Username</label>
+    <input id="username" name="username" required autofocus
+           value="{{ request.form['username'] or '' }}">
+
+    <label for="password">Password <small>(at least 8 characters)</small></label>
+    <input id="password" name="password" type="password" required minlength="8">
+
+    <button type="submit">Create account</button>
+  </form>
+  <p>Already registered? <a href="{{ url_for('auth.login') }}">Log in</a>.</p>
+{% endblock %}

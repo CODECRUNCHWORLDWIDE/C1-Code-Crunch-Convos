@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if posts %}
+    <ul class="post-list">
+      {% for post in posts %}
+        <li>
+          <a href="{{ url_for('blog.show_post', post_id=post['id']) }}">{{ post['title'] }}</a>
+          <time>{{ post['created_at'] }}</time>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="empty">No posts yet. <a href="{{ url_for('blog.new_post_form') }}">Write the first one.</a></p>
+  {% endif %}
+{% endblock %}

@@ -23,6 +23,57 @@ The program is delivered as a public, version-controlled repository — designed
 
 ---
 
+## Standards & equivalency
+
+> C1 stands in for a university's first programming course.
+
+**University equivalent.** Introduction to Programming — `COP 2210`, `CS 101`, `CS 106A`, `CSE 8A`, `6.100A`. Coverage: full.
+
+C1 carries no credit, no transcript entry, no accreditation and no proctored exam. The equivalence is one of **content and skill**: everything an accredited section of that course teaches, taught here at the same depth or deeper, and assessed. What a registrar records is not something an open repository can give you.
+
+| University outcome | Where this course teaches it | Depth |
+| --- | --- | --- |
+| Write, run and debug a program in a high-level language, and use the tooling that surrounds it | [Week 01](curriculum/week-01-python-foundations/) | deeper |
+| Use primitive types, variables, expressions and operators, and reason about conversion between them | [Week 02](curriculum/week-02-data-types-operators/) | same |
+| Direct a program with conditionals, loops and iteration, including early exit | [Week 03](curriculum/week-03-control-flow/) | same |
+| Decompose a problem into functions with parameters, return values and scope, and write a recursive one | [Week 04](curriculum/week-04-functions-modules/) | deeper |
+| Choose among the built-in collections — lists, tuples, dictionaries, sets — and reason about what each one costs | [Week 05](curriculum/week-05-data-structures/) | deeper |
+| Read and write files, and raise and handle exceptions instead of letting a program crash | [Week 06](curriculum/week-06-file-io-exceptions/) | deeper |
+| Define classes and objects, with encapsulation and inheritance | [Week 07](curriculum/week-07-object-oriented-programming/) | same |
+| Use libraries the course did not write, by reading their documentation | [Week 08](curriculum/week-08-apis-json/) | deeper |
+| Test and debug a program systematically rather than by guessing | [Week 11](curriculum/week-11-testing-debugging/) | deeper |
+| Complete a substantial program of the learner's own design, and defend it | [Week 15](curriculum/week-15-capstone/) | deeper |
+
+Every row above points at a week that **assigns work** on that outcome — an exercise, a challenge, homework, a quiz item or a project — not merely a week that mentions it.
+
+**The industry bar.** What an employer expects of somebody paid to write Python, and where this course makes the learner do it.
+
+| What the job expects | Where this course does it |
+| --- | --- |
+| Work lands as a commit in a repository you own, not a file on your desktop | [`resources/git-github-workflow.md`](resources/git-github-workflow.md), from Week 01's first push onward |
+| You read code you did not write and form a judgement on it | [`curriculum/week-11-testing-debugging/challenges/challenge-03-review-the-parser.md`](curriculum/week-11-testing-debugging/challenges/challenge-03-review-the-parser.md) |
+| Tests exist, and the command to run them is written down | [`curriculum/week-11-testing-debugging/lecture-notes/01-intro-to-pytest.md`](curriculum/week-11-testing-debugging/lecture-notes/01-intro-to-pytest.md), with worked test suites under [`projects/solutions/`](projects/solutions/) |
+| You read a real traceback instead of guessing | the `Common bugs to catch` section on every problem page, quoting output captured from a real run |
+| Dependencies are isolated per project | [`curriculum/week-01-python-foundations/lecture-notes/02-terminal-virtual-environments-and-pip.md`](curriculum/week-01-python-foundations/lecture-notes/02-terminal-virtual-environments-and-pip.md) |
+| A formatter, a linter and a pipeline that runs on every push | [`curriculum/week-11-testing-debugging/lecture-notes/03-quality-tools-and-ci.md`](curriculum/week-11-testing-debugging/lecture-notes/03-quality-tools-and-ci.md) |
+| Code that reads the way the rest of the codebase reads | [`resources/coding-standards.md`](resources/coding-standards.md) |
+| It runs from a clean clone by following the README | [`curriculum/week-15-capstone/submission-checklist.md`](curriculum/week-15-capstone/submission-checklist.md) |
+
+**Beyond both bars.** Clearing the two floors is entry, not success. Open any of these and check in under a minute.
+
+| What we add | Which bar it beats | Where it lives |
+| --- | --- | --- |
+| Every assigned problem publishes its worked answer on its own page, visible, with a runnable file beside it — no answer key, nothing withheld until a deadline | both | [`curriculum/week-05-data-structures/exercises/`](curriculum/week-05-data-structures/exercises/) |
+| `Under the hood` blocks carry the internals a first-course syllabus stops short of, folded so a learner may skip every one and still finish | university | [`curriculum/week-11-testing-debugging/challenges/challenge-01-tdd-fizzbuzz.md`](curriculum/week-11-testing-debugging/challenges/challenge-01-tdd-fizzbuzz.md) |
+| The learner finishes holding a public repository somebody can clone, not a grade only a registrar can see | both | [`projects/capstone/`](projects/capstone/) |
+| Five weeks sit entirely past the first-course outcome set — a served web application, a queried database, unattended automation, tabular analysis, and a trained model | university | [`curriculum/week-09-web-development-flask/`](curriculum/week-09-web-development-flask/) |
+| A written code review of somebody else's working-but-wrong module: findings ranked by severity, a failing test for each, then the repair | industry | [`curriculum/week-11-testing-debugging/challenges/challenge-03-review-the-parser.md`](curriculum/week-11-testing-debugging/challenges/challenge-03-review-the-parser.md) |
+| A quiz every week whose answers are published with it, folded under the question they answer | both | [`curriculum/week-03-control-flow/quiz.md`](curriculum/week-03-control-flow/quiz.md) |
+
+**Gaps we declare.** None against the first-course outcome set. C1 does not teach a second language, formal algorithm analysis beyond informal cost, or data structures implemented from scratch — those belong to a second course and to [C2 · CrunchTime](https://github.com/CODECRUNCHWORLDWIDE/C2-CrunchTime-The-Code), and C1 does not claim them.
+
+---
+
 ## Mission & Goals
 
 **Mission.** Make a high-quality, project-based Python education freely available to any learner, anywhere — built and improved in the open.

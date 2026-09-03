@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Crunch Blog{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav>
+    <a class="brand" href="{{ url_for('index') }}">Crunch Blog</a>
+    <span class="spacer"></span>
+    {% if g.user %}
+      <a href="{{ url_for('blog.create') }}">New post</a>
+      <span class="who">{{ g.user['username'] }}</span>
+      <a href="{{ url_for('auth.logout') }}">Log out</a>
+    {% else %}
+      <a href="{{ url_for('auth.register') }}">Register</a>
+      <a href="{{ url_for('auth.login') }}">Log in</a>
+    {% endif %}
+  </nav>
+
+  <main>
+    {% for message in get_flashed_messages() %}
+      <p class="flash">{{ message }}</p>
+    {% endfor %}
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

@@ -24,6 +24,16 @@ By the end of this week you will be able to:
 
 ---
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `COP 2210` — Past the CS1 outcome set: the file persistence of Week 06, extended to a store you query. |
+| Industry | Hold an application's data in a relational store and keep it correct as it changes: design the schema, migrate a table that already holds rows without losing any of them, and send every value into SQL through a placeholder. |
+| Beyond the bar | The argument for an index is something you run rather than something you are told, because the answer builds a seeded events table and prints the query plan four times, so you watch `SCAN` become `SEARCH` and then the temporary sort disappear — `homework/problem-04-query-optimizer-solution.py` |
+
+---
+
 ## Prerequisites
 
 You should be comfortable with:

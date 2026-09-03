@@ -37,6 +37,14 @@ By the end of Week 4 you will be able to:
 10. Write your own module, import it from a sibling file, and protect script-only code with `if __name__ == "__main__":`.
 11. Organize a multi-file Python project around a clear public interface.
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `CSE 8A` — Decompose a problem into functions with parameters, return values and scope, and write a recursive one. |
+| Industry | Break a working program into files that each own one job, with the imports pointing one way, so another person can change one part without reading the rest. |
+| Beyond the bar | A week-4 homework problem asks you to write the assertions that prove your own function before the course ever reaches its testing unit, so the answer is checked by code rather than by eye — `homework/problem-03-leap-year-function-with-tests.md` |
+
 ---
 
 ## Prerequisites

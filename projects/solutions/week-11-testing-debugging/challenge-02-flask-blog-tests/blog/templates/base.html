@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}My Blog{% endblock %}</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="{{ url_for('blog.index') }}">My Blog</a></h1>
+      <nav>
+        <a href="{{ url_for('blog.index') }}">Posts</a>
+        <a href="{{ url_for('blog.about') }}">About</a>
+        <a href="{{ url_for('blog.new_post_form') }}">New post</a>
+        {% if session.get('is_admin') %}
+          <form method="post" action="{{ url_for('auth.logout') }}">
+            <button type="submit">Log out</button>
+          </form>
+        {% else %}
+          <a href="{{ url_for('auth.login_form') }}">Log in</a>
+        {% endif %}
+      </nav>
+    </header>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul class="flashes">
+          {% for category, message in messages %}
+            <li class="flash flash-{{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>

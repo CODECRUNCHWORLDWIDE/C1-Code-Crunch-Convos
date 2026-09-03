@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}
+  {%- if current -%}
+    Weather in {{ current.city }} — Crunch Blog
+  {%- else -%}
+    Weather — Crunch Blog
+  {%- endif -%}
+{% endblock %}
+
+{% block content %}
+  <h2>Weather</h2>
+
+  <form class="search" method="get" action="{{ url_for('weather') }}">
+    <label for="city">City</label>
+    <input type="search" id="city" name="city" placeholder="London"
+           value="{{ request.args.get('city', '') }}" required>
+    <button type="submit">Look up</button>
+  </form>
+
+  {% if current %}
+    <article>
+      <h3>
+        {{ current.city }}{% if current.country %}, {{ current.country }}{% endif %}
+      </h3>
+      <p class="temp">{{ current.temp }}{{ current.unit }}</p>
+      <p>{{ current.description }}</p>
+    </article>
+  {% endif %}
+{% endblock %}

@@ -27,6 +27,16 @@ By the end of Week 8 you will be able to:
 
 ---
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `6.100A` — Use libraries the course did not write, by reading their documentation. |
+| Industry | Chain two live endpoints so one call's answer becomes the next call's question, and ship it with a timeout, a retry and a readable message on failure instead of a traceback. |
+| Beyond the bar | Every published homework answer runs with the network unplugged — the HTTP call sits behind a swappable seam fed a recorded response, so the output never drifts with somebody else's live data, and each page shows the one-line change back to the real API — `homework/README.md` |
+
+---
+
 ## Prerequisites
 
 You should be comfortable with everything from Weeks 1–7:

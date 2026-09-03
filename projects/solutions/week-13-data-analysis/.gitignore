@@ -1,0 +1,6 @@
+# The dataset is 14 MB and fully reproducible from fetch_data.py.
+data/
+
+.ipynb_checkpoints/
+__pycache__/
+.venv/

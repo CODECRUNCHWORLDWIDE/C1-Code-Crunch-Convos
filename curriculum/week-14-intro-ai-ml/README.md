@@ -32,6 +32,14 @@ By the end of the week you will be able to:
 10. Discuss bias and fairness in ML in a substantive, not performative, way.
 11. Save a trained model with `joblib` and load it back for inference.
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `CS 106A` — Past the CS1 outcome set entirely: no first programming course trains a model. |
+| Industry | Build a baseline model inside a pipeline so nothing leaks across the split, then report precision, recall, F1 and a confusion matrix rather than one accuracy number. |
+| Beyond the bar | One assigned problem scores an already-trained model separately for each group and finds recall of 1.00 for one group and 0.09 for the other out of the same predictions — `homework/problem-06-fairness-audit.md` |
+
 ## Prerequisites
 
 You should be comfortable with Weeks 1–13. Especially:
@@ -85,7 +93,14 @@ week-14-intro-ai-ml/
 ├── README.md                       <- you are here
 ├── resources.md                    <- curated reading + viewing list
 ├── quiz.md                         <- 10 MCQs, do at the end of the week
-├── homework.md                     <- 6 problems, due before Week 15
+├── homework/
+│   ├── README.md
+│   ├── problem-01-housing-regression.md
+│   ├── problem-02-churn-classification.md
+│   ├── problem-03-feature-importance.md
+│   ├── problem-04-grid-search.md
+│   ├── problem-05-learning-curve.md
+│   └── problem-06-fairness-audit.md   <- 6 problems, due before Week 15
 ├── lecture-notes/
 │   ├── 01-what-is-ml.md
 │   ├── 02-first-model-with-sklearn.md
@@ -103,8 +118,7 @@ week-14-intro-ai-ml/
 │   └── challenge-02-kmeans-clustering.md
 └── mini-project/
     ├── README.md
-    ├── starter.py
-    └── sample-data.csv
+    └── sms-spam-classifier.py
 ```
 
 ## Environment setup

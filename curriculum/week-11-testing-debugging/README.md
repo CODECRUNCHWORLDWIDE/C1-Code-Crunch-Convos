@@ -28,6 +28,16 @@ By the end of this week you will be able to:
 
 ---
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `6.100A` — Test and debug a program systematically rather than by guessing. |
+| Industry | Read a working module somebody else wrote, find the defects that no test and no linter caught, rank them by severity, and hand back a review with a failing test behind every finding. |
+| Beyond the bar | It publishes the finished review itself — a module carrying four planted defects, the ranked write-up of them, and a performance finding proved by counting comparisons rather than by a stopwatch — `challenges/challenge-03-review-the-parser.md` |
+
+---
+
 ## Prerequisites
 
 You should be comfortable with material from **Weeks 1–10**:
@@ -83,7 +93,7 @@ Adjust the pace to your reality — these are guidelines, not laws.
 
 - `lecture-notes/` — three deep-dive notes covering pytest, mocking/coverage/debugging, and quality tools/CI.
 - `exercises/` — five focused drills. Each one teaches a single skill.
-- `challenges/` — two bigger problems: TDD FizzBuzz, and adding tests to the Week 9 Flask blog.
+- `challenges/` — three bigger problems: TDD FizzBuzz, adding tests to the Week 9 Flask blog, and reviewing a log parser somebody else wrote.
 - `mini-project/` — the **stringutils** library with starter code, tests, config, and CI.
 - `quiz.md` — 10 multiple-choice questions to check your understanding.
 - `homework/` — six longer problems, one page each, that combine the week's tools.
