@@ -168,7 +168,7 @@ if __name__ == "__main__":
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python problem-05-link-header-parser-solution.py
+$ python problem-05-link-header-parser.py
 a real Link header, captured from api.github.com:
   next   https://api.github.com/user/583231/repos?per_page=3&page=2
   last   https://api.github.com/user/583231/repos?per_page=3&page=3
@@ -423,14 +423,12 @@ parameter), and the code reads as: for every entry, for every parameter,
 keep the rels. When a format is regular enough for regular expressions,
 letting the pattern do the walking keeps the Python nearly free of logic.
 
-## Download and run
+## Run it
 
-Download
-[problem-05-link-header-parser-solution.py](./problem-05-link-header-parser-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-05-link-header-parser.py` and run it:
 
 ```bash
-python problem-05-link-header-parser-solution.py
+python problem-05-link-header-parser.py
 ```
 
 It needs nothing installed and never touches the network — the one real

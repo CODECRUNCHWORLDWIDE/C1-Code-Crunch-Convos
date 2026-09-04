@@ -113,7 +113,7 @@ then shells out to `pytest --cov` three times — the whole story from 89 % to
 100 % — and prints only the stable numbers it parses back:
 
 ```text
-$ python problem-05-fine-schedule-solution.py
+$ python problem-05-fine-schedule.py
 Statement coverage can be 100% while a branch is never taken.
 
 Statement coverage, the two starter tests only:
@@ -301,14 +301,12 @@ what *ran*, not what *should have*. You could set the student rate to 10 or to
 The tool tells you which paths your tests visited. It has nothing to say about
 whether the numbers those paths produce match the schedule.
 
-## Download and run
+## Run it
 
-Download
-[problem-05-fine-schedule-solution.py](./problem-05-fine-schedule-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-05-fine-schedule.py` and run it:
 
 ```bash
-python problem-05-fine-schedule-solution.py
+python problem-05-fine-schedule.py
 ```
 
 It needs `pytest` and `pytest-cov` installed. It writes its own throwaway

@@ -94,7 +94,7 @@ already small — previews the work at `--width 320`, applies it, and reports th
 output dimensions. Real captured output:
 
 ```text
-$ python problem-04-image-resizer-solution.py
+$ python problem-04-image-resizer.py
 Image Resizer — driven headless on images this file builds.
 
 Preview at --width 320 (the default is a dry run):
@@ -312,15 +312,13 @@ folder is skipped without paying for a failed `Image.open`, and without a
 `try/except` around every file to swallow the `UnidentifiedImageError` that a
 non-image would otherwise raise.
 
-## Download and run
+## Run it
 
-Download
-[problem-04-image-resizer-solution.py](./problem-04-image-resizer-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-04-image-resizer.py` and run it:
 
 ```bash
 pip install Pillow
-python problem-04-image-resizer-solution.py
+python problem-04-image-resizer.py
 ```
 
 It builds its own images in a temp folder, so it never touches your photos.

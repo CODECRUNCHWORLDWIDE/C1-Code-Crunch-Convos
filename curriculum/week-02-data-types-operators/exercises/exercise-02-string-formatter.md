@@ -346,12 +346,12 @@ column. If you genuinely want a hard cap, add a precision:
 'Ada Lovelace E'
 ```
 
-## Download and run
+## Run it
 
-Download [exercise-02-string-formatter-solution.py](./exercise-02-string-formatter-solution.py) and run it:
+Copy the worked answer on this page into `exercise-02-string-formatter.py` and run it:
 
 ```bash
-python exercise-02-string-formatter-solution.py
+python exercise-02-string-formatter.py
 ```
 
 ## Common bugs to catch

@@ -211,7 +211,7 @@ matches the audit at the bottom of Challenge 1 because it is the same model on
 the same split.
 
 ```text
-$ python problem-06-fairness-audit-solution.py
+$ python problem-06-fairness-audit.py
 overall test accuracy: 0.710
 fairness audit (positive class = survived):
 | group  |   n | precision | recall | accuracy |
@@ -423,14 +423,12 @@ what happens to a person the model gets wrong — and that decision is not a
 `sklearn` call. The audit's job is to make the gap impossible to miss. What to do
 next is a human's job, and it stays a human's job.
 
-## Download and run
+## Run it
 
-Download
-[problem-06-fairness-audit-solution.py](./problem-06-fairness-audit-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-06-fairness-audit.py` and run it:
 
 ```bash
-python problem-06-fairness-audit-solution.py
+python problem-06-fairness-audit.py
 ```
 
 If scikit-learn and pandas are not installed yet:

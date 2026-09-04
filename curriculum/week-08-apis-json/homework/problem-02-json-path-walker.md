@@ -141,7 +141,7 @@ if __name__ == "__main__":
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python problem-02-json-path-walker-solution.py
+$ python problem-02-json-path-walker.py
 walk of the sample document:
   name               "Ada"
   age                207
@@ -331,14 +331,12 @@ values in JSON's own spelling — `"Ada"` with quotes, `true`, `null` — so
 strings are visibly strings. `print("Ada")` and `print(207)` look
 confusingly alike; `"Ada"` and `207` do not.
 
-## Download and run
+## Run it
 
-Download
-[problem-02-json-path-walker-solution.py](./problem-02-json-path-walker-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-02-json-path-walker.py` and run it:
 
 ```bash
-python problem-02-json-path-walker-solution.py
+python problem-02-json-path-walker.py
 ```
 
 It needs nothing installed and never touches the network. The `-solution` in

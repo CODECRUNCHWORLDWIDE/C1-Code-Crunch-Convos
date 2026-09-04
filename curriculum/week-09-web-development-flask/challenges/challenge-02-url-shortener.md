@@ -162,7 +162,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with Flask
 printout therefore reports facts about the slug rather than the slug itself:
 
 ```text
-$ python challenge-02-url-shortener-solution.py
+$ python challenge-02-url-shortener.py
 GET  /        -> 200 (the form)
 
 POST /shorten url='https://example.com' -> 302  Location: /
@@ -487,14 +487,12 @@ them — move `follow` above `shorten` in the file and nothing changes. The
 subtle consequence of a root-level catch-all, and why `GET /shorten` is a
 404 rather than a 405, is in Under the hood.
 
-## Download and run
+## Run it
 
-Download
-[challenge-02-url-shortener-solution.py](./challenge-02-url-shortener-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-02-url-shortener.py` and run it:
 
 ```bash
-python challenge-02-url-shortener-solution.py
+python challenge-02-url-shortener.py
 ```
 
 It needs Flask installed and nothing else, and it exits on its own — the two

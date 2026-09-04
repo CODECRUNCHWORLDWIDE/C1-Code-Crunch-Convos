@@ -406,13 +406,13 @@ a file of transactions with no questions in it. Your own
 `homework-06-atm.py` deletes both and calls `input("Choose 1-4: ")`
 directly.
 
-## Download and run
+## Run it
 
-Download [problem-06-simple-atm-menu-solution.py](./problem-06-simple-atm-menu-solution.py)
+Copy the worked answer on this page into `problem-06-simple-atm-menu.py` and run it:
 and run it:
 
 ```bash
-python problem-06-simple-atm-menu-solution.py
+python problem-06-simple-atm-menu.py
 ```
 
 Run from a terminal, it hands you the menu and waits. Run by a script, or

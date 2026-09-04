@@ -568,13 +568,13 @@ module double as its own smoke test: `python mymath.py` prints
 Without that guard on `mymath.py`, the demo line would appear above every
 run of `use_mymath.py`, because importing a module runs it.
 
-## Download and run
+## Run it
 
-Download [problem-06-importing-from-a-custom-module-solution.py](./problem-06-importing-from-a-custom-module-solution.py)
+Copy the worked answer on this page into `problem-06-importing-from-a-custom-module.py` and run it:
 and run it:
 
 ```bash
-python problem-06-importing-from-a-custom-module-solution.py
+python problem-06-importing-from-a-custom-module.py
 ```
 
 **Read this before you use it.** That download is one file, and the

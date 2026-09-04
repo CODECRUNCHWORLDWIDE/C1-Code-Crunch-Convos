@@ -153,7 +153,7 @@ whatever directory you happened to be in. Your own version writes `merged.csv`
 beside your script, as requirement 4 asks. Real captured run:
 
 ```text
-$ python problem-03-merge-dataframes-solution.py
+$ python problem-03-merge-dataframes.py
 After the left join:
  order_id  customer_id  amount  name country    _merge
       101            1    50.0   Ada      UK      both
@@ -320,15 +320,13 @@ ends. The file is genuinely written and genuinely read back with
 leave a `merged.csv` in your home directory. Your own homework file should
 write `merged.csv` next to itself, because you *want* to keep that one.
 
-## Download and run
+## Run it
 
-Download
-[problem-03-merge-dataframes-solution.py](./problem-03-merge-dataframes-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-03-merge-dataframes.py` and run it:
 
 ```bash
 python -m pip install pandas
-python problem-03-merge-dataframes-solution.py
+python problem-03-merge-dataframes.py
 ```
 
 It needs only pandas, builds both frames itself, and writes its CSV into a

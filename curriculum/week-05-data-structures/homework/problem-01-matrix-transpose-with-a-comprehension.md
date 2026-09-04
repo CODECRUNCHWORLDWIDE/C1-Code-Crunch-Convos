@@ -133,7 +133,7 @@ The `Example:` line in that docstring is a real test — see *Stretch*.
 ## Expected output
 
 ```text
-$ python problem-01-matrix-transpose-with-a-comprehension-solution.py
+$ python problem-01-matrix-transpose-with-a-comprehension.py
 [[1, 4], [2, 5], [3, 6]]
 [[1]]
 [[1, 3, 5], [2, 4, 6]]
@@ -310,13 +310,13 @@ The other four asserts check hand-picked examples. This one checks a **property*
 catch whole families of bugs at once, including the swapped-index bug below,
 which survives happily on square matrices and dies instantly here.
 
-## Download and run
+## Run it
 
-Download [problem-01-matrix-transpose-with-a-comprehension-solution.py](./problem-01-matrix-transpose-with-a-comprehension-solution.py)
+Copy the worked answer on this page into `problem-01-matrix-transpose-with-a-comprehension.py` and run it:
 and run it:
 
 ```bash
-python problem-01-matrix-transpose-with-a-comprehension-solution.py
+python problem-01-matrix-transpose-with-a-comprehension.py
 ```
 
 Your own copy of `transpose` belongs in `week-05-solutions.py`, and that is the

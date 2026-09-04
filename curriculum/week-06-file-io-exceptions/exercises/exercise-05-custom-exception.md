@@ -212,7 +212,7 @@ standard output; the rejections go to standard error through `logging`.
 3.13.2:
 
 ```text
-$ python exercise-05-custom-exception-solution.py > accepted.txt
+$ python exercise-05-custom-exception.py > accepted.txt
 lagos    ada.lovelace@example.org           3
 manila   grace.hopper@example.org           1
 2 of 6 lines accepted; 4 rejected
@@ -230,7 +230,7 @@ WARNING  | rejected InvalidCountError: line 6: check-in count -4 is negative
 Both together, in one terminal:
 
 ```text
-$ python exercise-05-custom-exception-solution.py 2>&1
+$ python exercise-05-custom-exception.py 2>&1
 lagos    ada.lovelace@example.org           3
 manila   grace.hopper@example.org           1
 WARNING  | rejected InvalidCountError: line 3: check-in count 'zero' is not a whole number
@@ -510,14 +510,12 @@ download runs on a machine where you have created nothing. `parse_file` is your
 `main` with the path passed in as an argument. Everything from `CheckInError`
 to `parse_line` is the exercise.
 
-## Download and run
+## Run it
 
-Download
-[exercise-05-custom-exception-solution.py](./exercise-05-custom-exception-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-05-custom-exception.py` and run it:
 
 ```bash
-python exercise-05-custom-exception-solution.py
+python exercise-05-custom-exception.py
 ```
 
 It needs no `data/` folder: it writes its own copy of the check-in log into a

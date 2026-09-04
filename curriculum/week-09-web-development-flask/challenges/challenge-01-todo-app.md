@@ -166,7 +166,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with Flask
 3.1.0:
 
 ```text
-$ python challenge-01-todo-app-solution.py
+$ python challenge-01-todo-app.py
 GET  /                    -> 200
   <p class="count">0 todos.</p>
   <li class="empty">Nothing to do. Suspicious.</li>
@@ -491,14 +491,12 @@ they are per-browser and consumed the first time they render. Nothing lives
 in a view-function local, because a view function is called once per request
 and forgets everything when it returns.
 
-## Download and run
+## Run it
 
-Download
-[challenge-01-todo-app-solution.py](./challenge-01-todo-app-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-01-todo-app.py` and run it:
 
 ```bash
-python challenge-01-todo-app-solution.py
+python challenge-01-todo-app.py
 ```
 
 It needs Flask installed and nothing else, and it exits on its own — the two

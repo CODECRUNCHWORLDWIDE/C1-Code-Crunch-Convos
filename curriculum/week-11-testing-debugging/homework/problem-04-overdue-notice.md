@@ -167,7 +167,7 @@ object-and-name form of the same idea. It runs the suite through pytest and
 reports:
 
 ```text
-$ python problem-04-overdue-notice-solution.py
+$ python problem-04-overdue-notice.py
 Five tests that 'post a reminder' without touching the network.
 Every call is a MagicMock standing in for requests.post('https://notices.example.org/overdue').
 
@@ -406,14 +406,12 @@ That is the whole reason to prefer it over calling `unittest.mock.patch(...)` by
 hand, where forgetting to stop the patch leaves a mock alive in an unrelated
 test file.
 
-## Download and run
+## Run it
 
-Download
-[problem-04-overdue-notice-solution.py](./problem-04-overdue-notice-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-04-overdue-notice.py` and run it:
 
 ```bash
-python problem-04-overdue-notice-solution.py
+python problem-04-overdue-notice.py
 ```
 
 It needs `pytest`, `pytest-mock`, and `requests` installed. It never opens a

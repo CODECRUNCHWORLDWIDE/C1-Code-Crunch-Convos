@@ -251,12 +251,12 @@ it, because rearranging values is pure assignment. Week 3 hands you
 branching, and from then on it is tempting to reach for `if` in places
 where a plain expression would have done the job.
 
-## Download and run
+## Run it
 
-Download [exercise-01-variable-swap-solution.py](./exercise-01-variable-swap-solution.py) and run it:
+Copy the worked answer on this page into `exercise-01-variable-swap.py` and run it:
 
 ```bash
-python exercise-01-variable-swap-solution.py
+python exercise-01-variable-swap.py
 ```
 
 ## Common bugs to catch

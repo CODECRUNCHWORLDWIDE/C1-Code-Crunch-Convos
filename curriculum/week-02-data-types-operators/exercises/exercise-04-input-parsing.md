@@ -498,12 +498,12 @@ samples, with a note saying so. Reading it top to bottom tells you the
 whole story of how the program decides, and there is exactly one place
 that decision is made.
 
-## Download and run
+## Run it
 
-Download [exercise-04-input-parsing-solution.py](./exercise-04-input-parsing-solution.py) and run it:
+Copy the worked answer on this page into `exercise-04-input-parsing.py` and run it:
 
 ```bash
-python exercise-04-input-parsing-solution.py
+python exercise-04-input-parsing.py
 ```
 
 ## Common bugs to catch

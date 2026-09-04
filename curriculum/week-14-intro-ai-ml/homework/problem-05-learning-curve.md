@@ -134,7 +134,7 @@ scikit-learn build could move a last digit; the shape of the two columns is the
 fixed part.
 
 ```text
-$ python problem-05-learning-curve-solution.py
+$ python problem-05-learning-curve.py
 learning curve (mean accuracy across 5 folds):
   train_size  train_acc  val_acc     gap
           50      1.000    0.818   0.182
@@ -268,14 +268,12 @@ points of gap are the part it memorised that does not generalise. More rows shri
 that gap slowly at best — the curve already shows it barely moving from 900 to
 1,400. This is a "change the model" situation, not a "get more data" one.
 
-## Download and run
+## Run it
 
-Download
-[problem-05-learning-curve-solution.py](./problem-05-learning-curve-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-05-learning-curve.py` and run it:
 
 ```bash
-python problem-05-learning-curve-solution.py
+python problem-05-learning-curve.py
 ```
 
 If scikit-learn is not installed yet:

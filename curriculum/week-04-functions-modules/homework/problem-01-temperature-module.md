@@ -398,13 +398,13 @@ Notice what did *not* happen: the conversion table did not appear. That is
 the `__main__` guard earning its place. Problem 6 builds the two-file
 version of this idea from scratch.
 
-## Download and run
+## Run it
 
-Download [problem-01-temperature-module-solution.py](./problem-01-temperature-module-solution.py)
+Copy the worked answer on this page into `problem-01-temperature-module.py` and run it:
 and run it:
 
 ```bash
-python problem-01-temperature-module-solution.py
+python problem-01-temperature-module.py
 ```
 
 That file *is* the module, under a longer name so it cannot land on top

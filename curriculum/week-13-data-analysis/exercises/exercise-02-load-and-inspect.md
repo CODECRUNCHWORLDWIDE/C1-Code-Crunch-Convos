@@ -134,7 +134,7 @@ print(df.head())
 ## Expected output
 
 ```text
-$ python exercise-02-load-and-inspect-solution.py
+$ python exercise-02-load-and-inspect.py
 --- head ---
     branch region  visits  holds_filled  open_hours
 0    Alder  North    4820           612          48
@@ -340,14 +340,12 @@ no meaning — they are positions with a label's clothes on. That is worth
 noticing now, because in Exercise 3 you will filter this kind of frame and watch
 the labels stop being `0..n` while the positions carry on as before.
 
-## Download and run
+## Run it
 
-Download
-[exercise-02-load-and-inspect-solution.py](./exercise-02-load-and-inspect-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-02-load-and-inspect.py` and run it:
 
 ```bash
-python exercise-02-load-and-inspect-solution.py
+python exercise-02-load-and-inspect.py
 ```
 
 It needs only pandas and prints the eight inspection blocks in order. The `-solution` suffix keeps it from colliding with your own `exercise-02-load-and-inspect.py`.

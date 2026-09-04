@@ -364,14 +364,12 @@ full ordering rule.
 classic "empty container formats to nothing" bug, and it shows up anywhere
 you join a collection you did not check first.
 
-## Download and run
+## Run it
 
-Download
-[exercise-02-args-kwargs-solution.py](./exercise-02-args-kwargs-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-02-args-kwargs.py` and run it:
 
 ```bash
-python exercise-02-args-kwargs-solution.py
+python exercise-02-args-kwargs.py
 ```
 
 It is the same program you are writing, under a name that will not collide

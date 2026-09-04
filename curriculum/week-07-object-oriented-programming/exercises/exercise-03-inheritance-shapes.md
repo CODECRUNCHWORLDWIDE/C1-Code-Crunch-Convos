@@ -218,7 +218,7 @@ rectangle.
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python exercise-03-inheritance-shapes-solution.py
+$ python exercise-03-inheritance-shapes.py
 Back panel: 1000.00 sq cm
 Clock face: 452.39 sq cm
 Corner gusset: 270.00 sq cm
@@ -426,14 +426,12 @@ with a sentence in it fails at the exact line that is wrong, which is the
 cheapest place to find out. The base class is not being unhelpful; it is
 refusing to guess.
 
-## Download and run
+## Run it
 
-Download
-[exercise-03-inheritance-shapes-solution.py](./exercise-03-inheritance-shapes-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-03-inheritance-shapes.py` and run it:
 
 ```bash
-python exercise-03-inheritance-shapes-solution.py
+python exercise-03-inheritance-shapes.py
 ```
 
 It imports only `math` and `collections.abc`, both from the standard library.

@@ -158,7 +158,7 @@ if __name__ == "__main__":
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python problem-03-rate-limit-decorator-solution.py
+$ python problem-03-rate-limit-decorator.py
 ok  four calls at 2/sec slept [0.5, 0.5, 0.5], total 1.5s
 ok  wrapper kept its name ('greet') and its docstring
 ok  a call that arrives late enough does not sleep
@@ -452,14 +452,12 @@ function that appears nowhere in your code. `wraps` copies the wrapped
 function's identity onto the wrapper — and tucks the original away as
 `greet.__wrapped__`, which is how debuggers dig the real function back out.
 
-## Download and run
+## Run it
 
-Download
-[problem-03-rate-limit-decorator-solution.py](./problem-03-rate-limit-decorator-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-03-rate-limit-decorator.py` and run it:
 
 ```bash
-python problem-03-rate-limit-decorator-solution.py
+python problem-03-rate-limit-decorator.py
 ```
 
 It needs nothing installed, never touches the network, and finishes

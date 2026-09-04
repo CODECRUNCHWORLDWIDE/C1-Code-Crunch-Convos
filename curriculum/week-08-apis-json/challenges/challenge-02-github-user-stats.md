@@ -239,7 +239,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with requests
 2.32.3:
 
 ```text
-$ python challenge-02-github-user-stats-solution.py
+$ python challenge-02-github-user-stats.py
 --- replaying an account recorded on 2026-08-24; pass --live for today's ---
 User:         octocat (The Octocat)
 Bio:          —
@@ -795,14 +795,12 @@ comparison you are sure should pass.
 GitHub allows is not the same as "all of them". Asking for the biggest page
 reduces the number of requests; it does not remove the need to walk.
 
-## Download and run
+## Run it
 
-Download
-[challenge-02-github-user-stats-solution.py](./challenge-02-github-user-stats-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-02-github-user-stats.py` and run it:
 
 ```bash
-python challenge-02-github-user-stats-solution.py
+python challenge-02-github-user-stats.py
 ```
 
 It needs `requests` installed and **no internet**. The profile, all eight
@@ -818,7 +816,7 @@ politely.
 To call the real API:
 
 ```bash
-python challenge-02-github-user-stats-solution.py octocat --live
+python challenge-02-github-user-stats.py octocat --live
 ```
 
 `--live` swaps `recorded_fetch` for `live_fetch` and changes nothing else. If

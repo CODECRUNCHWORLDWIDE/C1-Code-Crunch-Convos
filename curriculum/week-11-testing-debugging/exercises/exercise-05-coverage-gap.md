@@ -137,7 +137,7 @@ folder, then runs `pytest --cov` four times — the whole story from 78 % to
 100 % — and prints only the stable numbers it parses back:
 
 ```text
-$ python exercise-05-coverage-gap-solution.py
+$ python exercise-05-coverage-gap.py
 Coverage measures which lines ran, nothing more. Watch the gap open twice.
 
 Statement coverage, the three starter tests only:
@@ -383,14 +383,12 @@ member already holds a copy, and no coverage tool will ever mention a rule that
 nobody wrote down. Coverage measures what ran. It has nothing to say about what
 should have.
 
-## Download and run
+## Run it
 
-Download
-[exercise-05-coverage-gap-solution.py](./exercise-05-coverage-gap-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-05-coverage-gap.py` and run it:
 
 ```bash
-python exercise-05-coverage-gap-solution.py
+python exercise-05-coverage-gap.py
 ```
 
 It needs `pytest` and `pytest-cov` installed. It writes its own throwaway

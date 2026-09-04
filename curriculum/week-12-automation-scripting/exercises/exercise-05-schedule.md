@@ -157,7 +157,7 @@ that stops itself, and then drives the loop into a `KeyboardInterrupt` to prove
 the handler. Real captured output:
 
 ```text
-$ python exercise-05-schedule-solution.py
+$ python exercise-05-schedule.py
 Schedule — the interval scheduler, driven headless.
 
 A bounded run that stops itself after --runs:
@@ -418,15 +418,13 @@ catches `SystemExit`, `MemoryError`, and every genuine bug in your job, and
 reports all of them as "stopped by user". A crash misreported as a clean exit
 is the worst outcome available, because it is the one nobody investigates.
 
-## Download and run
+## Run it
 
-Download
-[exercise-05-schedule-solution.py](./exercise-05-schedule-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-05-schedule.py` and run it:
 
 ```bash
 pip install schedule
-python exercise-05-schedule-solution.py
+python exercise-05-schedule.py
 ```
 
 The bounded run takes about seven seconds of real time, because `schedule` fires

@@ -178,7 +178,7 @@ The script is: change the file, delete it, wait a beat with it still
 gone, put it back, then interrupt.
 
 ```bash
-$ python problem-05-file-watcher-poll-based-solution.py
+$ python problem-05-file-watcher-poll-based.py
 ```
 
 ```text
@@ -483,13 +483,13 @@ logic changes. Handing a dependency in rather than reaching for it is
 the move that makes long-running code possible to check, and you will
 meet it again in Week 11.
 
-## Download and run
+## Run it
 
-Download [problem-05-file-watcher-poll-based-solution.py](./problem-05-file-watcher-poll-based-solution.py)
+Copy the worked answer on this page into `problem-05-file-watcher-poll-based.py` and run it:
 and run it:
 
 ```bash
-python problem-05-file-watcher-poll-based-solution.py
+python problem-05-file-watcher-poll-based.py
 ```
 
 With no arguments it creates its own file in a temporary folder and
@@ -498,7 +498,7 @@ nothing set up, and finishes immediately. Give it a real path and it
 watches that file for real, once a second, until you press Ctrl-C:
 
 ```bash
-python problem-05-file-watcher-poll-based-solution.py notes.txt
+python problem-05-file-watcher-poll-based.py notes.txt
 ```
 
 Save your own copy as `watch.py` in your homework folder, and commit that

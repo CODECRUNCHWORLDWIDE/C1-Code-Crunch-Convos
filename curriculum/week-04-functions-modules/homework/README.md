@@ -15,8 +15,8 @@ first closes it for free.
 1. Read The Brief and the Requirements. Say out loud what the function takes and
    what it gives back before you type anything.
 2. Copy the Starter into a file of your own. The page names it — for problem 1
-   that is `temperature.py`, not the `-solution.py` file, which is the finished
-   answer.
+   that is `temperature.py`. Copy the Starter, not the worked answer on the
+   page, which is the finished version.
 3. Fill in the `TODO` markers one at a time. Run it after each one.
 4. Compare your output with the Expected output block, character for character.
 5. Only then read The Solution and Why it works.
@@ -52,9 +52,9 @@ homework/
     use_mymath.py
 ```
 
-Those are *your* files. The `-solution.py` files on the problem pages are the
-published answers, and they are named differently on purpose so the two never
-land on top of each other.
+Those are *your* files. The published answers stay on the problem pages
+themselves, so nothing you write can be overwritten by an answer and nothing
+you hand in can be mistaken for one.
 
 Commit with `feat(week-04): homework problems`. If you are working in a cohort,
 open a pull request.

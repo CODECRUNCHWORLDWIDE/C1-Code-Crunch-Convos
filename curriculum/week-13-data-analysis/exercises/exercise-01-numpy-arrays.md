@@ -113,7 +113,7 @@ if __name__ == "__main__":
 ## Expected output
 
 ```text
-$ python exercise-01-numpy-arrays-solution.py
+$ python exercise-01-numpy-arrays.py
 Readings: [18 23 19 24 21 17 23 20 26 17]
 dtype=int64  shape=(10,)  ndim=1
 Total: 208 kWh
@@ -244,14 +244,12 @@ exactly zero. They must, because the mean is the value that makes them do so. If
 your deviation list does not roughly cancel out, your mean is wrong before
 anything else is.
 
-## Download and run
+## Run it
 
-Download
-[exercise-01-numpy-arrays-solution.py](./exercise-01-numpy-arrays-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-01-numpy-arrays.py` and run it:
 
 ```bash
-python exercise-01-numpy-arrays-solution.py
+python exercise-01-numpy-arrays.py
 ```
 
 It needs only NumPy and prints the nine report lines described in the brief. The `-solution` suffix keeps it from colliding with your own `exercise-01-numpy-arrays.py`.

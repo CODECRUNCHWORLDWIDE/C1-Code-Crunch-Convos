@@ -174,7 +174,7 @@ it proves itself with no folder for you to build first. Yours points at a
 sandbox of your own; the renamer is the same. Real captured output:
 
 ```text
-$ python exercise-02-bulk-rename-solution.py
+$ python exercise-02-bulk-rename.py
 Bulk Rename — proven headless on a sandbox this file builds and deletes.
 
 Preview (the default — nothing on disk is touched):
@@ -399,14 +399,12 @@ an identical number. That is the entire contract of a preview: the number you
 are shown is the number you will get. The only line that behaves differently
 between the two modes is `source.rename(target)`.
 
-## Download and run
+## Run it
 
-Download
-[exercise-02-bulk-rename-solution.py](./exercise-02-bulk-rename-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-02-bulk-rename.py` and run it:
 
 ```bash
-python exercise-02-bulk-rename-solution.py
+python exercise-02-bulk-rename.py
 ```
 
 It needs nothing but the standard library, builds its own sandbox in a temp

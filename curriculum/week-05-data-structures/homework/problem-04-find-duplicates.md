@@ -132,7 +132,7 @@ Two entries there are above 1. Those two are the whole answer.
 ## Expected output
 
 ```text
-$ python problem-04-find-duplicates-solution.py
+$ python problem-04-find-duplicates.py
 [1, 2]
 []
 ['x', 'y']
@@ -294,13 +294,13 @@ the structure is right.
 brief's order and it changes when the input is reordered, so the answer would
 not be stable. One `sorted()` call fixes both.
 
-## Download and run
+## Run it
 
-Download [problem-04-find-duplicates-solution.py](./problem-04-find-duplicates-solution.py)
+Copy the worked answer on this page into `problem-04-find-duplicates.py` and run it:
 and run it:
 
 ```bash
-python problem-04-find-duplicates-solution.py
+python problem-04-find-duplicates.py
 ```
 
 Your own copy of `find_duplicates` belongs in `week-05-solutions.py`, and that

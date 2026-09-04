@@ -294,13 +294,13 @@ returns the line *raw*, with no `.strip()` — stripping would change the
 `Characters` count, which is the one statistic that has to see the line
 exactly as it arrived.
 
-## Download and run
+## Run it
 
-Download [problem-03-word-and-character-counter-solution.py](./problem-03-word-and-character-counter-solution.py)
+Copy the worked answer on this page into `problem-03-word-and-character-counter.py` and run it:
 and run it:
 
 ```bash
-python problem-03-word-and-character-counter-solution.py
+python problem-03-word-and-character-counter.py
 ```
 
 Run from a terminal, it asks you for a line. Run by a script or with its

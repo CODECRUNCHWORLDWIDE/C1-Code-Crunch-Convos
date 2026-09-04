@@ -280,13 +280,13 @@ you wanted. Your own file calls
 `input("Enter a non-negative integer: ")` directly — no `def`, no
 `except`.
 
-## Download and run
+## Run it
 
-Download [problem-03-reverse-a-number-solution.py](./problem-03-reverse-a-number-solution.py)
+Copy the worked answer on this page into `problem-03-reverse-a-number.py` and run it:
 and run it:
 
 ```bash
-python problem-03-reverse-a-number-solution.py
+python problem-03-reverse-a-number.py
 ```
 
 Run from a terminal, it asks for a number. Run by a script, or with its

@@ -160,7 +160,7 @@ round is a bug, and *Common bugs to catch* shows what it looks like.
 ## Expected output
 
 ```text
-$ python problem-03-two-sum-classic-solution.py
+$ python problem-03-two-sum-classic.py
 (0, 1)
 (1, 2)
 None
@@ -329,13 +329,13 @@ you moved it out of the processor and into a hash table. That trade is the
 honest description of this algorithm, and it is the trade behind most of the
 fast things you will write.
 
-## Download and run
+## Run it
 
-Download [problem-03-two-sum-classic-solution.py](./problem-03-two-sum-classic-solution.py)
+Copy the worked answer on this page into `problem-03-two-sum-classic.py` and run it:
 and run it:
 
 ```bash
-python problem-03-two-sum-classic-solution.py
+python problem-03-two-sum-classic.py
 ```
 
 Your own copy of `two_sum` belongs in `week-05-solutions.py`, and that is the

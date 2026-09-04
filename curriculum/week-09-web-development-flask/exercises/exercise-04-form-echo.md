@@ -226,7 +226,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with Flask
 3.1.0:
 
 ```text
-$ python exercise-04-form-echo-solution.py
+$ python exercise-04-form-echo.py
 GET  / -> 200 (the empty form)
 
 A valid shout-out — Post / Redirect / Get:
@@ -520,14 +520,12 @@ has been round-tripped through a cookie. Jinja escapes it on the way out, so
 `<script>alert(1)</script>` renders as visible text. Put `|safe` on it and you
 have written the textbook stored-XSS bug.
 
-## Download and run
+## Run it
 
-Download
-[exercise-04-form-echo-solution.py](./exercise-04-form-echo-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-04-form-echo.py` and run it:
 
 ```bash
-python exercise-04-form-echo-solution.py
+python exercise-04-form-echo.py
 ```
 
 It needs Flask installed and nothing else — no `.env`, no `python-dotenv`,

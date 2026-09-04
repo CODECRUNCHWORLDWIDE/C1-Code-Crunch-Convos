@@ -561,8 +561,8 @@ week-XX-topic/
 └── mini-project/      ← week-capping deliverable
 ```
 
-Every problem is one page and carries its own answer, visible on the page, with
-a runnable `-solution.py` beside it. There is no separate answers folder — the
-answer lives under the question that asked it.
+Every problem is one page and carries its own answer, visible on the page, as
+a complete runnable script you can copy and run. Nothing is hidden away in a
+separate answers folder — the answer lives under the question that asked it.
 
 Start each week by reading the week's **README.md**, then follow the day-by-day schedule. Don't skip the homework — it's where most learning happens.

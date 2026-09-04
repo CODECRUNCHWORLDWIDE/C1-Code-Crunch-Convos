@@ -398,13 +398,13 @@ back. So the file has a real conversation with a person, reads piped-in
 answers when it is given them, and still prints a full session when it is
 handed nothing at all.
 
-## Download and run
+## Run it
 
-Download [challenge-01-tip-calculator-solution.py](./challenge-01-tip-calculator-solution.py)
+Copy the worked answer on this page into `challenge-01-tip-calculator.py` and run it:
 and run it:
 
 ```bash
-python challenge-01-tip-calculator-solution.py
+python challenge-01-tip-calculator.py
 ```
 
 In your own terminal it asks you the three questions. Run by a script,
@@ -414,14 +414,14 @@ prints the same report every time.
 You can also feed it the answers from the shell, one per line:
 
 ```bash
-printf '120\n18.5\n4\n' | python challenge-01-tip-calculator-solution.py
+printf '120\n18.5\n4\n' | python challenge-01-tip-calculator.py
 ```
 
 Because the questions go to the error stream, `>` captures the report on
 its own:
 
 ```bash
-python challenge-01-tip-calculator-solution.py > bill.txt
+python challenge-01-tip-calculator.py > bill.txt
 ```
 
 In your own project, save the same code as `tip.py`.

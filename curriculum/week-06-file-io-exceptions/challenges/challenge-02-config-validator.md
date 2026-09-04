@@ -222,7 +222,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2. It writes four
 demonstration configs into a temporary folder and validates each one:
 
 ```text
-$ python challenge-02-config-validator-solution.py
+$ python challenge-02-config-validator.py
 good.json: OK - 6 keys, port=5432
 wrong-type.json: ConfigSchemaError: key 'port' expected int, got str
 missing-key.json: ConfigSchemaError: missing required key: 'debug'
@@ -253,7 +253,7 @@ every error was caught. Let one escape and the traceback shows both halves:
 
 ```text
 Traceback (most recent call last):
-  File "challenge-02-config-validator-solution.py", line 84, in load_json
+  File "challenge-02-config-validator.py", line 84, in load_json
     return json.loads(raw)
            ~~~~~~~~~~^^^^^
   File "...\Lib\json\__init__.py", line 346, in loads
@@ -271,7 +271,7 @@ The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
   ...
-  File "challenge-02-config-validator-solution.py", line 86, in load_json
+  File "challenge-02-config-validator.py", line 86, in load_json
     raise ConfigParseError(
         f"invalid JSON at line {e.lineno}, column {e.colno}: {e.msg}"
     ) from e
@@ -568,14 +568,12 @@ download runs on a machine where you have created nothing and leaves nothing
 behind. The four cases are the four outcomes the validator has to produce, one
 each.
 
-## Download and run
+## Run it
 
-Download
-[challenge-02-config-validator-solution.py](./challenge-02-config-validator-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-02-config-validator.py` and run it:
 
 ```bash
-python challenge-02-config-validator-solution.py
+python challenge-02-config-validator.py
 ```
 
 It writes its four demonstration configs into a temporary directory, validates

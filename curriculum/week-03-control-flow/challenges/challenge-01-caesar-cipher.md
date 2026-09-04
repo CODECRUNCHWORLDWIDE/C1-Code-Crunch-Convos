@@ -497,13 +497,13 @@ from a single loop, and this file gets about a third shorter. Notice the
 duplication now, while it is still mildly annoying — that annoyance is
 what makes `def` feel like a relief rather than more syntax to learn.
 
-## Download and run
+## Run it
 
-Download [challenge-01-caesar-cipher-solution.py](./challenge-01-caesar-cipher-solution.py)
+Copy the worked answer on this page into `challenge-01-caesar-cipher.py` and run it:
 and run it:
 
 ```bash
-python challenge-01-caesar-cipher-solution.py
+python challenge-01-caesar-cipher.py
 ```
 
 In your own terminal it asks you the questions. Run by a script, or with
@@ -513,14 +513,14 @@ same session every time.
 You can also feed it answers from the shell, one line per question:
 
 ```bash
-printf 'encode\n13\nHello, World!\nn\n' | python challenge-01-caesar-cipher-solution.py
+printf 'encode\n13\nHello, World!\nn\n' | python challenge-01-caesar-cipher.py
 ```
 
 Because the questions go to the error stream, `>` captures the results on
 their own:
 
 ```bash
-python challenge-01-caesar-cipher-solution.py > out.txt
+python challenge-01-caesar-cipher.py > out.txt
 ```
 
 In your own project, save the same code as

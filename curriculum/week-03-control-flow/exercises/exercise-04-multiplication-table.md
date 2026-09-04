@@ -326,14 +326,12 @@ written, and Week 4 is where you will have the tools to write it on purpose
 values. Notice the duplication now so that the tidy-up has an obvious
 target when you get there.
 
-## Download and run
+## Run it
 
-Download
-[exercise-04-multiplication-table-solution.py](./exercise-04-multiplication-table-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-04-multiplication-table.py` and run it:
 
 ```bash
-python exercise-04-multiplication-table-solution.py
+python exercise-04-multiplication-table.py
 ```
 
 It is the same program as the one you are writing, under a name that will

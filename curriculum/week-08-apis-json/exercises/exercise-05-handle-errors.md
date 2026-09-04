@@ -189,7 +189,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with requests
 2.32.3 and urllib3 2.3.0:
 
 ```text
-$ python exercise-05-handle-errors-solution.py
+$ python exercise-05-handle-errors.py
 --- replaying recorded outcomes; pass --live to call httpbin ---
 [1/4] https://httpbin.org/get  (retrying session)
       ok - top-level keys: args, headers, origin, url
@@ -569,14 +569,12 @@ the right attribute names; it fills in an actual `requests.Response`. That is
 why case 2's message is the genuine `requests` error text, produced by the
 genuine `raise_for_status()`, rather than a string somebody typed.
 
-## Download and run
+## Run it
 
-Download
-[exercise-05-handle-errors-solution.py](./exercise-05-handle-errors-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-05-handle-errors.py` and run it:
 
 ```bash
-python exercise-05-handle-errors-solution.py
+python exercise-05-handle-errors.py
 ```
 
 It needs `requests` installed and **no internet**. It finishes in a fraction of
@@ -585,7 +583,7 @@ a second.
 To run the real thing, pass a flag:
 
 ```bash
-python exercise-05-handle-errors-solution.py --live
+python exercise-05-handle-errors.py --live
 ```
 
 That builds the retrying `Session` and calls httpbin four times. Expect it to

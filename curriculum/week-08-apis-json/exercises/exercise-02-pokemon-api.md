@@ -157,7 +157,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with requests
 2.32.3:
 
 ```text
-$ python exercise-02-pokemon-api-solution.py
+$ python exercise-02-pokemon-api.py
 --- replaying recorded payloads; pass fetch=fetch_live to go online ---
 pikachu (#25)
   types      electric
@@ -487,14 +487,12 @@ to tolerate it tomorrow, and the documentation says lowercase — so normalise a
 the boundary and stop thinking about it. That is a better reason than a
 mistaken one.
 
-## Download and run
+## Run it
 
-Download
-[exercise-02-pokemon-api-solution.py](./exercise-02-pokemon-api-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-02-pokemon-api.py` and run it:
 
 ```bash
-python exercise-02-pokemon-api-solution.py
+python exercise-02-pokemon-api.py
 ```
 
 It needs `requests` installed and **no internet**. The three payloads it prints

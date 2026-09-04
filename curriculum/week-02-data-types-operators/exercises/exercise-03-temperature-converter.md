@@ -404,12 +404,12 @@ two jobs is the shape of nearly every program you will write after this
 week, and it is far easier to see now, while Week 2 has no `if` in it to
 tempt you.
 
-## Download and run
+## Run it
 
-Download [exercise-03-temperature-converter-solution.py](./exercise-03-temperature-converter-solution.py) and run it:
+Copy the worked answer on this page into `exercise-03-temperature-converter.py` and run it:
 
 ```bash
-python exercise-03-temperature-converter-solution.py
+python exercise-03-temperature-converter.py
 ```
 
 ## Common bugs to catch

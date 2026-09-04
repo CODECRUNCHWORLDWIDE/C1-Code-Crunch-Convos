@@ -204,7 +204,7 @@ functions in the middle of the starter are mutators, and each one returns a
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python exercise-03-json-config-solution.py
+$ python exercise-03-json-config.py
 --- first run ---
 Loaded 5 top-level keys from site-config.json
 Enabled feature: comments
@@ -508,14 +508,12 @@ nothing, and so the idempotence claim is demonstrated instead of asserted.
 than read from a module constant — which is the one change that makes it
 callable twice.
 
-## Download and run
+## Run it
 
-Download
-[exercise-03-json-config-solution.py](./exercise-03-json-config-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-03-json-config.py` and run it:
 
 ```bash
-python exercise-03-json-config-solution.py
+python exercise-03-json-config.py
 ```
 
 It needs no `data/` folder: it writes its own copy of the config into a

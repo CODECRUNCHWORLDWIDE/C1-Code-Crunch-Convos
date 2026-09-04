@@ -127,7 +127,7 @@ says `False`, because it never looked at the values.
 ## Expected output
 
 ```text
-$ python problem-06-intersect-dictionaries-solution.py
+$ python problem-06-intersect-dictionaries.py
 {'b': 2, 'c': 3}
 {}
 {'x': 1}
@@ -302,13 +302,13 @@ cost follows whichever one you iterate. If `d1` is enormous and `d2` is tiny,
 `{k: d1[k] for k in d2 if k in d1}` is faster — at the price of losing `d1`'s
 order. Worth knowing. Not worth doing until you have measured.
 
-## Download and run
+## Run it
 
-Download [problem-06-intersect-dictionaries-solution.py](./problem-06-intersect-dictionaries-solution.py)
+Copy the worked answer on this page into `problem-06-intersect-dictionaries.py` and run it:
 and run it:
 
 ```bash
-python problem-06-intersect-dictionaries-solution.py
+python problem-06-intersect-dictionaries.py
 ```
 
 Your own copy of `intersect_dicts` belongs in `week-05-solutions.py`, and that

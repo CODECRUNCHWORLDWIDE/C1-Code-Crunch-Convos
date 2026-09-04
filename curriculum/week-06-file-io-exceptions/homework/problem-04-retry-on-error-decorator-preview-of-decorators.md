@@ -148,7 +148,7 @@ This problem touches no files at all, so the shipped answer runs
 anywhere as downloaded:
 
 ```bash
-$ python problem-04-retry-on-error-decorator-preview-of-decorators-solution.py
+$ python problem-04-retry-on-error-decorator-preview-of-decorators.py
 ```
 
 ```text
@@ -390,13 +390,13 @@ runs once, when Python reads the `@` line. So
 looking at the file, instead of the first time that path runs in
 production.
 
-## Download and run
+## Run it
 
-Download [problem-04-retry-on-error-decorator-preview-of-decorators-solution.py](./problem-04-retry-on-error-decorator-preview-of-decorators-solution.py)
+Copy the worked answer on this page into `problem-04-retry-on-error-decorator-preview-of-decorators.py` and run it:
 and run it:
 
 ```bash
-python problem-04-retry-on-error-decorator-preview-of-decorators-solution.py
+python problem-04-retry-on-error-decorator-preview-of-decorators.py
 ```
 
 It reads and writes no files, so it runs from anywhere with nothing set

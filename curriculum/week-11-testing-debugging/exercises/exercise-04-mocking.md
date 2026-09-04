@@ -166,7 +166,7 @@ boundary with `mocker.patch.object(requests, "get", ...)` — the object-and-nam
 form of the same idea. It runs the suite through pytest and reports:
 
 ```text
-$ python exercise-04-mocking-solution.py
+$ python exercise-04-mocking.py
 Five tests that 'talk to an API' without touching the network.
 Every call is a MagicMock standing in for requests.get('https://catalog.example.org/tools/t-014').
 
@@ -404,14 +404,12 @@ That is the whole reason to prefer it over calling `unittest.mock.patch(...)`
 by hand, where forgetting to stop the patch leaves a mock alive in an unrelated
 test file.
 
-## Download and run
+## Run it
 
-Download
-[exercise-04-mocking-solution.py](./exercise-04-mocking-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-04-mocking.py` and run it:
 
 ```bash
-python exercise-04-mocking-solution.py
+python exercise-04-mocking.py
 ```
 
 It needs `pytest`, `pytest-mock`, and `requests` installed. It never opens a

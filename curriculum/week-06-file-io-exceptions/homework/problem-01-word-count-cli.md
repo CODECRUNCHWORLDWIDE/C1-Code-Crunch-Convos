@@ -158,7 +158,7 @@ a scratch folder, then counts those two plus a `missing.txt` that was
 never created:
 
 ```bash
-$ python problem-01-word-count-cli-solution.py
+$ python problem-01-word-count-cli.py
 ```
 
 ```text
@@ -181,8 +181,8 @@ Prove the split to yourself. Throw stderr away and you keep the table;
 throw stdout away and you keep the complaint:
 
 ```bash
-python problem-01-word-count-cli-solution.py 2>/dev/null
-python problem-01-word-count-cli-solution.py 2>&1 >/dev/null
+python problem-01-word-count-cli.py 2>/dev/null
+python problem-01-word-count-cli.py 2>&1 >/dev/null
 ```
 
 ## Steps
@@ -385,13 +385,13 @@ an empty directory and run it. It also means the paths in the table are
 short names rather than a long temporary path, so the output is the same
 on every machine.
 
-## Download and run
+## Run it
 
-Download [problem-01-word-count-cli-solution.py](./problem-01-word-count-cli-solution.py)
+Copy the worked answer on this page into `problem-01-word-count-cli.py` and run it:
 and run it:
 
 ```bash
-python problem-01-word-count-cli-solution.py
+python problem-01-word-count-cli.py
 ```
 
 With no arguments it creates its own sample files in a temporary folder
@@ -399,7 +399,7 @@ and counts those, so it runs anywhere with nothing set up. Give it real
 file names and it counts those instead:
 
 ```bash
-python problem-01-word-count-cli-solution.py essay.txt notes.txt missing.txt
+python problem-01-word-count-cli.py essay.txt notes.txt missing.txt
 ```
 
 Save your own copy as `word_count.py` in your homework folder, and commit

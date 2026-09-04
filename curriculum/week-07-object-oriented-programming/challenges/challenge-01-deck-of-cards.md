@@ -276,7 +276,7 @@ comparison, get four.
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python challenge-01-deck-of-cards-solution.py
+$ python challenge-01-deck-of-cards.py
 52
 Deck(remaining=52)
 K of Diamonds
@@ -565,14 +565,12 @@ problem instead of a generic index failure. Same design as `InsufficientFunds`
 in Exercise 5, and the same reason the standard library makes `KeyError` and
 `IndexError` both subclasses of `LookupError`.
 
-## Download and run
+## Run it
 
-Download
-[challenge-01-deck-of-cards-solution.py](./challenge-01-deck-of-cards-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-01-deck-of-cards.py` and run it:
 
 ```bash
-python challenge-01-deck-of-cards-solution.py
+python challenge-01-deck-of-cards.py
 ```
 
 It imports only from the standard library and seeds `random` itself, so two

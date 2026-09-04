@@ -328,8 +328,6 @@ if __name__ == "__main__":
     main()
 ```
 
-<!--@@INSERT:problem-02-migration-script-solution.py@@-->
-
 **Why it works.**
 
 **A migration is a diff between two schemas, expressed as SQL you can
@@ -366,13 +364,13 @@ housekeeping query — "does this column exist yet?" — passes `posts` and
 formatting them into the SQL string. The habit does not get a day off
 just because the input came from you.
 
-## Download and run
+## Run it
 
-Download [problem-02-migration-script-solution.py](./problem-02-migration-script-solution.py)
+Copy the worked answer on this page into `problem-02-migration-script.py` and run it:
 and run it:
 
 ```bash
-python problem-02-migration-script-solution.py
+python problem-02-migration-script.py
 ```
 
 It builds the old two-table world in memory, fills it with rows, applies

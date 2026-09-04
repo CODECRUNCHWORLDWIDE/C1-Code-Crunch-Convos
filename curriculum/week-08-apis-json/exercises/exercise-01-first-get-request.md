@@ -163,7 +163,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with requests
 2.32.3:
 
 ```text
-$ python exercise-01-first-get-request-solution.py
+$ python exercise-01-first-get-request.py
 --- replaying recorded replies; pass send=send_live to go online ---
 200 OK
 content-type: application/json
@@ -442,14 +442,12 @@ back the one-character string `'8'`. A query string is text on the wire; it has
 no types at all. `echoed_args(response)["week"] == 8` is `False` and always
 will be. Convert with `int()` at the point where you need a number.
 
-## Download and run
+## Run it
 
-Download
-[exercise-01-first-get-request-solution.py](./exercise-01-first-get-request-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-01-first-get-request.py` and run it:
 
 ```bash
-python exercise-01-first-get-request-solution.py
+python exercise-01-first-get-request.py
 ```
 
 It needs the `requests` library installed, and nothing else. **It does not need

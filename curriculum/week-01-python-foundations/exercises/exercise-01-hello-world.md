@@ -179,12 +179,12 @@ from yet. Requirement 5 makes you type it anyway, because it costs nothing
 on day one and costs a whole afternoon the first time you forget it in
 Week 4.
 
-## Download and run
+## Run it
 
-Download [exercise-01-hello-world-solution.py](./exercise-01-hello-world-solution.py) and run it:
+Copy the worked answer on this page into `exercise-01-hello-world.py` and run it:
 
 ```bash
-python exercise-01-hello-world-solution.py
+python exercise-01-hello-world.py
 ```
 
 ## Common bugs to catch

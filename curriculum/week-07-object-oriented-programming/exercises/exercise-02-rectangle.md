@@ -206,7 +206,7 @@ forever.
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python exercise-02-rectangle-solution.py
+$ python exercise-02-rectangle.py
 Rectangle(width=90.0, height=60.0)
   area      : 5400.00 sq cm
   perimeter : 300.00 cm
@@ -383,14 +383,12 @@ enforcement for free.** Leaving the setter out means an assignment raises
 instead of silently doing something arbitrary. Read-only is not a limitation
 here; it is the accurate description of the value.
 
-## Download and run
+## Run it
 
-Download
-[exercise-02-rectangle-solution.py](./exercise-02-rectangle-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-02-rectangle.py` and run it:
 
 ```bash
-python exercise-02-rectangle-solution.py
+python exercise-02-rectangle.py
 ```
 
 It needs no setup and imports nothing. The `-solution` in the name keeps it

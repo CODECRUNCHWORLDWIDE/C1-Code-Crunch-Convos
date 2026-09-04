@@ -423,13 +423,13 @@ question that arrives after you have answered it is no use. Then
 raises `EOFError`, and the `except` prints the question and the demo word
 together on the normal output stream and hands the word back.
 
-## Download and run
+## Run it
 
-Download [challenge-02-mad-libs-solution.py](./challenge-02-mad-libs-solution.py) and run
+Copy the worked answer on this page into `challenge-02-mad-libs.py` and run it:
 it:
 
 ```bash
-python challenge-02-mad-libs-solution.py
+python challenge-02-mad-libs.py
 ```
 
 In your own terminal it asks you the seven questions. Run by a script, or
@@ -438,14 +438,14 @@ with its input closed, it answers itself from the demo words.
 You can also feed it seven answers from the shell:
 
 ```bash
-printf 'tiny\ncats\nMiami\nsinging\nAda Lovelace\n4\npizza\n' | python challenge-02-mad-libs-solution.py
+printf 'tiny\ncats\nMiami\nsinging\nAda Lovelace\n4\npizza\n' | python challenge-02-mad-libs.py
 ```
 
 Because the questions go to the error stream, `>` saves the story and the
 echo lines on their own:
 
 ```bash
-python challenge-02-mad-libs-solution.py > story.txt
+python challenge-02-mad-libs.py > story.txt
 ```
 
 In your own project, save the same code as `madlibs.py`.

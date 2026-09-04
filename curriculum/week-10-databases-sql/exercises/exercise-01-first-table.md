@@ -159,7 +159,7 @@ if __name__ == "__main__":
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python exercise-01-first-table-solution.py
+$ python exercise-01-first-table.py
 Connected to roastery.db
 Created table: roasts
 Inserted 4 roasts.
@@ -413,14 +413,12 @@ exception. The stretch below has you try the second form.
 
 </details>
 
-## Download and run
+## Run it
 
-Download
-[exercise-01-first-table-solution.py](./exercise-01-first-table-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-01-first-table.py` and run it:
 
 ```bash
-python exercise-01-first-table-solution.py
+python exercise-01-first-table.py
 ```
 
 It needs only the standard library, builds its catalogue in a throwaway

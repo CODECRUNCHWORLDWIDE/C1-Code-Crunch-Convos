@@ -185,7 +185,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with Flask
 3.1.0 and Jinja2 3.1.5:
 
 ```text
-$ python exercise-03-template-loop-solution.py
+$ python exercise-03-template-loop.py
 GET / -> 200
 count line  : <p>3 workshop(s) on the board.</p>
 escaped     : 2. <strong>Sorting, Big-O &amp; &lt;you&gt;</strong>
@@ -433,14 +433,12 @@ renders `Sorting, Big-O &amp; &lt;you&gt;` in the source and
 four things that turn it off — including the file-extension one that nobody
 sees coming.
 
-## Download and run
+## Run it
 
-Download
-[exercise-03-template-loop-solution.py](./exercise-03-template-loop-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-03-template-loop.py` and run it:
 
 ```bash
-python exercise-03-template-loop-solution.py
+python exercise-03-template-loop.py
 ```
 
 It needs Flask installed and nothing else, and it exits on its own — the

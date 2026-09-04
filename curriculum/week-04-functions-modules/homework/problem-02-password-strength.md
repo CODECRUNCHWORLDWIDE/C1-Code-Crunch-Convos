@@ -313,13 +313,13 @@ lines beneath it, and the last line needs no condition at all.
 
 Every branch you wrote gets exercised once. That is what a demo is for.
 
-## Download and run
+## Run it
 
-Download [problem-02-password-strength-solution.py](./problem-02-password-strength-solution.py)
+Copy the worked answer on this page into `problem-02-password-strength.py` and run it:
 and run it:
 
 ```bash
-python problem-02-password-strength-solution.py
+python problem-02-password-strength.py
 ```
 
 Save your own copy as `password.py` in your homework folder, and commit

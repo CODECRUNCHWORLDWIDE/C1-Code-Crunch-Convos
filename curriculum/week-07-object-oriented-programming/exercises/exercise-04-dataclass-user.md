@@ -169,7 +169,7 @@ whose email has an `@` in it.
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python exercise-04-dataclass-user-solution.py
+$ python exercise-04-dataclass-user.py
 User(username='rlopez', email='rlopez@example.org', interests=['python', 'gis'], active=True)
 User(username='amina', email='amina@example.org', interests=[], active=True)
 equal: True   same object: False
@@ -322,14 +322,12 @@ would be the right structure, at the cost of the ordering the requirement
 asks for. Choosing the structure that fits the requirement rather than the
 fastest one is the correct move here.
 
-## Download and run
+## Run it
 
-Download
-[exercise-04-dataclass-user-solution.py](./exercise-04-dataclass-user-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-04-dataclass-user.py` and run it:
 
 ```bash
-python exercise-04-dataclass-user-solution.py
+python exercise-04-dataclass-user.py
 ```
 
 It imports only `dataclasses` from the standard library and needs no setup.

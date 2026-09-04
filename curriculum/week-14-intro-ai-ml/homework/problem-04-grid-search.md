@@ -146,7 +146,7 @@ if __name__ == "__main__":
 ## Expected output
 
 ```text
-$ python problem-04-grid-search-solution.py
+$ python problem-04-grid-search.py
 images: 1797   train: 1347   test: 450
 combinations tried: 28  (x 5 folds)
 best parameters:
@@ -305,15 +305,14 @@ none of the 140 fits, none of the comparisons. That is what the 450 images were
 for, and it is why they were split off in the very first lines, before anything
 else happened.
 
-## Download and run
+## Run it
 
-Download
-[problem-04-grid-search-solution.py](./problem-04-grid-search-solution.py) and run
+Copy the worked answer on this page into `problem-04-grid-search.py` and run it:
 it:
 
 ```bash
 python -m pip install scikit-learn
-python problem-04-grid-search-solution.py
+python problem-04-grid-search.py
 ```
 
 The digits dataset ships inside scikit-learn, so nothing downloads. The run takes

@@ -327,8 +327,6 @@ if __name__ == "__main__":
     main()
 ```
 
-<!--@@INSERT:problem-04-query-optimizer-solution.py@@-->
-
 **Why it works.**
 
 **Question by question, this is the write-up the problem asks for:**
@@ -373,13 +371,13 @@ after the grouping. That honesty — seeing exactly what an index does and
 does not fix — is the difference between cargo-culting indexes and
 understanding them.
 
-## Download and run
+## Run it
 
-Download [problem-04-query-optimizer-solution.py](./problem-04-query-optimizer-solution.py)
+Copy the worked answer on this page into `problem-04-query-optimizer.py` and run it:
 and run it:
 
 ```bash
-python problem-04-query-optimizer-solution.py
+python problem-04-query-optimizer.py
 ```
 
 It builds the `events` table in memory, seeds it deterministically, and

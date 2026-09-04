@@ -457,13 +457,13 @@ deleted. Your own `exercise-04-aggregate.py` should not do this — you want
 `sales.db` left behind so you can rerun the `GROUP BY` in the SQLite shell
 and check it by hand.
 
-## Download and run
+## Run it
 
-Download [exercise-04-aggregate-solution.py](./exercise-04-aggregate-solution.py)
+Copy the worked answer on this page into `exercise-04-aggregate.py` and run it:
 and run it:
 
 ```bash
-python exercise-04-aggregate-solution.py
+python exercise-04-aggregate.py
 ```
 
 Nothing to install — `sqlite3` comes with Python. It seeds the ten sales,

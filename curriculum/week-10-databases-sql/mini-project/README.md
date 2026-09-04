@@ -287,7 +287,7 @@ throwaway folder and cleans up after itself. Captured from a real run:
 
 ```bash
 cd curriculum/week-10-databases-sql/mini-project
-PYTHONIOENCODING=utf-8 python tracker-solution.py
+PYTHONIOENCODING=utf-8 python tracker.py
 ```
 
 ```text
@@ -645,12 +645,12 @@ input can change, while the filters still combine freely.
 answer up to `run_command`, which owns all the printing and all the exit codes.
 That split is why the same two functions would work unchanged behind a website.
 
-## Download and run
+## Run it
 
-Download [tracker-solution.py](./tracker-solution.py) and run it:
+Copy the worked answer on this page into `tracker.py` and run it:
 
 ```bash
-python tracker-solution.py
+python tracker.py
 ```
 
 With no arguments it plays the whole session above inside a temporary folder and
@@ -658,8 +658,8 @@ deletes the folder on the way out, so it leaves no `tasks.db` behind. Give it a
 real command and it works on a real file:
 
 ```bash
-python tracker-solution.py add "Finish quiz" --due 2026-05-15 --priority 2
-python tracker-solution.py list --status open
+python tracker.py add "Finish quiz" --due 2026-05-15 --priority 2
+python tracker.py list --status open
 ```
 
 Save your own version as `tracker.py`. The download keeps the longer name on

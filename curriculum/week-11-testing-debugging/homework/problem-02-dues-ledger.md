@@ -168,7 +168,7 @@ Running the shipped answer prints who is in arrears, then runs the suite and
 reports each test. Your build will show the real capture here:
 
 ```text
-$ python problem-02-dues-ledger-solution.py
+$ python problem-02-dues-ledger.py
 Threshold is 500 cents. In arrears = owing strictly more.
   in arrears: ['Ada', 'Yukihiro']
   Grace owes exactly the threshold, so she is NOT in arrears: True
@@ -411,14 +411,12 @@ Grace is the row that can tell the two apart. And the empty-case test asserts
 exact empty list is the only way to know the filter returned a real, empty
 answer.
 
-## Download and run
+## Run it
 
-Download
-[problem-02-dues-ledger-solution.py](./problem-02-dues-ledger-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-02-dues-ledger.py` and run it:
 
 ```bash
-python problem-02-dues-ledger-solution.py
+python problem-02-dues-ledger.py
 ```
 
 It needs `pytest` and nothing else. Your own work is `ledger.py` plus

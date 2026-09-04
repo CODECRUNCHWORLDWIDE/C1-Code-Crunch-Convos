@@ -292,13 +292,13 @@ clean sentence in it while the question still appears on your screen.
 otherwise sit in a buffer and appear *after* you had already answered
 it.
 
-## Download and run
+## Run it
 
-Download [problem-01-leap-year-checker-solution.py](./problem-01-leap-year-checker-solution.py)
+Copy the worked answer on this page into `problem-01-leap-year-checker.py` and run it:
 and run it:
 
 ```bash
-python problem-01-leap-year-checker-solution.py
+python problem-01-leap-year-checker.py
 ```
 
 Run from a terminal, it asks you for a year. Run by a script, or with its

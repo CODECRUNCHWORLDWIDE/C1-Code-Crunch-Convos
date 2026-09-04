@@ -94,7 +94,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with Flask
 3.1.0:
 
 ```text
-$ python exercise-01-hello-flask-solution.py
+$ python exercise-01-hello-flask.py
 GET /      -> 200 text/html; charset=utf-8
 Code Crunch study hall is open.
 
@@ -259,14 +259,12 @@ exactly the same routing that a browser request would hit. Your own file keeps
 answer needs to prove itself and exit. Week 11 builds its whole testing story
 on this object.
 
-## Download and run
+## Run it
 
-Download
-[exercise-01-hello-flask-solution.py](./exercise-01-hello-flask-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-01-hello-flask.py` and run it:
 
 ```bash
-python exercise-01-hello-flask-solution.py
+python exercise-01-hello-flask.py
 ```
 
 It needs Flask installed and nothing else, and it exits on its own — no

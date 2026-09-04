@@ -171,7 +171,7 @@ readers.
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python exercise-01-dog-class-solution.py
+$ python exercise-01-dog-class.py
 Biscuit says woof!
 Juniper says woof!
 Biscuit, age 4, knows: sit, wait
@@ -308,14 +308,12 @@ the smallest honest way to say it. This is a small case of a large habit: the
 empty case is a case, and if you do not name it, the output names it for you
 badly.
 
-## Download and run
+## Run it
 
-Download
-[exercise-01-dog-class-solution.py](./exercise-01-dog-class-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-01-dog-class.py` and run it:
 
 ```bash
-python exercise-01-dog-class-solution.py
+python exercise-01-dog-class.py
 ```
 
 It needs no setup and imports nothing. The `-solution` in the name keeps it

@@ -254,7 +254,7 @@ read than `1000000`.
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python exercise-05-bank-account-solution.py
+$ python exercise-05-bank-account.py
 Ravi Menon: $0.00
 Ravi Menon: $125.50
 BankAccount(holder='Ravi Menon', balance_cents=12550)
@@ -487,14 +487,12 @@ screen and the decline notice. `//` takes the dollars and `%` takes the
 remainder, both on integers, so no decimal is created anywhere on the path
 from stored value to printed string.
 
-## Download and run
+## Run it
 
-Download
-[exercise-05-bank-account-solution.py](./exercise-05-bank-account-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-05-bank-account.py` and run it:
 
 ```bash
-python exercise-05-bank-account-solution.py
+python exercise-05-bank-account.py
 ```
 
 It imports nothing and needs no setup. The `-solution` in the name keeps it

@@ -300,14 +300,12 @@ conditional expression from
 *printed* before the `assert` stops the program. Print first, then fail, or
 you lose the evidence.
 
-## Download and run
+## Run it
 
-Download
-[exercise-02-sum-evens-solution.py](./exercise-02-sum-evens-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-02-sum-evens.py` and run it:
 
 ```bash
-python exercise-02-sum-evens-solution.py
+python exercise-02-sum-evens.py
 ```
 
 It is the same program as the one you are writing, under a name that will

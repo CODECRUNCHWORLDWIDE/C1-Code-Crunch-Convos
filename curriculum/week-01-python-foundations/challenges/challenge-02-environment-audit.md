@@ -342,12 +342,12 @@ column lines up. Hard-code `ljust(15)` and it works until somebody installs
 `charset-normalizer`, which is eighteen characters, and the column breaks.
 Measure the data, then format to the measurement.
 
-## Download and run
+## Run it
 
-Download [challenge-02-environment-audit-solution.py](./challenge-02-environment-audit-solution.py) and run it:
+Copy the worked answer on this page into `challenge-02-environment-audit.py` and run it:
 
 ```bash
-python challenge-02-environment-audit-solution.py
+python challenge-02-environment-audit.py
 ```
 
 Run it twice, and compare. Once from a plain terminal, and once from inside an
@@ -356,7 +356,7 @@ activated virtual environment:
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-python challenge-02-environment-audit-solution.py
+python challenge-02-environment-audit.py
 ```
 
 The `Executable`, `Inside venv` and package lines should all change. If they

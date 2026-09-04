@@ -242,7 +242,7 @@ elsewhere.
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python problem-05-observer-pattern-light-solution.py
+$ python problem-05-observer-pattern-light.py
 TemperatureSensor(celsius=20.0, observers=2)
 set_temperature(21.0)
   [printer] temperature is now 21.0 C
@@ -526,14 +526,12 @@ Lambdas are the exception — every `lambda` expression is a distinct object
 with no equal twin, so you *cannot* unsubscribe a lambda you did not keep a
 reference to. Bind it to a name first if you will need to remove it.
 
-## Download and run
+## Run it
 
-Download
-[problem-05-observer-pattern-light-solution.py](./problem-05-observer-pattern-light-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-05-observer-pattern-light.py` and run it:
 
 ```bash
-python problem-05-observer-pattern-light-solution.py
+python problem-05-observer-pattern-light.py
 ```
 
 It imports nothing outside the standard library and needs no setup. Save your

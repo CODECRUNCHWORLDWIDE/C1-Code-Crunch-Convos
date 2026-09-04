@@ -368,14 +368,12 @@ Notice what fixing bug 5 does to the rest of the file. `crew_capacity` no
 longer touches `VOLUNTEERS_SIGNED_UP` at all, which is what makes the
 stretch — getting rid of `global` entirely — reachable.
 
-## Download and run
+## Run it
 
-Download
-[exercise-04-scope-mystery-solution.py](./exercise-04-scope-mystery-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-04-scope-mystery.py` and run it:
 
 ```bash
-python exercise-04-scope-mystery-solution.py
+python exercise-04-scope-mystery.py
 ```
 
 It is the fixed version of the file you are debugging, under a name that will

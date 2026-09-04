@@ -158,7 +158,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with requests
 2.32.3:
 
 ```text
-$ python exercise-03-post-data-solution.py
+$ python exercise-03-post-data.py
 --- replaying a recorded echo; pass post=post_live to go online ---
 --- json= ---
 content-type sent: application/json
@@ -451,13 +451,13 @@ an encoding you write on your side and a decoding you write on the other.
 has already acted, a retry submits the report twice. Exercise 5 restricts
 retries to `GET` and `HEAD` for exactly this reason.
 
-## Download and run
+## Run it
 
-Download [exercise-03-post-data-solution.py](./exercise-03-post-data-solution.py)
+Copy the worked answer on this page into `exercise-03-post-data.py` and run it:
 and run it:
 
 ```bash
-python exercise-03-post-data-solution.py
+python exercise-03-post-data.py
 ```
 
 It needs `requests` installed and **no internet**. The echo document it works

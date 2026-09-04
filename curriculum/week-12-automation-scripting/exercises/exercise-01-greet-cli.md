@@ -124,7 +124,7 @@ Yours reads its arguments from the shell instead; the parser being exercised is
 the same. Real captured output, with the usage width pinned to 80 columns:
 
 ```text
-$ python exercise-01-greet-cli-solution.py
+$ python exercise-01-greet-cli.py
 Greet CLI — driving the parser headless with fixed argv lists.
 
 greet Ada
@@ -366,14 +366,12 @@ calls `sys.exit`, so every function is importable. `main(["Ada", "-n", "3"])`
 runs the entire program in-process — which is exactly how the demo drives it,
 and how you would write a test for a CLI without paying for a subprocess.
 
-## Download and run
+## Run it
 
-Download
-[exercise-01-greet-cli-solution.py](./exercise-01-greet-cli-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-01-greet-cli.py` and run it:
 
 ```bash
-python exercise-01-greet-cli-solution.py
+python exercise-01-greet-cli.py
 ```
 
 It needs nothing but the standard library and prints the session shown above.

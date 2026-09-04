@@ -138,7 +138,7 @@ The second call did **not** replace the list. It found one and handed it over.
 ## Expected output
 
 ```text
-$ python problem-05-group-by-first-letter-solution.py
+$ python problem-05-group-by-first-letter.py
 {'a': ['apple', 'ant'], 'b': ['bee', 'banana'], 'c': ['cherry']}
 {}
 {'z': ['zebra']}
@@ -323,13 +323,13 @@ def group_by_first_letter_dd(words: list[str]) -> dict[str, list[str]]:
 The rule of thumb: `defaultdict` where insertion dominates and the dict never
 leaves the function; plain `dict` at the boundaries.
 
-## Download and run
+## Run it
 
-Download [problem-05-group-by-first-letter-solution.py](./problem-05-group-by-first-letter-solution.py)
+Copy the worked answer on this page into `problem-05-group-by-first-letter.py` and run it:
 and run it:
 
 ```bash
-python problem-05-group-by-first-letter-solution.py
+python problem-05-group-by-first-letter.py
 ```
 
 Your own copy of `group_by_first_letter` belongs in `week-05-solutions.py`, and

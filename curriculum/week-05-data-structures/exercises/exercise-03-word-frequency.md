@@ -396,14 +396,12 @@ picks three without sorting is longer than the saving is worth at any size you
 will meet this year. Reach for the clever version when you have measured, not
 before.
 
-## Download and run
+## Run it
 
-Download
-[exercise-03-word-frequency-solution.py](./exercise-03-word-frequency-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-03-word-frequency.py` and run it:
 
 ```bash
-python exercise-03-word-frequency-solution.py
+python exercise-03-word-frequency.py
 ```
 
 It is the same program you are writing, under a name that will not collide

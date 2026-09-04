@@ -410,8 +410,6 @@ if __name__ == "__main__":
     main()
 ```
 
-<!--@@INSERT:problem-01-ecommerce-schema-solution.py@@-->
-
 **Why it works.**
 
 **A schema is a contract the database enforces for free.** Everything in
@@ -445,13 +443,13 @@ Storing the price on the order line, at the moment of purchase, means
 next month's sale cannot travel back in time and change what a customer
 paid in March.
 
-## Download and run
+## Run it
 
-Download [problem-01-ecommerce-schema-solution.py](./problem-01-ecommerce-schema-solution.py)
+Copy the worked answer on this page into `problem-01-ecommerce-schema.py` and run it:
 and run it:
 
 ```bash
-python problem-01-ecommerce-schema-solution.py
+python problem-01-ecommerce-schema.py
 ```
 
 It builds the whole schema in an in-memory database, lists it, seeds it,

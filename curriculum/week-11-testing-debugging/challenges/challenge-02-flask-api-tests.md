@@ -119,7 +119,7 @@ templates in a `DictLoader` — plus the fixtures and the test suite into one fi
 so it runs as a plain script. It runs the suite through pytest and reports:
 
 ```text
-$ python challenge-02-flask-api-tests-solution.py
+$ python challenge-02-flask-api-tests.py
 Integration tests for the blog, each on its own app + in-memory database.
 
 The tests, run the way pytest runs them:
@@ -666,14 +666,12 @@ so the delete view is reachable at `DELETE /posts/<id>` (for API clients) and
 `POST /posts/<id>/delete` (for an HTML form). Werkzeug routes on the method, so
 `GET /posts/<id>` still lands on `show_post`. Both delete paths are tested.
 
-## Download and run
+## Run it
 
-Download
-[challenge-02-flask-api-tests-solution.py](./challenge-02-flask-api-tests-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-02-flask-api-tests.py` and run it:
 
 ```bash
-python challenge-02-flask-api-tests-solution.py
+python challenge-02-flask-api-tests.py
 ```
 
 It needs `flask` and `pytest` installed and opens no port and no network. Your

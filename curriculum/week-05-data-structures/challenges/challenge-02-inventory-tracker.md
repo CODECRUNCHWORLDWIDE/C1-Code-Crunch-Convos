@@ -571,14 +571,12 @@ list this function built two lines earlier. Nobody else is holding it. The
 rule was never "never sort in place"; it was "never rearrange something you
 were handed".
 
-## Download and run
+## Run it
 
-Download
-[challenge-02-inventory-tracker-solution.py](./challenge-02-inventory-tracker-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-02-inventory-tracker.py` and run it:
 
 ```bash
-python challenge-02-inventory-tracker-solution.py
+python challenge-02-inventory-tracker.py
 ```
 
 It is the same program you are writing, under a name that will not collide

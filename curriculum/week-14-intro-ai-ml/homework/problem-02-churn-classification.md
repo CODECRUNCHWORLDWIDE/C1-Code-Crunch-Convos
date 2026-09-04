@@ -149,7 +149,7 @@ digit as soft — a different library build can move it — but the shape of the
 result is fixed and is the whole point.
 
 ```text
-$ python problem-02-churn-classification-solution.py
+$ python problem-02-churn-classification.py
 rows: 5000   class balance (0=stay, 1=churn): {0: 4250, 1: 750}
 test set churn balance: {0: 1063, 1: 187}
 --- LogisticRegression ---
@@ -335,15 +335,13 @@ regression with `class_weight="balanced"` would be a far closer fight — see Un
 the hood. Every claim in machine learning has that many conditions attached, and
 the honest ones say so.
 
-## Download and run
+## Run it
 
-Download
-[problem-02-churn-classification-solution.py](./problem-02-churn-classification-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-02-churn-classification.py` and run it:
 
 ```bash
 python -m pip install scikit-learn pandas
-python problem-02-churn-classification-solution.py
+python problem-02-churn-classification.py
 ```
 
 The customers are generated inside the file from a pinned seed, so nothing

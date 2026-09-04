@@ -309,13 +309,13 @@ six lines to diff by eye. The `print("All tests passed")` sits *after* the
 loop, so it is reachable only when the loop ran all the way through
 without returning.
 
-## Download and run
+## Run it
 
-Download [problem-03-leap-year-function-with-tests-solution.py](./problem-03-leap-year-function-with-tests-solution.py)
+Copy the worked answer on this page into `problem-03-leap-year-function-with-tests.py` and run it:
 and run it:
 
 ```bash
-python problem-03-leap-year-function-with-tests-solution.py
+python problem-03-leap-year-function-with-tests.py
 ```
 
 Save your own copy as `leap.py` in your homework folder, and commit that

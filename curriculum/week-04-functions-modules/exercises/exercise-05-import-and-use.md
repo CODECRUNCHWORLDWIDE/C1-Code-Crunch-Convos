@@ -420,14 +420,12 @@ day you wrote it, and wrong in the garden next Tuesday.
 twice, `from math import isclose` for the one name called four times in a
 row. And no aliases, for the reason in the constraints.
 
-## Download and run
+## Run it
 
-Download
-[exercise-05-import-and-use-solution.py](./exercise-05-import-and-use-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-05-import-and-use.py` and run it:
 
 ```bash
-python exercise-05-import-and-use-solution.py
+python exercise-05-import-and-use.py
 ```
 
 It is the same program you are writing, plus the one seed line, under a name

@@ -130,7 +130,7 @@ if __name__ == "__main__":
 ## Expected output
 
 ```text
-$ python exercise-03-filter-and-sort-solution.py
+$ python exercise-03-filter-and-sort.py
 --- all rows ---
     learner   session  score  minutes
 0     Amara   Tuesday     88      240
@@ -322,14 +322,12 @@ calculations of "the winner" that can disagree the moment the tiebreak rule
 changes. `.iloc[0]` returns that row as a Series, so `top["learner"]` and
 `top["score"]` read fields out of it by column name.
 
-## Download and run
+## Run it
 
-Download
-[exercise-03-filter-and-sort-solution.py](./exercise-03-filter-and-sort-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-03-filter-and-sort.py` and run it:
 
 ```bash
-python exercise-03-filter-and-sort-solution.py
+python exercise-03-filter-and-sort.py
 ```
 
 It needs only pandas and prints the cohort, the passers, the ranking, and the two means. The `-solution` suffix keeps it from colliding with your own `exercise-03-filter-and-sort.py`.

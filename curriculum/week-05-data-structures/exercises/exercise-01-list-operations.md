@@ -402,14 +402,12 @@ which raises `IndexError: list index out of range`. Slices clamp, indexes
 raise — which is why the stretch version with a configurable `n` needs no
 defensive code.
 
-## Download and run
+## Run it
 
-Download
-[exercise-01-list-operations-solution.py](./exercise-01-list-operations-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-01-list-operations.py` and run it:
 
 ```bash
-python exercise-01-list-operations-solution.py
+python exercise-01-list-operations.py
 ```
 
 It is the same program you are writing, under a name that will not collide

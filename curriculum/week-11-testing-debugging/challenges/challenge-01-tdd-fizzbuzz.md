@@ -106,7 +106,7 @@ one file so it runs as a plain script. It prints the finished output, then runs
 the suite through pytest:
 
 ```text
-$ python challenge-01-tdd-fizzbuzz-solution.py
+$ python challenge-01-tdd-fizzbuzz.py
 fizzbuzz(15):
   ['1', '2', 'Fizz', '4', 'Buzz', 'Fizz', '7', '8', 'Fizz', 'Buzz', '11', 'Fizz', '13', '14', 'FizzBuzz']
 
@@ -319,14 +319,12 @@ after, which is the only time refactoring is safe.
 `_Collector` plugin records each result so the printed report never drifts. In
 your own folder you just type `pytest`.
 
-## Download and run
+## Run it
 
-Download
-[challenge-01-tdd-fizzbuzz-solution.py](./challenge-01-tdd-fizzbuzz-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-01-tdd-fizzbuzz.py` and run it:
 
 ```bash
-python challenge-01-tdd-fizzbuzz-solution.py
+python challenge-01-tdd-fizzbuzz.py
 ```
 
 It needs `pytest` and nothing else. Your own deliverable is the two separate

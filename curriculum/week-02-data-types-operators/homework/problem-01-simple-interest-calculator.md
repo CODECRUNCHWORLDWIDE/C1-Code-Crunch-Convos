@@ -287,13 +287,13 @@ with five clean lines in it while the questions still appear on your screen.
 `flush=True` matters because a prompt with no newline on the end would
 otherwise sit in a buffer and appear *after* you had already answered it.
 
-## Download and run
+## Run it
 
-Download [problem-01-simple-interest-calculator-solution.py](./problem-01-simple-interest-calculator-solution.py)
+Copy the worked answer on this page into `problem-01-simple-interest-calculator.py` and run it:
 and run it:
 
 ```bash
-python problem-01-simple-interest-calculator-solution.py
+python problem-01-simple-interest-calculator.py
 ```
 
 Run from a terminal, it asks you the three questions. Run by a script or

@@ -199,7 +199,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with requests
 2.32.3:
 
 ```text
-$ python challenge-01-currency-converter-solution.py
+$ python challenge-01-currency-converter.py
 --- replaying rates recorded on 2026-08-21; pass --live for today's ---
 100.00 USD = 85.48 EUR  (rate 0.8548, ECB 2026-08-21)
 50.00 GBP = 10836.00 JPY  (rate 216.72, ECB 2026-08-21)
@@ -212,10 +212,10 @@ Run with no arguments, the shipped file walks through three worked examples and
 then reads the currency list. Run with arguments it is the tool:
 
 ```bash
-$ python challenge-01-currency-converter-solution.py 100 USD EUR --live
+$ python challenge-01-currency-converter.py 100 USD EUR --live
 100.00 USD = 85.48 EUR  (rate 0.8548, ECB 2026-08-21)
 
-$ python challenge-01-currency-converter-solution.py 10 XYZ EUR --live
+$ python challenge-01-currency-converter.py 10 XYZ EUR --live
 Error: 'XYZ' is not a supported currency code.
 Run with --list to see supported codes.
 ```
@@ -676,14 +676,12 @@ convention for "you asked for something impossible" — which is also what
 argparse itself exits with. A script wrapping your tool can test the number
 instead of parsing your prose.
 
-## Download and run
+## Run it
 
-Download
-[challenge-01-currency-converter-solution.py](./challenge-01-currency-converter-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-01-currency-converter.py` and run it:
 
 ```bash
-python challenge-01-currency-converter-solution.py
+python challenge-01-currency-converter.py
 ```
 
 It needs `requests` installed and **no internet**. The four replies it uses
@@ -700,7 +698,7 @@ pins down.
 To call the real API, pass a flag:
 
 ```bash
-python challenge-01-currency-converter-solution.py 100 USD EUR --live
+python challenge-01-currency-converter.py 100 USD EUR --live
 ```
 
 `--live` swaps `fetch_recorded` for `fetch_live` and changes nothing else. The

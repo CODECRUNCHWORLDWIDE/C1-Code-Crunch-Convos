@@ -450,13 +450,13 @@ database appears wherever you are standing when you run the file.
 your folder so you can open it in the SQLite shell and trace the join by
 hand. That wrapper is packaging around the exercise, not part of it.
 
-## Download and run
+## Run it
 
-Download [exercise-03-joins-solution.py](./exercise-03-joins-solution.py)
+Copy the worked answer on this page into `exercise-03-joins.py` and run it:
 and run it:
 
 ```bash
-python exercise-03-joins-solution.py
+python exercise-03-joins.py
 ```
 
 Nothing to install — `sqlite3` ships with Python. It builds the blog,

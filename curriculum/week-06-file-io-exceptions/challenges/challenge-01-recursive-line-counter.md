@@ -202,7 +202,7 @@ Real stdout from the shipped file with no arguments, captured on CPython
 folder and counts that:
 
 ```text
-$ python challenge-01-recursive-line-counter-solution.py
+$ python challenge-01-recursive-line-counter.py
     3 app.py
     0 pkg/__init__.py
     4 pkg/util.py
@@ -437,21 +437,19 @@ file — inside a temporary folder, counts it, and deletes it on the way out.
 That is so the download prints something real on a machine with nothing set up,
 and so the `UnicodeDecodeError` branch is *demonstrated* rather than claimed.
 
-## Download and run
+## Run it
 
-Download
-[challenge-01-recursive-line-counter-solution.py](./challenge-01-recursive-line-counter-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-01-recursive-line-counter.py` and run it:
 
 ```bash
-python challenge-01-recursive-line-counter-solution.py
+python challenge-01-recursive-line-counter.py
 ```
 
 With no argument it builds and counts its own demo tree. Give it a folder and
 it counts that instead:
 
 ```bash
-python challenge-01-recursive-line-counter-solution.py ../week-06-file-io-exceptions
+python challenge-01-recursive-line-counter.py ../week-06-file-io-exceptions
 ```
 
 The `-solution` in the name keeps it from colliding with your own

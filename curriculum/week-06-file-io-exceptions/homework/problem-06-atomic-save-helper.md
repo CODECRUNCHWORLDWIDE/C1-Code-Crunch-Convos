@@ -166,7 +166,7 @@ the shipped answer works from a clean checkout and leaves nothing
 behind:
 
 ```bash
-$ python problem-06-atomic-save-helper-solution.py
+$ python problem-06-atomic-save-helper.py
 ```
 
 ```text
@@ -431,13 +431,13 @@ failure partway through, with real bytes already in the temporary file.
 No test hooks and no duplicated function. The streaming version is
 independently useful for documents too large to build in memory.
 
-## Download and run
+## Run it
 
-Download [problem-06-atomic-save-helper-solution.py](./problem-06-atomic-save-helper-solution.py)
+Copy the worked answer on this page into `problem-06-atomic-save-helper.py` and run it:
 and run it:
 
 ```bash
-python problem-06-atomic-save-helper-solution.py
+python problem-06-atomic-save-helper.py
 ```
 
 It creates its own file in a temporary folder, overwrites it once

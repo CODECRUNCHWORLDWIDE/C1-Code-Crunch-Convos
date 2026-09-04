@@ -418,14 +418,12 @@ assert is written that way on purpose, because "returns something truthy" and
 "returns a boolean" are different promises, and the second one is what a
 function named `is_...` is making.
 
-## Download and run
+## Run it
 
-Download
-[exercise-04-set-operations-solution.py](./exercise-04-set-operations-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-04-set-operations.py` and run it:
 
 ```bash
-python exercise-04-set-operations-solution.py
+python exercise-04-set-operations.py
 ```
 
 It is the same program you are writing, under a name that will not collide

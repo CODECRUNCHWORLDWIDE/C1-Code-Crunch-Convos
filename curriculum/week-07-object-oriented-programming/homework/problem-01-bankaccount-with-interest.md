@@ -244,7 +244,7 @@ nothing.
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python problem-01-bankaccount-with-interest-solution.py
+$ python problem-01-bankaccount-with-interest.py
 Ada: $123.45
 after depositing $50.00: Ada: $173.45
 after withdrawing $25.00: Ada: $148.45
@@ -516,14 +516,12 @@ not know the type still catch it with `except ValueError`; callers who care
 can tell "you asked for a nonsense amount" from "you do not have that much".
 Same design as `EmptyDeckError(IndexError)` in Challenge 01.
 
-## Download and run
+## Run it
 
-Download
-[problem-01-bankaccount-with-interest-solution.py](./problem-01-bankaccount-with-interest-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-01-bankaccount-with-interest.py` and run it:
 
 ```bash
-python problem-01-bankaccount-with-interest-solution.py
+python problem-01-bankaccount-with-interest.py
 ```
 
 It imports nothing and needs no setup. Save your own version as

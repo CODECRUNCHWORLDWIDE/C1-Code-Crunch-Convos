@@ -407,14 +407,14 @@ steps back out so the directory can be deleted. Your own
 `roastery_orm.db` left behind so you can open it and read the schema the ORM
 built for you.
 
-## Download and run
+## Run it
 
-Download [exercise-05-sqlalchemy-basic-solution.py](./exercise-05-sqlalchemy-basic-solution.py),
+Copy the worked answer on this page into `exercise-05-sqlalchemy-basic.py` and run it:
 install SQLAlchemy, and run it:
 
 ```bash
 pip install sqlalchemy
-python exercise-05-sqlalchemy-basic-solution.py
+python exercise-05-sqlalchemy-basic.py
 ```
 
 This is the one exercise this week that needs an install. `sqlite3` comes

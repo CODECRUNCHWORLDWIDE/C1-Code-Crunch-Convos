@@ -298,13 +298,13 @@ than the output stream, so `python homework-05-fibonacci.py > fib.txt`
 gives you a file of ten clean numbers and not a question. Your own file
 calls `input("Enter N: ")` directly.
 
-## Download and run
+## Run it
 
-Download [problem-05-fibonacci-numbers-up-to-n-solution.py](./problem-05-fibonacci-numbers-up-to-n-solution.py)
+Copy the worked answer on this page into `problem-05-fibonacci-numbers-up-to-n.py` and run it:
 and run it:
 
 ```bash
-python problem-05-fibonacci-numbers-up-to-n-solution.py
+python problem-05-fibonacci-numbers-up-to-n.py
 ```
 
 Run from a terminal, it asks for `N`. Run by a script, or with its input

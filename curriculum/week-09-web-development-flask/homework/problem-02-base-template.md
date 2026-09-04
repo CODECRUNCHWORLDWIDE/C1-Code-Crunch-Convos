@@ -140,7 +140,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with Flask
 3.1.0:
 
 ```text
-$ python problem-02-base-template-solution.py
+$ python problem-02-base-template.py
 GET /       -> 200
   doctype count in the page : 1
   footer from base.html     : True
@@ -401,14 +401,12 @@ pile up unread, then dump out somewhere surprising.
 plus two block overrides — none contains a `<html>` tag, a stylesheet link,
 or a nav. That is requirement 5, checked by living it.
 
-## Download and run
+## Run it
 
-Download
-[problem-02-base-template-solution.py](./problem-02-base-template-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-02-base-template.py` and run it:
 
 ```bash
-python problem-02-base-template-solution.py
+python problem-02-base-template.py
 ```
 
 It needs Flask installed and nothing else, and it exits on its own. In your

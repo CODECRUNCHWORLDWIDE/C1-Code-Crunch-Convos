@@ -309,12 +309,12 @@ it is a `NameError`. Chaining with `_` is great for exploring and terrible
 in a file, because every line then depends on the exact order of the lines
 above it.
 
-## Download and run
+## Run it
 
-Download [exercise-02-repl-explorer-solution.py](./exercise-02-repl-explorer-solution.py) and run it:
+Copy the worked answer on this page into `exercise-02-repl-explorer.py` and run it:
 
 ```bash
-python exercise-02-repl-explorer-solution.py
+python exercise-02-repl-explorer.py
 ```
 
 ## Common bugs to catch

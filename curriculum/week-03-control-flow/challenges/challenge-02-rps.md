@@ -506,13 +506,13 @@ waiting. Then it calls `input()` with **no argument**, because
 in with the game. That separation is why the piped session in *Expected
 output* is nothing but the game.
 
-## Download and run
+## Run it
 
-Download [challenge-02-rps-solution.py](./challenge-02-rps-solution.py)
+Copy the worked answer on this page into `challenge-02-rps.py` and run it:
 and run it:
 
 ```bash
-python challenge-02-rps-solution.py
+python challenge-02-rps.py
 ```
 
 In your own terminal it asks you what to play. Run by a script, or with
@@ -521,14 +521,14 @@ its input closed, it plays the demo session above.
 You can also feed it moves from the shell, one per line:
 
 ```bash
-printf 'ROCK \np\nq\n' | python challenge-02-rps-solution.py
+printf 'ROCK \np\nq\n' | python challenge-02-rps.py
 ```
 
 Because the questions go to the error stream, `>` captures the game on
 its own:
 
 ```bash
-python challenge-02-rps-solution.py > game.txt
+python challenge-02-rps.py > game.txt
 ```
 
 **Delete the `random.seed(SEED)` line before you actually play.** With it

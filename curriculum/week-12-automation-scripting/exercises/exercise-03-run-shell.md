@@ -160,7 +160,7 @@ anywhere. Your version numbers will differ; the shape is what matters. Real
 captured output on this machine:
 
 ```text
-$ python exercise-03-run-shell-solution.py
+$ python exercise-03-run-shell.py
 Run Shell — the toolbox doctor, driven headless.
 Your version numbers will differ; the shape is what matters.
 
@@ -370,14 +370,12 @@ one running your script — and on a fresh Windows install there may be no
 `python` on the `PATH` at all. `sys.executable` is the absolute path to *this*
 Python, and `[sys.executable, "-m", "pip", ...]` is *this* environment's pip.
 
-## Download and run
+## Run it
 
-Download
-[exercise-03-run-shell-solution.py](./exercise-03-run-shell-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-03-run-shell.py` and run it:
 
 ```bash
-python exercise-03-run-shell-solution.py
+python exercise-03-run-shell.py
 ```
 
 It needs nothing but the standard library and the tools it probes. Because it

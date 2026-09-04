@@ -92,7 +92,7 @@ sales = build_sales()
 ## Expected output
 
 ```text
-$ python challenge-02-time-series-solution.py
+$ python challenge-02-time-series.py
 --- head ---
 2024-01-01    1024.38
 2024-01-02    1152.45
@@ -332,14 +332,12 @@ and troughs at index 5 (Saturday) at `-292.5`, for a true peak-to-trough of
 rolling mean at day 1 is a single noisy observation and at day 366 is a 7-day
 average, so the two endpoints are not measured the same way.
 
-## Download and run
+## Run it
 
-Download
-[challenge-02-time-series-solution.py](./challenge-02-time-series-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-02-time-series.py` and run it:
 
 ```bash
-python challenge-02-time-series-solution.py
+python challenge-02-time-series.py
 ```
 
 It needs only pandas, numpy, and matplotlib — no dataset file, no network. It

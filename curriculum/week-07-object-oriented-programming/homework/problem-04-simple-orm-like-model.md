@@ -310,7 +310,7 @@ were also spelled `None`, the two would be indistinguishable.
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python problem-04-simple-orm-like-model-solution.py
+$ python problem-04-simple-orm-like-model.py
 User(id=1, name='Ada Lovelace', email='ada@example.com', joined=datetime.date(2026, 1, 15), active=True)
 fields: ['id', 'name', 'email', 'joined', 'active']
 Post(id=10, author=User(id=1, name='Ada Lovelace', email='ada@example.com', joined=datetime.date(2026, 1, 15), active=True), title='Why OOP', body='State and behaviour, together at last.', tags=['python', 'oop'], published_on=datetime.date(2026, 3, 1))
@@ -663,14 +663,12 @@ rule as everywhere else.
 `Post.published_on = None` means "no publication date", which is real data.
 A unique `object()` can never collide with a user value.
 
-## Download and run
+## Run it
 
-Download
-[problem-04-simple-orm-like-model-solution.py](./problem-04-simple-orm-like-model-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-04-simple-orm-like-model.py` and run it:
 
 ```bash
-python problem-04-simple-orm-like-model-solution.py
+python problem-04-simple-orm-like-model.py
 ```
 
 It imports only `copy`, `json`, `datetime` and `typing`, all from the

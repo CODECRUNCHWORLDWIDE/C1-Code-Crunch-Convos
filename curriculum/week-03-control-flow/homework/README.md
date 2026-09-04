@@ -60,16 +60,15 @@ these answers. That repetition is deliberate and it is the point: by
 problem 4 it should be annoying you, and that annoyance is exactly the
 feeling Week 4 exists to fix.
 
-## About the downloadable answers
+## About the published answers
 
-All six problems end in a real script, and each ships the finished `.py`
-beside its page under **Download and run** as
-`problem-NN-<name>-solution.py`. Those files ask their questions when you
-run them from a terminal and fall back to a built-in example when nobody
+All six problems end in a real script, and each page carries that finished
+script in full as its worked answer. Those scripts ask their questions when
+you run them from a terminal and fall back to a built-in example when nobody
 is at the keyboard, so they can be run and checked automatically.
 
 Each of them contains exactly one `def` — a small helper called `ask` —
-and it is **not part of the answer**. It is there so the download can run
+and it is **not part of the answer**. It is there so the script can run
 without a keyboard, and each page says so where it appears. The file you
 hand in is your own copy, under the name the page gives you, with a plain
 `input(...)` in place of `ask(...)`.

@@ -402,14 +402,12 @@ that `record_fee` still changes a list you *pass in*, and that is correct:
 the `running` checks at the bottom depend on it. The rule is not "never
 change a list". The rule is "never share a default".
 
-## Download and run
+## Run it
 
-Download
-[exercise-01-function-basics-solution.py](./exercise-01-function-basics-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-01-function-basics.py` and run it:
 
 ```bash
-python exercise-01-function-basics-solution.py
+python exercise-01-function-basics.py
 ```
 
 It is the same program you are writing, under a name that will not collide

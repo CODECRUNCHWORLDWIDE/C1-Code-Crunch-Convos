@@ -133,7 +133,7 @@ if __name__ == "__main__":
 ## Expected output
 
 ```text
-$ python exercise-05-plot-solution.py
+$ python exercise-05-plot.py
    month  revenue
 0    Jan     4120
 1    Feb     3980
@@ -331,14 +331,12 @@ the unit named, a legend entry reading `Mean`, and nothing clipped at any edge.
 
 **About the shipped file.** The chart-building code above is exactly what you write. The one difference is the save: this download wraps `savefig` in a `tempfile.TemporaryDirectory`, so the PNG is written, proven to exist, and then deleted with the folder on the way out. That keeps the automated check from littering the repo. Your own version points the save at `monthly-revenue.png` next to the script so you can open the picture.
 
-## Download and run
+## Run it
 
-Download
-[exercise-05-plot-solution.py](./exercise-05-plot-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-05-plot.py` and run it:
 
 ```bash
-python exercise-05-plot-solution.py
+python exercise-05-plot.py
 ```
 
 It needs pandas and matplotlib. It builds the chart with the non-interactive `Agg` backend, writes the PNG into a throwaway temporary directory that Python deletes on the way out — so it leaves nothing in your folder — and prints the one-line summary. Your own `exercise-05-plot.py` saves `monthly-revenue.png` beside the script instead, so you can open it. The `-solution` suffix keeps it from colliding with your own `exercise-05-plot.py`.

@@ -135,7 +135,7 @@ a plain report. That is what lets a published answer run as an ordinary
 script. Run it and you see this, the same on every machine:
 
 ```text
-$ python exercise-01-first-test-solution.py
+$ python exercise-01-first-test.py
 The late-fee rules, after the two-line fix:
     0 days late ->    0 cents
     1 days late ->   25 cents
@@ -352,14 +352,12 @@ records each test's name and result. pytest's own noisy output is captured and
 thrown away so the printed report never drifts. In your own folder you skip all
 of that and just type `pytest`.
 
-## Download and run
+## Run it
 
-Download
-[exercise-01-first-test-solution.py](./exercise-01-first-test-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-01-first-test.py` and run it:
 
 ```bash
-python exercise-01-first-test-solution.py
+python exercise-01-first-test.py
 ```
 
 It needs `pytest` installed and nothing else, and it exits on its own. Your own

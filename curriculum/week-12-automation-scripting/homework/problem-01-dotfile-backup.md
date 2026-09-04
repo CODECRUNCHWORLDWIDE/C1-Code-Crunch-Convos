@@ -95,7 +95,7 @@ in a temp directory, injects a fixed time, backs it up, and confirms the archive
 landed. Real captured output:
 
 ```text
-$ python problem-01-dotfile-backup-solution.py
+$ python problem-01-dotfile-backup.py
 Dotfile Backup — driven headless in a temp home this file builds.
 
 INFO    copied .bashrc
@@ -300,14 +300,12 @@ permission bits across, so a restored dotfile looks byte-for-byte and
 metadata-for-metadata like the original. For a backup that matters — a `.ssh`
 config restored world-readable would be a problem.
 
-## Download and run
+## Run it
 
-Download
-[problem-01-dotfile-backup-solution.py](./problem-01-dotfile-backup-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-01-dotfile-backup.py` and run it:
 
 ```bash
-python problem-01-dotfile-backup-solution.py
+python problem-01-dotfile-backup.py
 ```
 
 It needs nothing but the standard library and builds its own temp home, so it

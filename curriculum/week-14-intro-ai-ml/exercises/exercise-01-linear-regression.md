@@ -138,7 +138,7 @@ digits. Read the slope as **about 0.18 thousand dollars per square foot**,
 roughly $180 a square foot; that sentence is the deliverable.
 
 ```text
-$ python exercise-01-linear-regression-solution.py
+$ python exercise-01-linear-regression.py
 rows: 16 | train: 12 | test: 4
 slope (price_k per sqft): 0.179
 intercept (price_k):      44.4
@@ -263,14 +263,12 @@ cost, which is nonsense. It is a fitting artefact that holds the line at the
 right height over the range 700 to 2,450 square feet, not a claim about
 imaginary tiny apartments.
 
-## Download and run
+## Run it
 
-Download
-[exercise-01-linear-regression-solution.py](./exercise-01-linear-regression-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-01-linear-regression.py` and run it:
 
 ```bash
-python exercise-01-linear-regression-solution.py
+python exercise-01-linear-regression.py
 ```
 
 It needs no setup and no download: the sixteen sales are written into the file,

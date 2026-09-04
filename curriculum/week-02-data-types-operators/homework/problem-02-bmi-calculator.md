@@ -297,13 +297,13 @@ instead of hanging on an `input()` that will never be answered. The
 and then closes the input. That single `if` is plumbing, not part of the
 BMI answer — `print_report` has no branch in it at all.
 
-## Download and run
+## Run it
 
-Download [problem-02-bmi-calculator-solution.py](./problem-02-bmi-calculator-solution.py) and
+Copy the worked answer on this page into `problem-02-bmi-calculator.py` and run it:
 run it:
 
 ```bash
-python problem-02-bmi-calculator-solution.py
+python problem-02-bmi-calculator.py
 ```
 
 Run from a terminal, it asks you the two questions. Run by a script or with

@@ -135,7 +135,7 @@ scikit-learn build, so read them as approximate — but with every seed pinned
 they come out identical on every run of this file.
 
 ```text
-$ python exercise-02-iris-classifier-solution.py
+$ python exercise-02-iris-classifier.py
 features: ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
 classes : ['setosa', 'versicolor', 'virginica']
 train rows: 105   test rows: 45
@@ -267,14 +267,12 @@ accuracy it had when it gave up early. Worth sitting with: the warning was real,
 and fixing it changed nothing about the score. A warning tells you the process
 was wrong; it does not promise the answer was.
 
-## Download and run
+## Run it
 
-Download
-[exercise-02-iris-classifier-solution.py](./exercise-02-iris-classifier-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-02-iris-classifier.py` and run it:
 
 ```bash
-python exercise-02-iris-classifier-solution.py
+python exercise-02-iris-classifier.py
 ```
 
 The iris data ships inside scikit-learn, so there is nothing to download and no

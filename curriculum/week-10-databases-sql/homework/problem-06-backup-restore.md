@@ -340,8 +340,6 @@ if __name__ == "__main__":
     raise SystemExit(main(sys.argv[1:]))
 ```
 
-<!--@@INSERT:problem-06-backup-restore-solution.py@@-->
-
 **Why it works.**
 
 **One function does both jobs.** `backup` and `restore` are the same
@@ -383,14 +381,12 @@ tasks. The temporary folder deletes itself on the way out, so the script proves
 every path end to end and leaves nothing behind — which is exactly what lets
 the course's test run it and check the output.
 
-## Download and run
+## Run it
 
-Download
-[problem-06-backup-restore-solution.py](./problem-06-backup-restore-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-06-backup-restore.py` and run it:
 
 ```bash
-python problem-06-backup-restore-solution.py
+python problem-06-backup-restore.py
 ```
 
 With no arguments it runs the self-demonstration above in a throwaway folder and
@@ -398,8 +394,8 @@ exits `0`, so it works on any machine with Python and needs nothing installed.
 To use it for real, give it a subcommand:
 
 ```bash
-python problem-06-backup-restore-solution.py backup tasks.db tasks.backup.db
-python problem-06-backup-restore-solution.py restore tasks.backup.db restored.db
+python problem-06-backup-restore.py backup tasks.db tasks.backup.db
+python problem-06-backup-restore.py restore tasks.backup.db restored.db
 ```
 
 The `-solution` in the filename keeps this download from landing on top of the

@@ -327,13 +327,13 @@ import `List` from `typing` and write `List[str]`. This course targets
 3.11 and up, so the built-in spelling is the right one and the import is
 dead weight.
 
-## Download and run
+## Run it
 
-Download [problem-06-combine-everything-with-a-small-cli-solution.py](./problem-06-combine-everything-with-a-small-cli-solution.py)
+Copy the worked answer on this page into `problem-06-combine-everything-with-a-small-cli.py` and run it:
 and run it:
 
 ```bash
-python problem-06-combine-everything-with-a-small-cli-solution.py
+python problem-06-combine-everything-with-a-small-cli.py
 ```
 
 Run from a terminal, it asks you the four questions. Run by a script or

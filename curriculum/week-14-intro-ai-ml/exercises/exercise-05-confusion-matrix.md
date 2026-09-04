@@ -156,7 +156,7 @@ across the diagonal on a different build. Do not quote the 0.980 without the
 recall beside it — that is the entire exercise.
 
 ```text
-$ python exercise-05-confusion-matrix-solution.py
+$ python exercise-05-confusion-matrix.py
 class balance: {0: 950, 1: 50}
 test set: {0: 190, 1: 10}
 --- always says 'no condition' ---
@@ -361,14 +361,12 @@ feeds — *caught 6 of 10*, *missed 4 of 10*, *sent 0 healthy people for a secon
 test* — are the version of this result you could actually say to the clinic.
 "0.980" is not.
 
-## Download and run
+## Run it
 
-Download
-[exercise-05-confusion-matrix-solution.py](./exercise-05-confusion-matrix-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-05-confusion-matrix.py` and run it:
 
 ```bash
-python exercise-05-confusion-matrix-solution.py
+python exercise-05-confusion-matrix.py
 ```
 
 The population is generated inside the file from a pinned seed, so there is

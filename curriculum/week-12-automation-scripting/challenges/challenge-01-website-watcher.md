@@ -131,7 +131,7 @@ with a live timestamp, which no recording can match, so the demo drops that one
 prefix and prints the rest. Real captured output:
 
 ```text
-$ python challenge-01-website-watcher-solution.py
+$ python challenge-01-website-watcher.py
 Website Watcher — driven headless with recorded responses.
 (each log line's live timestamp prefix is dropped here so the run matches)
 
@@ -497,15 +497,13 @@ you are *supposed* to stop a daemon. Catching it, logging `STOP`, and returning
 `while`, so an interrupt during `time.sleep` and one during `session.get` are
 handled the same way.
 
-## Download and run
+## Run it
 
-Download
-[challenge-01-website-watcher-solution.py](./challenge-01-website-watcher-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-01-website-watcher.py` and run it:
 
 ```bash
 pip install requests
-python challenge-01-website-watcher-solution.py
+python challenge-01-website-watcher.py
 ```
 
 The demo runs entirely against recorded responses, so it needs no network. To

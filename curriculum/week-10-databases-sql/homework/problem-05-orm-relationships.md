@@ -287,8 +287,6 @@ if __name__ == "__main__":
     main()
 ```
 
-<!--@@INSERT:problem-05-orm-relationships-solution.py@@-->
-
 **Why it works.**
 
 **The relationship is the foreign key, seen from Python.** In the
@@ -327,14 +325,14 @@ number of posts the result is still deterministic instead of depending on
 insertion order. Small detail, but it is why the Expected output is a
 fact and not a coin flip.
 
-## Download and run
+## Run it
 
-Download [problem-05-orm-relationships-solution.py](./problem-05-orm-relationships-solution.py),
+Copy the worked answer on this page into `problem-05-orm-relationships.py` and run it:
 install SQLAlchemy, and run it:
 
 ```bash
 pip install sqlalchemy
-python problem-05-orm-relationships-solution.py
+python problem-05-orm-relationships.py
 ```
 
 It builds the schema in an in-memory database, seeds two authors and five

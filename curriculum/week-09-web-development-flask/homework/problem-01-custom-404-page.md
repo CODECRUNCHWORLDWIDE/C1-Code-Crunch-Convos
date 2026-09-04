@@ -153,7 +153,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with Flask
 3.1.0:
 
 ```text
-$ python problem-01-custom-404-page-solution.py
+$ python problem-01-custom-404-page.py
 GET /            -> 200 (the happy path still works)
 GET /post/1      -> 200
 
@@ -375,14 +375,12 @@ any route.
 only exists in the base template. That is how you *prove* inheritance rather
 than assert it.
 
-## Download and run
+## Run it
 
-Download
-[problem-01-custom-404-page-solution.py](./problem-01-custom-404-page-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-01-custom-404-page.py` and run it:
 
 ```bash
-python problem-01-custom-404-page-solution.py
+python problem-01-custom-404-page.py
 ```
 
 It needs Flask installed and nothing else, and it exits on its own — the

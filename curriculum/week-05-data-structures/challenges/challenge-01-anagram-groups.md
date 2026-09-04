@@ -395,14 +395,12 @@ every word against every group and re-sorts on each comparison. At fourteen
 words nobody can tell. At two hundred thousand it is the difference between
 about a second and most of an hour — the arithmetic is in *Under the hood*.
 
-## Download and run
+## Run it
 
-Download
-[challenge-01-anagram-groups-solution.py](./challenge-01-anagram-groups-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-01-anagram-groups.py` and run it:
 
 ```bash
-python challenge-01-anagram-groups-solution.py
+python challenge-01-anagram-groups.py
 ```
 
 It is the same program you are writing, under a name that will not collide

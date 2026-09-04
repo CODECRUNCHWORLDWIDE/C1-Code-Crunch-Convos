@@ -207,7 +207,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with Flask
 3.1.0:
 
 ```text
-$ python problem-03-weather-route-solution.py
+$ python problem-03-weather-route.py
 GET /weather                    -> 200 (the search form, nothing else)
 GET /weather?city=London        -> 200
   <h3>London, United Kingdom</h3>
@@ -491,14 +491,12 @@ one to trigger on purpose. Wiring one input to that branch means you can
 prove the calm-message path works, today, offline, without unplugging
 anything.
 
-## Download and run
+## Run it
 
-Download
-[problem-03-weather-route-solution.py](./problem-03-weather-route-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-03-weather-route.py` and run it:
 
 ```bash
-python problem-03-weather-route-solution.py
+python problem-03-weather-route.py
 ```
 
 It needs Flask installed and nothing else — no API key, no network — and it

@@ -195,7 +195,7 @@ This program writes to two streams, so there are two things to look at.
 captured on CPython 3.13.2:
 
 ```text
-$ python exercise-04-safe-divide-solution.py > report.txt
+$ python exercise-04-safe-divide.py > report.txt
 Lagos       15.00
 Manila       8.00
 Bogota         --
@@ -222,7 +222,7 @@ Run it with no redirection and both streams arrive at your terminal together,
 interleaved:
 
 ```text
-$ python exercise-04-safe-divide-solution.py 2>&1
+$ python exercise-04-safe-divide.py 2>&1
 2026-08-23 23:51:50,811 | INFO     | __main__ | read 6 rows from chapter-totals.csv
 Lagos       15.00
 Manila       8.00
@@ -471,14 +471,12 @@ download runs on a machine where you have created nothing. `report` is your
 `main` with the path passed in as an argument. `safe_divide` and
 `average_attendance` are the exercise.
 
-## Download and run
+## Run it
 
-Download
-[exercise-04-safe-divide-solution.py](./exercise-04-safe-divide-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-04-safe-divide.py` and run it:
 
 ```bash
-python exercise-04-safe-divide-solution.py
+python exercise-04-safe-divide.py
 ```
 
 It needs no `data/` folder: it writes its own copy of the export into a

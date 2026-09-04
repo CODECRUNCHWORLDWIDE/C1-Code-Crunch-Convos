@@ -124,7 +124,7 @@ if __name__ == "__main__":
 Every seed is pinned, so this is what the shipped answer prints on any machine.
 
 ```text
-$ python problem-03-feature-importance-solution.py
+$ python problem-03-feature-importance.py
 feature importances (most to least):
   petal length (cm)    0.431
   petal width (cm)     0.427
@@ -285,15 +285,13 @@ question you actually have is the second one, the experiment in this problem —
 it and refit — is the answer, and it is the reason the problem is built as an
 experiment rather than a printout.
 
-## Download and run
+## Run it
 
-Download
-[problem-03-feature-importance-solution.py](./problem-03-feature-importance-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-03-feature-importance.py` and run it:
 
 ```bash
 python -m pip install scikit-learn pandas
-python problem-03-feature-importance-solution.py
+python problem-03-feature-importance.py
 ```
 
 Iris ships inside scikit-learn, so nothing downloads and there is no network

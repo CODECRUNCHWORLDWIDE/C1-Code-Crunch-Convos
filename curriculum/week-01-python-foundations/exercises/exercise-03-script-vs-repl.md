@@ -287,15 +287,15 @@ it has nothing else to do. `python -i script.py` has a file to run, so it
 runs it first and drops you at the prompt with no banner. If you see a
 banner, you started a bare REPL and your script never ran.
 
-## Download and run
+## Run it
 
-Download [exercise-03-script-vs-repl-solution.py](./exercise-03-script-vs-repl-solution.py) and run it:
+Copy the worked answer on this page into `exercise-03-script-vs-repl.py` and run it:
 
 ```bash
-python exercise-03-script-vs-repl-solution.py
+python exercise-03-script-vs-repl.py
 ```
 
-Then run the same file the other way, `python -i exercise-03-script-vs-repl-solution.py`,
+Then run the same file the other way, `python -i exercise-03-script-vs-repl.py`,
 and compare. Same four lines, then a `>>>` prompt with everything loaded.
 
 ## Common bugs to catch

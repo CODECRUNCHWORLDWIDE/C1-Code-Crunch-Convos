@@ -131,7 +131,7 @@ every run of this file. The two `True`/`False` lines are **not** approximate:
 they are the whole finding, and if either flips, the exercise has failed.
 
 ```text
-$ python exercise-03-train-test-split-solution.py
+$ python exercise-03-train-test-split.py
 --- one model, ten different splits ---
 seed  0 -> 1.000
 seed  1 -> 0.978
@@ -279,14 +279,12 @@ spread 0.067, mean 0.958. One flower changing hands is worth 1/45, about 0.022,
 so the whole spread is three flowers. That is the honest size of the "which
 split did you use?" effect, on the easiest dataset in the book.
 
-## Download and run
+## Run it
 
-Download
-[exercise-03-train-test-split-solution.py](./exercise-03-train-test-split-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-03-train-test-split.py` and run it:
 
 ```bash
-python exercise-03-train-test-split-solution.py
+python exercise-03-train-test-split.py
 ```
 
 Iris ships with scikit-learn, so there is nothing to fetch. Every seed inside

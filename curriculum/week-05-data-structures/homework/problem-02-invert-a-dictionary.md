@@ -131,7 +131,7 @@ Pairs. Not keys, not values — pairs.
 ## Expected output
 
 ```text
-$ python problem-02-invert-a-dictionary-solution.py
+$ python problem-02-invert-a-dictionary.py
 {1: 'red', 2: 'green', 3: 'blue'}
 {}
 {'X': 'x', 'Y': 'y'}
@@ -281,13 +281,13 @@ printed output does, and so does anybody reading it.
 single expression, so it can be returned directly, and four lines of bookkeeping
 that could each have a typo in them never get written.
 
-## Download and run
+## Run it
 
-Download [problem-02-invert-a-dictionary-solution.py](./problem-02-invert-a-dictionary-solution.py)
+Copy the worked answer on this page into `problem-02-invert-a-dictionary.py` and run it:
 and run it:
 
 ```bash
-python problem-02-invert-a-dictionary-solution.py
+python problem-02-invert-a-dictionary.py
 ```
 
 Your own copy of `invert` belongs in `week-05-solutions.py`, and that is the

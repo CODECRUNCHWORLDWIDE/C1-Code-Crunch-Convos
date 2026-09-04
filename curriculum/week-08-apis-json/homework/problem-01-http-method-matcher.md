@@ -125,7 +125,7 @@ if __name__ == "__main__":
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python problem-01-http-method-matcher-solution.py
+$ python problem-01-http-method-matcher.py
 POST    <- 'add a new user'
 POST    <- 'create an invoice'
 POST    <- 'submit the form'
@@ -292,14 +292,12 @@ read — never one that writes or deletes on a guess.
 nothing until one fails. Fifteen printed lines are a table you can read back
 against the brief — the output *is* the specification, demonstrated.
 
-## Download and run
+## Run it
 
-Download
-[problem-01-http-method-matcher-solution.py](./problem-01-http-method-matcher-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-01-http-method-matcher.py` and run it:
 
 ```bash
-python problem-01-http-method-matcher-solution.py
+python problem-01-http-method-matcher.py
 ```
 
 It needs nothing installed and never touches the network. The `-solution` in

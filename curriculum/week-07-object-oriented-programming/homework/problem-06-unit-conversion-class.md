@@ -304,7 +304,7 @@ bars — which is why `Length.from_feet(5280).miles` can come back as exactly
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python problem-06-unit-conversion-class-solution.py
+$ python problem-06-unit-conversion-class.py
 Length(meters=1000.0) | 1.000 km
 kilometers: 1.0
 miles: 0.621371192237334
@@ -672,14 +672,12 @@ international yard and pound agreement, one inch is *defined* as exactly
 measurements with error bars, which is why `Length.from_feet(5280).miles`
 comes back as exactly `1.0`.
 
-## Download and run
+## Run it
 
-Download
-[problem-06-unit-conversion-class-solution.py](./problem-06-unit-conversion-class-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-06-unit-conversion-class.py` and run it:
 
 ```bash
-python problem-06-unit-conversion-class-solution.py
+python problem-06-unit-conversion-class.py
 ```
 
 It imports only `math` and needs no setup. Save your own version as

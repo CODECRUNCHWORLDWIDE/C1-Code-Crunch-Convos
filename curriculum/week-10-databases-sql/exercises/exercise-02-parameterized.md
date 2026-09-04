@@ -193,7 +193,7 @@ if __name__ == "__main__":
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python exercise-02-parameterized-solution.py
+$ python exercise-02-parameterized.py
 Seeded injection_demo.db with 4 members.
 
 --- Unsafe lookup: normal input ---
@@ -475,14 +475,12 @@ queries. The safe habit and the fast habit are the same habit.
 
 </details>
 
-## Download and run
+## Run it
 
-Download
-[exercise-02-parameterized-solution.py](./exercise-02-parameterized-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-02-parameterized.py` and run it:
 
 ```bash
-python exercise-02-parameterized-solution.py
+python exercise-02-parameterized.py
 ```
 
 Standard library only. It builds `injection_demo.db` inside a throwaway

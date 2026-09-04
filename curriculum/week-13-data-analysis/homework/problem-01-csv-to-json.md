@@ -139,7 +139,7 @@ JSON, and deletes the folder on the way out — so the download works on a
 machine with no data files on it at all. Real captured run:
 
 ```text
-$ python problem-01-csv-to-json-solution.py
+$ python problem-01-csv-to-json.py
 wrote sales.json from sales.csv
 [
   {
@@ -328,22 +328,20 @@ each print one line to `sys.stderr` and return `1`, which
 traceback, because a traceback is a message to the person who wrote the program
 and this message is for the person running it.
 
-## Download and run
+## Run it
 
-Download
-[problem-01-csv-to-json-solution.py](./problem-01-csv-to-json-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-01-csv-to-json.py` and run it:
 
 ```bash
 python -m pip install pandas
-python problem-01-csv-to-json-solution.py
+python problem-01-csv-to-json.py
 ```
 
 With no argument it makes its own sample sheet and prints the JSON. With a
 path it converts that file:
 
 ```bash
-python problem-01-csv-to-json-solution.py data/sales.csv
+python problem-01-csv-to-json.py data/sales.csv
 ```
 
 The `-solution` suffix keeps it from colliding with your own

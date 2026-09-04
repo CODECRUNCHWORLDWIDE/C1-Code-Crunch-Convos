@@ -191,7 +191,7 @@ Real captured run of the shipped answer,
 [`problem-06-correlations-solution.py`](./problem-06-correlations-solution.py):
 
 ```text
-$ python problem-06-correlations-solution.py
+$ python problem-06-correlations.py
 Correlation matrix
             total_bill     tip    size
 total_bill      1.0000  0.9053  0.8816
@@ -462,15 +462,13 @@ out, leaving nothing behind for the automated check to trip over. Your own
 can look at it. Its docstring also still carries the older name
 `hw-06-correlations.py` from an earlier draft of this assignment.
 
-## Download and run
+## Run it
 
-Download
-[problem-06-correlations-solution.py](./problem-06-correlations-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-06-correlations.py` and run it:
 
 ```bash
 pip install pandas numpy matplotlib
-python problem-06-correlations-solution.py
+python problem-06-correlations.py
 ```
 
 The data is generated inline from a fixed seed, so it reads no files and prints

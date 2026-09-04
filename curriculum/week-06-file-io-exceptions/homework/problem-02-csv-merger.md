@@ -184,7 +184,7 @@ three, prints the header and first row of the result, then tries a merge
 that must fail:
 
 ```bash
-$ python problem-02-csv-merger-solution.py
+$ python problem-02-csv-merger.py
 ```
 
 ```text
@@ -524,13 +524,13 @@ back out before the folder is deleted. `random.seed(6)` before the
 amounts means the sample row is identical on every machine, which is
 what lets the page promise a specific number.
 
-## Download and run
+## Run it
 
-Download [problem-02-csv-merger-solution.py](./problem-02-csv-merger-solution.py)
+Copy the worked answer on this page into `problem-02-csv-merger.py` and run it:
 and run it:
 
 ```bash
-python problem-02-csv-merger-solution.py
+python problem-02-csv-merger.py
 ```
 
 With no arguments it creates its own quarterly files in a temporary
@@ -538,7 +538,7 @@ folder and merges those, so it runs anywhere with nothing set up. Give
 it real files and it merges those instead:
 
 ```bash
-python problem-02-csv-merger-solution.py q1.csv q2.csv q3.csv --out year.csv
+python problem-02-csv-merger.py q1.csv q2.csv q3.csv --out year.csv
 ```
 
 Save your own copy as `csv_merge.py` in your homework folder, and commit

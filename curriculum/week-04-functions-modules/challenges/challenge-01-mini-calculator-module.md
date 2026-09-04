@@ -633,20 +633,20 @@ prompt to `stdout`, mixed in with your results. Keeping them apart is
 what makes this work:
 
 ```bash
-python challenge-01-mini-calculator-module-solution.py > out.txt
+python challenge-01-mini-calculator-module.py > out.txt
 ```
 
 `out.txt` holds the answers and none of the questions. You saw the same
 effect in the piped session under *Expected output*, where the prompts
 simply were not there.
 
-## Download and run
+## Run it
 
-Download [challenge-01-mini-calculator-module-solution.py](./challenge-01-mini-calculator-module-solution.py)
+Copy the worked answer on this page into `challenge-01-mini-calculator-module.py` and run it:
 and run it:
 
 ```bash
-python challenge-01-mini-calculator-module-solution.py
+python challenge-01-mini-calculator-module.py
 ```
 
 In your own terminal it asks you for sums. Run by a script, or with its
@@ -655,7 +655,7 @@ input closed, it types its own session from `DEMO_LINES`.
 You can also feed it lines from the shell, one per prompt:
 
 ```bash
-printf '2 + 3\n10 / 4\nquit\n' | python challenge-01-mini-calculator-module-solution.py
+printf '2 + 3\n10 / 4\nquit\n' | python challenge-01-mini-calculator-module.py
 ```
 
 One thing to know about that: when the piped lines run out, `ask()` does
@@ -667,7 +667,7 @@ Because the questions go to the error stream, `>` captures the answers
 on their own:
 
 ```bash
-python challenge-01-mini-calculator-module-solution.py > out.txt
+python challenge-01-mini-calculator-module.py > out.txt
 ```
 
 **This one file is the two-file project stacked up.** It is written that

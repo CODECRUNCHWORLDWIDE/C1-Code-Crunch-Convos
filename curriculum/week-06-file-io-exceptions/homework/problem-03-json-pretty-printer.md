@@ -148,7 +148,7 @@ file into a scratch folder, pretty-prints the good one and shows the
 result, then tries the broken one:
 
 ```bash
-$ python problem-03-json-pretty-printer-solution.py
+$ python problem-03-json-pretty-printer.py
 ```
 
 ```text
@@ -394,13 +394,13 @@ changes into it, writes both inputs, runs both cases, and changes back
 out before the folder is deleted. Changing directory first is also why
 the diagnostic says `bad.json` and not a long temporary path.
 
-## Download and run
+## Run it
 
-Download [problem-03-json-pretty-printer-solution.py](./problem-03-json-pretty-printer-solution.py)
+Copy the worked answer on this page into `problem-03-json-pretty-printer.py` and run it:
 and run it:
 
 ```bash
-python problem-03-json-pretty-printer-solution.py
+python problem-03-json-pretty-printer.py
 ```
 
 With no arguments it creates its own good and broken JSON files in a
@@ -408,7 +408,7 @@ temporary folder and runs both cases, so it works anywhere with nothing
 set up. Give it two paths and it does the real job:
 
 ```bash
-python problem-03-json-pretty-printer-solution.py messy.json clean.json
+python problem-03-json-pretty-printer.py messy.json clean.json
 ```
 
 Save your own copy as `json_pretty.py` in your homework folder, and

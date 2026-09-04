@@ -111,7 +111,7 @@ build could shift a last digit, but the finding — boosting wins comfortably on
 curvy data — is the fixed part.
 
 ```text
-$ python problem-01-housing-regression-solution.py
+$ python problem-01-housing-regression.py
 rows: 800  features: 5  target: median_value ($100k)
 train rows: 600   test rows: 200
 --- metrics on the held-out test set (lower MAE/RMSE better, higher R2 better) ---
@@ -263,14 +263,12 @@ would match or beat boosting and run in a fraction of the time, and boosting's
 extra flexibility would just fit noise. "More powerful model" is not a free win;
 it is the right call only when the data has structure a line cannot reach.
 
-## Download and run
+## Run it
 
-Download
-[problem-01-housing-regression-solution.py](./problem-01-housing-regression-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-01-housing-regression.py` and run it:
 
 ```bash
-python problem-01-housing-regression-solution.py
+python problem-01-housing-regression.py
 ```
 
 The homes are generated from a fixed seed inside the file, so there is nothing to

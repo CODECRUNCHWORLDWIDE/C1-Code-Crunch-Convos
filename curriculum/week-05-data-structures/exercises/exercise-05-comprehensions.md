@@ -567,14 +567,12 @@ is visible in the bytecode — see *Under the hood*. Comprehensions are for
 readability. Use them when the one-liner reads better than the loop, and stop
 when it does not.
 
-## Download and run
+## Run it
 
-Download
-[exercise-05-comprehensions-solution.py](./exercise-05-comprehensions-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-05-comprehensions.py` and run it:
 
 ```bash
-python exercise-05-comprehensions-solution.py
+python exercise-05-comprehensions.py
 ```
 
 It is the same program you are writing, under a name that will not collide

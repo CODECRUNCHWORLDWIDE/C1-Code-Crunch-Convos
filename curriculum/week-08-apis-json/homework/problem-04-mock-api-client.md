@@ -148,7 +148,7 @@ if __name__ == "__main__":
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python problem-04-mock-api-client-solution.py
+$ python problem-04-mock-api-client.py
 ok  a new client is empty
 ok  create returned {'id': 1, 'title': 'write the homework', 'done': False}
 ok  the second id is 2, not 1
@@ -444,14 +444,12 @@ promise visible instead of inherited.
 `(label, lambda)` pairs and one loop — the same trick `RULES` pulled in
 problem 1. When several cases differ only in data, make them data.
 
-## Download and run
+## Run it
 
-Download
-[problem-04-mock-api-client-solution.py](./problem-04-mock-api-client-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-04-mock-api-client.py` and run it:
 
 ```bash
-python problem-04-mock-api-client-solution.py
+python problem-04-mock-api-client.py
 ```
 
 It needs nothing installed and never touches the network — that is the whole

@@ -396,14 +396,12 @@ raises immediately instead of quietly stopping at the shorter list
 ([Lecture 2 §5](../lecture-notes/02-loops.md)). Without it, the check that
 is supposed to protect you shrinks in silence.
 
-## Download and run
+## Run it
 
-Download
-[exercise-05-find-prime-solution.py](./exercise-05-find-prime-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-05-find-prime.py` and run it:
 
 ```bash
-python exercise-05-find-prime-solution.py
+python exercise-05-find-prime.py
 ```
 
 It is the same program as the one you are writing, under a name that will

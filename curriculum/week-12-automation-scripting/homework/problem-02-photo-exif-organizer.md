@@ -106,7 +106,7 @@ mtime fallback fires, and a non-image to be skipped — previews, applies, and
 checks each file landed. Real captured output:
 
 ```text
-$ python problem-02-photo-exif-organizer-solution.py
+$ python problem-02-photo-exif-organizer.py
 Photo Organizer — driven headless on images this file builds.
 
 Preview (the default — nothing is moved):
@@ -343,15 +343,13 @@ to `2023/11/`. Assemble the string with `str(when.month)` and you get `2023/7/`,
 which sorts *after* `2023/11/` in a file browser — a bug you would not notice
 until December.
 
-## Download and run
+## Run it
 
-Download
-[problem-02-photo-exif-organizer-solution.py](./problem-02-photo-exif-organizer-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-02-photo-exif-organizer.py` and run it:
 
 ```bash
 pip install Pillow
-python problem-02-photo-exif-organizer-solution.py
+python problem-02-photo-exif-organizer.py
 ```
 
 It builds its own images in a temp folder, so it never touches your photos.

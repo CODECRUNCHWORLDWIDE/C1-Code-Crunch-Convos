@@ -131,7 +131,7 @@ can see the bug and the cure together, and then it runs the whole regression
 suite and reports it:
 
 ```text
-$ python problem-06-shelf-order-regression-solution.py
+$ python problem-06-shelf-order-regression.py
 Input: ['A-10', 'A-2', 'A-1', 'B-1']
   broken (plain string sort): ['A-1', 'A-10', 'A-2', 'B-1']
   fixed  (natural-key sort) : ['A-1', 'A-2', 'A-10', 'B-1']
@@ -337,14 +337,12 @@ that reader, in the name alone, "I exist because `A-10` once jumped in front of
 `A-2`, and I am here so it never does again." Nobody deletes a guardrail once
 they can see the cliff.
 
-## Download and run
+## Run it
 
-Download
-[problem-06-shelf-order-regression-solution.py](./problem-06-shelf-order-regression-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-06-shelf-order-regression.py` and run it:
 
 ```bash
-python problem-06-shelf-order-regression-solution.py
+python problem-06-shelf-order-regression.py
 ```
 
 It shows the broken result beside the fixed one, then runs the regression suite

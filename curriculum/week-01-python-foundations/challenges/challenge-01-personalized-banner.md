@@ -290,18 +290,18 @@ command line when I am the program, not when I am somebody else's toolbox.
 Without it, `from banner import build_banner` in the mini-project would print
 a banner as a side effect of the import.
 
-## Download and run
+## Run it
 
-Download [challenge-01-personalized-banner-solution.py](./challenge-01-personalized-banner-solution.py) and run it:
+Copy the worked answer on this page into `challenge-01-personalized-banner.py` and run it:
 
 ```bash
-python challenge-01-personalized-banner-solution.py
+python challenge-01-personalized-banner.py
 ```
 
 Pass a name to draw somebody else:
 
 ```bash
-python challenge-01-personalized-banner-solution.py Grace Hopper
+python challenge-01-personalized-banner.py Grace Hopper
 ```
 
 In your own project, save the same code as `banner.py`. A module name with

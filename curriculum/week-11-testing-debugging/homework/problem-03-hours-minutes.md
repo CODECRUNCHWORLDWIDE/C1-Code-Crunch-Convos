@@ -140,7 +140,7 @@ Running the shipped answer prints a few durations, then runs every case the way
 pytest runs it and reports the count:
 
 ```text
-$ python problem-03-hours-minutes-solution.py
+$ python problem-03-hours-minutes.py
 format_hm(minutes):
       5 minutes -> 0:05
      65 minutes -> 1:05
@@ -344,14 +344,12 @@ remove that whole problem. The `-> str` contract and the `raises ValueError`
 contract are genuinely different; keeping them apart keeps the file honest about
 that.
 
-## Download and run
+## Run it
 
-Download
-[problem-03-hours-minutes-solution.py](./problem-03-hours-minutes-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-03-hours-minutes.py` and run it:
 
 ```bash
-python problem-03-hours-minutes-solution.py
+python problem-03-hours-minutes.py
 ```
 
 It needs `pytest` and nothing else. Your own work is `checkout.py` plus

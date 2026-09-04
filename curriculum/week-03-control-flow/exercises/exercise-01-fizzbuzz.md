@@ -367,14 +367,13 @@ No list appears anywhere in this program. `range` produces one count,
 `print` consumes it, and the next one arrives. The program holds exactly
 one number in its hand no matter how large `LAST_COUNT` gets.
 
-## Download and run
+## Run it
 
-Download
-[exercise-01-fizzbuzz-solution.py](./exercise-01-fizzbuzz-solution.py) and
+Copy the worked answer on this page into `exercise-01-fizzbuzz.py` and run it:
 run it:
 
 ```bash
-python exercise-01-fizzbuzz-solution.py
+python exercise-01-fizzbuzz.py
 ```
 
 It is the same program as the one you are writing, under a name that will

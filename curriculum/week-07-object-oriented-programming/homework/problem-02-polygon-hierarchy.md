@@ -274,7 +274,7 @@ triangles meeting at the centre. Each has base `s` and height
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python problem-02-polygon-hierarchy-solution.py
+$ python problem-02-polygon-hierarchy.py
 Triangle: area=6.0000, perimeter=12.0000
 Rectangle: area=10.0000, perimeter=13.0000
 RegularPolygon: area=10.3923, perimeter=12.0000
@@ -552,14 +552,12 @@ centre.
 `9.000000000000002`.** The `:.4f` formatting hides it. This is worth knowing
 before you write `assert square.area == 9`.
 
-## Download and run
+## Run it
 
-Download
-[problem-02-polygon-hierarchy-solution.py](./problem-02-polygon-hierarchy-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-02-polygon-hierarchy.py` and run it:
 
 ```bash
-python problem-02-polygon-hierarchy-solution.py
+python problem-02-polygon-hierarchy.py
 ```
 
 It imports only `math` and `abc` from the standard library. Save your own

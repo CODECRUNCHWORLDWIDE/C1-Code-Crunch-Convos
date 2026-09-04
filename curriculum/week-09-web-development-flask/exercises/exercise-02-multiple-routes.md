@@ -126,7 +126,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with Flask
 3.1.0:
 
 ```text
-$ python exercise-02-multiple-routes-solution.py
+$ python exercise-02-multiple-routes.py
 GET / -> 200
 1: Loops and Lists (host: ada)
 2: HTTP by Hand (host: grace)
@@ -349,14 +349,12 @@ Type the path as a literal instead and it keeps working right up until the app
 is mounted under a prefix, at which point every hand-written path is wrong and
 every `url_for` is still right.
 
-## Download and run
+## Run it
 
-Download
-[exercise-02-multiple-routes-solution.py](./exercise-02-multiple-routes-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-02-multiple-routes.py` and run it:
 
 ```bash
-python exercise-02-multiple-routes-solution.py
+python exercise-02-multiple-routes.py
 ```
 
 It needs Flask installed and nothing else, and it exits on its own — the

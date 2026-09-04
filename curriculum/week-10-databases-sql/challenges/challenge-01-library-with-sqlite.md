@@ -250,7 +250,7 @@ A real run of the shipped answer, captured on CPython 3.13.2:
 
 ```bash
 cd challenges
-python challenge-01-library-with-sqlite-solution.py
+python challenge-01-library-with-sqlite.py
 ```
 
 ```text
@@ -624,14 +624,12 @@ argument to a path and the identical code runs a real library. And the
 schema is inlined in the file only so the download is a single file — in
 your repo it belongs in `schema.sql`, as requirement 3 says.
 
-## Download and run
+## Run it
 
-Download
-[challenge-01-library-with-sqlite-solution.py](./challenge-01-library-with-sqlite-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-01-library-with-sqlite.py` and run it:
 
 ```bash
-python challenge-01-library-with-sqlite-solution.py
+python challenge-01-library-with-sqlite.py
 ```
 
 It needs nothing installed — `sqlite3` ships with Python — and it exits on

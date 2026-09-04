@@ -140,7 +140,7 @@ file so it runs as a plain script. It formats a few amounts, shows the exact
 hazard the guard prevents, then runs all twelve cases through pytest:
 
 ```text
-$ python exercise-03-parametrize-solution.py
+$ python exercise-03-parametrize.py
 A few amounts, formatted:
             5 cents -> $0.05
           250 cents -> $2.50
@@ -381,14 +381,12 @@ remove that whole problem. The `-> str` contract and the `raises ValueError`
 contract are genuinely different; keeping them apart keeps the file honest about
 that.
 
-## Download and run
+## Run it
 
-Download
-[exercise-03-parametrize-solution.py](./exercise-03-parametrize-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-03-parametrize.py` and run it:
 
 ```bash
-python exercise-03-parametrize-solution.py
+python exercise-03-parametrize.py
 ```
 
 It needs `pytest` and nothing else. Your own work is `money.py` plus

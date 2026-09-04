@@ -123,7 +123,7 @@ off a cliff through k=4 and then flattens — that cliff-then-flat shape is the
 elbow, and it points at four segments, which is exactly how many were built in.
 
 ```text
-$ python challenge-02-kmeans-clustering-solution.py
+$ python challenge-02-kmeans-clustering.py
 customers: 400   features: ['annual_spend', 'purchase_freq', 'recency_days']
 --- elbow: inertia at each k (look for the bend) ---
   k=1  inertia=   1200.0
@@ -319,14 +319,12 @@ name and act on: cluster 2 here is "spent the most, gone quiet for ten months",
 which is a specific person to write a specific email to. That translation from
 number to profile to action is the entire point of the exercise.
 
-## Download and run
+## Run it
 
-Download
-[challenge-02-kmeans-clustering-solution.py](./challenge-02-kmeans-clustering-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-02-kmeans-clustering.py` and run it:
 
 ```bash
-python challenge-02-kmeans-clustering-solution.py
+python challenge-02-kmeans-clustering.py
 ```
 
 It needs only `scikit-learn`, `pandas`, and `numpy`. The 400 customers are

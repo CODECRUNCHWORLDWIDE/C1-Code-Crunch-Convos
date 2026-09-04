@@ -97,7 +97,7 @@ the run is the same everywhere. It also shows the target guard rejecting a
 non-localhost host. Real captured output:
 
 ```text
-$ python problem-06-port-scanner-solution.py
+$ python problem-06-port-scanner.py
 Port Scanner — driven headless against a listener this file opens.
 
 the port we opened is detected as open: True
@@ -279,14 +279,12 @@ message. Putting it first, and making it a hard `return`, is what turns "please
 only scan localhost" from a comment into a rule the program enforces — the same
 shape as the scraper refusing a `--url` flag.
 
-## Download and run
+## Run it
 
-Download
-[problem-06-port-scanner-solution.py](./problem-06-port-scanner-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-06-port-scanner.py` and run it:
 
 ```bash
-python problem-06-port-scanner-solution.py
+python problem-06-port-scanner.py
 ```
 
 It opens its own loopback listener, probes it, and refuses a non-localhost

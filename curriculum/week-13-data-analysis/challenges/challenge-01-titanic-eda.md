@@ -113,7 +113,7 @@ df = pd.DataFrame(MANIFEST)
 ## Expected output
 
 ```text
-$ python challenge-01-titanic-eda-solution.py
+$ python challenge-01-titanic-eda.py
 shape: (16, 9)
 --- missing-data audit ---
           n_missing  pct_missing
@@ -361,14 +361,12 @@ nothing behind. On the real dataset you would swap the dict for
 `seaborn.load_dataset("titanic")` and point `savefig` at a real file — every
 line between those two edits is unchanged.
 
-## Download and run
+## Run it
 
-Download
-[challenge-01-titanic-eda-solution.py](./challenge-01-titanic-eda-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-01-titanic-eda.py` and run it:
 
 ```bash
-python challenge-01-titanic-eda-solution.py
+python challenge-01-titanic-eda.py
 ```
 
 It needs only pandas, numpy, and matplotlib — no network, no dataset file. It

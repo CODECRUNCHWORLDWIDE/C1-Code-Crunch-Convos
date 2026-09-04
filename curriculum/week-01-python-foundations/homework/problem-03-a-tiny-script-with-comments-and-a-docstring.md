@@ -183,13 +183,13 @@ three lines and is shorter. It is also the version where a missing `\n`
 silently glues two facts together, and where you cannot put a comment
 against one individual fact.
 
-## Download and run
+## Run it
 
-Download [problem-03-a-tiny-script-with-comments-and-a-docstring-solution.py](./problem-03-a-tiny-script-with-comments-and-a-docstring-solution.py)
+Copy the worked answer on this page into `problem-03-a-tiny-script-with-comments-and-a-docstring.py` and run it:
 and run it:
 
 ```bash
-python problem-03-a-tiny-script-with-comments-and-a-docstring-solution.py
+python problem-03-a-tiny-script-with-comments-and-a-docstring.py
 ```
 
 It is the same program as `about_me.py`; only the filename differs, so the

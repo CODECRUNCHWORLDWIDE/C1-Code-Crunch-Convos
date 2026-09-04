@@ -309,7 +309,7 @@ dates, so it prints the same thing every time and leaves no file behind.
 Captured on CPython 3.13.
 
 ```bash
-$ python challenge-02-blog-with-db-solution.py
+$ python challenge-02-blog-with-db.py
 ```
 
 ```text
@@ -759,14 +759,12 @@ clean exit it commits; on an exception it rolls back. It is not a
 "close the connection" block — this is the one Python `with` that does not
 close the thing it opened, which is worth knowing before it surprises you.
 
-## Download and run
+## Run it
 
-Download
-[challenge-02-blog-with-db-solution.py](./challenge-02-blog-with-db-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-02-blog-with-db.py` and run it:
 
 ```bash
-python challenge-02-blog-with-db-solution.py
+python challenge-02-blog-with-db.py
 ```
 
 Nothing to install. The storage layer is standard library only — `sqlite3`,

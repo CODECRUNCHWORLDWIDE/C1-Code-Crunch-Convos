@@ -207,7 +207,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with Flask
 3.1.0:
 
 ```text
-$ python problem-06-session-auth-demo-solution.py
+$ python problem-06-session-auth-demo.py
 DEMO ONLY — this shows how sessions work, not how to build auth.
 
 GET  /new (logged out)         -> 302  Location: /login
@@ -537,14 +537,12 @@ forever.
 compared with `==`, with no account, no hash, no lockout, and no CSRF token.
 The mechanism above is real and reusable. The lock is a prop.
 
-## Download and run
+## Run it
 
-Download
-[problem-06-session-auth-demo-solution.py](./problem-06-session-auth-demo-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-06-session-auth-demo.py` and run it:
 
 ```bash
-python problem-06-session-auth-demo-solution.py
+python problem-06-session-auth-demo.py
 ```
 
 It needs Flask installed and nothing else. There is no `app.run()` and no

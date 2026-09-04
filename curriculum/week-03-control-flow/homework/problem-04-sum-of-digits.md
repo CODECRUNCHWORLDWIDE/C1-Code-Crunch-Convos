@@ -257,13 +257,13 @@ rather than the output stream, so
 the question. Your own file calls
 `input("Enter a non-negative integer: ")` directly.
 
-## Download and run
+## Run it
 
-Download [problem-04-sum-of-digits-solution.py](./problem-04-sum-of-digits-solution.py)
+Copy the worked answer on this page into `problem-04-sum-of-digits.py` and run it:
 and run it:
 
 ```bash
-python problem-04-sum-of-digits-solution.py
+python problem-04-sum-of-digits.py
 ```
 
 Run from a terminal, it asks for a number. Run by a script, or with its

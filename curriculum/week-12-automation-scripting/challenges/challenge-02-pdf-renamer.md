@@ -110,7 +110,7 @@ that want the same target so the overwrite refusal shows. `--from-title` needs
 captured output:
 
 ```text
-$ python challenge-02-pdf-renamer-solution.py
+$ python challenge-02-pdf-renamer.py
 PDF Renamer — regex mode, driven headless on sandboxes this file builds.
 
 Preview (the default — nothing is renamed):
@@ -467,14 +467,12 @@ and more depending on how a PDF is malformed, and new versions add to the list.
 A batch renamer that dies on one corrupt scan out of hundreds is useless; the
 type and message are logged so you can still see what happened.
 
-## Download and run
+## Run it
 
-Download
-[challenge-02-pdf-renamer-solution.py](./challenge-02-pdf-renamer-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-02-pdf-renamer.py` and run it:
 
 ```bash
-python challenge-02-pdf-renamer-solution.py
+python challenge-02-pdf-renamer.py
 ```
 
 The demo drives the regex path only, which is pure standard library, so it needs

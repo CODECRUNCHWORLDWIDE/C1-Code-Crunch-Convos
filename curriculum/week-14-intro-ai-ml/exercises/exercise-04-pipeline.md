@@ -138,7 +138,7 @@ the captured output here. The `rows / features / classes` line, the whole
 Both accuracies and the seventeen iterations are approximate.
 
 ```text
-$ python exercise-04-pipeline-solution.py
+$ python exercise-04-pipeline.py
 rows: 178  features: 13  classes: 3
 feature ranges (a few):
      alcohol  color_intensity  proline
@@ -292,14 +292,12 @@ remember to scale in the right order.
 can read `n_iter_` off it. Note `pipe.coef_` does not exist — the pipeline is
 not the classifier; go through the step with `pipe.named_steps["clf"].coef_`.
 
-## Download and run
+## Run it
 
-Download
-[exercise-04-pipeline-solution.py](./exercise-04-pipeline-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-04-pipeline.py` and run it:
 
 ```bash
-python exercise-04-pipeline-solution.py
+python exercise-04-pipeline.py
 ```
 
 The wine data ships with scikit-learn. The split and the classifier are both

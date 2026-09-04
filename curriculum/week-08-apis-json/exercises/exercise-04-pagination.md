@@ -164,7 +164,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with requests
 2.32.3:
 
 ```text
-$ python exercise-04-pagination-solution.py
+$ python exercise-04-pagination.py
 --- replaying recorded pages; pass --live to call GitHub ---
 page 1: 3 repos
 page 2: 3 repos
@@ -488,13 +488,13 @@ compares the repository names found by the two walks. That comparison is true
 today, was true before the stars moved, and will be true after. A test written
 against `22016` would have been wrong by tomorrow morning.
 
-## Download and run
+## Run it
 
-Download [exercise-04-pagination-solution.py](./exercise-04-pagination-solution.py)
+Copy the worked answer on this page into `exercise-04-pagination.py` and run it:
 and run it:
 
 ```bash
-python exercise-04-pagination-solution.py
+python exercise-04-pagination.py
 ```
 
 It needs `requests` installed and **no internet**. The eight repositories it
@@ -510,7 +510,7 @@ address**, which a class sharing one network burns through in minutes.
 To call the real API, pass a flag:
 
 ```bash
-python exercise-04-pagination-solution.py octocat --live --per-page 3
+python exercise-04-pagination.py octocat --live --per-page 3
 ```
 
 `--live` swaps `recorded_pages()` for `live_pages()` and changes nothing else.

@@ -180,7 +180,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with requests
 2.32.3:
 
 ```text
-$ python problem-06-tiny-url-shortener-client-solution.py
+$ python problem-06-tiny-url-shortener-client.py
 --- replaying is.gd replies recorded on 2026-08-21; pass --live for real ---
 https://is.gd/ccw_home  <-  https://www.codecrunchworldwide.com/
 https://is.gd/ccw_org  <-  https://github.com/CODECRUNCHWORLDWIDE
@@ -529,14 +529,12 @@ handed back: `close()` does it, and `__enter__`/`__exit__` make `with` do it for
 you even if the block raises halfway through. Setting `self._session = None`
 after closing makes a second `close()` harmless.
 
-## Download and run
+## Run it
 
-Download
-[problem-06-tiny-url-shortener-client-solution.py](./problem-06-tiny-url-shortener-client-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-06-tiny-url-shortener-client.py` and run it:
 
 ```bash
-python problem-06-tiny-url-shortener-client-solution.py
+python problem-06-tiny-url-shortener-client.py
 ```
 
 It needs nothing installed but `requests`, and by default it never touches the
@@ -544,7 +542,7 @@ network — it replays the recorded is.gd replies. Point it at a URL of your own
 and add `--live` to shorten it for real:
 
 ```bash
-python problem-06-tiny-url-shortener-client-solution.py https://example.com/some/long/path --live
+python problem-06-tiny-url-shortener-client.py https://example.com/some/long/path --live
 ```
 
 The `-solution` in the filename keeps it from colliding with your own

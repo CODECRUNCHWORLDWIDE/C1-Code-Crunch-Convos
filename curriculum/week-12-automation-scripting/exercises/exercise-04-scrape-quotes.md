@@ -165,7 +165,7 @@ time. Page 2 is deliberately absent, so the scraper meets an empty page and
 stops, exactly as it would past the live site's last page. Real captured output:
 
 ```text
-$ python exercise-04-scrape-quotes-solution.py
+$ python exercise-04-scrape-quotes.py
 Scrape Quotes — proven offline against a recorded copy of page 1.
 
 fetching https://quotes.toscrape.com/page/1/
@@ -450,15 +450,13 @@ Skip it and a 404 or 503 parses to zero quotes, trips the empty-page stop
 condition on page one, and the script writes an empty file and reports success.
 A crash you can see beats a success you cannot check.
 
-## Download and run
+## Run it
 
-Download
-[exercise-04-scrape-quotes-solution.py](./exercise-04-scrape-quotes-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-04-scrape-quotes.py` and run it:
 
 ```bash
 pip install requests beautifulsoup4
-python exercise-04-scrape-quotes-solution.py
+python exercise-04-scrape-quotes.py
 ```
 
 It runs against the recorded page with no network at all, so you can also

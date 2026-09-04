@@ -215,7 +215,7 @@ cannot be modified by accident.
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python problem-03-stack-built-on-a-list-solution.py
+$ python problem-03-stack-built-on-a-list.py
 empty: Stack([]) | is_empty: True
 after pushes: Stack(['a', 'b', 'c'])  # top -> 'c' | len: 3
 peek: c | top-to-bottom: ['c', 'b', 'a']
@@ -437,14 +437,12 @@ so a `for` loop over the stack is safe even if the body pushes or pops.
 on real source text. The `elif char in PAIRS` branch only fires for the three
 closers; everything else falls through untouched.
 
-## Download and run
+## Run it
 
-Download
-[problem-03-stack-built-on-a-list-solution.py](./problem-03-stack-built-on-a-list-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-03-stack-built-on-a-list.py` and run it:
 
 ```bash
-python problem-03-stack-built-on-a-list-solution.py
+python problem-03-stack-built-on-a-list.py
 ```
 
 It imports only from the standard library and needs no setup. Save your own

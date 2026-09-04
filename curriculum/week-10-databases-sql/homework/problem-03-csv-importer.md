@@ -357,8 +357,6 @@ if __name__ == "__main__":
     raise SystemExit(main(sys.argv[1:]))
 ```
 
-<!--@@INSERT:problem-03-csv-importer-solution.py@@-->
-
 **Why it works.**
 
 **The one thing you cannot bind is a name.** A `?` placeholder tells
@@ -393,20 +391,20 @@ thing back, and the table is not even created. `row_count` afterwards
 returns `0`, not "however many rows we got through before the bad one".
 That is what makes the recovery trivial: fix the file, run it again.
 
-## Download and run
+## Run it
 
-Download [problem-03-csv-importer-solution.py](./problem-03-csv-importer-solution.py)
+Copy the worked answer on this page into `problem-03-csv-importer.py` and run it:
 and run it two ways. With no arguments, it demonstrates itself in a
 throwaway folder:
 
 ```bash
-python problem-03-csv-importer-solution.py
+python problem-03-csv-importer.py
 ```
 
 With a path, it imports your own file:
 
 ```bash
-python problem-03-csv-importer-solution.py people.csv people.db
+python problem-03-csv-importer.py people.csv people.db
 ```
 
 The demo creates its sample, its database, and a deliberately broken CSV

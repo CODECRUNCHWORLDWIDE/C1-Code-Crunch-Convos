@@ -265,7 +265,7 @@ and returns the sum of their `monthly_salary()` values, with **zero**
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python challenge-02-employee-hierarchy-solution.py
+$ python challenge-02-employee-hierarchy.py
 6500.0
 5400.0
 7595.0
@@ -568,14 +568,12 @@ exactly `1.3` at the machine's precision. Do not build a habit on it. Real
 payroll uses `decimal.Decimal` or whole cents, for the reasons Exercise 5
 spends a page on.
 
-## Download and run
+## Run it
 
-Download
-[challenge-02-employee-hierarchy-solution.py](./challenge-02-employee-hierarchy-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-02-employee-hierarchy.py` and run it:
 
 ```bash
-python challenge-02-employee-hierarchy-solution.py
+python challenge-02-employee-hierarchy.py
 ```
 
 It imports only `collections.abc` and needs no setup. The reflection answers

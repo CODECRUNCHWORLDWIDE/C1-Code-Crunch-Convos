@@ -502,21 +502,19 @@ and reusable in the Week 9 web form. The function you were handed is shaped
 better than the one you would have written inline, and it is worth noticing
 why.
 
-## Download and run
+## Run it
 
-Download
-[exercise-03-password-checker-solution.py](./exercise-03-password-checker-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-03-password-checker.py` and run it:
 
 ```bash
-python exercise-03-password-checker-solution.py
+python exercise-03-password-checker.py
 ```
 
 Add `--ask` to type your own passwords instead of watching the sample
 session:
 
 ```bash
-python exercise-03-password-checker-solution.py --ask
+python exercise-03-password-checker.py --ask
 ```
 
 It is the same program as the one you are writing, under a name that will

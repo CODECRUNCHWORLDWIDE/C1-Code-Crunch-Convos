@@ -532,13 +532,13 @@ enforced by Python — you *can* call `text_stats._tokenize` — but it is
 a universally understood sign saying "this may change without warning".
 That is what a clean public surface means.
 
-## Download and run
+## Run it
 
-Download [challenge-02-text-stats-package-solution.py](./challenge-02-text-stats-package-solution.py)
+Copy the worked answer on this page into `challenge-02-text-stats-package.py` and run it:
 and run it:
 
 ```bash
-python challenge-02-text-stats-package-solution.py
+python challenge-02-text-stats-package.py
 ```
 
 It takes no input, so it prints the same thing every time.

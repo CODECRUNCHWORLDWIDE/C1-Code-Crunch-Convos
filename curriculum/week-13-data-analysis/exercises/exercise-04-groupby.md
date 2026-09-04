@@ -146,7 +146,7 @@ if __name__ == "__main__":
 ## Expected output
 
 ```text
-$ python exercise-04-groupby-solution.py
+$ python exercise-04-groupby.py
 --- rows ---
                      item   category  units  unit_price  revenue
 0   Interior latex gallon      Paint     14       32.50   455.00
@@ -386,14 +386,12 @@ the same order as the table above them: 34.0, 25.2, 23.0, 17.8. They sum to
 100.0 here; with four shares rounded to one decimal, 99.9 or 100.1 would also be
 correct and nothing needs fixing.
 
-## Download and run
+## Run it
 
-Download
-[exercise-04-groupby-solution.py](./exercise-04-groupby-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-04-groupby.py` and run it:
 
 ```bash
-python exercise-04-groupby-solution.py
+python exercise-04-groupby.py
 ```
 
 It needs only pandas and prints the line items and the four aggregated views. The `-solution` suffix keeps it from colliding with your own `exercise-04-groupby.py`.

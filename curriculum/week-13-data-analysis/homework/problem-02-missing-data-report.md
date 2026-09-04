@@ -143,7 +143,7 @@ identically on every machine. `deck` still lands on top near 77%, which is the
 checkpoint the brief describes. Real captured run:
 
 ```text
-$ python problem-02-missing-data-report-solution.py
+$ python problem-02-missing-data-report.py
           n_missing  pct_missing    dtype
 column                                   
 deck             10        76.92   object
@@ -291,15 +291,13 @@ confirm 76.92% yourself. A report you cannot verify on a small case is a report
 you are trusting rather than testing. Point the same function at the real
 891-row Titanic frame and nothing changes but the numbers.
 
-## Download and run
+## Run it
 
-Download
-[problem-02-missing-data-report-solution.py](./problem-02-missing-data-report-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-02-missing-data-report.py` and run it:
 
 ```bash
 python -m pip install pandas numpy
-python problem-02-missing-data-report-solution.py
+python problem-02-missing-data-report.py
 ```
 
 It needs only pandas and NumPy — no network, no data files. It prints the

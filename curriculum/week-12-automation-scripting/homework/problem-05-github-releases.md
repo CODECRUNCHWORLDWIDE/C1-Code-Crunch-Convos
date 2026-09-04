@@ -94,7 +94,7 @@ it runs with no network and prints the same releases every time. Real captured
 output:
 
 ```text
-$ python problem-05-github-releases-solution.py
+$ python problem-05-github-releases.py
 GitHub Releases — proven offline against a recorded API response.
 
 v2.34.2     2026-05-14  v2.34.2
@@ -293,15 +293,13 @@ token is there, so the script works unauthenticated and simply gets a higher
 rate limit when a token exists. A key read from the environment never appears in
 the file you commit — the one rule about secrets that has no exceptions.
 
-## Download and run
+## Run it
 
-Download
-[problem-05-github-releases-solution.py](./problem-05-github-releases-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-05-github-releases.py` and run it:
 
 ```bash
 pip install requests
-python problem-05-github-releases-solution.py
+python problem-05-github-releases.py
 ```
 
 It runs against the recorded response with no network, so you can also

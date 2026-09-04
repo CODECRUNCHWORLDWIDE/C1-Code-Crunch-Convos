@@ -176,7 +176,7 @@ Real captured run of the shipped answer,
 [`problem-04-pivot-table-solution.py`](./problem-04-pivot-table-solution.py):
 
 ```text
-$ python problem-04-pivot-table-solution.py
+$ python problem-04-pivot-table.py
 15 rows, day=['Thur', 'Fri', 'Sat', 'Sun'], time=['Lunch', 'Dinner']
 
 Mean total_bill by day and time
@@ -363,15 +363,13 @@ line that catches a whole family of silent mistakes.
 `problem-04-pivot-table.py`; the `-solution` suffix on the download exists so it
 cannot collide with it.
 
-## Download and run
+## Run it
 
-Download
-[problem-04-pivot-table-solution.py](./problem-04-pivot-table-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-04-pivot-table.py` and run it:
 
 ```bash
 pip install pandas
-python problem-04-pivot-table-solution.py
+python problem-04-pivot-table.py
 ```
 
 It needs pandas and nothing else. The data is inline, so it reads no files,

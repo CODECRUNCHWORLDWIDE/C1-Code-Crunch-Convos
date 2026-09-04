@@ -201,7 +201,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with Flask
 3.1.0:
 
 ```text
-$ python problem-05-search-filter-solution.py
+$ python problem-05-search-filter.py
 GET /                -> 200 (no query: everything shows)
   <h2>Latest posts</h2>
   posts on the page  : 3
@@ -474,14 +474,12 @@ strings in Python and passing them through. That single habit is what
 makes requirement 8 true for *every* input, not just the ones you thought
 to test.
 
-## Download and run
+## Run it
 
-Download
-[problem-05-search-filter-solution.py](./problem-05-search-filter-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-05-search-filter.py` and run it:
 
 ```bash
-python problem-05-search-filter-solution.py
+python problem-05-search-filter.py
 ```
 
 It needs Flask installed and nothing else, and it exits on its own — it

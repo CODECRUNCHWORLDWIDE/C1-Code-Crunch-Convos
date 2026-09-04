@@ -337,13 +337,13 @@ order the caller wrote them. That is why the example prints
 `{'name': 'Amina', 'age': 29}` and not some other arrangement, and it is
 why a doctest on a dict is stable enough to be worth writing at all.
 
-## Download and run
+## Run it
 
-Download [problem-05-dict-builder-solution.py](./problem-05-dict-builder-solution.py)
+Copy the worked answer on this page into `problem-05-dict-builder.py` and run it:
 and run it:
 
 ```bash
-python problem-05-dict-builder-solution.py
+python problem-05-dict-builder.py
 ```
 
 Save your own copy as `dict_builder.py` in your homework folder, and

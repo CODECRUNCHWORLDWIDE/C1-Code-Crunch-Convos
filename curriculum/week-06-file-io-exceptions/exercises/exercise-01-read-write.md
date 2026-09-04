@@ -180,7 +180,7 @@ every machine in the org.
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python exercise-01-read-write-solution.py
+$ python exercise-01-read-write.py
 Read 5 lines from signups.txt
 Wrote 4 addresses to signups-clean.txt
 
@@ -364,14 +364,12 @@ folder that Python deletes on the way out. Your own version reads the real
 which is the point of passing paths in as arguments instead of reaching for
 module-level constants inside the function.
 
-## Download and run
+## Run it
 
-Download
-[exercise-01-read-write-solution.py](./exercise-01-read-write-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-01-read-write.py` and run it:
 
 ```bash
-python exercise-01-read-write-solution.py
+python exercise-01-read-write.py
 ```
 
 It needs no `data/` folder and no setup: it builds its own copy of the sample

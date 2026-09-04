@@ -214,9 +214,9 @@ D. It is a private keyword and cannot be set on instances.
 
 ---
 
+</details>
+
 **Score yourself:** 9–10 ready for Week 8 / 7–8 review the lecture where
 you missed / under 7 redo the exercises *and* re-read lecture 01.
-
-</details>
 
 ---

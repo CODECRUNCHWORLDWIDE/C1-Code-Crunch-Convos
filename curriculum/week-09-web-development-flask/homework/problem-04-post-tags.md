@@ -247,7 +247,7 @@ Real stdout from the shipped file, captured on CPython 3.13.2 with Flask
 3.1.0:
 
 ```text
-$ python problem-04-post-tags-solution.py
+$ python problem-04-post-tags.py
 parse_tags at work:
   'Python, flask ,, PYTHON'    -> ['python', 'flask']
   '  web , WEB,web '           -> ['web']
@@ -575,14 +575,12 @@ branch after the post loop runs when the list was empty — no posts at all —
 so the "No posts yet." message costs nothing extra. Python's `for/else`
 means something different and stranger; Jinja's is the useful one.
 
-## Download and run
+## Run it
 
-Download
-[problem-04-post-tags-solution.py](./problem-04-post-tags-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-04-post-tags.py` and run it:
 
 ```bash
-python problem-04-post-tags-solution.py
+python problem-04-post-tags.py
 ```
 
 It needs Flask installed and nothing else, and it exits on its own — no

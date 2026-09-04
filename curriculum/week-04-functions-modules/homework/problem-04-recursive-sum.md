@@ -360,13 +360,13 @@ different ways — recursive wrong, iterative wrong, or both wrong in
 different directions — and the FAIL line names all three numbers so you
 can tell which.
 
-## Download and run
+## Run it
 
-Download [problem-04-recursive-sum-solution.py](./problem-04-recursive-sum-solution.py)
+Copy the worked answer on this page into `problem-04-recursive-sum.py` and run it:
 and run it:
 
 ```bash
-python problem-04-recursive-sum-solution.py
+python problem-04-recursive-sum.py
 ```
 
 Save your own copy as `recursive_sum.py` in your homework folder, and

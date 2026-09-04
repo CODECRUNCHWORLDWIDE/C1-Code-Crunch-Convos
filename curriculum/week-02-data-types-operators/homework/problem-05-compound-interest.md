@@ -322,13 +322,13 @@ downloadable file run with nobody present, handing back the example figures
 when `sys.stdin.isatty()` says there is no terminal with a person at it,
 rather than hanging on an `input()` that will never be answered.
 
-## Download and run
+## Run it
 
-Download [problem-05-compound-interest-solution.py](./problem-05-compound-interest-solution.py)
+Copy the worked answer on this page into `problem-05-compound-interest.py` and run it:
 and run it:
 
 ```bash
-python problem-05-compound-interest-solution.py
+python problem-05-compound-interest.py
 ```
 
 Run from a terminal, it asks you the three questions. Run by a script or

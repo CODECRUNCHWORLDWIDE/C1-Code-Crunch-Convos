@@ -198,7 +198,7 @@ tests and a driver into one file so it runs as a plain script. It summarises the
 two sample logs with each module, then runs the four tests against each:
 
 ```text
-$ python challenge-03-review-the-parser-solution.py
+$ python challenge-03-review-the-parser.py
 The submitted module, on the two sample files, in the order they arrived:
   morning  lines=6   errors=1  per_minute=1.20  hosts={'web-01': 3, 'web-03': 2, 'web-02': 1}
   midday   lines=10  errors=2  per_minute=0.09  hosts={'web-01': 3, 'web-03': 2, 'web-02': 3, 'web-04': 2}
@@ -830,14 +830,12 @@ of a review is the only line some people read. It has to answer the question the
 author asked — can this ship — before it explains anything. Everything after the
 summary is evidence for that one sentence.
 
-## Download and run
+## Run it
 
-Download
-[challenge-03-review-the-parser-solution.py](./challenge-03-review-the-parser-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-03-review-the-parser.py` and run it:
 
 ```bash
-python challenge-03-review-the-parser-solution.py
+python challenge-03-review-the-parser.py
 ```
 
 It needs `pytest` and nothing else. In your own folder the work is four files —

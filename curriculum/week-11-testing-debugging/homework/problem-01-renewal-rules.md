@@ -106,7 +106,7 @@ file so it runs as a plain script. It prints the decision table, then runs the
 suite through pytest:
 
 ```text
-$ python problem-01-renewal-rules-solution.py
+$ python problem-01-renewal-rules.py
 can_renew(times_renewed, someone_waiting):
   renewed=0, waiting=False -> True
   renewed=1, waiting=False -> True
@@ -283,14 +283,12 @@ answer downstream.
 bool. Comparing with `is` means a future version that accidentally returns a
 truthy string or a `1` fails the test instead of sliding by.
 
-## Download and run
+## Run it
 
-Download
-[problem-01-renewal-rules-solution.py](./problem-01-renewal-rules-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-01-renewal-rules.py` and run it:
 
 ```bash
-python problem-01-renewal-rules-solution.py
+python problem-01-renewal-rules.py
 ```
 
 It needs `pytest` and nothing else. Your own work is `renewal.py` plus

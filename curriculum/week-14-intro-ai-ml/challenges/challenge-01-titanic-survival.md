@@ -153,7 +153,7 @@ lands near 0.71 rather than the 0.80 you will read about online). With every see
 pinned the whole run is identical on every machine.
 
 ```text
-$ python challenge-01-titanic-survival-solution.py
+$ python challenge-01-titanic-survival.py
 passengers: 500   survived: 231   died: 269
 missing ages: 96   missing embarked: 11
 survival rate by sex:
@@ -430,14 +430,12 @@ checks the reloaded copy predicts the same. That single file is what
 "deploying a model" actually means: not the classifier alone, but every
 preprocessing decision travelling with it.
 
-## Download and run
+## Run it
 
-Download
-[challenge-01-titanic-survival-solution.py](./challenge-01-titanic-survival-solution.py)
-and run it:
+Copy the worked answer on this page into `challenge-01-titanic-survival.py` and run it:
 
 ```bash
-python challenge-01-titanic-survival-solution.py
+python challenge-01-titanic-survival.py
 ```
 
 It needs `scikit-learn`, `pandas`, `numpy`, and `joblib`, all of which you

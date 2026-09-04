@@ -835,7 +835,7 @@ model. Raise it to 0.8 and the filter blocks fewer real messages and misses more
 scams; drop it to 0.3 and the opposite. Whoever is harmed by the mistakes should
 be who sets that number.
 
-## Download and run
+## Run it
 
 <!-- no-runnable-file: what you hand in is four files - train.py, predict.py, model.joblib and report.md - and four files cannot be started by one python command, so there is nothing this page could name README-solution.py without lying about the shape of the project. The runnable answer ships beside this page as sms-spam-classifier.py, all four folded into one script, and is linked from Download and run. -->
 

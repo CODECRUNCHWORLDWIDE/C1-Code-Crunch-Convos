@@ -222,13 +222,13 @@ directly. It also sends the prompt to the **error** stream rather than
 the output stream, so `python homework-02-count-vowels.py > count.txt`
 saves the one sentence you wanted and not the question you were asked.
 
-## Download and run
+## Run it
 
-Download [problem-02-count-vowels-in-a-string-solution.py](./problem-02-count-vowels-in-a-string-solution.py)
+Copy the worked answer on this page into `problem-02-count-vowels-in-a-string.py` and run it:
 and run it:
 
 ```bash
-python problem-02-count-vowels-in-a-string-solution.py
+python problem-02-count-vowels-in-a-string.py
 ```
 
 Run from a terminal, it asks for a sentence. Run by a script, or with its

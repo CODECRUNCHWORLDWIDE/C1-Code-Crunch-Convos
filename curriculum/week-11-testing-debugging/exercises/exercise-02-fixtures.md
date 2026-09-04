@@ -171,7 +171,7 @@ one file so it runs as a plain script. It prints what the filter returns, then
 runs the suite through pytest and reports each test:
 
 ```text
-$ python exercise-02-fixtures-solution.py
+$ python exercise-02-fixtures.py
 Today is 2026-03-10. Overdue means due strictly before that.
   overdue right now : ['circular saw', 'hedge trimmer']
   the ladder is due today, so it is NOT overdue: True
@@ -431,14 +431,12 @@ difference: with only the saw and the trimmer in the data, `<` and `<=` behave
 identically and the off-by-one ships. Choosing input that can tell two plausible
 implementations apart is most of the skill in writing tests.
 
-## Download and run
+## Run it
 
-Download
-[exercise-02-fixtures-solution.py](./exercise-02-fixtures-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-02-fixtures.py` and run it:
 
 ```bash
-python exercise-02-fixtures-solution.py
+python exercise-02-fixtures.py
 ```
 
 It needs `pytest` and nothing else. Your own work is `roster.py` plus

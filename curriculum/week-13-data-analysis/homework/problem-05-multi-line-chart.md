@@ -181,7 +181,7 @@ Real captured run of the shipped answer,
 [`problem-05-multi-line-chart-solution.py`](./problem-05-multi-line-chart-solution.py):
 
 ```text
-$ python problem-05-multi-line-chart-solution.py
+$ python problem-05-multi-line-chart.py
 Alpha   Beta  Gamma
 month                       
 2025-01  452.9  605.5  785.7
@@ -395,15 +395,13 @@ littering the repo. Your own `problem-05-multi-line-chart.py` points
 picture. Its docstring also still carries the older name `hw-05-multi-line.py`
 from an earlier draft of this assignment.
 
-## Download and run
+## Run it
 
-Download
-[problem-05-multi-line-chart-solution.py](./problem-05-multi-line-chart-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-05-multi-line-chart.py` and run it:
 
 ```bash
 pip install pandas matplotlib numpy
-python problem-05-multi-line-chart-solution.py
+python problem-05-multi-line-chart.py
 ```
 
 It builds the chart with the non-interactive `Agg` backend, writes the PNG into

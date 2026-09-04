@@ -299,13 +299,13 @@ hands back the example score rather than hanging on an `input()` that will
 never be answered. That single `if` is plumbing. The answer itself —
 `grade_for` — has no branch in it.
 
-## Download and run
+## Run it
 
-Download [problem-04-grade-letter-assigner-no-if-solution.py](./problem-04-grade-letter-assigner-no-if-solution.py)
+Copy the worked answer on this page into `problem-04-grade-letter-assigner-no-if.py` and run it:
 and run it:
 
 ```bash
-python problem-04-grade-letter-assigner-no-if-solution.py
+python problem-04-grade-letter-assigner-no-if.py
 ```
 
 Run from a terminal, it asks you for a score. Run by a script or with its

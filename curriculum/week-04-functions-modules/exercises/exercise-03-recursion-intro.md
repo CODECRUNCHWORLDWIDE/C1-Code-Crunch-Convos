@@ -451,14 +451,12 @@ is `1`, which the arithmetic produces without help. There is exactly one way
 to seat nobody: the empty seating. An edge case that falls out of the formula
 is a sign the formula is right.
 
-## Download and run
+## Run it
 
-Download
-[exercise-03-recursion-intro-solution.py](./exercise-03-recursion-intro-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-03-recursion-intro.py` and run it:
 
 ```bash
-python exercise-03-recursion-intro-solution.py
+python exercise-03-recursion-intro.py
 ```
 
 It is the same program you are writing, under a name that will not collide

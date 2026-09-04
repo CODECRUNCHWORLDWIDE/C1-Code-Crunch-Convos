@@ -182,7 +182,7 @@ that it has its own constraint below and its own **Under the hood** block.
 Real stdout from the shipped file, captured on CPython 3.13.2:
 
 ```text
-$ python exercise-02-csv-roundtrip-solution.py
+$ python exercise-02-csv-roundtrip.py
 Read 6 rows from mentor-hours.csv
 Kept 3 rows at or above 10 hours
 Wrote mentor-hours-certified.csv
@@ -430,14 +430,12 @@ reason the exercise does — the sample text already contains exactly the line
 endings it should have, and translation would add to them. `qualifies` and
 `filter_rows` are the exercise and know nothing about any of it.
 
-## Download and run
+## Run it
 
-Download
-[exercise-02-csv-roundtrip-solution.py](./exercise-02-csv-roundtrip-solution.py)
-and run it:
+Copy the worked answer on this page into `exercise-02-csv-roundtrip.py` and run it:
 
 ```bash
-python exercise-02-csv-roundtrip-solution.py
+python exercise-02-csv-roundtrip.py
 ```
 
 It needs no `data/` folder: it writes its own copy of the export into a

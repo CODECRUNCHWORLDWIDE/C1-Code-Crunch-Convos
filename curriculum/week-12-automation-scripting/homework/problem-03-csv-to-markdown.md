@@ -85,7 +85,7 @@ builds a small CSV in a temp file — with a cell containing a `|`, and an empty
 cell — and renders it left-aligned and centered. Real captured output:
 
 ```text
-$ python problem-03-csv-to-markdown-solution.py
+$ python problem-03-csv-to-markdown.py
 CSV to Markdown — driven headless on a CSV this file builds.
 
 Default (left-aligned):
@@ -262,14 +262,12 @@ one character (a `y`/`n` flag, say) cannot hold a centre separator, which needs
 `:-:`. Clamping every width up to 3 keeps every alignment legal without a special
 case.
 
-## Download and run
+## Run it
 
-Download
-[problem-03-csv-to-markdown-solution.py](./problem-03-csv-to-markdown-solution.py)
-and run it:
+Copy the worked answer on this page into `problem-03-csv-to-markdown.py` and run it:
 
 ```bash
-python problem-03-csv-to-markdown-solution.py
+python problem-03-csv-to-markdown.py
 ```
 
 It is pure standard library and builds its own CSV, so you can also
